@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/elixir:1.9.4
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: mix do local.hex --force, local.rebar --force
+      - run: mix deps.get
+      - run: mix coveralls.circle
