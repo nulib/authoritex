@@ -1,20 +1,10 @@
 defmodule AuthoritexTest do
-  use ExUnit.Case
-
+  use ExUnit.Case, async: true
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
-
-  setup do
-    ExVCR.Config.cassette_library_dir(
-      "test/fixtures/vcr_cassettes/lcnaf",
-      "test/fixtures/custom_cassettes/lcnaf"
-    )
-
-    :ok
-  end
 
   describe "fetch/1" do
     test "success" do
-      use_cassette "fetch_success" do
+      use_cassette "lcnaf_fetch_success" do
         assert Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251") ==
                  {:ok, "Valim, Jose"}
 
@@ -24,14 +14,14 @@ defmodule AuthoritexTest do
     end
 
     test "failure" do
-      use_cassette "fetch_failure" do
+      use_cassette "lcnaf_fetch_failure" do
         assert Authoritex.fetch("http://id.loc.gov/authorities/names/wrong-id") ==
                  {:error, 404}
       end
     end
 
     test "error" do
-      use_cassette "500", custom: true do
+      use_cassette "lcnaf_500", custom: true do
         assert Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251") ==
                  {:error, 500}
       end
@@ -40,20 +30,20 @@ defmodule AuthoritexTest do
 
   describe "search/2" do
     test "results" do
-      use_cassette "search_results" do
+      use_cassette "lcnaf_search_results" do
         {:ok, results} = Authoritex.search("lcnaf", "smith")
         assert length(results) == 30
         assert %{id: _id, label: _label} = List.first(results)
       end
 
-      use_cassette "search_results_max" do
+      use_cassette "lcnaf_search_results_max" do
         {:ok, results} = Authoritex.search("lcnaf", "smith", 50)
         assert length(results) == 50
       end
     end
 
     test "no results" do
-      use_cassette "search_results_empty" do
+      use_cassette "lcnaf_search_results_empty" do
         assert {:ok, []} = Authoritex.search("lcnaf", "NO_resulteeeees")
       end
     end
@@ -66,7 +56,7 @@ defmodule AuthoritexTest do
     end
 
     test "error" do
-      use_cassette "500", custom: true do
+      use_cassette "lcnaf_500", custom: true do
         assert Authoritex.search("lcnaf", "smith") ==
                  {:error, 500}
       end
