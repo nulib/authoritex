@@ -1,0 +1,40 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://id.loc.gov/authorities/names/no2011087251.rdf"
+    },
+    "response": {
+      "binary": false,
+      "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n  <madsrdf:PersonalName rdf:about=\"http://id.loc.gov/authorities/names/no2011087251\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <madsrdf:authoritativeLabel>Valim, Jose</madsrdf:authoritativeLabel>\n    <madsrdf:elementList rdf:parseType=\"Collection\">\n      <madsrdf:FullNameElement>\n\t<madsrdf:elementValue>Valim, Jose</madsrdf:elementValue>\n      </madsrdf:FullNameElement>\n    </madsrdf:elementList>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings\"/>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_LCNAF\"/>\n    <madsrdf:hasExactExternalAuthority rdf:resource=\"http://viaf.org/viaf/sourceID/LC%7Cno2011087251#skos:Concept\"/>\n    <madsrdf:identifiesRWO>\n      <madsrdf:RWO rdf:about=\"http://id.loc.gov/rwo/agents/no2011087251\">\n\t<rdf:type rdf:resource=\"http://id.loc.gov/ontologies/bibframe/Person\"/>\n\t<rdf:type rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n\t<rdfs:label xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\">Valim, Jose</rdfs:label>\n\t<bflc:contributorTo xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\">\n\t  <bf:Work rdf:about=\"http://id.loc.gov/resources/works/17032688\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\">\n\t    <bflc:aap>Valim, Jose. Crafting rails applications :</bflc:aap>\n\t  </bf:Work>\n\t</bflc:contributorTo>\n      </madsrdf:RWO>\n    </madsrdf:identifiesRWO>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/authorities/names\"/>\n    <identifiers:lccn xmlns:identifiers=\"http://id.loc.gov/vocabulary/identifiers/\">no2011087251</identifiers:lccn>\n    <identifiers:local xmlns:identifiers=\"http://id.loc.gov/vocabulary/identifiers/\">(OCoLC)oca08877947</identifiers:local>\n    <madsrdf:hasSource>\n      <madsrdf:Source>\n\t<madsrdf:citation-source>Crafting Rails applications, c2011:</madsrdf:citation-source>\n\t<madsrdf:citation-note>t.p. (Jose Valim)</madsrdf:citation-note>\n\t<madsrdf:citation-status>found</madsrdf:citation-status>\n      </madsrdf:Source>\n    </madsrdf:hasSource>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-06T00:00:00</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-07T06:21:47</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">revised</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n    <skos:prefLabel xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">Valim, Jose</skos:prefLabel>\n    <skos:exactMatch rdf:resource=\"http://viaf.org/viaf/sourceID/LC%7Cno2011087251#skos:Concept\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"/>\n    <skos:inScheme rdf:resource=\"http://id.loc.gov/authorities/names\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"/>\n    <skos:changeNote xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/authorities/names/no2011087251\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-06T00:00:00</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n    <skos:changeNote xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/authorities/names/no2011087251\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-07T06:21:47</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">revised</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n  </madsrdf:PersonalName>\n</rdf:RDF>\n",
+      "headers": {
+        "Date": "Mon, 11 May 2020 19:52:41 GMT",
+        "Content-Type": "application/rdf+xml; charset=UTF-8",
+        "Content-Length": "4907",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d9df5410ca5bd8550cbcb11e86781c9931589226761; expires=Wed, 10-Jun-20 19:52:41 GMT; path=/; domain=.loc.gov; HttpOnly; SameSite=Lax",
+        "X-RWO-URI": "http://id.loc.gov/rwo/agents/no2011087251",
+        "ETag": "4e8d8eb3f55d0911a9162daeb11be049",
+        "X-URI": "http://id.loc.gov/authorities/names/no2011087251",
+        "cache-control": "public, max-age=2419200",
+        "X-Varnish": "453145580 445456501",
+        "Age": "261871",
+        "Via": "1.1 varnish-v4",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "HEAD, POST, GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+        "Accept-Ranges": "bytes",
+        "CF-Cache-Status": "DYNAMIC",
+        "Server": "cloudflare",
+        "CF-RAY": "591e711c6db9f23a-ORD",
+        "cf-request-id": "02a6e505bd0000f23adc99a200000001"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

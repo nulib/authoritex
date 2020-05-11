@@ -24,7 +24,11 @@ defmodule Authoritex.MixProject do
         "coveralls.circle": :test,
         "coveralls.detail": :test,
         "coveralls.post": :test,
-        "coveralls.html": :test
+        "coveralls.html": :test,
+        vcr: :test,
+        "vcr.delete": :test,
+        "vcr.check": :test,
+        "vcr.show": :test
       ],
       test_coverage: [tool: ExCoveralls],
       elixirc_paths: elixirc_paths(Mix.env())
@@ -44,6 +48,7 @@ defmodule Authoritex.MixProject do
       {:credo, "~> 1.3.0", only: [:dev, :test]},
       {:ex_doc, "~> 0.19", only: [:dev, :docs]},
       {:excoveralls, "~> 0.12.3", only: [:dev, :test]},
+      {:exvcr, "~> 0.11", only: :test},
       {:httpoison, "~> 1.6.2"},
       {:sweet_xml, "~> 0.6"}
     ]
