@@ -7,5 +7,14 @@ jobs:
     steps:
       - checkout
       - run: mix do local.hex --force, local.rebar --force
+      - restore_cache:
+          keys:
+            - hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}
+            - hex-cache-{{ .Environment.CACHE_PREFIX }}-
       - run: mix deps.get
       - run: mix coveralls.circle
+      - save_cache:
+          key: hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}
+          paths:
+            - ~/meadow/deps
+            - ~/meadow/_build
