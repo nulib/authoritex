@@ -9,8 +9,10 @@ defmodule Authoritex.LOC.NamesTest do
     ],
     bad_uri: "http://id.loc.gov/authorities/names/wrong-id",
     expected: [
-      id: "info:lc/authorities/names/no2011087251",
-      label: "Valim, Jose"
+      id: "http://id.loc.gov/authorities/names/no2011087251",
+      label: "Valim, Jose",
+      qualified_label: "Valim, Jose",
+      hint: nil
     ],
     search_result_term: "valim",
     search_count_term: "smith"

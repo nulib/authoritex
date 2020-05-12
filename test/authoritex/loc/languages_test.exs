@@ -9,8 +9,10 @@ defmodule Authoritex.LOC.LanguagesTest do
     ],
     bad_uri: "http://id.loc.gov/vocabulary/languages/wrong-id",
     expected: [
-      id: "info:lc/vocabulary/languages/ang",
-      label: "English, Old (ca. 450-1100)"
+      id: "http://id.loc.gov/vocabulary/languages/ang",
+      label: "English, Old (ca. 450-1100)",
+      qualified_label: "English, Old (ca. 450-1100)",
+      hint: nil
     ],
     search_result_term: "english",
     search_count_term: ""

@@ -78,8 +78,12 @@ defmodule Authoritex.LOC.Base do
 
             rdf ->
               {:ok,
-               SweetXml.xpath(rdf, ~x"//madsrdf:authoritativeLabel", label: ~x"./text()"s)
-               |> Map.get(:label)}
+               SweetXml.xpath(rdf, ~x"./madsrdf:*",
+                 id: ~x"./@rdf:about"s,
+                 label: ~x"./madsrdf:authoritativeLabel[1]/text()"s,
+                 qualified_label: ~x"./madsrdf:authoritativeLabel[1]/text()"s,
+                 hint: ~x"./no_hint/text()"
+               )}
           end
         end
       rescue
@@ -104,7 +108,11 @@ defmodule Authoritex.LOC.Base do
 
             feed ->
               {:ok,
-               SweetXml.xpath(feed, ~x"//entry"l, id: ~x"./id/text()"s, label: ~x"./title/text()"s)}
+               SweetXml.xpath(feed, ~x"//entry"l,
+                 id: ~x{./link[@rel="alternate"][not(@type)]/@href}s,
+                 label: ~x"./title/text()"s,
+                 hint: ~x"./no_hint/text()"
+               )}
           end
         end
       rescue

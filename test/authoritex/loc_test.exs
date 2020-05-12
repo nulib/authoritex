@@ -11,8 +11,10 @@ defmodule Authoritex.LOCTest do
     ],
     bad_uri: "http://id.loc.gov/vocabulary/organizations/wrong-id",
     expected: [
-      id: "info:lc/vocabulary/organizations/iehs",
-      label: "Evanston Township High School"
+      id: "http://id.loc.gov/vocabulary/organizations/iehs",
+      label: "Evanston Township High School",
+      qualified_label: "Evanston Township High School",
+      hint: nil
     ],
     search_result_term: "evanston township high",
     search_count_term: "high school"

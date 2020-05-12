@@ -12,6 +12,8 @@ defmodule Authoritex.TestCase do
             bad_uri: use_opts[:bad_uri],
             expected_id: get_in(use_opts, [:expected, :id]),
             expected_label: get_in(use_opts, [:expected, :label]),
+            expected_qualified_label: get_in(use_opts, [:expected, :qualified_label]),
+            expected_hint: get_in(use_opts, [:expected, :hint]),
             search_result_term: use_opts[:search_result_term],
             search_count_term: use_opts[:search_count_term]
           ] do
@@ -40,7 +42,14 @@ defmodule Authoritex.TestCase do
           use_cassette "#{unquote(code)}_fetch_success" do
             unquote(test_uris)
             |> Enum.each(fn uri ->
-              assert unquote(module).fetch(uri) == {:ok, unquote(expected_label)}
+              assert unquote(module).fetch(uri) ==
+                       {:ok,
+                        %{
+                          id: unquote(expected_id),
+                          label: unquote(expected_label),
+                          qualified_label: unquote(expected_qualified_label),
+                          hint: unquote(expected_hint)
+                        }}
             end)
           end
         end
@@ -66,7 +75,8 @@ defmodule Authoritex.TestCase do
             with {:ok, results} <- unquote(module).search(unquote(search_result_term)) do
               assert Enum.member?(results, %{
                        id: unquote(expected_id),
-                       label: unquote(expected_label)
+                       label: unquote(expected_label),
+                       hint: unquote(expected_hint)
                      })
             end
           end
