@@ -1,0 +1,26 @@
+[
+  {
+    "request": {
+      "url": "http://id.loc.gov/vocabulary/organizations/iehs.rdf"
+    },
+    "response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "body": "<h1>Authority is Busted</h1>"
+    }
+  },
+  {
+    "request": {
+      "url": "http://id.loc.gov/search/?q=Authority+Busted&count=30&format=xml%2Batom"
+    },
+    "response": {
+      "status_code": 200,
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "body": "<h1>Authority is Busted</h1>"
+    }
+  }
+]

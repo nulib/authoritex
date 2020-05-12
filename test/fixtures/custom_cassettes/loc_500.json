@@ -1,26 +1,26 @@
 [
   {
     "request": {
-      "url": "http://id.loc.gov/authorities/names/no2011087251.rdf"
+      "url": "http://id.loc.gov/vocabulary/organizations/iehs.rdf"
     },
     "response": {
       "status_code": 500,
       "headers": {
         "Content-Type": "text/html"
       },
-      "body": "<h1>Government Shutdown</h1>"
+      "body": "<h1>Authority is Down</h1>"
     }
   },
   {
     "request": {
-      "url": "http://id.loc.gov/search/?q=smith&q=scheme%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2Fnames&count=30&format=xml%2Batom"
+      "url": "http://id.loc.gov/search/?q=Authority+Down&count=30&format=xml%2Batom"
     },
     "response": {
       "status_code": 500,
       "headers": {
         "Content-Type": "text/html"
       },
-      "body": "<h1>Government Shutdown</h1>"
+      "body": "<h1>Authority is Down</h1>"
     }
   }
 ]
