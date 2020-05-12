@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.geonames.org/searchJSON?q=M1551ng&<<geonames_username>>&maxRows=30"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"totalResultsCount\":0,\"geonames\":[]}",
+      "headers": {
+        "Date": "Fri, 15 May 2020 19:28:47 GMT",
+        "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips",
+        "Cache-Control": "no-cache",
+        "Access-Control-Allow-Origin": "*",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.geonames.org/getJSON?geonameId=43025619&<<geonames_username>>"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"status\":{\"message\":\"the geoname feature does not exist.\",\"value\":11}}",
+      "headers": {
+        "Date": "Fri, 15 May 2020 19:28:44 GMT",
+        "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips",
+        "Cache-Control": "no-cache",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "71",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "status_code": 404,
+      "type": "ok"
+    }
+  }
+]

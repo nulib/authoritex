@@ -2,6 +2,7 @@ use Mix.Config
 
 config :authoritex,
   authorities: [
+    Authoritex.GeoNames,
     Authoritex.Getty.AAT,
     Authoritex.Getty.TGN,
     Authoritex.Getty.ULAN,

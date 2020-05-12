@@ -1,0 +1,40 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.geonames.org/getJSON?geonameId=4560349&<<geonames_username>>"
+    },
+    "response": {
+      "status_code": 500,
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "body": "{\"status\":{\"message\":\"Internal Server Error.\",\"value\":22}}"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.geonames.org/searchJSON?q=Authority+Down&<<geonames_username>>&maxRows=30"
+    },
+    "response": {
+      "status_code": 500,
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "body": "{\"status\":{\"message\":\"Internal Server Error.\",\"value\":22}}"
+    }
+  }
+]

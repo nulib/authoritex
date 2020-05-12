@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.geonames.org/getJSON?geonameId=11887750&<<geonames_username>>"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"timezone\":{\"gmtOffset\":-6,\"timeZoneId\":\"America/Chicago\",\"dstOffset\":-5},\"bbox\":{\"east\":-80.518693,\"south\":35.995683,\"north\":49.384358,\"west\":-104.05769800000002,\"accuracyLevel\":0},\"asciiName\":\"Midwest\",\"astergdem\":338,\"countryId\":\"6252001\",\"fcl\":\"L\",\"srtm3\":335,\"countryCode\":\"US\",\"lat\":\"42.65982\",\"fcode\":\"RGN\",\"continentCode\":\"NA\",\"lng\":\"-93.93863\",\"geonameId\":11887750,\"toponymName\":\"Midwest\",\"population\":65000000,\"wikipediaURL\":\"en.wikipedia.org/wiki/Midwestern_United_States\",\"adminName5\":\"\",\"adminName4\":\"\",\"adminName3\":\"\",\"alternateNames\":[{\"name\":\"https://en.wikipedia.org/wiki/Midwestern_United_States\",\"lang\":\"link\"},{\"isPreferredName\":true,\"name\":\"Midwestern United States\"}],\"adminName2\":\"\",\"name\":\"Midwest\",\"fclName\":\"parks,area, ...\",\"countryName\":\"United States\",\"fcodeName\":\"region\",\"adminName1\":\"\"}",
+      "headers": {
+        "Date": "Mon, 18 May 2020 14:04:37 GMT",
+        "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16",
+        "Cache-Control": "no-cache",
+        "Access-Control-Allow-Origin": "*",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

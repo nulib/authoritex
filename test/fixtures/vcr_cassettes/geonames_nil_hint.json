@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.geonames.org/getJSON?geonameId=3358844&<<geonames_username>>"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"adminCode1\":\"00\",\"lng\":\"-15\",\"geonameId\":3358844,\"timezone\":{\"gmtOffset\":-3,\"timeZoneId\":\"America/Fortaleza\",\"dstOffset\":-3},\"bbox\":{\"east\":20.000425338745117,\"south\":-83.02047729492188,\"north\":0,\"west\":-83.21609497070312,\"accuracyLevel\":0},\"toponymName\":\"South Atlantic Ocean\",\"asciiName\":\"South Atlantic Ocean\",\"astergdem\":-9999,\"fcl\":\"H\",\"population\":0,\"wikipediaURL\":\"en.wikipedia.org/wiki/South_Atlantic_Ocean\",\"adminName5\":\"\",\"srtm3\":-32768,\"adminName4\":\"\",\"adminName3\":\"\",\"alternateNames\":[{\"name\":\"Atlantic Ocean\"},{\"name\":\"https://en.wikipedia.org/wiki/South_Atlantic_Ocean\",\"lang\":\"link\"},{\"name\":\"Océano Atlántico Sur\",\"lang\":\"es\"}],\"adminName2\":\"\",\"name\":\"South Atlantic Ocean\",\"fclName\":\"stream, lake, ...\",\"fcodeName\":\"ocean\",\"adminName1\":\"\",\"lat\":\"-45\",\"fcode\":\"OCN\"}",
+      "headers": {
+        "Date": "Mon, 18 May 2020 14:17:36 GMT",
+        "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips",
+        "Cache-Control": "no-cache",
+        "Access-Control-Allow-Origin": "*",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
