@@ -6,24 +6,37 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}
-            - hex-cache-{{ .Environment.CACHE_PREFIX }}-
       - run:
           name: Install Hex & Rebar
           command: mix do local.hex --force, local.rebar --force
+      - restore_cache:
+          keys:
+            - hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
+            - hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-
+            - hex-cache-{{ .Environment.CACHE_PREFIX }}-
+      - restore_cache:
+          keys:
+            - build-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
+            - build-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-
+            - build-{{ .Environment.CACHE_PREFIX }}-
       - run:
           name: Install Dependencies
           command: mix do deps.get, deps.compile
+          environment:
+            MIX_ENV: test
       - save_cache:
-          key: hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}
+          key: hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
           paths:
-            - ~/meadow/deps
-            - ~/meadow/_build
+            - ~/repo/deps
+      - save_cache:
+          key: build-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
+          paths:
+            - ~/repo/_build
       - run:
           name: Static Analysis
           command: mix credo || true
+          environment:
+            MIX_ENV: test
       - run:
           name: Run Tests & Coverage Analysis
           command: mix coveralls.circle --trace
