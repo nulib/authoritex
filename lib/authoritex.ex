@@ -4,9 +4,7 @@ defmodule Authoritex do
   @callback code() :: String.t()
   @callback description :: String.t()
   @callback fetch(String.t()) :: {:ok, String.t() | nil} | {:error, term()}
-  @callback search(String.t()) :: {:ok, list(:result)} | {:error, term()}
-
-  @authorities [Authoritex.LCNAF]
+  @callback search(String.t(), integer()) :: {:ok, list(:result)} | {:error, term()}
 
   @doc """
   Returns a label given an id.
@@ -17,7 +15,7 @@ defmodule Authoritex do
   """
   def fetch(id) do
     case authority_for(id) do
-      nil -> nil
+      nil -> {:error, :unknown_authority}
       {authority, _, _} -> authority.fetch(id)
     end
   end
@@ -49,7 +47,7 @@ defmodule Authoritex do
   end
 
   def authorities do
-    @authorities
+    Application.get_env(:authoritex, :authorities, [])
     |> Enum.map(fn mod -> {mod, mod.code(), mod.description()} end)
   end
 

@@ -6,15 +6,24 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: mix do local.hex --force, local.rebar --force
       - restore_cache:
           keys:
             - hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}
             - hex-cache-{{ .Environment.CACHE_PREFIX }}-
-      - run: mix deps.get
-      - run: mix coveralls.circle
+      - run:
+          name: Install Hex & Rebar
+          command: mix do local.hex --force, local.rebar --force
+      - run:
+          name: Install Dependencies
+          command: mix do deps.get, deps.compile
       - save_cache:
           key: hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}
           paths:
             - ~/meadow/deps
             - ~/meadow/_build
+      - run:
+          name: Static Analysis
+          command: mix credo || true
+      - run:
+          name: Run Tests & Coverage Analysis
+          command: mix coveralls.circle --trace
