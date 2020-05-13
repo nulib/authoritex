@@ -1,10 +1,16 @@
 defmodule Authoritex do
-  @type result :: %{id: String.t(), label: String.t()}
+  @type fetch_result :: %{
+          id: String.t(),
+          label: String.t() | nil,
+          qualified_label: String.t() | nil,
+          hint: String.t() | nil
+        }
+  @type search_result :: %{id: String.t(), label: String.t(), hint: String.t() | nil}
   @callback can_resolve?(String.t()) :: true | false
   @callback code() :: String.t()
   @callback description :: String.t()
-  @callback fetch(String.t()) :: {:ok, String.t() | nil} | {:error, term()}
-  @callback search(String.t(), integer()) :: {:ok, list(:result)} | {:error, term()}
+  @callback fetch(String.t()) :: {:ok, :fetch_result} | {:error, term()}
+  @callback search(String.t(), integer()) :: {:ok, list(:search_result)} | {:error, term()}
 
   @doc """
   Returns a label given an id.

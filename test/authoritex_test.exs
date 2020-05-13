@@ -18,11 +18,17 @@ defmodule AuthoritexTest do
   describe "fetch/1" do
     test "success" do
       use_cassette "authoritex_fetch_success" do
-        assert Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251") ==
-                 {:ok, "Valim, Jose"}
+        expected = %{
+          hint: nil,
+          id: "http://id.loc.gov/authorities/names/no2011087251",
+          label: "Valim, Jose",
+          qualified_label: "Valim, Jose"
+        }
 
-        assert Authoritex.fetch("info:lc/authorities/names/no2011087251") ==
-                 {:ok, "Valim, Jose"}
+        assert Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251") ==
+                 {:ok, expected}
+
+        assert Authoritex.fetch("info:lc/authorities/names/no2011087251") == {:ok, expected}
       end
     end
 
@@ -52,8 +58,9 @@ defmodule AuthoritexTest do
 
         with {:ok, results} <- Authoritex.search("lcnaf", "valim") do
           assert Enum.member?(results, %{
-                   id: "info:lc/authorities/names/no2011087251",
-                   label: "Valim, Jose"
+                   id: "http://id.loc.gov/authorities/names/no2011087251",
+                   label: "Valim, Jose",
+                   hint: nil
                  })
         end
       end
