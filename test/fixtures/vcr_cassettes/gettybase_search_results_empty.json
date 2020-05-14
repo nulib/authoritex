@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Accept": "application/sparql-results+xml;charset=UTF-8",
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+%3Fs+%3Fname+%3Fhint+%7B+%3Fs+a+skos%3AConcept%3B+luc%3Aterm+%22M1551ng%22+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+skos%3AscopeNote+%5Brdf%3Avalue+%3Fhint%5D+.+%7D+LIMIT+30"
+    },
+    "response": {
+      "binary": false,
+      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t</results>\n</sparql>\n",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Server": "GraphDB 6.2.7+sha.ab94d232, Forest 2.1.3, Sesame 2.7.8",
+        "Link": "<http://opendatacommons.org/licenses/by/1.0/>; rel=\"license\"",
+        "Content-Disposition": "attachment; filename=\"sparql.xml\"",
+        "Content-Type": "application/sparql-results+xml;charset=UTF-8",
+        "Content-Language": "en-US",
+        "Transfer-Encoding": "chunked",
+        "Date": "Thu, 14 May 2020 15:18:00 GMT"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

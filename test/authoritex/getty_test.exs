@@ -52,34 +52,4 @@ defmodule Authoritex.GettyTest do
       end
     end
   end
-
-  describe "bad responses" do
-    test "fetch" do
-      use_cassette "getty_bad_200", match_requests_on: [:query], custom: true do
-        assert Getty.fetch("http://vocab.getty.edu/ulan/500311625") ==
-                 {:error, {:bad_response, "<h1>Getty is Busted</h1>"}}
-      end
-    end
-
-    test "search" do
-      use_cassette "getty_bad_200", match_requests_on: [:query], custom: true do
-        assert Getty.search("modern") ==
-                 {:error, {:bad_response, "<h1>Getty is Busted</h1>"}}
-      end
-    end
-  end
-
-  describe "errors" do
-    test "fetch" do
-      use_cassette "getty_500", match_requests_on: [:query], custom: true do
-        assert Getty.fetch("http://vocab.getty.edu/ulan/500311625") == {:error, 500}
-      end
-    end
-
-    test "search" do
-      use_cassette "getty_500", match_requests_on: [:query], custom: true do
-        assert Getty.search("modern") == {:error, 500}
-      end
-    end
-  end
 end

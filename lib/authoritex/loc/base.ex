@@ -5,7 +5,6 @@ defmodule Authoritex.LOC.Base do
   # * Language of labels
   # * Stemming/wildcards during search (e.g., "English" vs. "englis" vs. "eng")
 
-  # coveralls-ignore-start
   defmacro __using__(use_opts) do
     {suffix, query_filter} =
       if is_nil(use_opts[:subauthority]) do
@@ -123,6 +122,4 @@ defmodule Authoritex.LOC.Base do
       defp parse_search_result(%{status_code: status_code}), do: {:error, status_code}
     end
   end
-
-  # coveralls-ignore-stop
 end

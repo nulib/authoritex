@@ -1,5 +1,4 @@
 defmodule Authoritex.Getty.Base do
-  # coveralls-ignore-start
   defmacro __using__(use_opts) do
     quote bind_quoted: [
             subauthority: use_opts[:subauthority],
@@ -103,6 +102,4 @@ defmodule Authoritex.Getty.Base do
       defp parse_sparql_result({:error, error}), do: {:error, error}
     end
   end
-
-  # coveralls-ignore-stop
 end

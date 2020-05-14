@@ -1,0 +1,39 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://id.loc.gov/search/?q=M1551ng&q=scheme%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2FgenreForms&count=30&format=xml%2Batom"
+    },
+    "response": {
+      "binary": false,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n<title>Library of Congress Authorities and Vocabulary Service: Search Results</title><link href=\"http://id.loc.gov/search/?q=M1551ng scheme:http://id.loc.gov/authorities/genreForms&amp;start=1&amp;format=atom\" rel=\"self\"/><id>info:lc/search/?q=M1551ng+scheme:http://id.loc.gov/authorities/genreForms</id><updated>2020-05-14T00:17:23.249899-04:00</updated><opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:totalResults><opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">1</opensearch:startIndex><opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">30</opensearch:itemsPerPage>\n</feed>\n",
+      "headers": {
+        "Date": "Thu, 14 May 2020 15:18:05 GMT",
+        "Content-Type": "application/atom+xml; charset=UTF-8",
+        "Content-Length": "767",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d58a2429a7243ac5be2062b67f7e74c741589469485; expires=Sat, 13-Jun-20 15:18:05 GMT; path=/; domain=.loc.gov; HttpOnly; SameSite=Lax",
+        "cache-control": "public, max-age=2419200",
+        "X-Varnish": "461777891 459737824",
+        "Age": "39642",
+        "Via": "1.1 varnish-v4",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "HEAD, POST, GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+        "Accept-Ranges": "bytes",
+        "CF-Cache-Status": "DYNAMIC",
+        "Server": "cloudflare",
+        "CF-RAY": "593596fec87b2547-ORD",
+        "cf-request-id": "02b55cb33e00002547cd8e8200000001"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

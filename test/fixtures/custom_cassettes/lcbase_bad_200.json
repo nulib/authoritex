@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "url": "http://id.loc.gov/vocabulary/organizations/iehs.rdf"
+      "url": "http://id.loc.gov/authorities/genreForms/gf2011026181.rdf"
     },
     "response": {
       "status_code": 200,
@@ -13,7 +13,7 @@
   },
   {
     "request": {
-      "url": "http://id.loc.gov/search/?q=Authority+Busted&count=30&format=xml%2Batom"
+      "url": "http://id.loc.gov/search/?q=Authority+Busted&q=scheme%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2FgenreForms&count=30&format=xml%2Batom"
     },
     "response": {
       "status_code": 200,
