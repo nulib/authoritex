@@ -47,7 +47,14 @@ defmodule Authoritex do
      %{id: "info:lc/authorities/names/no2009021335", label: "Melo, Cimara"}
    ]}
   """
-  def search(authority_code, query, max_results \\ 30) do
+  def search(authority_code, query) do
+    case(find_authority(authority_code)) do
+      nil -> {:error, "Unknown authority: #{authority_code}"}
+      authority -> authority.search(query)
+    end
+  end
+
+  def search(authority_code, query, max_results) do
     case(find_authority(authority_code)) do
       nil -> {:error, "Unknown authority: #{authority_code}"}
       authority -> authority.search(query, max_results)

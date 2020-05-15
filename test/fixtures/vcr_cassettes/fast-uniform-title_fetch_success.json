@@ -1,0 +1,25 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json;"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://id.worldcat.org/fast/1356244/"
+    },
+    "response": {
+      "binary": false,
+      "body": "<rdf:RDF xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:norm=\"http://whatever/java/org.oclc.marc.NormalFormC\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:schema=\"http://schema.org/\" xmlns:void=\"http://rdfs.org/ns/void#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:coord=\"http://whatever/java/org.oclc.marc.CoordToDecimal\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:mx=\"http://www.loc.gov/MARC21/slim\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xml:base=\"http://id.worldcat.org/fast/\">\n<rdf:Description rdf:about=\"1356244\">\n<dct:identifier>1356244</dct:identifier>\n<skos:inScheme rdf:resource=\"ontology/1.0/#fast\"/>\n<rdf:type rdf:resource=\"http://schema.org/CreativeWork\"/>\n<skos:inScheme rdf:resource=\"ontology/1.0/#facet-Title\"/>\n<skos:prefLabel>Autobiography (Franklin, Benjamin)</skos:prefLabel>\n<schema:name>Autobiography (Franklin, Benjamin)</schema:name>\n<skos:altLabel>Benjamin Franklin's autobiography (Franklin, Benjamin)</skos:altLabel>\n<schema:name>Benjamin Franklin's autobiography (Franklin, Benjamin)</schema:name>\n<skos:altLabel>Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)</skos:altLabel>\n<schema:name>Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)</schema:name>\n<skos:altLabel>Autobiography of Benjamin Franklin (Franklin, Benjamin)</skos:altLabel>\n<schema:name>Autobiography of Benjamin Franklin (Franklin, Benjamin)</schema:name>\n<skos:altLabel>Franklin on Franklin (Franklin, Benjamin)</skos:altLabel>\n<schema:name>Franklin on Franklin (Franklin, Benjamin)</schema:name>\n<skos:altLabel>Benjamin Franklin, his autobiography (Franklin, Benjamin)</skos:altLabel>\n<schema:name>Benjamin Franklin, his autobiography (Franklin, Benjamin)</schema:name>\n<skos:altLabel>Life of Benjamin Franklin (Franklin, Benjamin)</skos:altLabel>\n<schema:name>Life of Benjamin Franklin (Franklin, Benjamin)</schema:name>\n<schema:sameAs>\n<rdf:Description rdf:about=\"http://id.loc.gov/authorities/names/n86080078\">\n<rdfs:label>Franklin, Benjamin, 1706-1790.</rdfs:label>\n</rdf:Description>\n</schema:sameAs>\n<schema:sameAs>\n<rdf:Description rdf:about=\"https://viaf.org/viaf/182698761\">\n<rdfs:label>Franklin, Benjamin, 1706-1790.</rdfs:label>\n</rdf:Description>\n</schema:sameAs>\n</rdf:Description>\n<rdf:Description rdf:about=\"fst01356244\">\n<rdfs:comment>This identifier is deprecated. See the rdfs:seeAlso link for the new identifier.</rdfs:comment>\n<rdfs:seeAlso rdf:resource=\"1356244\"/>\n</rdf:Description>\n<foaf:Document rdf:about=\"1356244/rdf.xml\">\n<void:inDataset rdf:resource=\"http://id.worldcat.org/fast/void/0.1\"/>\n<foaf:primaryTopic rdf:resource=\"1356244\"/>\n<dc:format>application/rdf+xml</dc:format>\n<dct:created rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2006-11-16T00:00:00.0</dct:created>\n<dct:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-07-06T14:07:21.0</dct:modified>\n<dct:language rdf:resource=\"http://lexvo.org/id/iso639-3/eng\"/>\n<skos:changeNote xml:lang=\"en\">Cataloged by agency: OCoLC</skos:changeNote>\n<skos:changeNote xml:lang=\"en\">Transcribed by agency: OCoLC</skos:changeNote>\n</foaf:Document>\n<void:Dataset rdf:about=\"http://id.worldcat.org/fast/void/0.1\">\n<dct:title>FAST (Faceted Application of Subject Terminology) Data</dct:title>\n<dct:license>\n<rdf:Description rdf:about=\"http://www.oclc.org/research/activities/fast/odcby.htm\">\n<dct:title>Open Data Commons Attribution License (ODC-By) v1.0</dct:title>\n<rdfs:comment>This is OCLC's \"local copy\" of the ODC-By license</rdfs:comment>\n<rdfs:seeAlso rdf:resource=\"http://opendatacommons.org/licenses/by/#toc-anchor-337-3\"/>\n<owl:sameAs rdf:resource=\"http://opendatacommons.org/licenses/by/1-0/\"/>\n</rdf:Description>\n</dct:license>\n</void:Dataset>\n</rdf:RDF>\n",
+      "headers": {
+        "Content-Type": "application/xml;charset=UTF-8",
+        "Content-Length": "3850",
+        "Date": "Tue, 19 May 2020 19:02:09 GMT"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

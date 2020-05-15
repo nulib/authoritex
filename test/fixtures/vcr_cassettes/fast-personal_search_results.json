@@ -1,0 +1,50 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json;"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=dewey&query_index=suggest00&suggest=autoSubject&queryReturn=suggest00,idroot,auth,type&rows=20"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":1,\n    \"params\":{\n      \"q\":\"suggest00:dewey\",\n      \"fl\":\"suggest00,idroot,auth,type\",\n      \"rows\":\"20\"}},\n  \"response\":{\"numFound\":181,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst00036653\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, John, 1859-1952\",\n        \"suggest00\":[\n          \"Dewey, John, 1859-1952\"]},\n      {\n        \"idroot\":\"fst00000387\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, George, 1837-1917\",\n        \"suggest00\":[\n          \"Dewey, George, 1837-1917\"]},\n      {\n        \"idroot\":\"fst00031716\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, Thomas E. (Thomas Edmund), 1902-1971\",\n        \"suggest00\":[\n          \"Dewey, Thomas E. (Thomas Edmund), 1902-1971\"]},\n      {\n        \"idroot\":\"fst00031716\",\n        \"type\":\"alt\",\n        \"auth\":\"Dewey, Thomas E. (Thomas Edmund), 1902-1971\",\n        \"suggest00\":[\n          \"Dewey, Thomas Edmund, 1902-1971\"]},\n      {\n        \"idroot\":\"fst00031716\",\n        \"type\":\"alt\",\n        \"auth\":\"Dewey, Thomas E. (Thomas Edmund), 1902-1971\",\n        \"suggest00\":[\n          \"Dewey, Thomas, 1902-1971\"]},\n      {\n        \"idroot\":\"fst00297997\",\n        \"type\":\"auth\",\n        \"auth\":\"Bridgman, Laura Dewey, 1829-1889\",\n        \"suggest00\":[\n          \"Bridgman, Laura Dewey, 1829-1889\"]},\n      {\n        \"idroot\":\"fst00297997\",\n        \"type\":\"alt\",\n        \"auth\":\"Bridgman, Laura Dewey, 1829-1889\",\n        \"suggest00\":[\n          \"Bridgeman, Laura Dewey, 1829-1889\"]},\n      {\n        \"idroot\":\"fst01427205\",\n        \"type\":\"alt\",\n        \"auth\":\"Cukor, George, 1899-1983\",\n        \"suggest00\":[\n          \"Cukor, George Dewey, 1899-\"]},\n      {\n        \"idroot\":\"fst00041002\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, Melvil, 1851-1931\",\n        \"suggest00\":[\n          \"Dewey, Melvil, 1851-1931\"]},\n      {\n        \"idroot\":\"fst00041002\",\n        \"type\":\"alt\",\n        \"auth\":\"Dewey, Melvil, 1851-1931\",\n        \"suggest00\":[\n          \"Dewey, Melville Louis Kossuth, 1851-1931\"]},\n      {\n        \"idroot\":\"fst00216520\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey family\",\n        \"suggest00\":[\n          \"Dewey family\"]},\n      {\n        \"idroot\":\"fst00237196\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, John\",\n        \"suggest00\":[\n          \"Dewey, John\"]},\n      {\n        \"idroot\":\"fst00240909\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, Orville, 1794-1882\",\n        \"suggest00\":[\n          \"Dewey, Orville, 1794-1882\"]},\n      {\n        \"idroot\":\"fst00137867\",\n        \"type\":\"auth\",\n        \"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\",\n        \"suggest00\":[\n          \"Barnard, Daniel D. (Daniel Dewey), 1797-1861\"]},\n      {\n        \"idroot\":\"fst00137867\",\n        \"type\":\"alt\",\n        \"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\",\n        \"suggest00\":[\n          \"Barnard, D. D. (Daniel Dewey), 1797-1861\"]},\n      {\n        \"idroot\":\"fst00137867\",\n        \"type\":\"alt\",\n        \"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\",\n        \"suggest00\":[\n          \"Barnard, Mr. (Daniel Dewey), 1797-1861\"]},\n      {\n        \"idroot\":\"fst00137867\",\n        \"type\":\"alt\",\n        \"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\",\n        \"suggest00\":[\n          \"Barnard, Daniel Dewey, 1797-1861\"]},\n      {\n        \"idroot\":\"fst00259756\",\n        \"type\":\"auth\",\n        \"auth\":\"Richards, F. D. (Franklin Dewey), 1821-1899\",\n        \"suggest00\":[\n          \"Richards, F. D. (Franklin Dewey), 1821-1899\"]},\n      {\n        \"idroot\":\"fst00259756\",\n        \"type\":\"alt\",\n        \"auth\":\"Richards, F. D. (Franklin Dewey), 1821-1899\",\n        \"suggest00\":[\n          \"Richards, Franklin Dewey, 1821-1899\"]},\n      {\n        \"idroot\":\"fst00144369\",\n        \"type\":\"auth\",\n        \"auth\":\"Perkins, Carl Dewey, 1912-1984\",\n        \"suggest00\":[\n          \"Perkins, Carl Dewey, 1912-1984\"]}]\n  }}",
+      "headers": {
+        "Date": "Tue, 19 May 2020 19:02:25 GMT",
+        "Server": "Apache/2.0.63 (Unix)",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json;"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=dewey&query_index=suggest00&suggest=autoSubject&queryReturn=suggest00,idroot,auth,type&rows=15"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggest00:dewey\",\n      \"fl\":\"suggest00,idroot,auth,type\",\n      \"rows\":\"15\"}},\n  \"response\":{\"numFound\":181,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst00036653\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, John, 1859-1952\",\n        \"suggest00\":[\n          \"Dewey, John, 1859-1952\"]},\n      {\n        \"idroot\":\"fst00000387\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, George, 1837-1917\",\n        \"suggest00\":[\n          \"Dewey, George, 1837-1917\"]},\n      {\n        \"idroot\":\"fst00031716\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, Thomas E. (Thomas Edmund), 1902-1971\",\n        \"suggest00\":[\n          \"Dewey, Thomas E. (Thomas Edmund), 1902-1971\"]},\n      {\n        \"idroot\":\"fst00031716\",\n        \"type\":\"alt\",\n        \"auth\":\"Dewey, Thomas E. (Thomas Edmund), 1902-1971\",\n        \"suggest00\":[\n          \"Dewey, Thomas Edmund, 1902-1971\"]},\n      {\n        \"idroot\":\"fst00031716\",\n        \"type\":\"alt\",\n        \"auth\":\"Dewey, Thomas E. (Thomas Edmund), 1902-1971\",\n        \"suggest00\":[\n          \"Dewey, Thomas, 1902-1971\"]},\n      {\n        \"idroot\":\"fst00297997\",\n        \"type\":\"auth\",\n        \"auth\":\"Bridgman, Laura Dewey, 1829-1889\",\n        \"suggest00\":[\n          \"Bridgman, Laura Dewey, 1829-1889\"]},\n      {\n        \"idroot\":\"fst00297997\",\n        \"type\":\"alt\",\n        \"auth\":\"Bridgman, Laura Dewey, 1829-1889\",\n        \"suggest00\":[\n          \"Bridgeman, Laura Dewey, 1829-1889\"]},\n      {\n        \"idroot\":\"fst01427205\",\n        \"type\":\"alt\",\n        \"auth\":\"Cukor, George, 1899-1983\",\n        \"suggest00\":[\n          \"Cukor, George Dewey, 1899-\"]},\n      {\n        \"idroot\":\"fst00041002\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, Melvil, 1851-1931\",\n        \"suggest00\":[\n          \"Dewey, Melvil, 1851-1931\"]},\n      {\n        \"idroot\":\"fst00041002\",\n        \"type\":\"alt\",\n        \"auth\":\"Dewey, Melvil, 1851-1931\",\n        \"suggest00\":[\n          \"Dewey, Melville Louis Kossuth, 1851-1931\"]},\n      {\n        \"idroot\":\"fst00216520\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey family\",\n        \"suggest00\":[\n          \"Dewey family\"]},\n      {\n        \"idroot\":\"fst00237196\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, John\",\n        \"suggest00\":[\n          \"Dewey, John\"]},\n      {\n        \"idroot\":\"fst00240909\",\n        \"type\":\"auth\",\n        \"auth\":\"Dewey, Orville, 1794-1882\",\n        \"suggest00\":[\n          \"Dewey, Orville, 1794-1882\"]},\n      {\n        \"idroot\":\"fst00137867\",\n        \"type\":\"auth\",\n        \"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\",\n        \"suggest00\":[\n          \"Barnard, Daniel D. (Daniel Dewey), 1797-1861\"]},\n      {\n        \"idroot\":\"fst00137867\",\n        \"type\":\"alt\",\n        \"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\",\n        \"suggest00\":[\n          \"Barnard, D. D. (Daniel Dewey), 1797-1861\"]}]\n  }}",
+      "headers": {
+        "Date": "Tue, 19 May 2020 19:02:26 GMT",
+        "Server": "Apache/2.0.63 (Unix)",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
