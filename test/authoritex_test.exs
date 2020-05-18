@@ -1,5 +1,5 @@
 defmodule AuthoritexTest do
-  use ExUnit.Case, async: true
+  use ExUnit.Case, async: false
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 
   describe "authorities/0" do

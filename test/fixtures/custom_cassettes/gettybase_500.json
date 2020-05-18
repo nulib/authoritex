@@ -1,0 +1,26 @@
+[
+  {
+    "request": {
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Fulan%2F500019204%3E+as+%3Fs%29+%3Fs+a+skos%3AConcept+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+skos%3AscopeNote+%5Brdf%3Avalue+%3Fhint%5D+%7D+LIMIT+1"
+    },
+    "response": {
+      "status_code": 500,
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "body": "<h1>Authority is Down</h1>"
+    }
+  },
+  {
+    "request": {
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+%3Fs+%3Fname+%3Fhint+%7B+%3Fs+a+skos%3AConcept%3B+luc%3Aterm+%22Authority+Down%22+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+skos%3AscopeNote+%5Brdf%3Avalue+%3Fhint%5D+.+%7D+LIMIT+30"
+    },
+    "response": {
+      "status_code": 500,
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "body": "<h1>Authority is Down</h1>"
+    }
+  }
+]
