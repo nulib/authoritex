@@ -1,4 +1,6 @@
 defmodule Authoritex do
+  @moduledoc "Elixir authority lookup behavior"
+
   @type fetch_result :: %{
           id: String.t(),
           label: String.t() | nil,

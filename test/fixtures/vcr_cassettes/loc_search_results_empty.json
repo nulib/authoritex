@@ -12,16 +12,16 @@
     },
     "response": {
       "binary": false,
-      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n<title>Library of Congress Authorities and Vocabulary Service: Search Results</title><link href=\"http://id.loc.gov/search/?q=M1551ng&amp;start=1&amp;format=atom\" rel=\"self\"/><id>info:lc/search/?q=M1551ng</id><updated>2020-05-12T14:03:59.326089-04:00</updated><opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:totalResults><opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">1</opensearch:startIndex><opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">30</opensearch:itemsPerPage>\n</feed>\n",
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n<title>Library of Congress Authorities and Vocabulary Service: Search Results</title><link href=\"http://id.loc.gov/search/?q=M1551ng&amp;start=1&amp;format=atom\" rel=\"self\"/><id>info:lc/search/?q=M1551ng</id><updated>2020-05-12T14:05:46.373259-04:00</updated><opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:totalResults><opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">1</opensearch:startIndex><opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">30</opensearch:itemsPerPage>\n</feed>\n",
       "headers": {
-        "Date": "Tue, 12 May 2020 18:07:33 GMT",
+        "Date": "Thu, 14 May 2020 16:06:57 GMT",
         "Content-Type": "application/atom+xml; charset=UTF-8",
         "Content-Length": "671",
         "Connection": "keep-alive",
-        "Set-Cookie": "__cfduid=d6243d3fead37f6e547f0a876047b59331589306853; expires=Thu, 11-Jun-20 18:07:33 GMT; path=/; domain=.loc.gov; HttpOnly; SameSite=Lax",
+        "Set-Cookie": "__cfduid=d96082fbbbeade25c654f67352bdc5b901589472417; expires=Sat, 13-Jun-20 16:06:57 GMT; path=/; domain=.loc.gov; HttpOnly; SameSite=Lax",
         "cache-control": "public, max-age=2419200",
-        "X-Varnish": "466488112 466394636",
-        "Age": "214",
+        "X-Varnish": "461876034 457643945",
+        "Age": "165671",
         "Via": "1.1 varnish-v4",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "HEAD, POST, GET, OPTIONS",
@@ -29,8 +29,8 @@
         "Accept-Ranges": "bytes",
         "CF-Cache-Status": "DYNAMIC",
         "Server": "cloudflare",
-        "CF-RAY": "5926147c0f2271b9-ORD",
-        "cf-request-id": "02abab2186000071b9c9a25200000001"
+        "CF-RAY": "5935de90ab1a817c-ORD",
+        "cf-request-id": "02b5896e6b0000817cf914f200000001"
       },
       "status_code": 200,
       "type": "ok"

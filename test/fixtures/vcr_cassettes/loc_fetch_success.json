@@ -12,16 +12,16 @@
       "binary": false,
       "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n  <madsrdf:CorporateName rdf:about=\"http://id.loc.gov/vocabulary/organizations/iehs\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <madsrdf:authoritativeLabel>Evanston Township High School</madsrdf:authoritativeLabel>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/vocabulary/organizations/collection_organizations\"/>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/code\">IEHS</madsrdf:code>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/normalized\">iehs</madsrdf:code>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/iso15511\">US-iehs</madsrdf:code>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/vocabulary/organizations\"/>\n    <madsrdf:adminMetadata>\n                <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n                  <ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n                  <ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1990-01-01T00:00:00.000-04:00</ri:recordChangeDate>\n                  <ri:recordStatus xml:lang=\"en\">new</ri:recordStatus>\n                </ri:RecordInfo>\n              </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n                <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n                  <ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n                  <ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2015-04-07T09:13:26.000-04:00</ri:recordChangeDate>\n                  <ri:recordStatus xml:lang=\"en\">modified</ri:recordStatus>\n                </ri:RecordInfo>\n              </madsrdf:adminMetadata>\n    <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n    <skos:prefLabel xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">Evanston Township High School</skos:prefLabel>\n    <skos:notation rdf:datatype=\"http://id.loc.gov/datatypes/orgs/code\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">IEHS</skos:notation>\n    <skos:notation rdf:datatype=\"http://id.loc.gov/datatypes/orgs/normalized\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">iehs</skos:notation>\n    <skos:notation rdf:datatype=\"http://id.loc.gov/datatypes/orgs/iso15511\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">US-iehs</skos:notation>\n    <skos:inScheme rdf:resource=\"http://id.loc.gov/vocabulary/organizations\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"/>\n    <skos:changeNote xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/organizations/iehs\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1990-01-01T00:00:00.000-04:00</cs:createdDate>\n\t<cs:changeReason xml:lang=\"en\">new</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n    <skos:changeNote xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\">\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/organizations/iehs\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2015-04-07T09:13:26.000-04:00</cs:createdDate>\n\t<cs:changeReason xml:lang=\"en\">modified</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n  </madsrdf:CorporateName>\n</rdf:RDF>\n",
       "headers": {
-        "Date": "Tue, 12 May 2020 18:07:35 GMT",
+        "Date": "Thu, 14 May 2020 16:07:01 GMT",
         "Content-Type": "application/rdf+xml; charset=UTF-8",
         "Content-Length": "3769",
         "Connection": "keep-alive",
-        "Set-Cookie": "__cfduid=d4a494b1c4dc869c8d56e950f4c9ba8481589306855; expires=Thu, 11-Jun-20 18:07:35 GMT; path=/; domain=.loc.gov; HttpOnly; SameSite=Lax",
+        "Set-Cookie": "__cfduid=de537ffd447b9f925b628f818f6f9518f1589472421; expires=Sat, 13-Jun-20 16:07:01 GMT; path=/; domain=.loc.gov; HttpOnly; SameSite=Lax",
         "ETag": "7db05b5890a8d17fa40843b1a2c34bab",
         "X-URI": "http://id.loc.gov/vocabulary/organizations/iehs",
         "cache-control": "public, max-age=2419200",
-        "X-Varnish": "466488115 466234829",
-        "Age": "105",
+        "X-Varnish": "468760924 466234829",
+        "Age": "165670",
         "Via": "1.1 varnish-v4",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "HEAD, POST, GET, OPTIONS",
@@ -29,8 +29,8 @@
         "Accept-Ranges": "bytes",
         "CF-Cache-Status": "DYNAMIC",
         "Server": "cloudflare",
-        "CF-RAY": "592614890ff771b9-ORD",
-        "cf-request-id": "02abab29a4000071b9c9aaf200000001"
+        "CF-RAY": "5935dea85d85817c-ORD",
+        "cf-request-id": "02b5897d360000817cf9308200000001"
       },
       "status_code": 200,
       "type": "ok"
