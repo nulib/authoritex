@@ -77,6 +77,9 @@ defmodule AuthoritexTest do
 
       assert {:error, "Unknown authority: #{authority_code}"} ==
                Authoritex.search(authority_code, "term")
+
+      assert {:error, "Unknown authority: #{authority_code}"} ==
+               Authoritex.search(authority_code, "term", 3)
     end
   end
 end

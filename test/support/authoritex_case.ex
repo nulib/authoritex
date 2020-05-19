@@ -14,8 +14,16 @@ defmodule Authoritex.TestCase do
             expected_label: get_in(use_opts, [:expected, :label]),
             expected_qualified_label: get_in(use_opts, [:expected, :qualified_label]),
             expected_hint: get_in(use_opts, [:expected, :hint]),
+            expected_fetch_hint:
+              Keyword.get(
+                use_opts[:expected],
+                :fetch_hint,
+                get_in(use_opts, [:expected, :hint])
+              ),
             search_result_term: use_opts[:search_result_term],
-            search_count_term: use_opts[:search_count_term]
+            search_count_term: use_opts[:search_count_term],
+            default_results: use_opts[:default_results] || 30,
+            explicit_results: use_opts[:explicit_results] || 50
           ] do
       use ExUnit.Case, async: true
       use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
@@ -48,7 +56,7 @@ defmodule Authoritex.TestCase do
                           id: unquote(expected_id),
                           label: unquote(expected_label),
                           qualified_label: unquote(expected_qualified_label),
-                          hint: unquote(expected_hint)
+                          hint: unquote(expected_fetch_hint)
                         }}
             end)
           end
@@ -65,11 +73,12 @@ defmodule Authoritex.TestCase do
         test "results" do
           use_cassette "#{unquote(code)}_search_results", match_requests_on: [:query] do
             with {:ok, results} <- unquote(module).search(unquote(search_count_term)) do
-              assert length(results) == 30
+              assert length(results) == unquote(default_results)
             end
 
-            with {:ok, results} <- unquote(module).search(unquote(search_count_term), 50) do
-              assert length(results) == 50
+            with {:ok, results} <-
+                   unquote(module).search(unquote(search_count_term), unquote(explicit_results)) do
+              assert length(results) == unquote(explicit_results)
             end
 
             with {:ok, results} <- unquote(module).search(unquote(search_result_term)) do
