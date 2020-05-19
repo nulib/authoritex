@@ -69,7 +69,8 @@ defmodule Authoritex.MixProject do
       files: ["lib", "mix.exs", "README.md", "LICENSE.md"],
       maintainers: ["Brendan Quinn", "Karen Shaw", "Michael B. Klein"],
       licenses: ["MIT"],
-      links: %{GitHub: @url}
+      links: %{GitHub: @url},
+      exclude_patterns: [".DS_Store"]
     ]
   end
 end
