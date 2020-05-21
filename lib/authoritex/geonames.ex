@@ -157,7 +157,7 @@ defmodule Authoritex.GeoNames do
   end
 
   # coveralls-ignore-start
-  defp username() do
+  defp username do
     System.get_env("GEONAMES_USERNAME") ||
       Application.get_env(:authoritex, :geonames_username)
   end

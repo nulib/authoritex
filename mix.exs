@@ -25,6 +25,7 @@ defmodule Authoritex.MixProject do
         "coveralls.detail": :test,
         "coveralls.post": :test,
         "coveralls.html": :test,
+        docs: :docs,
         vcr: :test,
         "vcr.delete": :test,
         "vcr.check": :test,
@@ -50,6 +51,7 @@ defmodule Authoritex.MixProject do
       {:excoveralls, "~> 0.12.3", only: [:dev, :test]},
       {:exvcr, "~> 0.11", only: :test},
       {:httpoison, "~> 1.6.2"},
+      {:jason, "~> 1.2.1"},
       {:sweet_xml, "~> 0.6"}
     ]
   end
@@ -61,6 +63,7 @@ defmodule Authoritex.MixProject do
     ]
   end
 
+  defp elixirc_paths(:docs), do: ["lib", "test/support"]
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
 
