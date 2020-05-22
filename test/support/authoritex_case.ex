@@ -1,5 +1,32 @@
 defmodule Authoritex.TestCase do
-  @moduledoc "Shared test cases for Library of Congress authorities"
+  @moduledoc """
+  Shared tests for Authoritex modules
+
+  `Authoritex.TestCase` ensures that an authority module implements the
+  `Authoritex` behvaiour and that all of its functions behave as expected.
+  To run the shared tests, `use Authoritex.TestCase, opts` within your
+  test module, where `opts` contains:
+
+  * `module` -- The module you're testing
+  * `code` -- The code returned by the module's `code/0` callback
+  * `description` -- The description returned by the module's `description/0` callback
+  * `test_uris` -- A list of URIs that should be resolvable by the module, referencing
+    the same resource
+  * `bad_uri` -- A URI that is in the correct format but does not point to a resource
+  * `expected` -- A keyword list containing the attributes of the resource referenced
+    by the `test_uris`.
+  * `search_result_term` -- A term or search query that will include the resource
+    referenced by the `test_uris` in its results
+  * `search_count_term` -- A term or search query that will produce at least two
+    pages of results
+  * `default_results` (optional) -- The default maximum number of results returned
+    by a search (default: `30`)
+  * `specified_results` (optional) -- A non-default number of results that can be
+    used for testing `search/2` (default: `50`)
+  ```
+
+  See this package's test suite for detailed examples.
+  """
 
   use ExUnit.CaseTemplate
 
@@ -27,6 +54,12 @@ defmodule Authoritex.TestCase do
           ] do
       use ExUnit.Case, async: true
       use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
+
+      test "implements the Authoritex behaviour" do
+        assert unquote(module).__info__(:attributes)
+               |> get_in([:behaviour])
+               |> Enum.member?(Authoritex)
+      end
 
       test "can_resolve?/1" do
         unquote(test_uris)

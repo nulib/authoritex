@@ -1,4 +1,6 @@
 defmodule Authoritex.Getty.Base do
+  @moduledoc "Abstract Authoritex implementation for Getty authorities & vocabularies"
+
   defmacro __using__(use_opts) do
     quote bind_quoted: [
             subauthority: use_opts[:subauthority],
