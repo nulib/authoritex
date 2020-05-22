@@ -1,7 +1,7 @@
 defmodule Authoritex.MixProject do
   use Mix.Project
 
-  @version "0.1.1"
+  @version "0.1.2"
   @url "https://github.com/nulib/authoritex"
 
   def project do
@@ -26,6 +26,7 @@ defmodule Authoritex.MixProject do
         "coveralls.post": :test,
         "coveralls.html": :test,
         docs: :docs,
+        "hex.publish": :docs,
         vcr: :test,
         "vcr.delete": :test,
         "vcr.check": :test,
