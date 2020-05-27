@@ -70,17 +70,19 @@ defmodule Authoritex.TestCase do
         refute unquote(module).can_resolve?("info:fake/uri")
       end
 
-      test "code/0" do
-        assert unquote(module).code() == unquote(code)
-      end
+      describe "introspection" do
+        test "code/0" do
+          assert unquote(module).code() == unquote(code)
+        end
 
-      test "description/0" do
-        assert unquote(module).description() == unquote(description)
+        test "description/0" do
+          assert unquote(module).description() == unquote(description)
+        end
       end
 
       describe "fetch/1" do
         test "success" do
-          use_cassette "#{unquote(code)}_fetch_success" do
+          use_cassette "#{unquote(code)}_fetch_success", match_requests_on: [:query] do
             unquote(test_uris)
             |> Enum.each(fn uri ->
               assert unquote(module).fetch(uri) ==
@@ -96,7 +98,7 @@ defmodule Authoritex.TestCase do
         end
 
         test "failure" do
-          use_cassette "#{unquote(code)}_fetch_failure" do
+          use_cassette "#{unquote(code)}_fetch_failure", match_requests_on: [:query] do
             assert unquote(module).fetch(unquote(bad_uri)) == {:error, 404}
           end
         end

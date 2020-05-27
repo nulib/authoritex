@@ -18,32 +18,34 @@ defmodule Authoritex.GettyTest do
 
   describe "delegate" do
     test "fetch authority-specific URIs" do
-      assert Getty.fetch("http://vocab.getty.edu/aat/300265149") ==
-               {:ok,
-                %{
-                  id: "http://vocab.getty.edu/aat/300265149",
-                  label: "dollars (paper money)",
-                  qualified_label: "dollars (paper money)",
-                  hint: nil
-                }}
+      use_cassette "getty_delegate_subauthorities", match_requests_on: [:query] do
+        assert Getty.fetch("http://vocab.getty.edu/aat/300265149") ==
+                 {:ok,
+                  %{
+                    id: "http://vocab.getty.edu/aat/300265149",
+                    label: "dollars (paper money)",
+                    qualified_label: "dollars (paper money)",
+                    hint: nil
+                  }}
 
-      assert Getty.fetch("http://vocab.getty.edu/tgn/2236134") ==
-               {:ok,
-                %{
-                  id: "http://vocab.getty.edu/tgn/2236134",
-                  label: "Chicago River",
-                  qualified_label: "Chicago River (Cook, Illinois, United States)",
-                  hint: "Cook, Illinois, United States"
-                }}
+        assert Getty.fetch("http://vocab.getty.edu/tgn/2236134") ==
+                 {:ok,
+                  %{
+                    id: "http://vocab.getty.edu/tgn/2236134",
+                    label: "Chicago River",
+                    qualified_label: "Chicago River (Cook, Illinois, United States)",
+                    hint: "Cook, Illinois, United States"
+                  }}
 
-      assert Getty.fetch("http://vocab.getty.edu/ulan/500447664") ==
-               {:ok,
-                %{
-                  id: "http://vocab.getty.edu/ulan/500447664",
-                  label: "Palmer, Potter",
-                  qualified_label: "Palmer, Potter (American businessman, 1826-1902)",
-                  hint: "American businessman, 1826-1902"
-                }}
+        assert Getty.fetch("http://vocab.getty.edu/ulan/500447664") ==
+                 {:ok,
+                  %{
+                    id: "http://vocab.getty.edu/ulan/500447664",
+                    label: "Palmer, Potter",
+                    qualified_label: "Palmer, Potter (American businessman, 1826-1902)",
+                    hint: "American businessman, 1826-1902"
+                  }}
+      end
     end
 
     test "gracefully fail to fetch a non-Getty URI" do

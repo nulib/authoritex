@@ -19,14 +19,16 @@ defmodule Authoritex.Getty.ULANTest do
     search_result_term: "palmer",
     search_count_term: "palmer"
 
-  describe "compound word search" do
-    with {:ok, results} <- ULAN.search("potter palmer") do
-      assert results
-             |> Enum.member?(%{
-               id: "http://vocab.getty.edu/ulan/500447664",
-               label: "Palmer, Potter",
-               hint: "American businessman, 1826-1902"
-             })
+  describe "ULAN-specific" do
+    test "compound word search" do
+      with {:ok, results} <- ULAN.search("potter palmer") do
+        assert results
+               |> Enum.member?(%{
+                 id: "http://vocab.getty.edu/ulan/500447664",
+                 label: "Palmer, Potter",
+                 hint: "American businessman, 1826-1902"
+               })
+      end
     end
   end
 end
