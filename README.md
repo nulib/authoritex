@@ -62,6 +62,10 @@ and `Authoritex.fetch/1`.
   run `mix vcr.delete CODE_` (where `CODE` is your authority module's
   unique short code) to clear that authority's cached results
 
+## Testing using mocks
+
+See `Authoritex.Mock`
+
 ## Contributing
 
 Issues and Pull Requests are always welcome!
