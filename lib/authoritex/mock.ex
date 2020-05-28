@@ -7,6 +7,9 @@ defmodule Authoritex.Mock do
     # In test.exs:
     # config :authoritex, authorities: [Authoritex.Mock]
 
+    # In test_helper.exs:
+    # Authoritex.Mock.init()
+
     # In test case:
     iex> Authoritex.Mock.set_data([
       %{id: "mock:result1", label: "First Result", qualified_label: "First Result (1)", hint: "(1)"},
@@ -64,22 +67,21 @@ defmodule Authoritex.Mock do
     ArgumentError -> {:error, 500}
   end
 
+  def init do
+    :ets.new(__MODULE__, [:set, :named_table, :public])
+  rescue
+    ArgumentError -> __MODULE__
+  end
+
   def set_data(data) when is_list(data) do
-    :ets.insert(ets_table(), {Kernel.inspect(self()), data})
+    :ets.insert(Authoritex.Mock, {Kernel.inspect(self()), data})
     :ok
   end
 
   defp get_data do
-    case :ets.lookup(ets_table(), Kernel.inspect(self())) do
+    case :ets.lookup(Authoritex.Mock, Kernel.inspect(self())) do
       [] -> []
       [{_, data}] -> data
-    end
-  end
-
-  defp ets_table do
-    case :ets.whereis(__MODULE__) do
-      :undefined -> :ets.new(__MODULE__, [:set, :named_table, :public])
-      ref -> ref
     end
   end
 end

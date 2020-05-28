@@ -3,6 +3,11 @@ defmodule Authoritex.MockTest do
 
   use ExUnit.Case, async: true
 
+  setup_all do
+    Mock.init()
+    :ok
+  end
+
   @data [
     %{
       id: "mock:result1",
@@ -35,6 +40,19 @@ defmodule Authoritex.MockTest do
 
   test "description/0" do
     assert Mock.description() == "Authoritex Mock Authority for Test Suites"
+  end
+
+  describe "thread safety" do
+    test "isolates data without argument errors" do
+      Enum.map(1..10, fn _ ->
+        Task.async(fn ->
+          assert :ok == Mock.set_data(@data)
+          assert {:ok, results} = Mock.search("everything")
+          assert length(results) == length(@data)
+        end)
+      end)
+      |> Enum.map(&Task.await(&1))
+    end
   end
 
   describe "fetch/1" do
