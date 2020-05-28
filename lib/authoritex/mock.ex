@@ -44,9 +44,9 @@ defmodule Authoritex.Mock do
 
   @impl Authoritex
   def fetch(id) do
-    case :ets.lookup(__MODULE__, Kernel.inspect(self()) <> id) do
-      [{_id, record}] -> {:ok, record}
-      _ -> {:error, 404}
+    case Enum.find(get_data(), &(&1.id == id)) do
+      nil -> {:error, 404}
+      record -> {:ok, record}
     end
   end
 
@@ -57,21 +57,29 @@ defmodule Authoritex.Mock do
 
   def search(_query, max_results) do
     {:ok,
-     :ets.tab2list(Authoritex.Mock)
-     |> Enum.filter(fn {id, _value} -> String.starts_with?(id, Kernel.inspect(self())) end)
-     |> Enum.map(fn {_id, value} -> value |> Map.delete(:qualified_label) end)
+     get_data()
+     |> Enum.map(&Map.delete(&1, :qualified_label))
      |> Enum.take(max_results)}
   rescue
     ArgumentError -> {:error, 500}
   end
 
   def set_data(data) when is_list(data) do
-    if :ets.whereis(__MODULE__) == :undefined, do: :ets.new(__MODULE__, [:named_table, :public])
-
-    Enum.each(data, fn record ->
-      :ets.insert(__MODULE__, {Kernel.inspect(self()) <> record.id, record})
-    end)
-
+    :ets.insert(ets_table(), {Kernel.inspect(self()), data})
     :ok
+  end
+
+  defp get_data do
+    case :ets.lookup(ets_table(), Kernel.inspect(self())) do
+      [] -> []
+      [{_, data}] -> data
+    end
+  end
+
+  defp ets_table do
+    case :ets.whereis(__MODULE__) do
+      :undefined -> :ets.new(__MODULE__, [:set, :named_table, :public])
+      ref -> ref
+    end
   end
 end
