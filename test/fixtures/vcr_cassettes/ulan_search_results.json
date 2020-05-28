@@ -22,7 +22,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Wed, 13 May 2020 19:54:42 GMT"
+        "Date": "Thu, 28 May 2020 19:10:25 GMT"
       },
       "status_code": 200,
       "type": "ok"
@@ -51,7 +51,36 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Wed, 13 May 2020 19:54:42 GMT"
+        "Date": "Thu, 28 May 2020 19:10:25 GMT"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Accept": "application/sparql-results+xml;charset=UTF-8",
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%7B+%3Fs+a+skos%3AConcept%3B+luc%3Aterm+%22potter+palmer%22+%3B+skos%3AinScheme+%3Chttp%3A%2F%2Fvocab.getty.edu%2Fulan%2F%3E+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+foaf%3Afocus%2Fgvp%3AbiographyPreferred+%5Bschema%3Adescription+%3Fhint%5D+%3B+skos%3AaltLabel+%3Falt+.+FILTER+%28%28regex%28%3Fname%2C+%22potter%22%2C+%22i%22%29+%7C%7C+regex%28%3Falt%2C+%22potter%22%2C+%22i%22%29%29+%26%26+%28regex%28%3Fname%2C+%22palmer%22%2C+%22i%22%29+%7C%7C+regex%28%3Falt%2C+%22palmer%22%2C+%22i%22%29%29%29+.+%7D+LIMIT+30"
+    },
+    "response": {
+      "binary": false,
+      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/ulan/500447664</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Palmer, Potter</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>American businessman, 1826-1902</literal>\n\t\t\t</binding>\n\t\t</result>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/ulan/500323640</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Palmer, Bertha Honoré</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>American collector and exhibition organizer, 1849-1918</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Server": "GraphDB 6.2.7+sha.ab94d232, Forest 2.1.3, Sesame 2.7.8",
+        "Link": "<http://opendatacommons.org/licenses/by/1.0/>; rel=\"license\"",
+        "Content-Disposition": "attachment; filename=\"sparql.xml\"",
+        "Content-Type": "application/sparql-results+xml;charset=UTF-8",
+        "Content-Language": "en-US",
+        "Transfer-Encoding": "chunked",
+        "Date": "Thu, 28 May 2020 19:10:25 GMT"
       },
       "status_code": 200,
       "type": "ok"
