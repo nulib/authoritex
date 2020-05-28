@@ -17,7 +17,7 @@ defmodule AuthoritexTest do
 
   describe "fetch/1" do
     test "success" do
-      use_cassette "authoritex_fetch_success" do
+      use_cassette "authoritex_fetch_success", match_requests_on: [:query] do
         expected = %{
           hint: nil,
           id: "http://id.loc.gov/authorities/names/no2011087251",
@@ -33,7 +33,7 @@ defmodule AuthoritexTest do
     end
 
     test "failure" do
-      use_cassette "authoritex_fetch_failure" do
+      use_cassette "authoritex_fetch_failure", match_requests_on: [:query] do
         assert Authoritex.fetch("http://id.loc.gov/authorities/names/wrong-id") ==
                  {:error, 404}
       end
@@ -67,7 +67,7 @@ defmodule AuthoritexTest do
     end
 
     test "no results" do
-      use_cassette "authoritex_search_results_empty" do
+      use_cassette "authoritex_search_results_empty", match_requests_on: [:query] do
         assert {:ok, []} = Authoritex.search("lcnaf", "NO_resulteeeees")
       end
     end
