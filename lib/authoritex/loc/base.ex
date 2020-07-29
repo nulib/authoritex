@@ -26,6 +26,7 @@ defmodule Authoritex.LOC.Base do
           ] do
       @behaviour Authoritex
 
+      import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
       @impl Authoritex
@@ -44,26 +45,13 @@ defmodule Authoritex.LOC.Base do
         do: fetch(unquote(http_uri) <> "/" <> rest)
 
       def fetch(id) do
-        case HTTPoison.get(id <> ".rdf") do
+        request =
+          HTTPoison.get(id <> ".rdf")
+          |> autoretry()
+
+        case request do
           {:ok, response} ->
             parse_fetch_result(response)
-
-          {:error, error} ->
-            {:error, error}
-        end
-      end
-
-      @impl Authoritex
-      def search(query, max_results \\ 30) do
-        query_params = [{:q, query} | unquote(query_filter)]
-
-        case HTTPoison.get(
-               "http://id.loc.gov/search/",
-               [{"User-Agent", "Authoritex"}],
-               params: query_params ++ [count: max_results, format: "xml+atom"]
-             ) do
-          {:ok, response} ->
-            parse_search_result(response)
 
           {:error, error} ->
             {:error, error}
@@ -99,6 +87,27 @@ defmodule Authoritex.LOC.Base do
       end
 
       defp parse_fetch_result(%{status_code: status_code}), do: {:error, status_code}
+
+      @impl Authoritex
+      def search(query, max_results \\ 30) do
+        query_params = [{:q, query} | unquote(query_filter)]
+
+        request =
+          HTTPoison.get(
+            "http://id.loc.gov/search/",
+            [{"User-Agent", "Authoritex"}],
+            params: query_params ++ [count: max_results, format: "xml+atom"]
+          )
+          |> autoretry()
+
+        case request do
+          {:ok, response} ->
+            parse_search_result(response)
+
+          {:error, error} ->
+            {:error, error}
+        end
+      end
 
       defp parse_search_result(%{body: response, status_code: 200}) do
         with doc <- SweetXml.parse(response) do

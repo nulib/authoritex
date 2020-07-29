@@ -11,6 +11,7 @@ defmodule Authoritex.Getty.Base do
           ] do
       @behaviour Authoritex
 
+      import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
       @impl Authoritex
@@ -72,6 +73,7 @@ defmodule Authoritex.Getty.Base do
               |> String.trim()
           ]
         )
+        |> autoretry()
       end
 
       defp parse_sparql_result({:ok, %{body: response, status_code: 200}}) do

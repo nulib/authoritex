@@ -2,6 +2,8 @@ defmodule Authoritex.GeoNames do
   @moduledoc "Authoritex implementation for GeoNames webservice"
   @behaviour Authoritex
 
+  import HTTPoison.Retry
+
   @http_uri_base "https://sws.geonames.org/"
 
   @error_codes %{
@@ -37,14 +39,18 @@ defmodule Authoritex.GeoNames do
   def fetch(id) do
     @http_uri_base <> geoname_id = id
 
-    case HTTPoison.get(
-           "http://api.geonames.org/getJSON",
-           [{"User-Agent", "Authoritex"}],
-           params: [
-             geonameId: geoname_id,
-             username: username()
-           ]
-         ) do
+    request =
+      HTTPoison.get(
+        "http://api.geonames.org/getJSON",
+        [{"User-Agent", "Authoritex"}],
+        params: [
+          geonameId: geoname_id,
+          username: username()
+        ]
+      )
+      |> autoretry()
+
+    case request do
       {:ok, %{body: response, status_code: 200}} ->
         parse_fetch_result(response)
 
@@ -58,15 +64,19 @@ defmodule Authoritex.GeoNames do
 
   @impl Authoritex
   def search(query, max_results \\ 30) do
-    case HTTPoison.get(
-           "http://api.geonames.org/searchJSON",
-           [{"User-Agent", "Authoritex"}],
-           params: [
-             q: query,
-             username: username(),
-             maxRows: max_results
-           ]
-         ) do
+    request =
+      HTTPoison.get(
+        "http://api.geonames.org/searchJSON",
+        [{"User-Agent", "Authoritex"}],
+        params: [
+          q: query,
+          username: username(),
+          maxRows: max_results
+        ]
+      )
+      |> autoretry()
+
+    case request do
       {:ok, %{body: response, status_code: 200}} ->
         {:ok, parse_search_result(response)}
 

@@ -11,6 +11,7 @@ defmodule Authoritex.FAST.Base do
           ] do
       @behaviour Authoritex
 
+      import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
       @impl Authoritex
@@ -31,9 +32,13 @@ defmodule Authoritex.FAST.Base do
       end
 
       def fetch(id) do
-        case id
-             |> add_trailing_slash()
-             |> HTTPoison.get([{"Content-Type", "application/json;"}], []) do
+        request =
+          id
+          |> add_trailing_slash()
+          |> HTTPoison.get([{"Content-Type", "application/json;"}], [])
+          |> autoretry()
+
+        case request do
           {:ok, response} ->
             parse_fetch_result(response)
 
@@ -54,6 +59,7 @@ defmodule Authoritex.FAST.Base do
               "&rows=#{max_results}",
             [{"Content-Type", "application/json;"}]
           )
+          |> autoretry()
 
         case request do
           {:ok, %{body: response, status_code: 200}} ->
