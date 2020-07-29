@@ -46,6 +46,13 @@ config :authoritex,
     Authoritex.LOC.SubjectHeadings,
     Authoritex.LOC
   ]
+
+# Authoritex uses httpoison_retry https://github.com/mgwidmann/httpoison_retry
+# Override the config in your application if needed
+config :httpoison_retry,
+  max_attempts: 3,
+  wait: 1_000,
+  retry_unknown_errors: false
 ```
 
 ## Usage
