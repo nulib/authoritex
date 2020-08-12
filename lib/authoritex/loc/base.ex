@@ -45,16 +45,18 @@ defmodule Authoritex.LOC.Base do
         do: fetch(unquote(http_uri) <> "/" <> rest)
 
       def fetch(id) do
-        request =
-          HTTPoison.get(id <> ".rdf")
-          |> autoretry()
+        with url <- String.replace(id, ~r/^http:/, "https:") do
+          request =
+            HTTPoison.get(url <> ".rdf")
+            |> autoretry()
 
-        case request do
-          {:ok, response} ->
-            parse_fetch_result(response)
+          case request do
+            {:ok, response} ->
+              parse_fetch_result(response)
 
-          {:error, error} ->
-            {:error, error}
+            {:error, error} ->
+              {:error, error}
+          end
         end
       end
 
@@ -94,7 +96,7 @@ defmodule Authoritex.LOC.Base do
 
         request =
           HTTPoison.get(
-            "http://id.loc.gov/search/",
+            "https://id.loc.gov/search/",
             [{"User-Agent", "Authoritex"}],
             params: query_params ++ [count: max_results, format: "xml+atom"]
           )
