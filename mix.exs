@@ -47,7 +47,7 @@ defmodule Authoritex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.4.0", only: [:dev, :test]},
+      {:credo, "~> 1.5.0", only: [:dev, :test]},
       {:ex_doc, "~> 0.19", only: [:dev, :docs]},
       {:excoveralls, "~> 0.13.1", only: [:dev, :test]},
       {:exvcr, "~> 0.11", only: :test},
