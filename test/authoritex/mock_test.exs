@@ -72,8 +72,12 @@ defmodule Authoritex.MockTest do
                 }}
     end
 
-    test "failure" do
-      assert Mock.fetch("mock:result∞") == {:error, 404}
+    test "supports the missing_id_authority prefix to provide a 404 error response" do
+      assert Mock.fetch("missing_id_authority:123") == {:error, 404}
+    end
+
+    test "non-existent authorities provide an :unknown_authority error response" do
+      assert Mock.fetch("wrong") == {:error, :unknown_authority}
     end
   end
 

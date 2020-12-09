@@ -20,6 +20,12 @@ defmodule Authoritex.Mock do
     iex> Authoritex.fetch("mock:result2")
     {:ok, %{id: "mock:result2", label: "Second Result", qualified_label: "Second Result (2)", hint: "(2)"}}
 
+    iex> Authoritex.fetch("missing_id_authority:anything")
+    {:error, 404}
+
+    iex> Authoritex.fetch("wrong")
+    {:error, :unknown_authority}
+
     iex> Authoritex.search("mock", "test")
     {:ok, [
             %{id: "mock:result1", label: "First Result", hint: "(1)"},
@@ -46,9 +52,13 @@ defmodule Authoritex.Mock do
   def can_resolve?(_id), do: true
 
   @impl Authoritex
+  def fetch("missing_id_authority:" <> _id) do
+    {:error, 404}
+  end
+
   def fetch(id) do
     case Enum.find(get_data(), &(&1.id == id)) do
-      nil -> {:error, 404}
+      nil -> {:error, :unknown_authority}
       record -> {:ok, record}
     end
   end
