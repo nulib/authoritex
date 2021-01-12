@@ -51,7 +51,7 @@ defmodule Authoritex.MixProject do
       {:ex_doc, "~> 0.19", only: [:dev, :docs]},
       {:excoveralls, "~> 0.13.1", only: [:dev, :test]},
       {:exvcr, "~> 0.11", only: :test},
-      {:httpoison, "~> 1.7.0"},
+      {:httpoison, "~> 1.8.0"},
       {:httpoison_retry, "~> 1.1.0"},
       {:jason, "~> 1.2.1"},
       {:sweet_xml, "~> 0.6"}
