@@ -28,7 +28,7 @@ defmodule Authoritex.LOC.BaseTest do
     test "fetch" do
       use_cassette "lcbase_bad_200", match_requests_on: [:query], custom: true do
         assert TestAuthority.fetch("http://id.loc.gov/authorities/genreForms/gf2011026181") ==
-                 {:error, {:bad_response, "<h1>Authority is Busted</h1>"}}
+                 {:error, {:bad_response, :missing_label}}
       end
     end
 
