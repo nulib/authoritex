@@ -37,28 +37,32 @@ defmodule Authoritex.GeoNames do
 
   @impl Authoritex
   def fetch(id) do
-    @http_uri_base <> geoname_id = id
+    case parse_geonames_uri(id) do
+      :error ->
+        {:error, 404}
 
-    request =
-      HTTPoison.get(
-        "http://api.geonames.org/getJSON",
-        [{"User-Agent", "Authoritex"}],
-        params: [
-          geonameId: geoname_id,
-          username: username()
-        ]
-      )
-      |> autoretry()
+      geoname_id ->
+        request =
+          HTTPoison.get(
+            "http://api.geonames.org/getJSON",
+            [{"User-Agent", "Authoritex"}],
+            params: [
+              geonameId: geoname_id,
+              username: username()
+            ]
+          )
+          |> autoretry()
 
-    case request do
-      {:ok, %{body: response, status_code: 200}} ->
-        parse_fetch_result(response)
+        case request do
+          {:ok, %{body: response, status_code: 200}} ->
+            parse_fetch_result(response)
 
-      {:ok, %{body: response, status_code: status_code}} ->
-        {:error, parse_geonames_error(response, status_code)}
+          {:ok, %{body: response, status_code: status_code}} ->
+            {:error, parse_geonames_error(response, status_code)}
 
-      {:error, error} ->
-        {:error, error}
+          {:error, error} ->
+            {:error, error}
+        end
     end
   end
 
@@ -94,7 +98,7 @@ defmodule Authoritex.GeoNames do
     |> Map.get("geonames")
     |> Enum.map(fn result ->
       %{
-        id: @http_uri_base <> to_string(result["geonameId"]),
+        id: make_geonames_uri(result["geonameId"]),
         label: result["name"],
         hint: parse_hint(result)
       }
@@ -111,7 +115,7 @@ defmodule Authoritex.GeoNames do
     {:ok,
      Enum.into(
        [
-         id: @http_uri_base <> to_string(geoname_id),
+         id: make_geonames_uri(geoname_id),
          label: name,
          hint: hint,
          qualified_label: Enum.join(Enum.filter([name, hint], & &1), ", ")
@@ -127,6 +131,16 @@ defmodule Authoritex.GeoNames do
 
       {:error, error} ->
         {:error, {:bad_response, error}}
+    end
+  end
+
+  defp make_geonames_uri(geoname_id), do: @http_uri_base <> to_string(geoname_id) <> "/"
+
+  defp parse_geonames_uri(uri) do
+    with @http_uri_base <> result <- uri do
+      if String.ends_with?(result, "/"),
+        do: String.slice(result, 0..-2),
+        else: :error
     end
   end
 
