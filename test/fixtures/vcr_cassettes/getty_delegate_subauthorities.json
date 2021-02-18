@@ -9,11 +9,11 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Faat%2F300265149%3E+as+%3Fs%29+%3Fs+a+skos%3AConcept+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+%7D+LIMIT+1"
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3FreplacedBy+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Faat%2F300265149%3E+as+%3Fs%29+OPTIONAL+%7B%3Fs+gvp%3AprefLabelGVP%2Fxl%3AliteralForm+%3Fname%7D+OPTIONAL+%7B%3Fs+dcterms%3AisReplacedBy+%3FreplacedBy%7D+%7D+LIMIT+1"
     },
     "response": {
       "binary": false,
-      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/aat/300265149</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal xml:lang='en'>dollars (paper money)</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
+      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='replacedBy'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/aat/300265149</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal xml:lang='en'>dollars (paper money)</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Server": "GraphDB 6.2.7+sha.ab94d232, Forest 2.1.3, Sesame 2.7.8",
@@ -22,7 +22,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Wed, 27 May 2020 22:47:59 GMT"
+        "Date": "Fri, 19 Feb 2021 03:13:01 GMT"
       },
       "status_code": 200,
       "type": "ok"
@@ -38,11 +38,11 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Ftgn%2F2236134%3E+as+%3Fs%29+%3Fs+a+skos%3AConcept+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+gvp%3AparentString+%3Fhint+.+%7D+LIMIT+1"
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%3FreplacedBy+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Ftgn%2F2236134%3E+as+%3Fs%29+OPTIONAL+%7B%3Fs+gvp%3AprefLabelGVP%2Fxl%3AliteralForm+%3Fname%7D+OPTIONAL+%7B%3Fs+gvp%3AparentString+%3Fhint%7D+OPTIONAL+%7B%3Fs+dcterms%3AisReplacedBy+%3FreplacedBy%7D+%7D+LIMIT+1"
     },
     "response": {
       "binary": false,
-      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/2236134</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Chicago River</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>Cook, Illinois, United States, North and Central America, World</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
+      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t\t<variable name='replacedBy'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/2236134</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Chicago River</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>Cook, Illinois, United States, North and Central America, World</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Server": "GraphDB 6.2.7+sha.ab94d232, Forest 2.1.3, Sesame 2.7.8",
@@ -51,7 +51,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Wed, 27 May 2020 22:47:59 GMT"
+        "Date": "Fri, 19 Feb 2021 03:13:01 GMT"
       },
       "status_code": 200,
       "type": "ok"
@@ -67,11 +67,11 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Fulan%2F500447664%3E+as+%3Fs%29+%3Fs+a+skos%3AConcept+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+foaf%3Afocus%2Fgvp%3AbiographyPreferred+%5Bschema%3Adescription+%3Fhint%5D+%3B+%7D+LIMIT+1"
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%3FreplacedBy+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Fulan%2F500447664%3E+as+%3Fs%29+OPTIONAL+%7B%3Fs+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D%7D+OPTIONAL+%7B%3Fs+foaf%3Afocus%2Fgvp%3AbiographyPreferred+%5Bschema%3Adescription+%3Fhint%5D%7D+OPTIONAL+%7B%3Fs+dcterms%3AisReplacedBy+%3FreplacedBy%7D+%7D+LIMIT+1"
     },
     "response": {
       "binary": false,
-      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/ulan/500447664</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Palmer, Potter</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>American businessman, 1826-1902</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
+      "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t\t<variable name='replacedBy'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/ulan/500447664</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Palmer, Potter</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>American businessman, 1826-1902</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Server": "GraphDB 6.2.7+sha.ab94d232, Forest 2.1.3, Sesame 2.7.8",
@@ -80,7 +80,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Wed, 27 May 2020 22:47:59 GMT"
+        "Date": "Fri, 19 Feb 2021 03:13:02 GMT"
       },
       "status_code": 200,
       "type": "ok"

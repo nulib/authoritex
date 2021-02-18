@@ -8,11 +8,11 @@ defmodule Authoritex.Getty.BaseTest do
     def sparql_fetch(id) do
       with id <- String.replace(id, ~r"/base/", "/ulan/") do
         """
-        SELECT DISTINCT ?s ?name ?hint {
+        SELECT DISTINCT ?s ?name ?hint ?replacedBy {
           BIND(<#{id}> as ?s)
-          ?s a skos:Concept ;
-          gvp:prefLabelGVP [skosxl:literalForm ?name] ;
-          skos:scopeNote [rdf:value ?hint]
+          OPTIONAL {?s gvp:prefLabelGVP [skosxl:literalForm ?name]}
+          OPTIONAL {?s skos:scopeNote [rdf:value ?hint] }
+          OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
         } LIMIT 1
         """
       end
@@ -33,6 +33,8 @@ defmodule Authoritex.Getty.BaseTest do
     def process_result(result) do
       result
       |> Map.put(:id, String.replace(result.id, ~r"/ulan/", "/base/"))
+
+      # |> IO.inspect()
     end
   end
 

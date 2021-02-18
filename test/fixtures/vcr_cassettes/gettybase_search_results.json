@@ -22,7 +22,8 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Thu, 14 May 2020 15:18:01 GMT"
+        "Date": "Fri, 19 Feb 2021 03:23:16 GMT",
+        "Set-Cookie": "BIGipServerForest=!/SliJFGEhrLW6/aobzT9tf5otODJ51+BySHjurVW7ap3ejumxREvtyGSUJHDWIX9LJj6lzY4oCAIFg==; path=/; Httponly"
       },
       "status_code": 200,
       "type": "ok"
@@ -51,7 +52,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Thu, 14 May 2020 15:18:01 GMT"
+        "Date": "Fri, 19 Feb 2021 03:23:16 GMT"
       },
       "status_code": 200,
       "type": "ok"
@@ -80,7 +81,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Thu, 14 May 2020 15:18:01 GMT"
+        "Date": "Fri, 19 Feb 2021 03:23:16 GMT"
       },
       "status_code": 200,
       "type": "ok"
