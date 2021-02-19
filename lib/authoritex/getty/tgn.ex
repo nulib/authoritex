@@ -8,11 +8,11 @@ defmodule Authoritex.Getty.TGN do
 
   def sparql_fetch(id) do
     """
-    SELECT DISTINCT ?s ?name ?hint {
+    SELECT DISTINCT ?s ?name ?hint ?replacedBy {
       BIND(<#{id}> as ?s)
-      ?s a skos:Concept ;
-      gvp:prefLabelGVP [skosxl:literalForm ?name] ;
-      gvp:parentString ?hint .
+      OPTIONAL {?s gvp:prefLabelGVP/xl:literalForm ?name}
+      OPTIONAL {?s gvp:parentString ?hint}
+      OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
     } LIMIT 1
     """
   end
@@ -37,10 +37,15 @@ defmodule Authoritex.Getty.TGN do
     |> Enum.join(" && ")
   end
 
+  def process_result(%{hint: nil} = result), do: result
+
   def process_result(%{id: id, label: label, hint: hint}) do
     case hint |> String.split(~r",\s*") |> Enum.slice(0..-3) |> Enum.join(", ") do
-      "" -> %{id: id, label: label, hint: nil}
-      hint -> %{id: id, label: label, hint: hint}
+      "" ->
+        %{id: id, label: label, hint: nil}
+
+      hint ->
+        %{id: id, label: label, hint: hint}
     end
   end
 end

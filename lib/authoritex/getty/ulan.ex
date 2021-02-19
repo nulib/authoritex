@@ -8,11 +8,11 @@ defmodule Authoritex.Getty.ULAN do
 
   def sparql_fetch(id) do
     """
-    SELECT DISTINCT ?s ?name ?hint {
+    SELECT DISTINCT ?s ?name ?hint ?replacedBy {
       BIND(<#{id}> as ?s)
-      ?s a skos:Concept ;
-      gvp:prefLabelGVP [skosxl:literalForm ?name] ;
-      foaf:focus/gvp:biographyPreferred [schema:description ?hint] ;
+      OPTIONAL {?s gvp:prefLabelGVP [skosxl:literalForm ?name]}
+      OPTIONAL {?s foaf:focus/gvp:biographyPreferred [schema:description ?hint]}
+      OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
     } LIMIT 1
     """
   end

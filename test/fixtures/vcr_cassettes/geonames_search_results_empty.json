@@ -14,10 +14,11 @@
       "binary": false,
       "body": "{\"totalResultsCount\":0,\"geonames\":[]}",
       "headers": {
-        "Date": "Fri, 15 May 2020 19:28:47 GMT",
+        "Date": "Thu, 18 Feb 2021 21:05:09 GMT",
         "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips",
-        "Cache-Control": "no-cache",
         "Access-Control-Allow-Origin": "*",
+        "X-Frame-Options": "sameorigin",
+        "Cache-Control": "no-cache",
         "Transfer-Encoding": "chunked",
         "Content-Type": "application/json;charset=UTF-8"
       },

@@ -6,56 +6,30 @@
       "method": "head",
       "options": [],
       "request_body": "",
-      "url": "http://id.loc.gov/vocabulary/organizations/wrong-id"
-    },
-    "response": {
-      "binary": false,
-      "body": null,
-      "headers": {
-        "Date": "Fri, 22 Jan 2021 19:32:56 GMT",
-        "Connection": "keep-alive",
-        "Cache-Control": "max-age=3600",
-        "Expires": "Fri, 22 Jan 2021 20:32:56 GMT",
-        "Location": "https://id.loc.gov/vocabulary/organizations/wrong-id",
-        "cf-request-id": "07cd2ef0fd00003fb582805000000001",
-        "Server": "cloudflare",
-        "CF-RAY": "615bb42e6fa93fb5-ORD"
-      },
-      "status_code": 301,
-      "type": "ok"
-    }
-  },
-  {
-    "request": {
-      "body": "",
-      "headers": [],
-      "method": "head",
-      "options": [],
-      "request_body": "",
       "url": "https://id.loc.gov/vocabulary/organizations/wrong-id"
     },
     "response": {
       "binary": false,
       "body": null,
       "headers": {
-        "Date": "Fri, 22 Jan 2021 19:32:56 GMT",
+        "Date": "Thu, 18 Feb 2021 21:19:44 GMT",
         "Content-Length": "0",
         "Connection": "keep-alive",
-        "Set-Cookie": "__cfduid=d57ec0f1e98d280d379c7f1fd13d2eecf1611343976; expires=Sun, 21-Feb-21 19:32:56 GMT; path=/; domain=.id.loc.gov; HttpOnly; SameSite=Lax",
+        "Set-Cookie": "__cfduid=d086b55715c5d570c102ee9e22f4bc5c11613683184; expires=Sat, 20-Mar-21 21:19:44 GMT; path=/; domain=.id.loc.gov; HttpOnly; SameSite=Lax",
         "Location": "https://id.loc.gov/vocabulary/organizations/wrong-id.html",
         "Vary": "Accept",
         "Cache-Control": "public, max-age=2419200",
-        "X-Varnish": "98587778 88102609",
-        "Age": "2764",
+        "X-Varnish": "154862756",
+        "Age": "0",
         "Via": "1.1 varnish (Varnish/6.0)",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "HEAD, POST, GET, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
         "CF-Cache-Status": "DYNAMIC",
-        "cf-request-id": "07cd2ef13800002fe6d11f1000000001",
+        "cf-request-id": "08589c6cad00003f7f002fb000000001",
         "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
         "Server": "cloudflare",
-        "CF-RAY": "615bb42eb9a72fe6-ORD"
+        "CF-RAY": "623ac9c118553f7f-ORD"
       },
       "status_code": 303,
       "type": "ok"

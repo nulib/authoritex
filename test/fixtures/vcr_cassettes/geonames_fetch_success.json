@@ -14,10 +14,11 @@
       "binary": false,
       "body": "{\"timezone\":{\"gmtOffset\":-5,\"timeZoneId\":\"America/New_York\",\"dstOffset\":-4},\"bbox\":{\"east\":-84.506796,\"south\":37.824998,\"north\":37.96333,\"west\":-84.62727,\"accuracyLevel\":0},\"asciiName\":\"Nicholasville\",\"astergdem\":292,\"countryId\":\"6252001\",\"fcl\":\"P\",\"srtm3\":291,\"adminId2\":\"4296292\",\"countryCode\":\"US\",\"adminCodes1\":{\"ISO3166_2\":\"KY\"},\"adminId1\":\"6254925\",\"lat\":\"37.88063\",\"fcode\":\"PPLA2\",\"continentCode\":\"NA\",\"elevation\":286,\"adminCode2\":\"113\",\"adminCode1\":\"KY\",\"lng\":\"-84.573\",\"geonameId\":4302561,\"toponymName\":\"Nicholasville\",\"population\":29754,\"wikipediaURL\":\"en.wikipedia.org/wiki/Nicholasville%2C_Kentucky\",\"adminName5\":\"\",\"adminName4\":\"\",\"adminName3\":\"\",\"alternateNames\":[{\"name\":\"ニコラスビル\",\"lang\":\"ja\"},{\"name\":\"40340\",\"lang\":\"post\"},{\"name\":\"40356\",\"lang\":\"post\"},{\"name\":\"https://en.wikipedia.org/wiki/Nicholasville%2C_Kentucky\",\"lang\":\"link\"},{\"name\":\"Q988752\",\"lang\":\"wkdt\"},{\"name\":\"USNCK\",\"lang\":\"unlc\"},{\"name\":\"نیکلاسویل، کنتاکی\",\"lang\":\"fa\"},{\"name\":\"نیکولسویل، کینٹکی\",\"lang\":\"ur\"},{\"name\":\"نيشلسفيل\",\"lang\":\"ar\"},{\"name\":\"Николасвил\",\"lang\":\"sr\"},{\"name\":\"Ничоласвилл\",\"lang\":\"kk\"},{\"name\":\"尼古拉斯維爾\",\"lang\":\"zh\"}],\"adminName2\":\"Jessamine\",\"name\":\"Nicholasville\",\"fclName\":\"city, village,...\",\"countryName\":\"United States\",\"fcodeName\":\"seat of a second-order administrative division\",\"adminName1\":\"Kentucky\"}",
       "headers": {
-        "Date": "Fri, 15 May 2020 19:28:43 GMT",
+        "Date": "Thu, 18 Feb 2021 21:19:57 GMT",
         "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips",
-        "Cache-Control": "no-cache",
         "Access-Control-Allow-Origin": "*",
+        "X-Frame-Options": "sameorigin",
+        "Cache-Control": "no-cache",
         "Transfer-Encoding": "chunked",
         "Content-Type": "application/json;charset=UTF-8"
       },

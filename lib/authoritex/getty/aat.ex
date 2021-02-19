@@ -8,10 +8,10 @@ defmodule Authoritex.Getty.AAT do
 
   def sparql_fetch(id) do
     """
-    SELECT DISTINCT ?s ?name {
+    SELECT DISTINCT ?s ?name ?replacedBy {
       BIND(<#{id}> as ?s)
-      ?s a skos:Concept ;
-      gvp:prefLabelGVP [skosxl:literalForm ?name] ;
+      OPTIONAL {?s gvp:prefLabelGVP/xl:literalForm ?name}
+      OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
     } LIMIT 1
     """
   end

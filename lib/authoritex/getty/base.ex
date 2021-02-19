@@ -14,6 +14,8 @@ defmodule Authoritex.Getty.Base do
       import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
+      require Logger
+
       @impl Authoritex
       def can_resolve?(unquote(http_uri) <> _id), do: true
       def can_resolve?(unquote(prefix) <> _id), do: true
@@ -30,24 +32,35 @@ defmodule Authoritex.Getty.Base do
 
       def fetch(id) do
         case sparql_fetch(id) |> send() |> parse_sparql_result() do
-          {:ok, []} ->
+          {:ok, [%{label: label} = result]}
+          when label == "" and not is_map_key(result, :replaced_by) ->
             {:error, 404}
 
-          {:ok, result} ->
+          {:ok, [%{replaced_by: replaced_by}] = result} when replaced_by != "" ->
+            Logger.warn("#{id} is obsolete. Fetching replacement term #{replaced_by}.")
+            fetch(replaced_by)
+
+          {:ok, [result]} ->
             {:ok,
-             with result <- List.first(result) do
-               case result.hint do
-                 nil -> Map.put(result, :qualified_label, result.label)
-                 "" -> Map.put(result, :qualified_label, result.label)
-                 hint -> Map.put(result, :qualified_label, "#{result.label} (#{hint})")
-               end
-             end}
+             result
+             |> Map.delete(:replaced_by)
+             |> put_qualified_label()}
 
           other ->
             other
         end
       rescue
         e in RuntimeError -> {:error, e.message}
+      end
+
+      defp put_qualified_label(result) do
+        result = Map.delete(result, :replaced_by)
+
+        case result.hint do
+          nil -> Map.put(result, :qualified_label, result.label)
+          "" -> Map.put(result, :qualified_label, result.label)
+          hint -> Map.put(result, :qualified_label, "#{result.label} (#{hint})")
+        end
       end
 
       @impl Authoritex
@@ -87,13 +100,13 @@ defmodule Authoritex.Getty.Base do
                SweetXml.xpath(results, ~x"./result"l,
                  id: ~x"./binding[@name='s']/uri/text()"s,
                  label: ~x"./binding[@name='name']/literal/text()"s,
-                 hint: ~x"./binding[@name='hint']/literal/text()"s
+                 hint: ~x"./binding[@name='hint']/literal/text()"s,
+                 replaced_by: ~x"./binding[@name='replacedBy']/uri/text()"s
                )
                |> Enum.map(fn result ->
-                 case Map.get(result, :hint) do
-                   "" -> Map.put(result, :hint, nil)
-                   _ -> result
-                 end
+                 result
+                 |> nilify_hint()
+                 |> remove_replaced_by()
                end)
                |> Enum.map(&process_result/1)}
           end
@@ -101,6 +114,11 @@ defmodule Authoritex.Getty.Base do
       rescue
         _ -> {:error, {:bad_response, response}}
       end
+
+      defp nilify_hint(%{hint: ""} = result), do: Map.put(result, :hint, nil)
+      defp nilify_hint(result), do: result
+      defp remove_replaced_by(%{replaced_by: ""} = result), do: Map.delete(result, :replaced_by)
+      defp remove_replaced_by(result), do: result
 
       defp parse_sparql_result({:ok, response}), do: {:error, response.status_code}
       defp parse_sparql_result({:error, error}), do: {:error, error}

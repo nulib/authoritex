@@ -12,54 +12,28 @@
       "binary": false,
       "body": null,
       "headers": {
-        "Date": "Fri, 22 Jan 2021 19:34:09 GMT",
+        "Date": "Thu, 18 Feb 2021 21:19:57 GMT",
         "Content-Length": "0",
         "Connection": "keep-alive",
-        "Set-Cookie": "__cfduid=d1c791add12da2f450158db51565d65ec1611344049; expires=Sun, 21-Feb-21 19:34:09 GMT; path=/; domain=.id.loc.gov; HttpOnly; SameSite=Lax",
+        "Set-Cookie": "__cfduid=dca6b95fa9291d699daf6d184baaad6001613683197; expires=Sat, 20-Mar-21 21:19:57 GMT; path=/; domain=.id.loc.gov; HttpOnly; SameSite=Lax",
         "Location": "https://id.loc.gov/authorities/names/no2011087251.html",
         "Vary": "Accept",
         "X-URI": "http://id.loc.gov/authorities/names/no2011087251",
         "X-PrefLabel": "Valim, Jose",
         "Cache-Control": "public, max-age=2419200",
-        "X-Varnish": "101519713 102790344",
-        "Age": "1315",
+        "X-Varnish": "154301787 103590593",
+        "Age": "2341970",
         "Via": "1.1 varnish (Varnish/6.0)",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "HEAD, POST, GET, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
         "CF-Cache-Status": "DYNAMIC",
-        "cf-request-id": "07cd300c4f00002fe627bed000000001",
+        "cf-request-id": "08589c9eaa00003f7f8f294000000001",
         "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
         "Server": "cloudflare",
-        "CF-RAY": "615bb5f3ba372fe6-ORD"
+        "CF-RAY": "623aca110acb3f7f-ORD"
       },
       "status_code": 303,
-      "type": "ok"
-    }
-  },
-  {
-    "request": {
-      "body": "",
-      "headers": [],
-      "method": "head",
-      "options": [],
-      "request_body": "",
-      "url": "http://id.loc.gov/authorities/names/no2011087251"
-    },
-    "response": {
-      "binary": false,
-      "body": null,
-      "headers": {
-        "Date": "Fri, 22 Jan 2021 19:34:09 GMT",
-        "Connection": "keep-alive",
-        "Cache-Control": "max-age=3600",
-        "Expires": "Fri, 22 Jan 2021 20:34:09 GMT",
-        "Location": "https://id.loc.gov/authorities/names/no2011087251",
-        "cf-request-id": "07cd300c3500003fb5689c5000000001",
-        "Server": "cloudflare",
-        "CF-RAY": "615bb5f388323fb5-ORD"
-      },
-      "status_code": 301,
       "type": "ok"
     }
   }
