@@ -45,24 +45,30 @@ defmodule Authoritex.LOC.Base do
         do: fetch(unquote(http_uri) <> "/" <> rest)
 
       def fetch(id) do
-        with url <- String.replace(id, ~r/^http:/, "https:"),
-             response <- HTTPoison.head!(url) do
-          case {response.headers |> Enum.into(%{}), response.status_code} do
-            {%{"X-PrefLabel" => label, "X-URI" => uri}, code} when code in [200, 303] ->
-              {:ok, make_fetch_result(uri, label)}
-
-            {%{"Location" => location}, code} when code in 301..302 ->
-              fetch(location)
-
-            {_, 303} ->
-              {:error, 404}
-
-            {_, 200} ->
-              {:error, {:bad_response, :missing_label}}
-
-            {_, status_code} ->
-              {:error, status_code}
+        with url <- String.replace(id, ~r/^http:/, "https:") do
+          case HTTPoison.head(url) |> autoretry() do
+            {:ok, response} -> process_fetch_response(response)
+            {:error, error} -> {error, error}
           end
+        end
+      end
+
+      defp process_fetch_response(response) do
+        case {response.headers |> Enum.into(%{}), response.status_code} do
+          {%{"X-PrefLabel" => label, "X-URI" => uri}, code} when code in [200, 303] ->
+            {:ok, make_fetch_result(uri, label)}
+
+          {%{"Location" => location}, code} when code in 301..302 ->
+            fetch(location)
+
+          {_, 303} ->
+            {:error, 404}
+
+          {_, 200} ->
+            {:error, {:bad_response, :missing_label}}
+
+          {_, status_code} ->
+            {:error, status_code}
         end
       end
 

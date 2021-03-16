@@ -23,19 +23,21 @@ defmodule Authoritex.Getty.ULANTest do
 
   describe "obsolete subjects" do
     test "fetch" do
-      log =
-        capture_log(fn ->
-          assert ULAN.fetch("http://vocab.getty.edu/ulan/500461126") ==
-                   {:ok,
-                    %{
-                      hint: "unknown cultural designation",
-                      id: "http://vocab.getty.edu/ulan/500125274",
-                      label: "unknown",
-                      qualified_label: "unknown (unknown cultural designation)"
-                    }}
-        end)
+      use_cassette "ulan_obsolete_subject", match_requests_on: [:query] do
+        log =
+          capture_log(fn ->
+            assert ULAN.fetch("http://vocab.getty.edu/ulan/500461126") ==
+                     {:ok,
+                      %{
+                        hint: "unknown cultural designation",
+                        id: "http://vocab.getty.edu/ulan/500125274",
+                        label: "unknown",
+                        qualified_label: "unknown (unknown cultural designation)"
+                      }}
+          end)
 
-      assert log |> String.contains?("replacement term")
+        assert log |> String.contains?("replacement term")
+      end
     end
   end
 end
