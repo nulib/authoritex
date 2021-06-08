@@ -1,35 +1,49 @@
-version: 2
+version: 2.1
 jobs:
   build:
+    parameters:
+      otp:
+        type: string
+      elixir:
+        type: string
     docker:
-      - image: circleci/elixir:1.11.3
+      - image: erlang:<< parameters.otp >>
     working_directory: ~/repo
     steps:
+      - run:
+          name: Install Elixir
+          command: |
+            git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+            echo ". ~/.asdf/asdf.sh" >> $BASH_ENV
+            . ~/.asdf/asdf.sh
+            asdf plugin add elixir
+            asdf install elixir << parameters.elixir >>-otp-<< parameters.otp >>
+            asdf global elixir << parameters.elixir >>-otp-<< parameters.otp >>
       - checkout
       - run:
           name: Install Hex & Rebar
           command: mix do local.hex --force, local.rebar --force
       - restore_cache:
           keys:
-            - hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
-            - hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-
-            - hex-cache-{{ .Environment.CACHE_PREFIX }}-
+            - hex-cache-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
+            - hex-cache-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-
+            - hex-cache-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-
       - restore_cache:
           keys:
-            - build-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
-            - build-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-
-            - build-{{ .Environment.CACHE_PREFIX }}-
+            - build-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
+            - build-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-
+            - build-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-
       - run:
           name: Install Dependencies
           command: mix do deps.get, deps.compile
           environment:
             MIX_ENV: test
       - save_cache:
-          key: hex-cache-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
+          key: hex-cache-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
           paths:
             - ~/repo/deps
       - save_cache:
-          key: build-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
+          key: build-<< parameters.elixir >>-<< parameters.otp >>-{{ .Environment.CACHE_PREFIX }}-{{ checksum "mix.lock" }}-{{ .Branch }}
           paths:
             - ~/repo/_build
       - run:
@@ -40,3 +54,15 @@ jobs:
       - run:
           name: Run Tests & Coverage Analysis
           command: mix coveralls.circle --trace
+workflows:
+  ci:
+    jobs:
+    - build:
+        matrix:
+          parameters:
+            elixir: ["1.10", "1.11", "1.12"]
+            otp: ["22", "23", "24"]
+          exclude:
+          - elixir: "1.10"
+            otp: "24"
+
