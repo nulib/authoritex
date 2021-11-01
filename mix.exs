@@ -61,7 +61,11 @@ defmodule Authoritex.MixProject do
   defp docs do
     [
       main: "readme",
-      extras: ["README.md"]
+      extras: [
+        {:"README.md", [title: "Introduction"]},
+        {:"LIVEBOOK.livemd", [title: "Livebook Notebook"]},
+        {:"LICENSE.md", [title: "License"]}
+      ],
     ]
   end
 
@@ -71,7 +75,7 @@ defmodule Authoritex.MixProject do
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README.md", "LICENSE.md"],
+      files: ["lib", "mix.exs", "README.md", "LICENSE.md", "LIVEBOOK.livemd"],
       maintainers: ["Brendan Quinn", "Karen Shaw", "Michael B. Klein"],
       licenses: ["MIT"],
       links: %{GitHub: @url},
