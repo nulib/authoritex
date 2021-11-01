@@ -1,0 +1,154 @@
+# Getting Started With Authoritex
+
+## About
+
+An Elixir library for searching and fetching controlled vocabulary authority terms, inspired by the [Samvera Community's](https://github.com/samvera) [Questioning Authority](https://github.com/samvera/questioning_authority).
+
+`Authoritex` provides an [Elixir behaviour](https://elixir-lang.org/getting-started/typespecs-and-behaviours.html#behaviours) that defines a specification for creating authorities. Each authority is a module which has to implement at least 5 public functions: `can_resolve?/1`, `code/0`, `description/0`, `fetch/1`, and `search/2`.
+
+* `can_resolve?/1` Returns true if the module can resolve the given identifier
+* `code/0` Returns the unique short code for the authority
+* `description/0` Returns a human-readable description of the authority
+* `fetch/1` Fetches a label (and optional hint string) for a specified resource
+* `search/2` Returns a list of search results (and optional hints) matching a query
+
+## Installation
+
+```elixir
+Mix.install([
+  {:authoritex, "~> 0.7.0"}
+])
+```
+
+## Configuration
+
+```elixir
+Application.put_env(:authoritex, :authorities, [
+  Authoritex.FAST.CorporateName,
+  Authoritex.FAST.EventName,
+  Authoritex.FAST.Form,
+  Authoritex.FAST.Geographic,
+  Authoritex.FAST.Personal,
+  Authoritex.FAST.Topical,
+  Authoritex.FAST.UniformTitle,
+  Authoritex.FAST,
+  Authoritex.GeoNames,
+  Authoritex.Getty.AAT,
+  Authoritex.Getty.TGN,
+  Authoritex.Getty.ULAN,
+  Authoritex.Getty,
+  Authoritex.LOC.Languages,
+  Authoritex.LOC.Names,
+  Authoritex.LOC.SubjectHeadings
+])
+```
+
+## List configured authorities
+
+`Authoritex.authorities/0` returns a list of tuples describing all configured authorities.
+
+```elixir
+Authoritex.authorities()
+```
+
+## Fetch records by id
+
+`Authoritex.fetch/1` returns a map with the `:label`, `:id`, `:hint`, and `:qualified_label` for an authority record given an id (must be a string).
+
+```elixir
+# Known authority and record identifier
+Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251")
+```
+
+`Authoritex.fetch/1` returns the error tuple `{:error, 404}` given an unknown id for a properly configured authority.
+
+```elixir
+# Known authority with unknown record identifier
+Authoritex.fetch("http://id.loc.gov/authorities/names/unknown-id")
+```
+
+`Authoritex.fetch/1` returns the error tuple `{:error, :unknown_authority}` given an id for an unknown authority.
+
+```elixir
+# Unknown authority
+Authoritex.fetch("http://fake.authority.org/not-a-real-thing")
+```
+
+## Search an authority
+
+`Authoritex.search/2` takes an authority code and search term (both arguments must be strings), and responds with either an `:ok` or an `:error` tuple. Search results are returned as a list of maps containing the `:id`, `:label` and `:hint` values for each result.
+
+Enter a search term in the field below and choose an authority to search from the select dropdown. Selecting a different authority will automatically re-run the search below:
+
+<!-- livebook:{"livebook_object":"cell_input","name":"search term","type":"text","value":"test"} -->
+
+<!-- livebook:{"livebook_object":"cell_input","name":"select authority","props":{"options":["aat","fast","fast-corporate-name","fast-event-name","fast-form","fast-geographic","fast-personal","fast-topical","fast-uniform-title","getty","lclang","lcnaf","lcsh","tgn","ulan"]},"reactive":true,"type":"select","value":"aat"} -->
+
+```elixir
+Authoritex.search(IO.gets("select authority: ") |> String.trim(), IO.gets("search term: "))
+```
+
+`Authoritex.search/3` takes the same arguments as `Authoritex.search/2` along with a third argument (must be an integer) to limit the result count of the search.
+
+```elixir
+Authoritex.search("lcsh", "library", 3)
+```
+
+```elixir
+# Error recevied when searching an unknown authority
+Authoritex.search("not-an-authority", "test")
+```
+
+## Testing
+
+`Authoritex` provides a mock for testing purposes in consuming applications.
+
+Configure the mock with a few lines of code:
+
+<!-- livebook:{"force_markdown":true} -->
+
+```elixir
+# In test.exs:
+config :authoritex, authorities: [Authoritex.Mock]
+
+# In test_helper.exs:
+Authoritex.Mock.init()
+```
+
+Use the `Authoritex.Mock.set_data/1` function to add data for testing purposes, typically in a `setup` block. The example module below demonstrates an `ExUnit` test using the `Authoritex.Mock`. The `Authoritex.Mock.search/1` function returns all mock data regardless of the string passed to the function. (Note: the following code is a code sample that is not runnable like the examples above):
+
+<!-- livebook:{"force_markdown":true} -->
+
+```elixir
+defmodule MyTest do
+  alias Authoritex.Mock
+  use ExUnit.Case, async: true
+
+  @data [
+      %{
+        id: "mock:result1",
+        label: "First Result",
+        qualified_label: "First Result (1)",
+        hint: "(1)"
+      },
+      %{
+        id: "mock:result2",
+        label: "Second Result",
+        qualified_label: "Second Result (2)",
+        hint: "(2)"
+      },
+      %{id: "mock:result3", label: "Third Result", qualified_label: "Third Result (3)", hint: "(3)"}
+    ]
+
+  setup do
+    Mock.set_data(@data)
+    :ok
+  end
+
+  test "results" do
+    with {:ok, results} <- Mock.search("any") do
+      assert length(results) == length(@data)
+    end
+  end
+end
+```
