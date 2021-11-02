@@ -1,6 +1,6 @@
 # Authoritex
 
-[![Build](https://circleci.com/gh/nulib/authoritex.svg?style=svg)](https://circleci.com/gh/nulib/authoritex)
+[![Build](https://github.com/nulib/authoritex/actions/workflows/build.yml/badge.svg)](https://github.com/nulib/authoritex/actions/workflows/build.yml)
 [![Coverage](https://coveralls.io/repos/github/nulib/authoritex/badge.svg?branch=main)](https://coveralls.io/github/nulib/authoritex?branch=main)
 [![Hex.pm](https://img.shields.io/hexpm/v/authoritex.svg)](https://hex.pm/packages/authoritex)
 
