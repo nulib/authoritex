@@ -36,10 +36,9 @@ defmodule Authoritex.Getty.ULAN do
   defp sparql_search_filter(q) do
     if String.contains?(q, " ") do
       String.split(q)
-      |> Enum.map(fn term ->
+      |> Enum.map_join(" && ", fn term ->
         ~s{(regex(?name, "#{term}", "i") || regex(?alt, "#{term}", "i"))}
       end)
-      |> Enum.join(" && ")
     else
       ~s{regex(?name, "#{q}", "i")}
     end

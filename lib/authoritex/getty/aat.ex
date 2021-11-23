@@ -31,8 +31,7 @@ defmodule Authoritex.Getty.AAT do
 
   defp sparql_search_filter(q) do
     String.split(q)
-    |> Enum.map(&~s{regex(?name, "#{&1}", "i")})
-    |> Enum.join(" && ")
+    |> Enum.map_join(" && ", &~s{regex(?name, "#{&1}", "i")})
   end
 
   def process_result(result), do: result
