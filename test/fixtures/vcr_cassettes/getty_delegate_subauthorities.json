@@ -22,7 +22,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Fri, 19 Feb 2021 03:13:01 GMT"
+        "Date": "Wed, 12 Jan 2022 21:53:49 GMT"
       },
       "status_code": 200,
       "type": "ok"
@@ -51,7 +51,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Fri, 19 Feb 2021 03:13:01 GMT"
+        "Date": "Wed, 12 Jan 2022 21:53:49 GMT"
       },
       "status_code": 200,
       "type": "ok"
@@ -80,7 +80,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Fri, 19 Feb 2021 03:13:02 GMT"
+        "Date": "Wed, 12 Jan 2022 21:53:49 GMT"
       },
       "status_code": 200,
       "type": "ok"

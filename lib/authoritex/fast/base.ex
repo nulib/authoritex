@@ -85,7 +85,8 @@ defmodule Authoritex.FAST.Base do
                   id: ~x"./@rdf:about"s,
                   label: ~x"./skos:prefLabel/text()"s,
                   qualified_label: ~x"./skos:prefLabel/text()"s,
-                  hint: ~x"./no_hint/text()"
+                  hint: ~x"./no_hint/text()",
+                  variants: ~x"./no_variants/text()"l
                 )
 
               {:ok, %{result | id: "http://id.worldcat.org/fast/#{result.id}"}}

@@ -19,7 +19,13 @@ defmodule Authoritex.LOC.BaseTest do
       id: "http://id.loc.gov/authorities/genreForms/gf2011026181",
       label: "Cutout animation films",
       qualified_label: "Cutout animation films",
-      hint: nil
+      hint: nil,
+      variants: [
+        "Collage animation films",
+        "Cut-out animation films",
+        "Paper cut-out animation films",
+        "Cutout animation films"
+      ]
     ],
     search_result_term: "paper",
     search_count_term: ""
@@ -28,7 +34,7 @@ defmodule Authoritex.LOC.BaseTest do
     test "fetch" do
       use_cassette "lcbase_bad_200", match_requests_on: [:query], custom: true do
         assert TestAuthority.fetch("http://id.loc.gov/authorities/genreForms/gf2011026181") ==
-                 {:error, {:bad_response, :missing_label}}
+                 {:error, {:bad_response, "<h1>Authority is Busted</h1>"}}
       end
     end
 

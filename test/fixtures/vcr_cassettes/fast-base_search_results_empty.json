@@ -12,9 +12,9 @@
     },
     "response": {
       "binary": false,
-      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":5,\n    \"params\":{\n      \"q\":\"suggestall:M1551ng\",\n      \"fl\":\"suggestall,idroot,auth,type\",\n      \"rows\":\"20\"}},\n  \"response\":{\"numFound\":0,\"start\":0,\"docs\":[]\n  }}",
+      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":1,\n    \"params\":{\n      \"q\":\"suggestall:M1551ng\",\n      \"fl\":\"suggestall,idroot,auth,type\",\n      \"rows\":\"20\"}},\n  \"response\":{\"numFound\":0,\"start\":0,\"docs\":[]\n  }}",
       "headers": {
-        "Date": "Fri, 19 Feb 2021 03:26:12 GMT",
+        "Date": "Wed, 12 Jan 2022 21:53:44 GMT",
         "Server": "Apache/2.0.63 (Unix)",
         "Transfer-Encoding": "chunked",
         "Content-Type": "application/json"

@@ -15,7 +15,8 @@ defmodule Authoritex.FASTTest do
       label: "Melville J. Herskovits Library of African Studies",
       qualified_label: "Melville J. Herskovits Library of African Studies",
       hint: "Herskovits Library of African Studies",
-      fetch_hint: nil
+      fetch_hint: nil,
+      variants: []
     ],
     search_result_term: "herskovits library of african studies",
     search_count_term: "test",

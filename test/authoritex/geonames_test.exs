@@ -13,7 +13,8 @@ defmodule Authoritex.GeoNamesTest do
       hint: "Kentucky, United States",
       id: "https://sws.geonames.org/4302561/",
       label: "Nicholasville",
-      qualified_label: "Nicholasville, Kentucky, United States"
+      qualified_label: "Nicholasville, Kentucky, United States",
+      variants: []
     ],
     search_result_term: "Kentucky",
     search_count_term: "Kentucky"
@@ -54,7 +55,8 @@ defmodule Authoritex.GeoNamesTest do
                     hint: "United States",
                     id: "https://sws.geonames.org/11887750/",
                     label: "Midwest",
-                    qualified_label: "Midwest, United States"
+                    qualified_label: "Midwest, United States",
+                    variants: []
                   }}
       end
     end

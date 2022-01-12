@@ -33,8 +33,6 @@ defmodule Authoritex.Getty.BaseTest do
     def process_result(result) do
       result
       |> Map.put(:id, String.replace(result.id, ~r"/ulan/", "/base/"))
-
-      # |> IO.inspect()
     end
   end
 
@@ -51,7 +49,8 @@ defmodule Authoritex.Getty.BaseTest do
       id: "http://vocab.getty.edu/base/500019204",
       label: "McKim, Charles Follen",
       qualified_label: "McKim, Charles Follen (American architect.)",
-      hint: "American architect."
+      hint: "American architect.",
+      variants: []
     ],
     search_result_term: "mckim",
     search_count_term: "charles"

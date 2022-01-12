@@ -22,8 +22,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Thu, 18 Feb 2021 21:05:13 GMT",
-        "Set-Cookie": "BIGipServerForest=!/BjvMCgmlAW7gqPHIzX2inLvsMs/g0V28dJcGw4LP0dpwZKe3M63QHY2U2WqhzqlU+wMHYyhVqwyGw==; path=/; Httponly"
+        "Date": "Wed, 12 Jan 2022 21:53:37 GMT"
       },
       "status_code": 200,
       "type": "ok"

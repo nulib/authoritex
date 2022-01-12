@@ -13,7 +13,8 @@ defmodule Authoritex.FAST.GeographicTest do
       label: "Lake States",
       qualified_label: "Lake States",
       hint: "Great Lakes States",
-      fetch_hint: nil
+      fetch_hint: nil,
+      variants: []
     ],
     search_result_term: "great lake states",
     search_count_term: "great lake",

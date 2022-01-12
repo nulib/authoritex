@@ -46,39 +46,18 @@ defmodule Authoritex.LOC.Base do
 
       def fetch(id) do
         with url <- String.replace(id, ~r/^http:/, "https:") do
-          case HTTPoison.head(url) |> autoretry() do
-            {:ok, response} -> process_fetch_response(response)
-            {:error, error} -> {error, error}
+          request =
+            HTTPoison.get(url <> ".rdf")
+            |> autoretry()
+
+          case request do
+            {:ok, response} ->
+              parse_fetch_result(response)
+
+            {:error, error} ->
+              {:error, error}
           end
         end
-      end
-
-      defp process_fetch_response(response) do
-        case {response.headers |> Enum.into(%{}), response.status_code} do
-          {%{"X-PrefLabel" => label, "X-URI" => uri}, code} when code in [200, 303] ->
-            {:ok, make_fetch_result(uri, label)}
-
-          {%{"Location" => location}, code} when code in 301..302 ->
-            fetch(location)
-
-          {_, 303} ->
-            {:error, 404}
-
-          {_, 200} ->
-            {:error, {:bad_response, :missing_label}}
-
-          {_, status_code} ->
-            {:error, status_code}
-        end
-      end
-
-      defp make_fetch_result(uri, label) do
-        %{
-          id: uri,
-          label: label,
-          qualified_label: label,
-          hint: nil
-        }
       end
 
       @impl Authoritex
@@ -101,6 +80,39 @@ defmodule Authoritex.LOC.Base do
             {:error, error}
         end
       end
+
+      defp parse_fetch_result(%{body: response, status_code: 200}) do
+        with doc <- SweetXml.parse(response) do
+          case doc |> SweetXml.xpath(~x"/rdf:RDF") do
+            nil ->
+              {:error, {:bad_response, response}}
+
+            rdf ->
+              {:ok,
+               SweetXml.xpath(rdf, ~x"./madsrdf:*",
+                 id: ~x"./@rdf:about"s,
+                 label: ~x"./madsrdf:authoritativeLabel[1]/text()"s,
+                 qualified_label: ~x"./madsrdf:authoritativeLabel[1]/text()"s,
+                 hint: ~x"./no_hint/text()",
+                 variants:
+                   ~x".//madsrdf:variantLabel/text()"ls
+                   |> SweetXml.transform_by(&Enum.uniq/1)
+               )}
+          end
+        end
+      rescue
+        _ -> {:error, {:bad_response, response}}
+      end
+
+      defp parse_fetch_result(%{status_code: code} = response) when code in 300..399 do
+        response.headers
+        |> Enum.into(%{})
+        |> Map.get("Location")
+        |> String.replace(~r"\.rdf$", "")
+        |> fetch()
+      end
+
+      defp parse_fetch_result(%{status_code: status_code}), do: {:error, status_code}
 
       defp parse_search_result(%{body: response, status_code: 200}) do
         with doc <- SweetXml.parse(response) do

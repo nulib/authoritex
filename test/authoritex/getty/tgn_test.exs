@@ -14,7 +14,8 @@ defmodule Authoritex.Getty.TGNTest do
       id: "http://vocab.getty.edu/tgn/2236134",
       label: "Chicago River",
       qualified_label: "Chicago River (Cook, Illinois, United States)",
-      hint: "Cook, Illinois, United States"
+      hint: "Cook, Illinois, United States",
+      variants: []
     ],
     search_result_term: "chicago",
     search_count_term: "chicago"

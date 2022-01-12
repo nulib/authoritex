@@ -13,7 +13,8 @@ defmodule Authoritex.FAST.PersonalTest do
       label: "Dewey, Melvil, 1851-1931",
       qualified_label: "Dewey, Melvil, 1851-1931",
       hint: "Dewey, Melville Louis Kossuth, 1851-1931",
-      fetch_hint: nil
+      fetch_hint: nil,
+      variants: []
     ],
     search_result_term: "dewey",
     search_count_term: "dewey",

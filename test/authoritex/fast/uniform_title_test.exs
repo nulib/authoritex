@@ -13,7 +13,8 @@ defmodule Authoritex.FAST.UniformTitleTest do
       label: "Autobiography (Franklin, Benjamin)",
       qualified_label: "Autobiography (Franklin, Benjamin)",
       hint: "Benjamin Franklin's autobiography (Franklin, Benjamin)",
-      fetch_hint: nil
+      fetch_hint: nil,
+      variants: []
     ],
     search_result_term: "benjamin franklin",
     search_count_term: "test",

@@ -12,7 +12,8 @@ defmodule Authoritex.LOC.LanguagesTest do
       id: "http://id.loc.gov/vocabulary/languages/ang",
       label: "English, Old (ca. 450-1100)",
       qualified_label: "English, Old (ca. 450-1100)",
-      hint: nil
+      hint: nil,
+      variants: []
     ],
     search_result_term: "english",
     search_count_term: ""

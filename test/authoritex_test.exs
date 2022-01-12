@@ -22,7 +22,8 @@ defmodule AuthoritexTest do
           hint: nil,
           id: "http://id.loc.gov/authorities/names/no2011087251",
           label: "Valim, Jose",
-          qualified_label: "Valim, Jose"
+          qualified_label: "Valim, Jose",
+          variants: []
         }
 
         assert Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251") ==

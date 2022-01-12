@@ -12,7 +12,14 @@ defmodule Authoritex.LOC.SubjectHeadingsTest do
       id: "http://id.loc.gov/authorities/subjects/sh85009792",
       label: "Authority files (Information retrieval)",
       qualified_label: "Authority files (Information retrieval)",
-      hint: nil
+      hint: nil,
+      variants: [
+        "Authority control (Information retrieval)",
+        "Authority files (Cataloging)",
+        "Authority records (Information retrieval)",
+        "Authority work (Information retrieval)",
+        "Library authority files"
+      ]
     ],
     search_result_term: "authority",
     search_count_term: "authority"

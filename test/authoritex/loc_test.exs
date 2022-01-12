@@ -14,7 +14,8 @@ defmodule Authoritex.LOCTest do
       id: "http://id.loc.gov/vocabulary/organizations/iehs",
       label: "Evanston Township High School",
       qualified_label: "Evanston Township High School",
-      hint: nil
+      hint: nil,
+      variants: []
     ],
     search_result_term: "evanston township high",
     search_count_term: "high school"

@@ -118,7 +118,8 @@ defmodule Authoritex.GeoNames do
          id: make_geonames_uri(geoname_id),
          label: name,
          hint: hint,
-         qualified_label: Enum.join(Enum.filter([name, hint], & &1), ", ")
+         qualified_label: Enum.join(Enum.filter([name, hint], & &1), ", "),
+         variants: []
        ],
        %{}
      )}
@@ -150,9 +151,7 @@ defmodule Authoritex.GeoNames do
         status_code
 
       {:ok, %{"status" => %{"message" => message, "value" => error_code}}} ->
-        "Status #{status_code}: #{error_description(to_string(error_code))} (#{
-          to_string(error_code)
-        }). #{message}"
+        "Status #{status_code}: #{error_description(to_string(error_code))} (#{to_string(error_code)}). #{message}"
 
       {:error, error} ->
         {:bad_response, error}

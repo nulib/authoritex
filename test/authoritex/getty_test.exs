@@ -11,7 +11,8 @@ defmodule Authoritex.GettyTest do
       id: "http://vocab.getty.edu/ulan/500311625",
       label: "Museum of Modern Art",
       qualified_label: "Museum of Modern Art (Union List of Artist Names)",
-      hint: "Union List of Artist Names"
+      hint: "Union List of Artist Names",
+      variants: []
     ],
     search_result_term: "modern",
     search_count_term: "modern"
@@ -25,7 +26,8 @@ defmodule Authoritex.GettyTest do
                     id: "http://vocab.getty.edu/aat/300265149",
                     label: "dollars (paper money)",
                     qualified_label: "dollars (paper money)",
-                    hint: nil
+                    hint: nil,
+                    variants: []
                   }}
 
         assert Getty.fetch("http://vocab.getty.edu/tgn/2236134") ==
@@ -34,7 +36,8 @@ defmodule Authoritex.GettyTest do
                     id: "http://vocab.getty.edu/tgn/2236134",
                     label: "Chicago River",
                     qualified_label: "Chicago River (Cook, Illinois, United States)",
-                    hint: "Cook, Illinois, United States"
+                    hint: "Cook, Illinois, United States",
+                    variants: []
                   }}
 
         assert Getty.fetch("http://vocab.getty.edu/ulan/500447664") ==
@@ -43,7 +46,8 @@ defmodule Authoritex.GettyTest do
                     id: "http://vocab.getty.edu/ulan/500447664",
                     label: "Palmer, Potter",
                     qualified_label: "Palmer, Potter (American businessman, 1826-1902)",
-                    hint: "American businessman, 1826-1902"
+                    hint: "American businessman, 1826-1902",
+                    variants: []
                   }}
       end
     end
