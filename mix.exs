@@ -1,7 +1,7 @@
 defmodule Authoritex.MixProject do
   use Mix.Project
 
-  @version "0.8.0"
+  @version "0.9.0"
   @url "https://github.com/nulib/authoritex"
 
   def project do
@@ -65,7 +65,7 @@ defmodule Authoritex.MixProject do
         {:"README.md", [title: "Introduction"]},
         {:"LIVEBOOK.livemd", [title: "Livebook Notebook"]},
         {:"LICENSE.md", [title: "License"]}
-      ],
+      ]
     ]
   end
 
