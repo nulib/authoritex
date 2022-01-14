@@ -47,6 +47,7 @@ defmodule Authoritex.TestCase do
                 :fetch_hint,
                 get_in(use_opts, [:expected, :hint])
               ),
+            expected_variants: get_in(use_opts, [:expected, :variants]),
             search_result_term: use_opts[:search_result_term],
             search_count_term: use_opts[:search_count_term],
             default_results: use_opts[:default_results] || 30,
@@ -91,7 +92,8 @@ defmodule Authoritex.TestCase do
                           id: unquote(expected_id),
                           label: unquote(expected_label),
                           qualified_label: unquote(expected_qualified_label),
-                          hint: unquote(expected_fetch_hint)
+                          hint: unquote(expected_fetch_hint),
+                          variants: unquote(expected_variants)
                         }}
             end)
           end

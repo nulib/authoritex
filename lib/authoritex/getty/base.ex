@@ -44,7 +44,8 @@ defmodule Authoritex.Getty.Base do
             {:ok,
              result
              |> Map.delete(:replaced_by)
-             |> put_qualified_label()}
+             |> put_qualified_label()
+             |> Map.put(:variants, [])}
 
           other ->
             other

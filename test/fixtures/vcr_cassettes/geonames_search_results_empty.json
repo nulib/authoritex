@@ -14,8 +14,8 @@
       "binary": false,
       "body": "{\"totalResultsCount\":0,\"geonames\":[]}",
       "headers": {
-        "Date": "Thu, 18 Feb 2021 21:05:09 GMT",
-        "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips",
+        "Date": "Wed, 12 Jan 2022 21:53:56 GMT",
+        "Server": "Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g",
         "Access-Control-Allow-Origin": "*",
         "X-Frame-Options": "sameorigin",
         "Cache-Control": "no-cache",

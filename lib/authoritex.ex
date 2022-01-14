@@ -6,7 +6,8 @@ defmodule Authoritex do
           id: String.t(),
           label: String.t(),
           qualified_label: String.t(),
-          hint: String.t() | nil
+          hint: String.t() | nil,
+          variants: list(String.t())
         }
   @type search_result :: %{id: String.t(), label: String.t(), hint: String.t() | nil}
 

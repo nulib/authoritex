@@ -1,14 +1,14 @@
 [
   {
     "request": {
-      "method": "head",
-      "url": "https://id.loc.gov/authorities/genreForms/gf2011026181"
+      "url": "https://id.loc.gov/authorities/genreForms/gf2011026181.rdf"
     },
     "response": {
       "status_code": 500,
       "headers": {
         "Content-Type": "text/html"
-      }
+      },
+      "body": "<h1>Authority is Down</h1>"
     }
   },
   {

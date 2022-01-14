@@ -12,7 +12,8 @@ defmodule Authoritex.LOC.NamesTest do
       id: "http://id.loc.gov/authorities/names/no2011087251",
       label: "Valim, Jose",
       qualified_label: "Valim, Jose",
-      hint: nil
+      hint: nil,
+      variants: []
     ],
     search_result_term: "valim",
     search_count_term: "smith"

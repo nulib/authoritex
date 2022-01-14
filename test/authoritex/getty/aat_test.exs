@@ -14,7 +14,8 @@ defmodule Authoritex.Getty.AATTest do
       id: "http://vocab.getty.edu/aat/300265149",
       label: "dollars (paper money)",
       qualified_label: "dollars (paper money)",
-      hint: nil
+      hint: nil,
+      variants: []
     ],
     search_result_term: "dollars",
     search_count_term: "paint"

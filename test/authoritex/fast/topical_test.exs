@@ -13,7 +13,8 @@ defmodule Authoritex.FAST.TopicalTest do
       label: "Subject headings",
       qualified_label: "Subject headings",
       hint: "Subject authorities (Information retrieval)",
-      fetch_hint: nil
+      fetch_hint: nil,
+      variants: []
     ],
     search_result_term: "subject authorities",
     search_count_term: "authorities",

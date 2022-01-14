@@ -22,8 +22,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Tue, 16 Mar 2021 01:51:08 GMT",
-        "Set-Cookie": "BIGipServerForest=!2PaYYIbMb0ZOzJqNR+ykwt9deMwpbm3FgCkQYDAJCzXmeK0jS+V0Jc8deJxJmRO1lXsZ+2QgrSNMjw==; path=/; Httponly"
+        "Date": "Wed, 12 Jan 2022 21:53:41 GMT"
       },
       "status_code": 200,
       "type": "ok"
@@ -52,7 +51,7 @@
         "Content-Type": "application/sparql-results+xml;charset=UTF-8",
         "Content-Language": "en-US",
         "Transfer-Encoding": "chunked",
-        "Date": "Tue, 16 Mar 2021 01:51:08 GMT"
+        "Date": "Wed, 12 Jan 2022 21:53:41 GMT"
       },
       "status_code": 200,
       "type": "ok"
