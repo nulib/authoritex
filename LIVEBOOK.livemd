@@ -16,7 +16,8 @@ An Elixir library for searching and fetching controlled vocabulary authority ter
 
 ```elixir
 Mix.install([
-  {:authoritex, "~> 0.7.0"}
+  {:authoritex, "~> 0.7.0"},
+  {:kino, "~> 0.5.2"}
 ])
 ```
 
@@ -76,16 +77,45 @@ Authoritex.fetch("http://fake.authority.org/not-a-real-thing")
 
 ## Search an authority
 
-`Authoritex.search/2` takes an authority code and search term (both arguments must be strings), and responds with either an `:ok` or an `:error` tuple. Search results are returned as a list of maps containing the `:id`, `:label` and `:hint` values for each result.
-
-Enter a search term in the field below and choose an authority to search from the select dropdown. Selecting a different authority will automatically re-run the search below:
-
-<!-- livebook:{"livebook_object":"cell_input","name":"search term","type":"text","value":"test"} -->
-
-<!-- livebook:{"livebook_object":"cell_input","name":"select authority","props":{"options":["aat","fast","fast-corporate-name","fast-event-name","fast-form","fast-geographic","fast-personal","fast-topical","fast-uniform-title","getty","lclang","lcnaf","lcsh","tgn","ulan"]},"reactive":true,"type":"select","value":"aat"} -->
+`Authoritex.search/2` performs a search with an authority and a search term. The following select menu lets you choose a supported authority:
 
 ```elixir
-Authoritex.search(IO.gets("select authority: ") |> String.trim(), IO.gets("search term: "))
+search_authority =
+  Kino.Input.select(
+    "Select Authority",
+    [
+      {"aat", "Getty Art & Architecture Thesaurus (AAT)"},
+      {"fast", "Faceted Application of Subject Terminology (FAST)  -- Base"},
+      {"fast-corporate-name", "Faceted Application of Subject Terminology -- Corporate Name"},
+      {"fast-event-name", "Faceted Application of Subject Terminology -- Event Name"},
+      {"fast-form", "Faceted Application of Subject Terminology -- Form/Genre"},
+      {"fast-geographic", "Faceted Application of Subject Terminology -- Geographic"},
+      {"fast-personal", "Faceted Application of Subject Terminology -- Personal"},
+      {"fast-topical", "Faceted Application of Subject Terminology -- Topical"},
+      {"fast-uniform-title", "Faceted Application of Subject Terminology -- Uniform Title"},
+      {"getty", "Getty -- Base"},
+      {"lclang", "Library of Congress MARC List for Languages"},
+      {"lcnaf", "Library of Congress Name Authority File"},
+      {"lcsh", "Library of Congress Subject Headings"},
+      {"tgn", "Getty Thesaurus of Geographic Names (TGN)"},
+      {"ulan", "Getty Union List of Artist Names (ULAN)"}
+    ]
+  )
+
+```
+
+Enter a search term in the text input:
+
+```elixir
+search_term = Kino.Input.text("Search term")
+```
+
+Perform the search using the values chosen above:
+
+<!-- livebook:{"reevaluate_automatically":true} -->
+
+```elixir
+Authoritex.search(Kino.Input.read(search_authority), Kino.Input.read(search_term))
 ```
 
 `Authoritex.search/3` takes the same arguments as `Authoritex.search/2` along with a third argument (must be an integer) to limit the result count of the search.

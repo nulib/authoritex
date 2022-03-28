@@ -1,7 +1,7 @@
 defmodule Authoritex.MixProject do
   use Mix.Project
 
-  @version "0.9.0"
+  @version "0.9.1"
   @url "https://github.com/nulib/authoritex"
 
   def project do
@@ -53,7 +53,7 @@ defmodule Authoritex.MixProject do
       {:exvcr, "~> 0.11", only: :test},
       {:httpoison, "~> 1.8.0"},
       {:httpoison_retry, "~> 1.1.0"},
-      {:jason, "~> 1.2.1"},
+      {:jason, "~> 1.2"},
       {:sweet_xml, "~> 0.6"}
     ]
   end
