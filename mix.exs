@@ -53,7 +53,7 @@ defmodule Authoritex.MixProject do
       {:exvcr, "~> 0.11", only: :test},
       {:httpoison, "~> 1.8.0"},
       {:httpoison_retry, "~> 1.1.0"},
-      {:jason, "~> 1.3.0"},
+      {:jason, "~> 1.4.0"},
       {:sweet_xml, "~> 0.6"}
     ]
   end
