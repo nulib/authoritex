@@ -17,6 +17,6 @@ defmodule Authoritex.Getty.TGNTest do
       hint: "Cook, Illinois, United States",
       variants: []
     ],
-    search_result_term: "chicago",
+    search_result_term: "chicago river",
     search_count_term: "chicago"
 end
