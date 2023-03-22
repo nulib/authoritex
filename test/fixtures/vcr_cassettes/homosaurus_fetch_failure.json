@@ -1,0 +1,29 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://homosaurus.org/v3/not-a-real-thing.json"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"status\":500,\"error\":\"Internal Server Error\"}",
+      "headers": {
+        "Date": "Tue, 21 Mar 2023 22:04:18 GMT",
+        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k Phusion_Passenger/6.0.8",
+        "X-Request-Id": "ab33684a-eab1-470a-bb6d-5431c1c69ddb",
+        "X-Runtime": "0.004180",
+        "X-Powered-By": "Phusion Passenger(R) 6.0.8",
+        "Content-Length": "46",
+        "Status": "500 Internal Server Error",
+        "Connection": "close",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "status_code": 500,
+      "type": "ok"
+    }
+  }
+]
