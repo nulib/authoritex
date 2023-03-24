@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-Agent": "Authoritex"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://homosaurus.org/search/v3.jsonld?q=M1551ng%2A"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\n}",
+      "headers": {
+        "Date": "Tue, 21 Mar 2023 22:04:18 GMT",
+        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k Phusion_Passenger/6.0.8",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Request-Id": "0f0e7c03-e4cf-43f8-b51d-971c70f0961d",
+        "X-Download-Options": "noopen",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Runtime": "0.015036",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Phusion Passenger(R) 6.0.8",
+        "ETag": "W/\"8eb95bcbc154530931e15fc418c8b1fe\"",
+        "Status": "200 OK",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/ld+json; charset=utf-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://homosaurus.org/v3/homoit0002336.json"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"@context\":{\"skos\":\"http://www.w3.org/2004/02/skos/core#\",\"dc\":\"http://purl.org/dc/terms/\",\"rdfs\":\"http://www.w3.org/2000/01/rdf-schema#\",\"xsd\":\"http://www.w3.org/2001/XMLSchema#\"},\"@id\":\"https://homosaurus.org/v3/homoit0002336\",\"dc:identifier\":\"homoit0002336\",\"skos:prefLabel\":\"Adopted LGBTQ+ people\",\"skos:altLabel\":[\"Adopted people (LGBTQ)\",\"LGBTQ+ adopted people\"],\"rdfs:comment\":\"LGBTQ+ people who were adopted, whether or not by LGBTQ+ parents.\",\"dc:issued\":{\"@type\":\"xsd:date\",\"@value\":\"2022-12-13\"},\"dc:modified\":{\"@type\":\"xsd:date\",\"@value\":\"2022-12-13\"},\"@type\":\"skos:Concept\",\"skos:inScheme\":{\"@id\":\"https://homosaurus.org/v3\"},\"skos:broader\":[[{\"@id\":\"https://homosaurus.org/v3/homoit0000915\",\"skos:prefLabel\":\"LGBTQ+ people\"}]],\"skos:hasTopConcept\":[[{\"@id\":\"https://homosaurus.org/v3/homoit0002336\",\"skos:prefLabel\":\"Adopted LGBTQ+ people\"}]]}",
+      "headers": {
+        "Date": "Tue, 21 Mar 2023 22:04:18 GMT",
+        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k Phusion_Passenger/6.0.8",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Request-Id": "8f119dca-3b85-4f22-b370-f5bac3f2c868",
+        "X-Download-Options": "noopen",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Runtime": "0.023793",
+        "X-Content-Type-Options": "nosniff",
+        "X-Powered-By": "Phusion Passenger(R) 6.0.8",
+        "ETag": "W/\"273b87538d7b5c035fd66a451bd087e3\"",
+        "Status": "200 OK",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
