@@ -14,7 +14,7 @@ Add `authoritex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:authoritex, "~> 0.1.0"}
+    {:authoritex, "~> 1.0.0"}
   ]
 end
 ```
@@ -41,6 +41,8 @@ config :authoritex,
     Authoritex.Getty.TGN,
     Authoritex.Getty.ULAN,
     Authoritex.Getty,
+    Authoritex.Homosaurus,
+    Authoritex.LOC.GenreForms,
     Authoritex.LOC.Languages,
     Authoritex.LOC.Names,
     Authoritex.LOC.SubjectHeadings,
