@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%3FreplacedBy+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Fulan%2F500019204%3E+as+%3Fs%29+OPTIONAL+%7B%3Fs+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D%7D+OPTIONAL+%7B%3Fs+skos%3AscopeNote+%5Brdf%3Avalue+%3Fhint%5D+%7D+OPTIONAL+%7B%3Fs+dcterms%3AisReplacedBy+%3FreplacedBy%7D+%7D+LIMIT+1"
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%3FreplacedBy+%28group_concat%28%3Falt%3B+separator%3D%22%7C%22%29+AS+%3Fvariants%29+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Fulan%2F500019204%3E+as+%3Fs%29+OPTIONAL+%7B%3Fs+gvp%3AprefLabelGVP+%5Bxl%3AliteralForm+%3Fname%5D%7D+OPTIONAL+%7B%3Fs+skos%3AscopeNote+%5Brdf%3Avalue+%3Fhint%5D+%7D+OPTIONAL+%7B%3Fs+dcterms%3AisReplacedBy+%3FreplacedBy%7D+OPTIONAL+%7B%3Fs+xl%3AaltLabel%2Fxl%3AliteralForm+%3Falt%7D+%7D+GROUP+BY+%3Fs+%3Fname+%3Fhint+%3FreplacedBy+LIMIT+1"
     },
     "response": {
       "status_code": 200,

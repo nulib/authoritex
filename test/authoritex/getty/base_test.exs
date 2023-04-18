@@ -8,12 +8,15 @@ defmodule Authoritex.Getty.BaseTest do
     def sparql_fetch(id) do
       with id <- String.replace(id, ~r"/base/", "/ulan/") do
         """
-        SELECT DISTINCT ?s ?name ?hint ?replacedBy {
+        SELECT DISTINCT ?s ?name ?hint ?replacedBy (group_concat(?alt; separator="|") AS ?variants) {
           BIND(<#{id}> as ?s)
-          OPTIONAL {?s gvp:prefLabelGVP [skosxl:literalForm ?name]}
+          OPTIONAL {?s gvp:prefLabelGVP [xl:literalForm ?name]}
           OPTIONAL {?s skos:scopeNote [rdf:value ?hint] }
           OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
-        } LIMIT 1
+          OPTIONAL {?s xl:altLabel/xl:literalForm ?alt}
+        }
+        GROUP BY ?s ?name ?hint ?replacedBy
+        LIMIT 1
         """
       end
     end
@@ -50,7 +53,7 @@ defmodule Authoritex.Getty.BaseTest do
       label: "McKim, Charles Follen",
       qualified_label: "McKim, Charles Follen (American architect.)",
       hint: "American architect.",
-      variants: []
+      variants: ["Charles Follen McKim"]
     ],
     search_result_term: "mckim",
     search_count_term: "charles"

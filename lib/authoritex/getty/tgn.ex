@@ -8,12 +8,15 @@ defmodule Authoritex.Getty.TGN do
 
   def sparql_fetch(id) do
     """
-    SELECT DISTINCT ?s ?name ?hint ?replacedBy {
+    SELECT DISTINCT ?s ?name ?hint ?replacedBy (group_concat(?alt; separator="|") AS ?variants) {
       BIND(<#{id}> as ?s)
       OPTIONAL {?s gvp:prefLabelGVP/xl:literalForm ?name}
       OPTIONAL {?s gvp:parentString ?hint}
       OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
-    } LIMIT 1
+      OPTIONAL {?s xl:altLabel/xl:literalForm ?alt}
+    }
+    GROUP BY ?s ?name ?hint ?replacedBy
+    LIMIT 1
     """
   end
 
@@ -37,6 +40,16 @@ defmodule Authoritex.Getty.TGN do
   end
 
   def process_result(%{hint: nil} = result), do: result
+
+  def process_result(%{id: id, label: label, hint: hint, variants: variants}) do
+    case hint |> String.split(~r",\s*") |> Enum.slice(0..-3) |> Enum.join(", ") do
+      "" ->
+        %{id: id, label: label, hint: nil, variants: variants}
+
+      hint ->
+        %{id: id, label: label, hint: hint, variants: variants}
+    end
+  end
 
   def process_result(%{id: id, label: label, hint: hint}) do
     case hint |> String.split(~r",\s*") |> Enum.slice(0..-3) |> Enum.join(", ") do
