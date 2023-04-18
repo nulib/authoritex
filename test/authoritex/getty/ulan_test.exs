@@ -17,7 +17,7 @@ defmodule Authoritex.Getty.ULANTest do
       label: "Palmer, Potter",
       qualified_label: "Palmer, Potter (American businessman, 1826-1902)",
       hint: "American businessman, 1826-1902",
-      variants: []
+      variants: ["Potter Palmer", "P. Palmer"]
     ],
     search_result_term: "potter palmer",
     search_count_term: "palmer"
@@ -34,7 +34,7 @@ defmodule Authoritex.Getty.ULANTest do
                         id: "http://vocab.getty.edu/ulan/500125274",
                         label: "unknown",
                         qualified_label: "unknown (unknown cultural designation)",
-                        variants: []
+                        variants: ["anonymous"]
                       }}
           end)
 

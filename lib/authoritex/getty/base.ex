@@ -44,8 +44,8 @@ defmodule Authoritex.Getty.Base do
             {:ok,
              result
              |> Map.delete(:replaced_by)
-             |> put_qualified_label()
-             |> Map.put(:variants, [])}
+             |> ensure_variants()
+             |> put_qualified_label()}
 
           other ->
             other
@@ -53,6 +53,9 @@ defmodule Authoritex.Getty.Base do
       rescue
         e in RuntimeError -> {:error, e.message}
       end
+
+      defp ensure_variants(%{variants: [_ | _]} = result), do: result
+      defp ensure_variants(result), do: Map.put(result, :variants, [])
 
       defp put_qualified_label(result) do
         result = Map.delete(result, :replaced_by)
@@ -102,11 +105,15 @@ defmodule Authoritex.Getty.Base do
                  id: ~x"./binding[@name='s']/uri/text()"s,
                  label: ~x"./binding[@name='name']/literal/text()"s,
                  hint: ~x"./binding[@name='hint']/literal/text()"s,
-                 replaced_by: ~x"./binding[@name='replacedBy']/uri/text()"s
+                 replaced_by: ~x"./binding[@name='replacedBy']/uri/text()"s,
+                 variants:
+                   ~x"./binding[@name='variants']/literal/text()"s
+                   |> SweetXml.transform_by(&String.split(&1, "|"))
                )
                |> Enum.map(fn result ->
                  result
                  |> nilify_hint()
+                 |> remove_empty_variants()
                  |> remove_replaced_by()
                end)
                |> Enum.map(&process_result/1)}
@@ -118,6 +125,8 @@ defmodule Authoritex.Getty.Base do
 
       defp nilify_hint(%{hint: ""} = result), do: Map.put(result, :hint, nil)
       defp nilify_hint(result), do: result
+      defp remove_empty_variants(%{variants: [""]} = result), do: Map.delete(result, :variants)
+      defp remove_empty_variants(result), do: result
       defp remove_replaced_by(%{replaced_by: ""} = result), do: Map.delete(result, :replaced_by)
       defp remove_replaced_by(result), do: result
 

@@ -8,11 +8,14 @@ defmodule Authoritex.Getty.AAT do
 
   def sparql_fetch(id) do
     """
-    SELECT DISTINCT ?s ?name ?replacedBy {
+    SELECT DISTINCT ?s ?name ?replacedBy (group_concat(?alt; separator="|") AS ?variants) {
       BIND(<#{id}> as ?s)
       OPTIONAL {?s gvp:prefLabelGVP/xl:literalForm ?name}
       OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
-    } LIMIT 1
+      OPTIONAL {?s xl:altLabel/xl:literalForm ?alt}
+    }
+    GROUP BY ?s ?name ?replacedBy
+    LIMIT 1
     """
   end
 
