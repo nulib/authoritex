@@ -14,7 +14,12 @@ defmodule Authoritex.FAST.CorporateNameTest do
       qualified_label: "Northwestern University (Evanston, Ill.). Library",
       hint: "Northwestern University (Evanston, Ill.). Charles Deering Library",
       fetch_hint: nil,
-      variants: []
+      variants: [
+        "Northwestern University (Evanston, Ill.). Orrington Lunt Library",
+        "Northwestern University (Evanston, Ill.). Charles Deering Library",
+        "Orrington Lunt Library (Evanston, Ill.)",
+        "Charles Deering Library (Evanston, Ill.)"
+      ]
     ],
     search_result_term: "Charles Deering Library",
     search_count_term: "test",
