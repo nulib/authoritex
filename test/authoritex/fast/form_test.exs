@@ -14,7 +14,14 @@ defmodule Authoritex.FAST.FormTest do
       qualified_label: "Exhibition catalogs",
       hint: "Art exhibition catalogs",
       fetch_hint: nil,
-      variants: []
+      variants: [
+        "Art exhibition catalogs",
+        "Display catalogs",
+        "Exhibit catalogs",
+        "Exposition catalogs",
+        "Library exhibition catalogs",
+        "Museum exhibition catalogs"
+      ]
     ],
     search_result_term: "art",
     search_count_term: "art",

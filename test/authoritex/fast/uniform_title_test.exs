@@ -14,7 +14,14 @@ defmodule Authoritex.FAST.UniformTitleTest do
       qualified_label: "Autobiography (Franklin, Benjamin)",
       hint: "Benjamin Franklin's autobiography (Franklin, Benjamin)",
       fetch_hint: nil,
-      variants: []
+      variants: [
+        "Benjamin Franklin's autobiography (Franklin, Benjamin)",
+        "Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)",
+        "Autobiography of Benjamin Franklin (Franklin, Benjamin)",
+        "Franklin on Franklin (Franklin, Benjamin)",
+        "Benjamin Franklin, his autobiography (Franklin, Benjamin)",
+        "Life of Benjamin Franklin (Franklin, Benjamin)"
+      ]
     ],
     search_result_term: "benjamin franklin",
     search_count_term: "test",

@@ -14,7 +14,21 @@ defmodule Authoritex.FAST.TopicalTest do
       qualified_label: "Subject headings",
       hint: "Subject authorities (Information retrieval)",
       fetch_hint: nil,
-      variants: []
+      variants: [
+        "Controlled vocabularies (Subject headings)",
+        "Headings, Subject",
+        "Indexing vocabularies",
+        "Lists of subject headings",
+        "Structured vocabularies (Subject headings)",
+        "Subject authorities (Information retrieval)",
+        "Subject authority files (Information retrieval)",
+        "Subject authority records (Information retrieval)",
+        "Subject heading lists",
+        "Subject headings, English",
+        "Thesauri (Controlled vocabularies)",
+        "Vocabularies, Controlled (Subject headings)",
+        "Vocabularies, Structured (Subject headings)"
+      ]
     ],
     search_result_term: "subject authorities",
     search_count_term: "authorities",

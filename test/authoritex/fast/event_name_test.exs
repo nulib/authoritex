@@ -14,7 +14,11 @@ defmodule Authoritex.FAST.EventNameTest do
       qualified_label: "White House Conference on Library and Information Services",
       hint: "Conference on Library and Information Services, White House",
       fetch_hint: nil,
-      variants: []
+      variants: [
+        "Conference on Library and Information Services, White House",
+        "White House Conference on Libraries and Information Services",
+        "WHCLIS"
+      ]
     ],
     search_result_term: "Library",
     search_count_term: "Library",

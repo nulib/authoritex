@@ -14,7 +14,31 @@
       "binary": false,
       "body": "",
       "headers": {
-        "Location": "http://experimental.worldcat.org/fast/wrong-id/",
+        "Location": "https://id.worldcat.org/fast/wrong-id/",
+        "Server": "BigIP",
+        "Connection": "Keep-Alive",
+        "Content-Length": "0"
+      },
+      "status_code": 301,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-Type": "application/json;"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://id.worldcat.org/fast/wrong-id/"
+    },
+    "response": {
+      "binary": false,
+      "body": "",
+      "headers": {
+        "Location": "https://experimental.worldcat.org/fast/wrong-id/",
         "Server": "BigIP",
         "Connection": "Keep-Alive",
         "Content-Length": "0"
@@ -32,7 +56,7 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "http://experimental.worldcat.org/fast/wrong-id/"
+      "url": "https://experimental.worldcat.org/fast/wrong-id/"
     },
     "response": {
       "binary": false,
@@ -41,7 +65,7 @@
         "Server": "Apache-Coyote/1.1",
         "Content-Type": "text/html;charset=utf-8",
         "Content-Length": "957",
-        "Date": "Tue, 21 Mar 2023 21:18:55 GMT"
+        "Date": "Thu, 20 Apr 2023 16:43:33 GMT"
       },
       "status_code": 404,
       "type": "ok"
