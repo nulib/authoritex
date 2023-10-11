@@ -49,7 +49,7 @@ defmodule Authoritex.MixProject do
     [
       {:credo, "~> 1.7.0", only: [:dev, :test]},
       {:ex_doc, "~> 0.19", only: [:dev, :docs]},
-      {:excoveralls, "~> 0.17.0", only: [:dev, :test]},
+      {:excoveralls, "~> 0.18.0", only: [:dev, :test]},
       {:exvcr, "~> 0.11", only: :test},
       {:httpoison, "~> 1.8.0"},
       {:httpoison_retry, "~> 1.1.0"},
