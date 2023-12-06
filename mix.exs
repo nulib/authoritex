@@ -47,13 +47,13 @@ defmodule Authoritex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.6.1", only: [:dev, :test]},
+      {:credo, "~> 1.7.0", only: [:dev, :test]},
       {:ex_doc, "~> 0.19", only: [:dev, :docs]},
-      {:excoveralls, "~> 0.16.0", only: [:dev, :test]},
+      {:excoveralls, "~> 0.18.0", only: [:dev, :test]},
       {:exvcr, "~> 0.11", only: :test},
       {:httpoison, "~> 1.8.0"},
       {:httpoison_retry, "~> 1.1.0"},
-      {:jason, "~> 1.2"},
+      {:jason, "~> 1.4.0"},
       {:sweet_xml, "~> 0.6"}
     ]
   end
