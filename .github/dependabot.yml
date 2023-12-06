@@ -7,6 +7,5 @@ updates:
       time: "11:00"
     labels:
       - "dependencies"
-      - "automerge"
     open-pull-requests-limit: 10
-    target-branch: dependencies
+    target-branch: main

@@ -1,14 +1,14 @@
 defmodule Authoritex.MixProject do
   use Mix.Project
 
-  @version "1.0.2"
+  @version "1.0.3"
   @url "https://github.com/nulib/authoritex"
 
   def project do
     [
       app: :authoritex,
       version: @version,
-      elixir: "~> 1.9",
+      elixir: "~> 1.13",
       name: "Authoritex",
       description:
         "An Elixir library for searching and fetching controlled vocabulary authority terms",
