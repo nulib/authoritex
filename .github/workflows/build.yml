@@ -6,26 +6,36 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        otp: ["25", "26"]
-        elixir: ["1.13", "1.14", "1.15"]
+        elixir:
+          - 1.14-25
+          - 1.14-26
+          - 1.15-25
+          - 1.15-26
     env:
       MIX_ENV: test
     steps:
+      - name: Set Elixir and OTP versions
+        id: elixir-otp
+        run: |
+          echo "elixir=$(sed 's/-.*$//' <<< $version)" >> $GITHUB_OUTPUT
+          echo "otp=$(sed 's/^.*-//' <<< $version)" >> $GITHUB_OUTPUT
+        env:
+          version: ${{ matrix.elixir }}
       - uses: actions/checkout@v2
       - uses: erlef/setup-beam@v1
         with:
-          otp-version: ${{ matrix.otp }}
-          elixir-version: ${{ matrix.elixir }}
+          otp-version: ${{ steps.elixir-otp.outputs.otp }}
+          elixir-version: ${{ steps.elixir-otp.outputs.elixir }}
       - name: Cache Elixir dependencies
         uses: actions/cache@v2
         with:
           path: |
             deps
             _build
-          key: ${{ runner.os }}-deps-${{ matrix.elixir }}-${{ matrix.otp }}-${{ hashFiles('mix.lock') }}
+          key: ${{ runner.os }}-deps-${{ steps.elixir-otp.outputs.elixir }}-${{ steps.elixir-otp.outputs.otp }}-${{ hashFiles('mix.lock') }}
           restore-keys: |
-            ${{ runner.os }}-deps-${{ matrix.elixir }}-${{ matrix.otp }}-${{ hashFiles('mix.lock') }}
-            ${{ runner.os }}-deps-${{ matrix.elixir }}-${{ matrix.otp }}-
+            ${{ runner.os }}-deps-${{ steps.elixir-otp.outputs.elixir }}-${{ steps.elixir-otp.outputs.otp }}-${{ hashFiles('mix.lock') }}
+            ${{ runner.os }}-deps-${{ steps.elixir-otp.outputs.elixir }}-${{ steps.elixir-otp.outputs.otp }}-
       - name: Install Dependencies
         run: mix do deps.get, deps.compile
       - name: Static Analysis
