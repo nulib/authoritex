@@ -27,7 +27,7 @@ defmodule Authoritex.GettyTest do
                     label: "dollars (paper money)",
                     qualified_label: "dollars (paper money)",
                     hint: nil,
-                    variants: ["dollar (paper money)", "dollar bills", "dollar bill"]
+                    variants: ["dollar (paper money)", "dollar bills", "dollar bill", "Dollars"]
                   }}
 
         assert Getty.fetch("http://vocab.getty.edu/tgn/2236134") ==

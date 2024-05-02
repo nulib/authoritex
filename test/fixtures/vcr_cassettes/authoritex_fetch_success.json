@@ -1,46 +1,46 @@
 [
   {
     "request": {
+      "options": [],
       "body": "",
+      "url": "https://id.loc.gov/authorities/names/no2011087251.rdf",
       "headers": [],
       "method": "get",
-      "options": [],
-      "request_body": "",
-      "url": "https://id.loc.gov/authorities/names/no2011087251.rdf"
+      "request_body": ""
     },
     "response": {
       "binary": false,
-      "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\">\n  <madsrdf:PersonalName rdf:about=\"http://id.loc.gov/authorities/names/no2011087251\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <madsrdf:authoritativeLabel>Valim, Jose</madsrdf:authoritativeLabel>\n    <madsrdf:elementList rdf:parseType=\"Collection\">\n      <madsrdf:FullNameElement>\n\t<madsrdf:elementValue>Valim, Jose</madsrdf:elementValue>\n      </madsrdf:FullNameElement>\n    </madsrdf:elementList>\n    <bflc:marcKey>1001 $aValim, Jose</bflc:marcKey>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings\"/>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_LCNAF\"/>\n    <madsrdf:hasExactExternalAuthority rdf:resource=\"http://viaf.org/viaf/sourceID/LC%7Cno2011087251#skos:Concept\"/>\n    <madsrdf:identifiesRWO>\n      <madsrdf:RWO rdf:about=\"http://id.loc.gov/rwo/agents/no2011087251\">\n\t<rdf:type rdf:resource=\"http://id.loc.gov/ontologies/bibframe/Person\"/>\n\t<rdf:type rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n\t<rdfs:label>Valim, Jose</rdfs:label>\n\t<bflc:contributorTo>\n\t  <bf:Work rdf:about=\"http://id.loc.gov/resources/works/17032688\">\n\t    <bflc:aap>Valim, Jose. Crafting rails applications : expert practices for everyday rails development</bflc:aap>\n\t  </bf:Work>\n\t</bflc:contributorTo>\n      </madsrdf:RWO>\n    </madsrdf:identifiesRWO>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/authorities/names\"/>\n    <identifiers:lccn xmlns:identifiers=\"http://id.loc.gov/vocabulary/identifiers/\">no2011087251</identifiers:lccn>\n    <identifiers:local xmlns:identifiers=\"http://id.loc.gov/vocabulary/identifiers/\">(OCoLC)oca08877947</identifiers:local>\n    <madsrdf:hasSource>\n      <madsrdf:Source>\n\t<madsrdf:citationSource>Crafting Rails applications, c2011:</madsrdf:citationSource>\n\t<madsrdf:citationNote>t.p. (Jose Valim)</madsrdf:citationNote>\n\t<madsrdf:citationStatus>found</madsrdf:citationStatus>\n      </madsrdf:Source>\n    </madsrdf:hasSource>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-06T00:00:00</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-07T06:21:47</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">revised</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n    <skos:prefLabel>Valim, Jose</skos:prefLabel>\n    <skos:exactMatch rdf:resource=\"http://viaf.org/viaf/sourceID/LC%7Cno2011087251#skos:Concept\"/>\n    <skos:inScheme rdf:resource=\"http://id.loc.gov/authorities/names\"/>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/authorities/names/no2011087251\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-06T00:00:00</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/authorities/names/no2011087251\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-07T06:21:47</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">revised</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n  </madsrdf:PersonalName>\n</rdf:RDF>\n",
+      "type": "ok",
+      "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\">\n  <madsrdf:PersonalName rdf:about=\"http://id.loc.gov/authorities/names/no2011087251\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <madsrdf:authoritativeLabel>Valim, Jose</madsrdf:authoritativeLabel>\n    <madsrdf:elementList rdf:parseType=\"Collection\">\n      <madsrdf:FullNameElement>\n\t<madsrdf:elementValue>Valim, Jose</madsrdf:elementValue>\n      </madsrdf:FullNameElement>\n    </madsrdf:elementList>\n    <bflc:marcKey>1001 $aValim, Jose</bflc:marcKey>\n    <madsrdf:hasCloseExternalAuthority>\n      <madsrdf:Authority rdf:about=\"https://d-nb.info/gnd/1106268318\">\n\t<madsrdf:authoritativeLabel>Valim, José</madsrdf:authoritativeLabel>\n      </madsrdf:Authority>\n    </madsrdf:hasCloseExternalAuthority>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings\"/>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_LCNAF\"/>\n    <madsrdf:hasExactExternalAuthority rdf:resource=\"http://viaf.org/viaf/sourceID/LC%7Cno2011087251#skos:Concept\"/>\n    <madsrdf:identifiesRWO>\n      <madsrdf:RWO rdf:about=\"http://id.loc.gov/rwo/agents/no2011087251\">\n\t<rdf:type rdf:resource=\"http://id.loc.gov/ontologies/bibframe/Person\"/>\n\t<rdf:type rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n\t<rdfs:label>Valim, Jose</rdfs:label>\n\t<bflc:contributorTo>\n\t  <bf:Work rdf:about=\"http://id.loc.gov/resources/works/23201596\">\n\t    <bflc:aap>McCord, Chris (Computer programmer) Programming Phoenix 1.4</bflc:aap>\n\t  </bf:Work>\n\t</bflc:contributorTo>\n\t<bflc:contributorTo>\n\t  <bf:Work rdf:about=\"http://id.loc.gov/resources/works/19492088\">\n\t    <bflc:aap>Valim, Jose Crafting Rails 4 applications</bflc:aap>\n\t  </bf:Work>\n\t</bflc:contributorTo>\n\t<bflc:contributorTo>\n\t  <bf:Work rdf:about=\"http://id.loc.gov/resources/works/17032688\">\n\t    <bflc:aap>Valim, Jose Crafting rails applications</bflc:aap>\n\t  </bf:Work>\n\t</bflc:contributorTo>\n      </madsrdf:RWO>\n    </madsrdf:identifiesRWO>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/authorities/names\"/>\n    <identifiers:lccn xmlns:identifiers=\"http://id.loc.gov/vocabulary/identifiers/\">no2011087251</identifiers:lccn>\n    <identifiers:local xmlns:identifiers=\"http://id.loc.gov/vocabulary/identifiers/\">(OCoLC)oca08877947</identifiers:local>\n    <madsrdf:hasSource>\n      <madsrdf:Source>\n\t<madsrdf:citationSource>Crafting Rails applications, c2011:</madsrdf:citationSource>\n\t<madsrdf:citationNote>t.p. (Jose Valim)</madsrdf:citationNote>\n\t<madsrdf:citationStatus>found</madsrdf:citationStatus>\n      </madsrdf:Source>\n    </madsrdf:hasSource>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-06T00:00:00</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-07T06:21:47</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">revised</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n    <skos:prefLabel>Valim, Jose</skos:prefLabel>\n    <skos:exactMatch rdf:resource=\"http://viaf.org/viaf/sourceID/LC%7Cno2011087251#skos:Concept\"/>\n    <skos:closeMatch>\n      <rdf:Description rdf:about=\"https://d-nb.info/gnd/1106268318\">\n\t<rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n\t<skos:prefLabel>Valim, José</skos:prefLabel>\n      </rdf:Description>\n    </skos:closeMatch>\n    <skos:inScheme rdf:resource=\"http://id.loc.gov/authorities/names\"/>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/authorities/names/no2011087251\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-06T00:00:00</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/authorities/names/no2011087251\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-07T06:21:47</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">revised</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n  </madsrdf:PersonalName>\n</rdf:RDF>\n",
       "headers": {
-        "Date": "Tue, 21 Mar 2023 21:18:58 GMT",
+        "Date": "Thu, 02 May 2024 16:43:48 GMT",
         "Content-Type": "application/rdf+xml; charset=UTF-8",
-        "Content-Length": "4968",
+        "Content-Length": "5833",
         "Connection": "keep-alive",
-        "X-RWO-URI": "http://id.loc.gov/rwo/agents/no2011087251",
-        "X-Frame-Options": "DENY",
-        "X-XSS-Protection": "1",
-        "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Method": "HEAD, POST, GET, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-        "Access-Control-Expose-Headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
-        "Strict-Transport-Security": "max-age=31536000",
-        "ETag": "043fdd674015bcab4e102ff165f0fec0",
-        "X-PrefLabel": "Valim, Jose",
-        "X-PrefLabel-Escaped": "Valim, Jose",
-        "X-PrefLabel-Encoded": "Valim%2C%20Jose",
-        "X-URI": "http://id.loc.gov/authorities/names/no2011087251",
+        "x-rwo-uri": "http://id.loc.gov/rwo/agents/no2011087251",
+        "x-frame-options": "DENY",
+        "x-xss-protection": "1",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "*",
+        "access-control-allow-method": "HEAD, POST, GET, OPTIONS",
+        "access-control-allow-headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+        "access-control-expose-headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
+        "strict-transport-security": "max-age=31536000",
+        "etag": "be607d180fdbe04a6310b12880854583",
+        "x-preflabel": "Valim, Jose",
+        "x-preflabel-escaped": "Valim, Jose",
+        "x-preflabel-encoded": "Valim%2C%20Jose",
+        "x-uri": "http://id.loc.gov/authorities/names/no2011087251",
         "Cache-Control": "public, max-age=2419200",
-        "X-Varnish": "57889927",
-        "Age": "0",
-        "Via": "1.1 varnish (Varnish/6.0)",
-        "Accept-Ranges": "bytes",
+        "x-varnish": "743380632 743445331",
+        "Age": "954",
+        "via": "1.1 varnish (Varnish/6.0)",
+        "accept-ranges": "bytes",
         "CF-Cache-Status": "DYNAMIC",
         "Server": "cloudflare",
-        "CF-RAY": "7ab93afbef163b54-IAD"
+        "CF-RAY": "87d978ed5c14029d-ORD"
       },
-      "status_code": 200,
-      "type": "ok"
+      "status_code": 200
     }
   }
 ]

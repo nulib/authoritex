@@ -47,8 +47,8 @@ defmodule AuthoritexTest do
   end
 
   describe "search/2" do
-    test "results" do
-      use_cassette "authoritex_search_results", match_requests_on: [:query] do
+    test "result count" do
+      use_cassette "authoritex_search_count", match_requests_on: [:query] do
         with {:ok, results} <- Authoritex.search("lcnaf", "smith") do
           assert length(results) == 30
         end
@@ -56,7 +56,11 @@ defmodule AuthoritexTest do
         with {:ok, results} <- Authoritex.search("lcnaf", "smith", 50) do
           assert length(results) == 50
         end
+      end
+    end
 
+    test "expected result" do
+      use_cassette "authoritex_search_results", match_requests_on: [:query] do
         with {:ok, results} <- Authoritex.search("lcnaf", "valim") do
           assert Enum.member?(results, %{
                    id: "http://id.loc.gov/authorities/names/no2011087251",

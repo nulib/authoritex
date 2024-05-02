@@ -1,45 +1,45 @@
 [
   {
     "request": {
+      "options": [],
       "body": "",
+      "url": "https://id.loc.gov/vocabulary/languages/ang.rdf",
       "headers": [],
       "method": "get",
-      "options": [],
-      "request_body": "",
-      "url": "https://id.loc.gov/vocabulary/languages/ang.rdf"
+      "request_body": ""
     },
     "response": {
       "binary": false,
-      "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\">\n  <madsrdf:Language rdf:about=\"http://id.loc.gov/vocabulary/languages/ang\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <rdf:type rdf:resource=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource\"/>\n    <rdf:type rdf:resource=\"http://id.loc.gov/vocabulary/languages/MARC_Language\"/>\n    <madsrdf:authoritativeLabel xml:lang=\"en\">English, Old (ca. 450-1100)</madsrdf:authoritativeLabel>\n    <madsrdf:authoritativeLabel xml:lang=\"de\">Altenglisch</madsrdf:authoritativeLabel>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/vocabulary/languages/collection_PastPresentLanguagesEntries\"/>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/vocabulary/languages\"/>\n    <owl:sameAs rdf:resource=\"info:lc/vocabulary/languages/ang\"/>\n    <madsrdf:code rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">ang</madsrdf:code>\n    <madsrdf:editorialNote>Non-English forms of the name are contributed by National agencies.</madsrdf:editorialNote>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1970-01-01T00:00:00</ri:recordChangeDate>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">changed</ri:recordStatus>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-08-02T00:00:00</ri:recordChangeDate>\n\t<ri:recordChangeNote rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Added German AuthLabel.</ri:recordChangeNote>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n    <skos:prefLabel xml:lang=\"en\">English, Old (ca. 450-1100)</skos:prefLabel>\n    <skos:prefLabel xml:lang=\"de\">Altenglisch</skos:prefLabel>\n    <skos:editorial>Non-English forms of the name are contributed by National agencies.</skos:editorial>\n    <skos:notation rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">ang</skos:notation>\n    <skos:inScheme rdf:resource=\"http://id.loc.gov/vocabulary/languages\"/>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/languages/ang\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1970-01-01T00:00:00</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/languages/ang\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-08-02T00:00:00</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">changed</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n  </madsrdf:Language>\n</rdf:RDF>\n",
+      "type": "ok",
+      "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\">\n  <madsrdf:Language rdf:about=\"http://id.loc.gov/vocabulary/languages/ang\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <rdf:type rdf:resource=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource\"/>\n    <rdf:type rdf:resource=\"http://id.loc.gov/vocabulary/languages/MARC_Language\"/>\n    <madsrdf:authoritativeLabel xml:lang=\"en\">English, Old (ca. 450-1100)</madsrdf:authoritativeLabel>\n    <madsrdf:authoritativeLabel xml:lang=\"de\">Altenglisch</madsrdf:authoritativeLabel>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/vocabulary/languages/collection_PastPresentLanguagesEntries\"/>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/vocabulary/languages\"/>\n    <owl:sameAs rdf:resource=\"info:lc/vocabulary/languages/ang\"/>\n    <madsrdf:code rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">ang</madsrdf:code>\n    <madsrdf:editorialNote>Non-English forms of the name are contributed by National agencies.</madsrdf:editorialNote>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1970-01-01T00:00:00</ri:recordChangeDate>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">changed</ri:recordStatus>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-08-02T00:00:00</ri:recordChangeDate>\n\t<ri:recordChangeNote rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Added German AuthLabel.</ri:recordChangeNote>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n    <skos:prefLabel xml:lang=\"en\">English, Old (ca. 450-1100)</skos:prefLabel>\n    <skos:prefLabel xml:lang=\"de\">Altenglisch</skos:prefLabel>\n    <skos:editorialNote>Non-English forms of the name are contributed by National agencies.</skos:editorialNote>\n    <skos:notation rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">ang</skos:notation>\n    <skos:inScheme rdf:resource=\"http://id.loc.gov/vocabulary/languages\"/>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/languages/ang\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1970-01-01T00:00:00</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/languages/ang\"/>\n\t<cs:creatorName rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-08-02T00:00:00</cs:createdDate>\n\t<cs:changeReason rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">changed</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n  </madsrdf:Language>\n</rdf:RDF>\n",
       "headers": {
-        "Date": "Tue, 21 Mar 2023 21:18:55 GMT",
+        "Date": "Thu, 02 May 2024 16:28:02 GMT",
         "Content-Type": "application/rdf+xml; charset=UTF-8",
-        "Content-Length": "4084",
+        "Content-Length": "4092",
         "Connection": "keep-alive",
-        "X-Frame-Options": "DENY",
-        "X-XSS-Protection": "1",
-        "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Method": "HEAD, POST, GET, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-        "Access-Control-Expose-Headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
-        "Strict-Transport-Security": "max-age=31536000",
-        "ETag": "0b43a7534cb98a53492d83f71e3c7b07",
-        "X-PrefLabel": "English, Old (ca. 450-1100)",
-        "X-PrefLabel-Escaped": "English, Old (ca. 450-1100)",
-        "X-PrefLabel-Encoded": "English%2C%20Old%20%28ca.%20450-1100%29",
-        "X-URI": "http://id.loc.gov/vocabulary/languages/ang",
+        "x-frame-options": "DENY",
+        "x-xss-protection": "1",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "*",
+        "access-control-allow-method": "HEAD, POST, GET, OPTIONS",
+        "access-control-allow-headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+        "access-control-expose-headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
+        "strict-transport-security": "max-age=31536000",
+        "etag": "bca3bb81d93bde9bf171b79282ff945f",
+        "x-preflabel": "English, Old (ca. 450-1100)",
+        "x-preflabel-escaped": "English, Old (ca. 450-1100)",
+        "x-preflabel-encoded": "English%2C%20Old%20%28ca.%20450-1100%29",
+        "x-uri": "http://id.loc.gov/vocabulary/languages/ang",
         "Cache-Control": "public, max-age=2419200",
-        "X-Varnish": "59231895",
-        "Age": "0",
-        "Via": "1.1 varnish (Varnish/6.0)",
-        "Accept-Ranges": "bytes",
+        "x-varnish": "735980939 728283563",
+        "Age": "527068",
+        "via": "1.1 varnish (Varnish/6.0)",
+        "accept-ranges": "bytes",
         "CF-Cache-Status": "DYNAMIC",
         "Server": "cloudflare",
-        "CF-RAY": "7ab93aed8afe3b54-IAD"
+        "CF-RAY": "87d961d1de911265-ORD"
       },
-      "status_code": 200,
-      "type": "ok"
+      "status_code": 200
     }
   }
 ]
