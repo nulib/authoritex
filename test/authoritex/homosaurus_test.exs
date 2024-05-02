@@ -16,6 +16,6 @@ defmodule Authoritex.HomosaurusTest do
     ],
     search_result_term: "adop",
     search_count_term: "adop",
-    default_results: 10,
-    explicit_results: 10
+    default_results: 50,
+    explicit_results: 50
 end

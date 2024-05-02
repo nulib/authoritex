@@ -15,7 +15,7 @@ defmodule Authoritex.Getty.AATTest do
       label: "dollars (paper money)",
       qualified_label: "dollars (paper money)",
       hint: nil,
-      variants: ["dollar (paper money)", "dollar bills", "dollar bill"]
+      variants: ["dollar (paper money)", "dollar bills", "dollar bill", "Dollars"]
     ],
     search_result_term: "dollars",
     search_count_term: "paint"

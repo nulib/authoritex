@@ -6,14 +6,14 @@ defmodule Authoritex.GeoNamesTest do
     code: "geonames",
     description: "GeoNames geographical database",
     test_uris: [
-      "https://sws.geonames.org/4302561/"
+      "https://sws.geonames.org/4299276/"
     ],
-    bad_uri: "https://sws.geonames.org/43025619/",
+    bad_uri: "https://sws.geonames.org/42992769/",
     expected: [
       hint: "Kentucky, United States",
-      id: "https://sws.geonames.org/4302561/",
-      label: "Nicholasville",
-      qualified_label: "Nicholasville, Kentucky, United States",
+      id: "https://sws.geonames.org/4299276/",
+      label: "Louisville",
+      qualified_label: "Louisville, Kentucky, United States",
       variants: []
     ],
     search_result_term: "Kentucky",
@@ -28,9 +28,9 @@ defmodule Authoritex.GeoNamesTest do
     end
 
     test "proper URI form" do
-      assert Authoritex.fetch("https://sws.geonames.org/4302561") == {:error, 404}
-      assert Authoritex.fetch("http://sws.geonames.org/4302561") == {:error, :unknown_authority}
-      assert Authoritex.fetch("http://sws.geonames.org/4302561/") == {:error, :unknown_authority}
+      assert Authoritex.fetch("https://sws.geonames.org/4299276") == {:error, 404}
+      assert Authoritex.fetch("http://sws.geonames.org/4299276") == {:error, :unknown_authority}
+      assert Authoritex.fetch("http://sws.geonames.org/4299276/") == {:error, :unknown_authority}
     end
 
     test "search" do

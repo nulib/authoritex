@@ -1,38 +1,44 @@
 [
   {
     "request": {
+      "options": [],
       "body": "",
+      "url": "https://homosaurus.org/search/v3.jsonld?q=M1551ng%2A",
       "headers": {
         "User-Agent": "Authoritex"
       },
       "method": "get",
-      "options": [],
-      "request_body": "",
-      "url": "https://homosaurus.org/search/v3.jsonld?q=M1551ng%2A"
+      "request_body": ""
     },
     "response": {
       "binary": false,
-      "body": "{\n}",
+      "type": "ok",
+      "body": "{}",
       "headers": {
-        "Date": "Tue, 21 Mar 2023 22:04:18 GMT",
-        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k Phusion_Passenger/6.0.8",
+        "Date": "Thu, 02 May 2024 16:28:56 GMT",
+        "Content-Type": "application/ld+json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "X-Permitted-Cross-Domain-Policies": "none",
         "X-XSS-Protection": "1; mode=block",
-        "X-Request-Id": "0f0e7c03-e4cf-43f8-b51d-971c70f0961d",
+        "X-Request-Id": "c4118f70-0414-4ff4-ac0a-2ab4d5c41522",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Runtime": "0.015036",
+        "X-Runtime": "0.005191",
         "X-Content-Type-Options": "nosniff",
-        "X-Powered-By": "Phusion Passenger(R) 6.0.8",
-        "ETag": "W/\"8eb95bcbc154530931e15fc418c8b1fe\"",
+        "X-Powered-By": "Phusion Passenger(R) 6.0.17",
+        "ETag": "W/\"44136fa355b3678a1146ad16f7e8649e\"",
         "Status": "200 OK",
-        "Transfer-Encoding": "chunked",
-        "Content-Type": "application/ld+json; charset=utf-8"
+        "CF-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=xP5CYMGtUbxKNfdZ6APUi8GRGUusvZh5UlvlZFFaKmNUEi2oAxDVbW1LgKkSRlrc4PHR%2FeSpM2RhthF1FD5%2F4Za8qN5EpKyvQsaZmaiJ0XbBMZ5Muay0uH1OPB0VJyuEgg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "87d963257db66309-ORD",
+        "alt-svc": "h3=\":443\"; ma=86400"
       },
-      "status_code": 200,
-      "type": "ok"
+      "status_code": 200
     }
   }
 ]

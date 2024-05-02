@@ -1,29 +1,29 @@
 [
   {
     "request": {
+      "options": [],
       "body": "",
+      "url": "http://api.geonames.org/getJSON?geonameId=wrong&<<geonames_username>>",
       "headers": {
         "User-Agent": "Authoritex"
       },
       "method": "get",
-      "options": [],
-      "request_body": "",
-      "url": "http://api.geonames.org/getJSON?geonameId=wrong&<<geonames_username>>"
+      "request_body": ""
     },
     "response": {
       "binary": false,
+      "type": "ok",
       "body": "{\"status\":{\"message\":\"For input string: \\\"wrong\\\"\",\"value\":14}}",
       "headers": {
-        "Date": "Tue, 21 Mar 2023 21:18:50 GMT",
-        "Server": "Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16",
+        "Date": "Thu, 02 May 2024 16:45:52 GMT",
+        "Server": "Apache/2.4.57 (AlmaLinux) mod_jk/1.2.49 OpenSSL/3.0.7",
         "Access-Control-Allow-Origin": "*",
         "X-Frame-Options": "sameorigin",
         "Cache-Control": "no-cache",
         "Content-Length": "63",
         "Content-Type": "application/json;charset=UTF-8"
       },
-      "status_code": 200,
-      "type": "ok"
+      "status_code": 200
     }
   }
 ]

@@ -1,42 +1,42 @@
 [
   {
     "request": {
+      "options": [],
       "body": "",
+      "url": "https://id.loc.gov/search/?q=M1551ng&q=scheme%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2FgenreForms&count=30&format=xml%2Batom",
       "headers": {
         "User-Agent": "Authoritex"
       },
       "method": "get",
-      "options": [],
-      "request_body": "",
-      "url": "https://id.loc.gov/search/?q=M1551ng&q=scheme%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2FgenreForms&count=30&format=xml%2Batom"
+      "request_body": ""
     },
     "response": {
       "binary": false,
-      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n<title>Library of Congress Authorities and Vocabulary Service: Search Results</title><link href=\"http://id.loc.gov/search/?q=M1551ng scheme:http://id.loc.gov/authorities/genreForms&amp;start=1&amp;format=atom\" rel=\"self\"/><id>info:lc/search/?q=M1551ng+scheme:http://id.loc.gov/authorities/genreForms</id><updated>2023-03-21T17:12:58.017478-04:00</updated><opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:totalResults><opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">1</opensearch:startIndex><opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">30</opensearch:itemsPerPage>\n</feed>\n",
+      "type": "ok",
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n<title>Library of Congress Authorities and Vocabulary Service: Search Results</title><link href=\"http://id.loc.gov/search/?q=M1551ng scheme:http://id.loc.gov/authorities/genreForms&amp;start=1&amp;format=atom\" rel=\"self\"/><id>info:lc/search/?q=M1551ng+scheme:http://id.loc.gov/authorities/genreForms</id><updated>2024-05-02T12:16:30.952272-04:00</updated><opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:totalResults><opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">1</opensearch:startIndex><opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">30</opensearch:itemsPerPage>\n</feed>\n",
       "headers": {
-        "Date": "Tue, 21 Mar 2023 21:18:34 GMT",
+        "Date": "Thu, 02 May 2024 16:28:02 GMT",
         "Content-Type": "application/atom+xml; charset=UTF-8",
         "Content-Length": "767",
         "Connection": "keep-alive",
-        "X-Frame-Options": "DENY",
-        "X-XSS-Protection": "1",
-        "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Method": "HEAD, POST, GET, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-        "Access-Control-Expose-Headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
-        "Strict-Transport-Security": "max-age=31536000",
+        "x-frame-options": "DENY",
+        "x-xss-protection": "1",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "*",
+        "access-control-allow-method": "HEAD, POST, GET, OPTIONS",
+        "access-control-allow-headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+        "access-control-expose-headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
+        "strict-transport-security": "max-age=31536000",
         "Cache-Control": "public, max-age=2419200",
-        "X-Varnish": "57079829 57889595",
-        "Age": "336",
-        "Via": "1.1 varnish (Varnish/6.0)",
-        "Accept-Ranges": "bytes",
+        "x-varnish": "748630609 748630189",
+        "Age": "691",
+        "via": "1.1 varnish (Varnish/6.0)",
+        "accept-ranges": "bytes",
         "CF-Cache-Status": "DYNAMIC",
         "Server": "cloudflare",
-        "CF-RAY": "7ab93a6b19cc3b54-IAD"
+        "CF-RAY": "87d961d50b401265-ORD"
       },
-      "status_code": 200,
-      "type": "ok"
+      "status_code": 200
     }
   }
 ]

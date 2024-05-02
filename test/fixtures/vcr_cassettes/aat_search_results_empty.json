@@ -1,21 +1,22 @@
 [
   {
     "request": {
+      "options": [],
       "body": "",
+      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+%3Fs+%3Fname+%7B+%3Fs+a+skos%3AConcept%3B+luc%3Aterm+%22M1551ng%22%3B+skos%3AinScheme+%3Chttp%3A%2F%2Fvocab.getty.edu%2Faat%2F%3E+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+.+FILTER+%28regex%28%3Fname%2C+%22M1551ng%22%2C+%22i%22%29%29+.+%7D+ORDER+BY+DESC%28IF%28REGEX%28%3Fname%2C+%22%5EM1551ng%24%22%2C+%22i%22%29%2C+2%2C+IF%28REGEX%28%3Fname%2C+%22%5EM1551ng%22%2C+%22i%22%29%2C+1%2C+0%29%29%29+LIMIT+30",
       "headers": {
         "Accept": "application/sparql-results+xml;charset=UTF-8",
         "User-Agent": "Authoritex"
       },
       "method": "get",
-      "options": [],
-      "request_body": "",
-      "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+%3Fs+%3Fname+%7B+%3Fs+a+skos%3AConcept%3B+luc%3Aterm+%22M1551ng%22%3B+skos%3AinScheme+%3Chttp%3A%2F%2Fvocab.getty.edu%2Faat%2F%3E+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+.+FILTER+%28regex%28%3Fname%2C+%22M1551ng%22%2C+%22i%22%29%29+.+%7D+LIMIT+30"
+      "request_body": ""
     },
     "response": {
       "binary": false,
+      "type": "ok",
       "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t</head>\n\t<results>\n\t</results>\n</sparql>\n",
       "headers": {
-        "Date": "Tue, 18 Apr 2023 19:54:04 GMT",
+        "Date": "Thu, 02 May 2024 16:28:44 GMT",
         "Content-Type": "application/sparql-results+xml;charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -24,8 +25,7 @@
         "Content-Disposition": "attachment; filename=\"sparql.xml\"",
         "Content-Language": "en"
       },
-      "status_code": 200,
-      "type": "ok"
+      "status_code": 200
     }
   }
 ]

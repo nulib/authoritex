@@ -107,8 +107,8 @@ defmodule Authoritex.TestCase do
       end
 
       describe "search/2" do
-        test "results" do
-          use_cassette "#{unquote(code)}_search_results", match_requests_on: [:query] do
+        test "result count" do
+          use_cassette "#{unquote(code)}_search_count", match_requests_on: [:query] do
             with {:ok, results} <- unquote(module).search(unquote(search_count_term)) do
               assert length(results) == unquote(default_results)
             end
@@ -117,7 +117,11 @@ defmodule Authoritex.TestCase do
                    unquote(module).search(unquote(search_count_term), unquote(explicit_results)) do
               assert length(results) == unquote(explicit_results)
             end
+          end
+        end
 
+        test "expected result" do
+          use_cassette "#{unquote(code)}_search_results", match_requests_on: [:query] do
             with {:ok, results} <- unquote(module).search(unquote(search_result_term)) do
               assert Enum.member?(results, %{
                        id: unquote(expected_id),

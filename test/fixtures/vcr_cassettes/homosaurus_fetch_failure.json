@@ -1,29 +1,34 @@
 [
   {
     "request": {
+      "options": [],
       "body": "",
+      "url": "https://homosaurus.org/v3/not-a-real-thing.json",
       "headers": [],
       "method": "get",
-      "options": [],
-      "request_body": "",
-      "url": "https://homosaurus.org/v3/not-a-real-thing.json"
+      "request_body": ""
     },
     "response": {
       "binary": false,
+      "type": "ok",
       "body": "{\"status\":500,\"error\":\"Internal Server Error\"}",
       "headers": {
-        "Date": "Tue, 21 Mar 2023 22:04:18 GMT",
-        "Server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k Phusion_Passenger/6.0.8",
-        "X-Request-Id": "ab33684a-eab1-470a-bb6d-5431c1c69ddb",
-        "X-Runtime": "0.004180",
-        "X-Powered-By": "Phusion Passenger(R) 6.0.8",
+        "Date": "Thu, 02 May 2024 16:28:53 GMT",
+        "Content-Type": "application/json; charset=utf-8",
         "Content-Length": "46",
+        "Connection": "keep-alive",
+        "X-Request-Id": "f3e023dc-7905-4a72-bd53-b8d9cdaba32b",
+        "X-Runtime": "0.002658",
+        "X-Powered-By": "Phusion Passenger(R) 6.0.17",
         "Status": "500 Internal Server Error",
-        "Connection": "close",
-        "Content-Type": "application/json; charset=utf-8"
+        "CF-Cache-Status": "DYNAMIC",
+        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=PtiaiGkuXZHYbXITi2KjHIF%2BXfBgVc%2FL4hxfn9ZNi8xx7jYTw3Q4Xx5mSgNmesrsMFAYBXWtQelj2PiPx3D0ysfWFXCaYd9bLpkib0BXyENwAgjzzLb40W2OR1vmtilRBg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "87d9631229186309-ORD",
+        "alt-svc": "h3=\":443\"; ma=86400"
       },
-      "status_code": 500,
-      "type": "ok"
+      "status_code": 500
     }
   }
 ]

@@ -1,0 +1,52 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=test&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
+      "headers": {
+        "Content-Type": "application/json;"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggest30:test\",\n      \"fl\":\"suggest30,idroot,auth,type\",\n      \"rows\":\"20\"}},\n  \"response\":{\"numFound\":1094,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"auth\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Old Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Antico Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Antico Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Stary Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Velho Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Old Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Stary Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Velho Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"auth\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. New Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nouveau Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Novo Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Novum Testamentum\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nuevo Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nuovo Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nye Testamente\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"New Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Nouveau Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Novo Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Novum Testamentum\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Nuevo Testamento\"]}]\n  }}",
+      "headers": {
+        "Date": "Thu, 02 May 2024 16:28:45 GMT",
+        "Server": "Apache/2.0.63 (Unix)",
+        "Access-Control-Allow-Origin": "*",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200
+    }
+  },
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=test&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=15",
+      "headers": {
+        "Content-Type": "application/json;"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggest30:test\",\n      \"fl\":\"suggest30,idroot,auth,type\",\n      \"rows\":\"15\"}},\n  \"response\":{\"numFound\":1094,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"auth\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Old Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Antico Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Antico Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Stary Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Bible. Velho Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Old Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Stary Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggest30\":[\n          \"Velho Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"auth\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. New Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nouveau Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Novo Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Novum Testamentum\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nuevo Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nuovo Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggest30\":[\n          \"Bible. Nye Testamente\"]}]\n  }}",
+      "headers": {
+        "Date": "Thu, 02 May 2024 16:28:46 GMT",
+        "Server": "Apache/2.0.63 (Unix)",
+        "Access-Control-Allow-Origin": "*",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200
+    }
+  }
+]
