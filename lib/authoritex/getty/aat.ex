@@ -27,9 +27,13 @@ defmodule Authoritex.Getty.AAT do
            skos:inScheme <http://vocab.getty.edu/aat/> ;
            gvp:prefLabelGVP [skosxl:literalForm ?name] .
         FILTER (#{sparql_search_filter(q)}) .
-      } LIMIT #{max_results}
+      } ORDER BY #{sparql_order_clause(q)} LIMIT #{max_results}
       """
     end
+  end
+
+  defp sparql_order_clause(q) do
+    ~s{DESC(IF(REGEX(?name, "^#{q}$", "i"), 2, IF(REGEX(?name, "^#{q}", "i"), 1, 0)))}
   end
 
   defp sparql_search_filter(q) do

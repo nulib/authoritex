@@ -37,7 +37,7 @@ defmodule Authoritex.Getty.Base do
             {:error, 404}
 
           {:ok, [%{replaced_by: replaced_by}] = result} when replaced_by != "" ->
-            Logger.warn("#{id} is obsolete. Fetching replacement term #{replaced_by}.")
+            Logger.warning("#{id} is obsolete. Fetching replacement term #{replaced_by}.")
             fetch(replaced_by)
 
           {:ok, [result]} ->

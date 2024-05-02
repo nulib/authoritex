@@ -29,9 +29,13 @@ defmodule Authoritex.Getty.TGN do
           gvp:prefLabelGVP [skosxl:literalForm ?name] ;
           gvp:parentString ?hint .
         FILTER (#{sparql_search_filter(q)}) .
-      } LIMIT #{max_results}
+      } ORDER BY #{sparql_order_clause(q)} LIMIT #{max_results}
       """
     end
+  end
+
+  defp sparql_order_clause(q) do
+    ~s{DESC(IF(REGEX(?name, "^#{q}$", "i"), 2, IF(REGEX(?name, "^#{q}", "i"), 1, 0)))}
   end
 
   defp sparql_search_filter(q) do
