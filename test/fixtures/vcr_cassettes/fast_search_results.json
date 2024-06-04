@@ -3,31 +3,6 @@
     "request": {
       "options": [],
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=test&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=15",
-      "headers": {
-        "Content-Type": "application/json;"
-      },
-      "method": "get",
-      "request_body": ""
-    },
-    "response": {
-      "binary": false,
-      "type": "ok",
-      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggestall:test\",\n      \"fl\":\"suggestall,idroot,auth,type\",\n      \"rows\":\"15\"}},\n  \"response\":{\"numFound\":7222,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst01423780\",\n        \"type\":\"alt\",\n        \"auth\":\"Examinations\",\n        \"suggestall\":[\n          \"Practice tests\"]},\n      {\n        \"idroot\":\"fst01423780\",\n        \"type\":\"alt\",\n        \"auth\":\"Examinations\",\n        \"suggestall\":[\n          \"Test books\"]},\n      {\n        \"idroot\":\"fst01423780\",\n        \"type\":\"alt\",\n        \"auth\":\"Examinations\",\n        \"suggestall\":[\n          \"Tests\"]},\n      {\n        \"idroot\":\"fst01423888\",\n        \"type\":\"alt\",\n        \"auth\":\"Study guides\",\n        \"suggestall\":[\n          \"Test guides\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"auth\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Bible. Old Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Antico Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Bible. Antico Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Bible. Stary Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Bible. Velho Testamento\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Old Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Stary Testament\"]},\n      {\n        \"idroot\":\"fst01808092\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. Old Testament\",\n        \"suggestall\":[\n          \"Velho Testamento\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"auth\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggestall\":[\n          \"Bible. New Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggestall\":[\n          \"Bible. Nouveau Testament\"]},\n      {\n        \"idroot\":\"fst01808090\",\n        \"type\":\"alt\",\n        \"auth\":\"Bible. New Testament\",\n        \"suggestall\":[\n          \"Bible. Novo Testamento\"]}]\n  }}",
-      "headers": {
-        "Date": "Thu, 02 May 2024 16:28:21 GMT",
-        "Server": "Apache/2.0.63 (Unix)",
-        "Access-Control-Allow-Origin": "*",
-        "Transfer-Encoding": "chunked",
-        "Content-Type": "application/json"
-      },
-      "status_code": 200
-    }
-  },
-  {
-    "request": {
-      "options": [],
-      "body": "",
       "url": "http://fast.oclc.org/searchfast/fastsuggest?query=herskovits%20library%20of%20african%20studies&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
       "headers": {
         "Content-Type": "application/json;"
@@ -38,13 +13,13 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggestall:studies suggestall:african suggestall:of suggestall:library suggestall:herskovits\",\n      \"fl\":\"suggestall,idroot,auth,type\",\n      \"rows\":\"20\"}},\n  \"response\":{\"numFound\":3,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst00521479\",\n        \"type\":\"auth\",\n        \"auth\":\"Melville J. Herskovits Library of African Studies\",\n        \"suggestall\":[\n          \"Melville J. Herskovits Library of African Studies\"]},\n      {\n        \"idroot\":\"fst00521479\",\n        \"type\":\"alt\",\n        \"auth\":\"Melville J. Herskovits Library of African Studies\",\n        \"suggestall\":[\n          \"Herskovits Library of African Studies\"]},\n      {\n        \"idroot\":\"fst00521479\",\n        \"type\":\"alt\",\n        \"auth\":\"Melville J. Herskovits Library of African Studies\",\n        \"suggestall\":[\n          \"Northwestern University (Evanston, Ill.). Library. Melville J. Herskovits Library of African Studies\"]}]\n  }}",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggestall:studies suggestall:african suggestall:of suggestall:library suggestall:herskovits\",\"fl\":\"suggestall,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":3,\"start\":0,\"docs\":[{\"idroot\":[\"fst00521479\"],\"type\":\"alt\",\"suggestall\":[\"Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"},{\"idroot\":[\"fst00521479\"],\"type\":\"auth\",\"suggestall\":[\"Melville J. Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"},{\"idroot\":[\"fst00521479\"],\"type\":\"alt\",\"suggestall\":[\"Northwestern University (Evanston, Ill.). Library. Melville J. Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"}]}}\n",
       "headers": {
-        "Date": "Thu, 02 May 2024 16:28:22 GMT",
-        "Server": "Apache/2.0.63 (Unix)",
+        "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
-        "Transfer-Encoding": "chunked",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Content-Length": "794",
+        "Date": "Tue, 04 Jun 2024 19:27:57 GMT"
       },
       "status_code": 200
     }

@@ -3,31 +3,6 @@
     "request": {
       "options": [],
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=great%20lake&query_index=suggest51&suggest=autoSubject&queryReturn=suggest51,idroot,auth,type&rows=15",
-      "headers": {
-        "Content-Type": "application/json;"
-      },
-      "method": "get",
-      "request_body": ""
-    },
-    "response": {
-      "binary": false,
-      "type": "ok",
-      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggest51:lake suggest51:great\",\n      \"fl\":\"suggest51,idroot,auth,type\",\n      \"rows\":\"15\"}},\n  \"response\":{\"numFound\":60,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst01240563\",\n        \"type\":\"auth\",\n        \"auth\":\"Great Lakes\",\n        \"suggest51\":[\n          \"Great Lakes\"]},\n      {\n        \"idroot\":\"fst01240563\",\n        \"type\":\"alt\",\n        \"auth\":\"Great Lakes\",\n        \"suggest51\":[\n          \"Laurentian Great Lakes\"]},\n      {\n        \"idroot\":\"fst01205314\",\n        \"type\":\"alt\",\n        \"auth\":\"Utah--Salt Lake City\",\n        \"suggest51\":[\n          \"Utah--Great Salt Lake City\"]},\n      {\n        \"idroot\":\"fst01258523\",\n        \"type\":\"auth\",\n        \"auth\":\"Great Lakes Region\",\n        \"suggest51\":[\n          \"Great Lakes Region\"]},\n      {\n        \"idroot\":\"fst01245743\",\n        \"type\":\"alt\",\n        \"auth\":\"Lake States\",\n        \"suggest51\":[\n          \"Great Lakes States\"]},\n      {\n        \"idroot\":\"fst01240571\",\n        \"type\":\"auth\",\n        \"auth\":\"Utah--Great Salt Lake\",\n        \"suggest51\":[\n          \"Utah--Great Salt Lake\"]},\n      {\n        \"idroot\":\"fst01240571\",\n        \"type\":\"alt\",\n        \"auth\":\"Utah--Great Salt Lake\",\n        \"suggest51\":[\n          \"Utah--Salt Lake (Great Salt Lake)\"]},\n      {\n        \"idroot\":\"fst01265083\",\n        \"type\":\"auth\",\n        \"auth\":\"Great Lakes Watershed\",\n        \"suggest51\":[\n          \"Great Lakes Watershed\"]},\n      {\n        \"idroot\":\"fst01308978\",\n        \"type\":\"auth\",\n        \"auth\":\"Africa--Great Lakes Region\",\n        \"suggest51\":[\n          \"Africa--Great Lakes Region\"]},\n      {\n        \"idroot\":\"fst01308978\",\n        \"type\":\"alt\",\n        \"auth\":\"Africa--Great Lakes Region\",\n        \"suggest51\":[\n          \"Africa--Greater Lakes Region\"]},\n      {\n        \"idroot\":\"fst01250550\",\n        \"type\":\"auth\",\n        \"auth\":\"Northwest Territories--Great Slave Lake\",\n        \"suggest51\":[\n          \"Northwest Territories--Great Slave Lake\"]},\n      {\n        \"idroot\":\"fst01711955\",\n        \"type\":\"auth\",\n        \"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\",\n        \"suggest51\":[\n          \"Illinois--Great Lakes--Great Lakes Naval Training Center\"]},\n      {\n        \"idroot\":\"fst01711955\",\n        \"type\":\"alt\",\n        \"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\",\n        \"suggest51\":[\n          \"United States. Great Lakes Naval Training Center\"]},\n      {\n        \"idroot\":\"fst01711955\",\n        \"type\":\"alt\",\n        \"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\",\n        \"suggest51\":[\n          \"United States. Naval Training Center (Great Lakes, Ill.)\"]},\n      {\n        \"idroot\":\"fst01711955\",\n        \"type\":\"alt\",\n        \"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\",\n        \"suggest51\":[\n          \"United States. Navy. Great Lakes Naval Training Center\"]}]\n  }}",
-      "headers": {
-        "Date": "Thu, 02 May 2024 16:28:52 GMT",
-        "Server": "Apache/2.0.63 (Unix)",
-        "Access-Control-Allow-Origin": "*",
-        "Transfer-Encoding": "chunked",
-        "Content-Type": "application/json"
-      },
-      "status_code": 200
-    }
-  },
-  {
-    "request": {
-      "options": [],
-      "body": "",
       "url": "http://fast.oclc.org/searchfast/fastsuggest?query=great%20lake%20states&query_index=suggest51&suggest=autoSubject&queryReturn=suggest51,idroot,auth,type&rows=20",
       "headers": {
         "Content-Type": "application/json;"
@@ -38,13 +13,13 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggest51:states suggest51:lake suggest51:great\",\n      \"fl\":\"suggest51,idroot,auth,type\",\n      \"rows\":\"20\"}},\n  \"response\":{\"numFound\":7,\"start\":0,\"docs\":[\n      {\n        \"idroot\":\"fst01245743\",\n        \"type\":\"alt\",\n        \"auth\":\"Lake States\",\n        \"suggest51\":[\n          \"Great Lakes States\"]},\n      {\n        \"idroot\":\"fst01711955\",\n        \"type\":\"alt\",\n        \"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\",\n        \"suggest51\":[\n          \"United States. Great Lakes Naval Training Center\"]},\n      {\n        \"idroot\":\"fst01711955\",\n        \"type\":\"alt\",\n        \"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\",\n        \"suggest51\":[\n          \"United States. Naval Training Center (Great Lakes, Ill.)\"]},\n      {\n        \"idroot\":\"fst01711955\",\n        \"type\":\"alt\",\n        \"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\",\n        \"suggest51\":[\n          \"United States. Navy. Great Lakes Naval Training Center\"]},\n      {\n        \"idroot\":\"fst01801701\",\n        \"type\":\"auth\",\n        \"auth\":\"United States--Great Lakes Seaway Trail\",\n        \"suggest51\":[\n          \"United States--Great Lakes Seaway Trail\"]},\n      {\n        \"idroot\":\"fst01311735\",\n        \"type\":\"auth\",\n        \"auth\":\"United States--Great East Lake\",\n        \"suggest51\":[\n          \"United States--Great East Lake\"]},\n      {\n        \"idroot\":\"fst01891384\",\n        \"type\":\"auth\",\n        \"auth\":\"United States--Great Salt Plains Lake Watershed\",\n        \"suggest51\":[\n          \"United States--Great Salt Plains Lake Watershed\"]}]\n  }}",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":7,\"params\":{\"q\":\"suggest51:states suggest51:lake suggest51:great\",\"fl\":\"suggest51,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":7,\"start\":0,\"docs\":[{\"idroot\":[\"fst01245743\"],\"type\":\"alt\",\"suggest51\":[\"Great Lakes States\"],\"auth\":\"Lake States\"},{\"idroot\":[\"fst01311735\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great East Lake\"],\"auth\":\"United States--Great East Lake\"},{\"idroot\":[\"fst01801701\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great Lakes Seaway Trail\"],\"auth\":\"United States--Great Lakes Seaway Trail\"},{\"idroot\":[\"fst01891384\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great Salt Plains Lake Watershed\"],\"auth\":\"United States--Great Salt Plains Lake Watershed\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Great Lakes Naval Training Center\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Naval Training Center (Great Lakes, Ill.)\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Navy. Great Lakes Naval Training Center\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"}]}}\n",
       "headers": {
-        "Date": "Thu, 02 May 2024 16:28:53 GMT",
-        "Server": "Apache/2.0.63 (Unix)",
+        "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
-        "Transfer-Encoding": "chunked",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Content-Length": "1269",
+        "Date": "Tue, 04 Jun 2024 19:27:47 GMT"
       },
       "status_code": 200
     }

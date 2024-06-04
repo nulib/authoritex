@@ -23,7 +23,7 @@ defmodule Authoritex.FAST.FormTest do
         "Museum exhibition catalogs"
       ]
     ],
-    search_result_term: "art",
+    search_result_term: "art ex",
     search_count_term: "art",
     default_results: 20,
     explicit_results: 15
