@@ -20,8 +20,8 @@ defmodule Authoritex.FAST.EventNameTest do
         "WHCLIS"
       ]
     ],
-    search_result_term: "Library",
-    search_count_term: "Library",
+    search_result_term: "Library and Information",
+    search_count_term: "Library and Information",
     default_results: 20,
     explicit_results: 15
 end

@@ -13,13 +13,13 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\n  \"responseHeader\":{\n    \"status\":0,\n    \"QTime\":0,\n    \"params\":{\n      \"q\":\"suggest30:M1551ng\",\n      \"fl\":\"suggest30,idroot,auth,type\",\n      \"rows\":\"20\"}},\n  \"response\":{\"numFound\":0,\"start\":0,\"docs\":[]\n  }}",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest30:M1551ng\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}\n",
       "headers": {
-        "Date": "Thu, 02 May 2024 16:28:46 GMT",
-        "Server": "Apache/2.0.63 (Unix)",
+        "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
-        "Transfer-Encoding": "chunked",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Content-Length": "181",
+        "Date": "Tue, 04 Jun 2024 19:27:48 GMT"
       },
       "status_code": 200
     }

@@ -22,8 +22,8 @@ defmodule Authoritex.FAST.PersonalTest do
         "Tyui, Melbil, 1851-1931"
       ]
     ],
-    search_result_term: "dewey",
-    search_count_term: "dewey",
-    default_results: 20,
+    search_result_term: "dewey, m",
+    search_count_term: "dewey, m",
+    default_results: 17,
     explicit_results: 15
 end

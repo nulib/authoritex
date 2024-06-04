@@ -136,6 +136,8 @@ defmodule Authoritex.FAST.Base do
         |> URI.encode()
       end
 
+      defp uri_id_for_fast_id(base_uri, [fast_id]), do: uri_id_for_fast_id(base_uri, fast_id)
+
       defp uri_id_for_fast_id(base_uri, fast_id) do
         add_trailing_slash(base_uri) <> String.replace(fast_id, ~r/(^fst?0*)/, "")
       end
