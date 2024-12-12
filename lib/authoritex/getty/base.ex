@@ -18,7 +18,9 @@ defmodule Authoritex.Getty.Base do
 
       @impl Authoritex
       def can_resolve?(unquote(http_uri) <> _id), do: true
-      def can_resolve?(unquote(prefix) <> _id), do: true
+      def can_resolve?(unquote(prefix) <> _ = id) do
+        unquote(prefix) != ":"
+      end
       def can_resolve?(_), do: false
 
       @impl Authoritex
