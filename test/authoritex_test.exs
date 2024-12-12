@@ -44,6 +44,11 @@ defmodule AuthoritexTest do
       assert Authoritex.fetch("info:fake/no-authority/12345") ==
                {:error, :unknown_authority}
     end
+
+    test "bad uri" do
+      assert Authoritex.fetch(":http://id.loc.gov/authorities/names/no2009131449") ==
+               {:error, :unknown_authority}
+    end
   end
 
   describe "search/2" do
