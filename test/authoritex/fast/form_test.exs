@@ -7,7 +7,7 @@ defmodule Authoritex.FAST.FormTest do
       "http://id.worldcat.org/fast/1424028",
       "fst01424028"
     ],
-    bad_uri: "http://id.worldcat.org/fast/wrong-id",
+    bad_uri: "http://id.worldcat.org/fast/0-wrong-id",
     expected: [
       id: "http://id.worldcat.org/fast/1424028",
       label: "Exhibition catalogs",

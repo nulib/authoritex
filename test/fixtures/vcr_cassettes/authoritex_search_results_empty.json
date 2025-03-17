@@ -5,7 +5,7 @@
       "body": "",
       "url": "https://id.loc.gov/search/?q=NO_resulteeeees&q=scheme%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2Fnames&count=30&format=xml%2Batom",
       "headers": {
-        "User-Agent": "Authoritex"
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
       },
       "method": "get",
       "request_body": ""
@@ -13,9 +13,9 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n<title>Library of Congress Authorities and Vocabulary Service: Search Results</title><link href=\"http://id.loc.gov/search/?q=NO_resulteeeees scheme:http://id.loc.gov/authorities/names&amp;start=1&amp;format=atom\" rel=\"self\"/><id>info:lc/search/?q=NO_resulteeeees+scheme:http://id.loc.gov/authorities/names</id><updated>2024-05-02T12:17:08.926028-04:00</updated><opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:totalResults><opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">1</opensearch:startIndex><opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">30</opensearch:itemsPerPage>\n</feed>\n",
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n<title>Library of Congress Authorities and Vocabulary Service: Search Results</title><link href=\"http://id.loc.gov/search/?q=NO_resulteeeees scheme:http://id.loc.gov/authorities/names&amp;start=1&amp;format=atom\" rel=\"self\"/><id>info:lc/search/?q=NO_resulteeeees+scheme:http://id.loc.gov/authorities/names</id><updated>2025-03-17T13:32:46.593437-04:00</updated><opensearch:totalResults xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">0</opensearch:totalResults><opensearch:startIndex xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">1</opensearch:startIndex><opensearch:itemsPerPage xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\">30</opensearch:itemsPerPage>\n</feed>\n",
       "headers": {
-        "Date": "Thu, 02 May 2024 16:43:49 GMT",
+        "Date": "Mon, 17 Mar 2025 17:32:46 GMT",
         "Content-Type": "application/atom+xml; charset=UTF-8",
         "Content-Length": "773",
         "Connection": "keep-alive",
@@ -28,13 +28,13 @@
         "access-control-expose-headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
         "strict-transport-security": "max-age=31536000",
         "Cache-Control": "public, max-age=2419200",
-        "x-varnish": "743380634 743445113",
-        "Age": "1600",
+        "x-varnish": "36864342",
+        "Age": "0",
         "via": "1.1 varnish (Varnish/6.0)",
         "accept-ranges": "bytes",
-        "CF-Cache-Status": "DYNAMIC",
+        "cf-cache-status": "DYNAMIC",
         "Server": "cloudflare",
-        "CF-RAY": "87d978ef2ea2029d-ORD"
+        "CF-RAY": "921e3b471f827f7e-IAD"
       },
       "status_code": 200
     }

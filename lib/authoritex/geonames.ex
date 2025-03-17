@@ -2,6 +2,8 @@ defmodule Authoritex.GeoNames do
   @moduledoc "Authoritex implementation for GeoNames webservice"
   @behaviour Authoritex
 
+  alias Authoritex.HTTP.Client, as: HttpClient
+
   import HTTPoison.Retry
 
   @http_uri_base "https://sws.geonames.org/"
@@ -43,9 +45,9 @@ defmodule Authoritex.GeoNames do
 
       geoname_id ->
         request =
-          HTTPoison.get(
+          HttpClient.get(
             "http://api.geonames.org/getJSON",
-            [{"User-Agent", "Authoritex"}],
+            [],
             params: [
               geonameId: geoname_id,
               username: username()
@@ -69,9 +71,9 @@ defmodule Authoritex.GeoNames do
   @impl Authoritex
   def search(query, max_results \\ 30) do
     request =
-      HTTPoison.get(
+      HttpClient.get(
         "http://api.geonames.org/searchJSON",
-        [{"User-Agent", "Authoritex"}],
+        [],
         params: [
           q: query,
           username: username(),
@@ -140,7 +142,7 @@ defmodule Authoritex.GeoNames do
   defp parse_geonames_uri(uri) do
     with @http_uri_base <> result <- uri do
       if String.ends_with?(result, "/"),
-        do: String.slice(result, 0..-2),
+        do: String.slice(result, 0..-2//1),
         else: :error
     end
   end

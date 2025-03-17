@@ -26,6 +26,8 @@ defmodule Authoritex.LOC.Base do
           ] do
       @behaviour Authoritex
 
+      alias Authoritex.HTTP.Client, as: HttpClient
+
       import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
@@ -47,7 +49,7 @@ defmodule Authoritex.LOC.Base do
       def fetch(id) do
         with url <- String.replace(id, ~r/^http:/, "https:") do
           request =
-            HTTPoison.get(url <> ".rdf")
+            HttpClient.get(url <> ".rdf")
             |> autoretry()
 
           case request do
@@ -65,9 +67,9 @@ defmodule Authoritex.LOC.Base do
         query_params = [{:q, query} | unquote(query_filter)]
 
         request =
-          HTTPoison.get(
+          HttpClient.get(
             "https://id.loc.gov/search/",
-            [{"User-Agent", "Authoritex"}],
+            [],
             params: query_params ++ [count: max_results, format: "xml+atom"]
           )
           |> autoretry()

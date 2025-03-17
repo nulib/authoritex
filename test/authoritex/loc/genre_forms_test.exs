@@ -20,6 +20,6 @@ defmodule Authoritex.LOC.GenreFormsTest do
     ],
     search_result_term: "folk",
     search_count_term: "folk",
-    default_results: 14,
-    explicit_results: 14
+    default_results: 15,
+    explicit_results: 15
 end

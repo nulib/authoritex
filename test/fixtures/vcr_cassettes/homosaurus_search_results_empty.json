@@ -5,7 +5,7 @@
       "body": "",
       "url": "https://homosaurus.org/search/v3.jsonld?q=M1551ng%2A",
       "headers": {
-        "User-Agent": "Authoritex"
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
       },
       "method": "get",
       "request_body": ""
@@ -15,7 +15,7 @@
       "type": "ok",
       "body": "{}",
       "headers": {
-        "Date": "Thu, 02 May 2024 16:28:56 GMT",
+        "Date": "Mon, 17 Mar 2025 17:31:27 GMT",
         "Content-Type": "application/ld+json; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
@@ -23,20 +23,21 @@
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "X-Permitted-Cross-Domain-Policies": "none",
         "X-XSS-Protection": "1; mode=block",
-        "X-Request-Id": "c4118f70-0414-4ff4-ac0a-2ab4d5c41522",
+        "X-Request-Id": "af29f689-68d6-4ea2-a495-c7e81a6c6499",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Runtime": "0.005191",
+        "X-Runtime": "0.006543",
         "X-Content-Type-Options": "nosniff",
-        "X-Powered-By": "Phusion Passenger(R) 6.0.17",
+        "X-Powered-By": "Phusion Passenger(R) 6.0.23",
         "ETag": "W/\"44136fa355b3678a1146ad16f7e8649e\"",
         "Status": "200 OK",
-        "CF-Cache-Status": "DYNAMIC",
-        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=xP5CYMGtUbxKNfdZ6APUi8GRGUusvZh5UlvlZFFaKmNUEi2oAxDVbW1LgKkSRlrc4PHR%2FeSpM2RhthF1FD5%2F4Za8qN5EpKyvQsaZmaiJ0XbBMZ5Muay0uH1OPB0VJyuEgg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "cf-cache-status": "DYNAMIC",
+        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=cG581rZ0a9BcGHi7aR5xdEGvBBxIgFzV0yBWaV%2FZIou9g4gh%2FQ93AVyMraaoh4wzepaC3RQ1zEIn4LgENeeaRqZ0RzK%2Fw2tj1hGMEouUfnhczlbVLymAjjhGejPHY1lCYg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
         "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
         "Server": "cloudflare",
-        "CF-RAY": "87d963257db66309-ORD",
-        "alt-svc": "h3=\":443\"; ma=86400"
+        "CF-RAY": "921e3956bd0c4361-EWR",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "server-timing": "cfL4;desc=\"?proto=TCP&rtt=7207&min_rtt=7119&rtt_var=318&sent=36&recv=18&lost=0&retrans=0&sent_bytes=37569&recv_bytes=1515&delivery_rate=2385830&cwnd=199&unsent_bytes=0&cid=7bf2bdb44b42cd1a&ts=2841&x=0\""
       },
       "status_code": 200
     }

@@ -4,7 +4,9 @@
       "options": [],
       "body": "",
       "url": "https://homosaurus.org/v3/not-a-real-thing.json",
-      "headers": [],
+      "headers": {
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
+      },
       "method": "get",
       "request_body": ""
     },
@@ -13,20 +15,21 @@
       "type": "ok",
       "body": "{\"status\":500,\"error\":\"Internal Server Error\"}",
       "headers": {
-        "Date": "Thu, 02 May 2024 16:28:53 GMT",
+        "Date": "Mon, 17 Mar 2025 17:31:24 GMT",
         "Content-Type": "application/json; charset=utf-8",
         "Content-Length": "46",
         "Connection": "keep-alive",
-        "X-Request-Id": "f3e023dc-7905-4a72-bd53-b8d9cdaba32b",
-        "X-Runtime": "0.002658",
-        "X-Powered-By": "Phusion Passenger(R) 6.0.17",
+        "X-Request-Id": "7ab29fe4-5f95-40f9-9b52-ccbda3f4ab93",
+        "X-Runtime": "0.004560",
+        "X-Powered-By": "Phusion Passenger(R) 6.0.23",
         "Status": "500 Internal Server Error",
-        "CF-Cache-Status": "DYNAMIC",
-        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=PtiaiGkuXZHYbXITi2KjHIF%2BXfBgVc%2FL4hxfn9ZNi8xx7jYTw3Q4Xx5mSgNmesrsMFAYBXWtQelj2PiPx3D0ysfWFXCaYd9bLpkib0BXyENwAgjzzLb40W2OR1vmtilRBg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "cf-cache-status": "DYNAMIC",
+        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=8R%2BfJVDuLTUosVIKsfCz%2Fh0G1OvRwINhKF0kIP7QrvO0%2BQIOI9tpw0aAGylmV9RhJJOjH5%2FpZrnSDmTRmr8auMKfv4CLj19rpzlXA9b%2FXMq9Im%2FUrqZksCcAEJLn%2FoUk5g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
         "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
         "Server": "cloudflare",
-        "CF-RAY": "87d9631229186309-ORD",
-        "alt-svc": "h3=\":443\"; ma=86400"
+        "CF-RAY": "921e39460a894361-EWR",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "server-timing": "cfL4;desc=\"?proto=TCP&rtt=7233&min_rtt=7215&rtt_var=2718&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2833&recv_bytes=617&delivery_rate=401386&cwnd=193&unsent_bytes=0&cid=7bf2bdb44b42cd1a&ts=235&x=0\""
       },
       "status_code": 500
     }

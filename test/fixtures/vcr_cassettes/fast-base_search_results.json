@@ -5,6 +5,7 @@
       "body": "",
       "url": "http://fast.oclc.org/searchfast/fastsuggest?query=herskovits%20library%20of%20african%20studies&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
       "headers": {
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -19,7 +20,7 @@
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "Content-Length": "794",
-        "Date": "Tue, 04 Jun 2024 19:27:35 GMT"
+        "Date": "Mon, 17 Mar 2025 17:32:13 GMT"
       },
       "status_code": 200
     }

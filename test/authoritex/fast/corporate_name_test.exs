@@ -7,7 +7,7 @@ defmodule Authoritex.FAST.CorporateNameTest do
       "http://id.worldcat.org/fast/534726",
       "fst00534726"
     ],
-    bad_uri: "http://id.worldcat.org/fast/wrong-id",
+    bad_uri: "http://id.worldcat.org/fast/0-wrong-id",
     expected: [
       id: "http://id.worldcat.org/fast/534726",
       label: "Northwestern University (Evanston, Ill.). Library",

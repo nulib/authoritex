@@ -11,6 +11,8 @@ defmodule Authoritex.FAST.Base do
           ] do
       @behaviour Authoritex
 
+      alias Authoritex.HTTP.Client, as: HttpClient
+
       import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
@@ -35,7 +37,7 @@ defmodule Authoritex.FAST.Base do
         request =
           id
           |> add_trailing_slash()
-          |> HTTPoison.get([{"Content-Type", "application/json;"}], [])
+          |> HttpClient.get([{"Content-Type", "application/json;"}], [])
           |> autoretry()
 
         case request do
@@ -50,7 +52,7 @@ defmodule Authoritex.FAST.Base do
       @impl Authoritex
       def search(query, max_results \\ 20) do
         request =
-          HTTPoison.get(
+          HttpClient.get(
             "http://fast.oclc.org/searchfast/fastsuggest?" <>
               "query=#{conform_query_to_spec(query)}" <>
               "&query_index=#{unquote(subauthority)}" <>
