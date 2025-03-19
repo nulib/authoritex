@@ -3,9 +3,9 @@
     "request": {
       "options": [],
       "body": "",
-      "url": "https://homosaurus.org/v3/homoit0002336.json",
+      "url": "https://homosaurus.org/v4/homoit0002336.json",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
+        "User-Agent": "Authoritex/1.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
       },
       "method": "get",
       "request_body": ""
@@ -15,29 +15,26 @@
       "type": "ok",
       "body": "{\"@context\":{\"skos\":\"http://www.w3.org/2004/02/skos/core#\",\"dc\":\"http://purl.org/dc/terms/\",\"rdfs\":\"http://www.w3.org/2000/01/rdf-schema#\",\"xsd\":\"http://www.w3.org/2001/XMLSchema#\"},\"@id\":\"https://homosaurus.org/v4/homoit0002336\",\"dc:identifier\":\"homoit0002336\",\"skos:prefLabel\":[{\"@language\":\"en\",\"@value\":\"Adopted LGBTQ+ people\"},{\"@language\":\"es\",\"@value\":\"Personas LGBTQ+ adoptadas\"}],\"skos:altLabel\":[{\"@language\":\"en\",\"@value\":\"Adopted people (LGBTQ)\"},{\"@language\":\"en\",\"@value\":\"LGBTQ+ adopted people\"},{\"@language\":\"es\",\"@value\":\"Personas adoptadas (LGBTQ)\"}],\"rdfs:comment\":[{\"@language\":\"en\",\"@value\":\"LGBTQ+ people who were adopted, whether or not by LGBTQ+ parents.\"},{\"@language\":\"es\",\"@value\":\"Personas LGBTQ+ que fueron adoptadas, ya sea o no por padres LGBTQ+\"}],\"skos:broader\":[{\"@id\":\"https://homosaurus.org/v4/homoit0000915\",\"skos:prefLabel\":\"LGBTQ+ people\"}],\"skos:hasTopConcept\":{\"@id\":\"https://homosaurus.org/v4/homoit0000915\"},\"dc:issued\":{\"@type\":\"xsd:date\",\"@value\":\"2022-12-13\"},\"dc:modified\":{\"@type\":\"xsd:date\",\"@value\":\"2025-02-23\"},\"@type\":\"skos:Concept\",\"skos:inScheme\":{\"@id\":\"https://homosaurus.org/v3\"},\"skos:narrower\":[],\"skos:related\":[],\"dc:replaces\":[],\"dc:isReplacedBy\":[]}",
       "headers": {
-        "Date": "Mon, 17 Mar 2025 17:31:26 GMT",
+        "Date": "Wed, 19 Mar 2025 16:24:27 GMT",
         "Content-Type": "application/json; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
+        "Server": "cloudflare",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "X-Permitted-Cross-Domain-Policies": "none",
-        "X-XSS-Protection": "1; mode=block",
-        "X-Request-Id": "61a3735e-e0de-4062-b991-706deed79538",
+        "X-Xss-Protection": "1; mode=block",
+        "X-Request-Id": "baa11004-5eed-45d5-a98b-ca0278ff76b2",
         "X-Download-Options": "noopen",
         "X-Frame-Options": "SAMEORIGIN",
-        "X-Runtime": "0.017154",
+        "X-Runtime": "0.012017",
         "X-Content-Type-Options": "nosniff",
         "X-Powered-By": "Phusion Passenger(R) 6.0.23",
-        "ETag": "W/\"a845c6442547d11b646a17df5e9030f1\"",
+        "Etag": "W/\"a845c6442547d11b646a17df5e9030f1\"",
         "Status": "200 OK",
-        "cf-cache-status": "DYNAMIC",
-        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=y%2FQwAawOgI%2B%2BEy2rEuyxMVy6nQViM4DtUzl2nbeLSTaN7B0ZEuNeGo4H%2BztBrH1XGMMkbwsQt8l3SYgsLls9MFqnXsh0aZxnEMndkWzeqxsvUktN2KVQR6%2B3M%2FBxDVWsVg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-        "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-        "Server": "cloudflare",
-        "CF-RAY": "921e3953a9e04361-EWR",
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "server-timing": "cfL4;desc=\"?proto=TCP&rtt=7227&min_rtt=7182&rtt_var=2052&sent=7&recv=8&lost=0&retrans=0&sent_bytes=3872&recv_bytes=837&delivery_rate=401386&cwnd=194&unsent_bytes=0&cid=7bf2bdb44b42cd1a&ts=2425&x=0\""
+        "Cf-Cache-Status": "DYNAMIC",
+        "CF-RAY": "922e51f56fe32996-IAD",
+        "alt-svc": "h3=\":443\"; ma=86400"
       },
       "status_code": 200
     }
