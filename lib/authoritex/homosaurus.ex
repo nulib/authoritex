@@ -1,16 +1,20 @@
 defmodule Authoritex.Homosaurus do
-  @moduledoc "Authoritex implementation for Homosaurus linked data vocabulary"
+  @moduledoc """
+  Authoritex implementation for Homosaurus linked data vocabulary
+
+  As of Homosaurus v4, returns only English labels and variants. If
+  no English label exists, returns the first label found.
+  """
   @behaviour Authoritex
 
   alias Authoritex.HTTP.Client, as: HttpClient
 
   import HTTPoison.Retry
 
-  @http_uri_base "https://homosaurus.org/v3/"
+  @http_uri_match ~r[https://homosaurus.org/v(3|4)/]
 
   @impl Authoritex
-  def can_resolve?(@http_uri_base <> _), do: true
-  def can_resolve?(_), do: false
+  def can_resolve?(id), do: Regex.match?(@http_uri_match, id)
 
   @impl Authoritex
   def code, do: "homosaurus"
@@ -37,7 +41,7 @@ defmodule Authoritex.Homosaurus do
   end
 
   @impl Authoritex
-  def search(query, _max_results \\ 30) do
+  def search(query, _max_results \\ 10) do
     request =
       HttpClient.get(
         "https://homosaurus.org/search/v3.jsonld",
@@ -62,10 +66,10 @@ defmodule Authoritex.Homosaurus do
     case Jason.decode(response) do
       {:ok, %{"@graph" => graph}} ->
         graph
-        |> Enum.map(fn result ->
+        |> Enum.map(fn %{"@id" => id, "skos:prefLabel" => label} ->
           %{
-            id: result["@id"],
-            label: result["skos:prefLabel"],
+            id: id,
+            label: get_english(label),
             hint: nil
           }
         end)
@@ -76,6 +80,8 @@ defmodule Authoritex.Homosaurus do
   end
 
   defp parse_fetch_result(%{"@id" => homosaurus_id, "skos:prefLabel" => name} = response) do
+    name = get_english(name)
+
     {:ok,
      Enum.into(
        [
@@ -84,8 +90,7 @@ defmodule Authoritex.Homosaurus do
          qualified_label: name,
          hint: nil,
          variants:
-           [response["skos:altLabel"]]
-           |> Enum.reject(&is_nil/1)
+           [response["skos:altLabel"] |> select_english()]
            |> List.flatten()
        ],
        %{}
@@ -110,5 +115,21 @@ defmodule Authoritex.Homosaurus do
       {:error, error} ->
         {:bad_response, error}
     end
+  end
+
+  defp get_english(tagged_text) do
+    case tagged_text |> Enum.find(fn %{"@language" => lang} -> lang == "en" end) do
+      %{"@value" => result} -> result
+      nil -> List.first(tagged_text)["@value"]
+    end
+  end
+
+  defp select_english(tagged_text) do
+    tagged_text
+    |> Enum.map(fn
+      %{"@language" => "en", "@value" => value} -> value
+      _ -> nil
+    end)
+    |> Enum.reject(&is_nil/1)
   end
 end
