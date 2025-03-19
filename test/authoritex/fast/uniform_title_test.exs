@@ -7,7 +7,7 @@ defmodule Authoritex.FAST.UniformTitleTest do
       "http://id.worldcat.org/fast/1356244",
       "fst01356244"
     ],
-    bad_uri: "http://id.worldcat.org/fast/wrong-id",
+    bad_uri: "http://id.worldcat.org/fast/0-wrong-id",
     expected: [
       id: "http://id.worldcat.org/fast/1356244",
       label: "Autobiography (Franklin, Benjamin)",

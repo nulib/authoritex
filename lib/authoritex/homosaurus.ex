@@ -2,6 +2,8 @@ defmodule Authoritex.Homosaurus do
   @moduledoc "Authoritex implementation for Homosaurus linked data vocabulary"
   @behaviour Authoritex
 
+  alias Authoritex.HTTP.Client, as: HttpClient
+
   import HTTPoison.Retry
 
   @http_uri_base "https://homosaurus.org/v3/"
@@ -18,7 +20,7 @@ defmodule Authoritex.Homosaurus do
 
   @impl Authoritex
   def fetch(id) do
-    case HTTPoison.get([id, ".json"] |> IO.iodata_to_binary())
+    case HttpClient.get([id, ".json"] |> IO.iodata_to_binary())
          |> autoretry() do
       {:ok, %{body: response, status_code: 200}} ->
         parse_fetch_result(response)
@@ -37,9 +39,9 @@ defmodule Authoritex.Homosaurus do
   @impl Authoritex
   def search(query, _max_results \\ 30) do
     request =
-      HTTPoison.get(
+      HttpClient.get(
         "https://homosaurus.org/search/v3.jsonld",
-        [{"User-Agent", "Authoritex"}],
+        [],
         params: [q: query <> "*"]
       )
       |> autoretry()

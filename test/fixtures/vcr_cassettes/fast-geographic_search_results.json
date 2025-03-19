@@ -5,6 +5,7 @@
       "body": "",
       "url": "http://fast.oclc.org/searchfast/fastsuggest?query=great%20lake%20states&query_index=suggest51&suggest=autoSubject&queryReturn=suggest51,idroot,auth,type&rows=20",
       "headers": {
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -13,13 +14,13 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":7,\"params\":{\"q\":\"suggest51:states suggest51:lake suggest51:great\",\"fl\":\"suggest51,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":7,\"start\":0,\"docs\":[{\"idroot\":[\"fst01245743\"],\"type\":\"alt\",\"suggest51\":[\"Great Lakes States\"],\"auth\":\"Lake States\"},{\"idroot\":[\"fst01311735\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great East Lake\"],\"auth\":\"United States--Great East Lake\"},{\"idroot\":[\"fst01801701\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great Lakes Seaway Trail\"],\"auth\":\"United States--Great Lakes Seaway Trail\"},{\"idroot\":[\"fst01891384\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great Salt Plains Lake Watershed\"],\"auth\":\"United States--Great Salt Plains Lake Watershed\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Great Lakes Naval Training Center\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Naval Training Center (Great Lakes, Ill.)\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Navy. Great Lakes Naval Training Center\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggest51:states suggest51:lake suggest51:great\",\"fl\":\"suggest51,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":7,\"start\":0,\"docs\":[{\"idroot\":[\"fst01245743\"],\"type\":\"alt\",\"suggest51\":[\"Great Lakes States\"],\"auth\":\"Lake States\"},{\"idroot\":[\"fst01311735\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great East Lake\"],\"auth\":\"United States--Great East Lake\"},{\"idroot\":[\"fst01801701\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great Lakes Seaway Trail\"],\"auth\":\"United States--Great Lakes Seaway Trail\"},{\"idroot\":[\"fst01891384\"],\"type\":\"auth\",\"suggest51\":[\"United States--Great Salt Plains Lake Watershed\"],\"auth\":\"United States--Great Salt Plains Lake Watershed\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Great Lakes Naval Training Center\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Naval Training Center (Great Lakes, Ill.)\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"United States. Navy. Great Lakes Naval Training Center\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"}]}}\n",
       "headers": {
         "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "Content-Length": "1269",
-        "Date": "Tue, 04 Jun 2024 19:27:47 GMT"
+        "Date": "Mon, 17 Mar 2025 17:32:22 GMT"
       },
       "status_code": 200
     }

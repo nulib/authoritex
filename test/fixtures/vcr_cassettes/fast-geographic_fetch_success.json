@@ -5,6 +5,7 @@
       "body": "",
       "url": "https://id.worldcat.org/fast/1245743/",
       "headers": {
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -17,7 +18,7 @@
       "headers": {
         "Content-Type": "application/xml;charset=UTF-8",
         "Content-Length": "2797",
-        "Date": "Tue, 04 Jun 2024 19:27:46 GMT"
+        "Date": "Mon, 17 Mar 2025 17:32:21 GMT"
       },
       "status_code": 200
     }
@@ -28,6 +29,7 @@
       "body": "",
       "url": "http://id.worldcat.org/fast/1245743/",
       "headers": {
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",

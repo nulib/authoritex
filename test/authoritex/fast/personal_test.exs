@@ -7,7 +7,7 @@ defmodule Authoritex.FAST.PersonalTest do
       "http://id.worldcat.org/fast/41002",
       "fst00041002"
     ],
-    bad_uri: "http://id.worldcat.org/fast/wrong-id",
+    bad_uri: "http://id.worldcat.org/fast/0-wrong-id",
     expected: [
       id: "http://id.worldcat.org/fast/41002",
       label: "Dewey, Melvil, 1851-1931",

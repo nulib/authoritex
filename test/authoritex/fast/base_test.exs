@@ -14,7 +14,7 @@ defmodule Authoritex.FAST.BaseTest do
       "http://id.worldcat.org/fast/521479/",
       "fst00521479"
     ],
-    bad_uri: "http://id.worldcat.org/fast/wrong-id",
+    bad_uri: "http://id.worldcat.org/fast/0-wrong-id",
     expected: [
       # %{
       #    label: "Melville J. Herskovits Library of African Studies",

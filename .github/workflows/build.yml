@@ -7,10 +7,10 @@ jobs:
     strategy:
       matrix:
         elixir:
-          - 1.14-25
-          - 1.14-26
-          - 1.15-25
-          - 1.15-26
+          - 1.16-25
+          - 1.17-26
+          - 1.18-26
+          - 1.18-27
     env:
       MIX_ENV: test
     steps:
@@ -21,13 +21,13 @@ jobs:
           echo "otp=$(sed 's/^.*-//' <<< $version)" >> $GITHUB_OUTPUT
         env:
           version: ${{ matrix.elixir }}
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: erlef/setup-beam@v1
         with:
           otp-version: ${{ steps.elixir-otp.outputs.otp }}
           elixir-version: ${{ steps.elixir-otp.outputs.elixir }}
       - name: Cache Elixir dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: |
             deps

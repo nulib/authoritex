@@ -46,7 +46,7 @@ defmodule Authoritex.Getty.TGN do
   def process_result(%{hint: nil} = result), do: result
 
   def process_result(%{id: id, label: label, hint: hint, variants: variants}) do
-    case hint |> String.split(~r",\s*") |> Enum.slice(0..-3) |> Enum.join(", ") do
+    case hint |> String.split(~r",\s*") |> Enum.slice(0..-3//1) |> Enum.join(", ") do
       "" ->
         %{id: id, label: label, hint: nil, variants: variants}
 
@@ -56,7 +56,7 @@ defmodule Authoritex.Getty.TGN do
   end
 
   def process_result(%{id: id, label: label, hint: hint}) do
-    case hint |> String.split(~r",\s*") |> Enum.slice(0..-3) |> Enum.join(", ") do
+    case hint |> String.split(~r",\s*") |> Enum.slice(0..-3//1) |> Enum.join(", ") do
       "" ->
         %{id: id, label: label, hint: nil}
 

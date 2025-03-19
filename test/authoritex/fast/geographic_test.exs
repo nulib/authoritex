@@ -7,7 +7,7 @@ defmodule Authoritex.FAST.GeographicTest do
       "http://id.worldcat.org/fast/1245743",
       "fst01245743"
     ],
-    bad_uri: "http://id.worldcat.org/fast/wrong-id",
+    bad_uri: "http://id.worldcat.org/fast/0-wrong-id",
     expected: [
       id: "http://id.worldcat.org/fast/1245743",
       label: "Lake States",

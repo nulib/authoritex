@@ -7,7 +7,7 @@ defmodule Authoritex.FAST.EventNameTest do
       "http://id.worldcat.org/fast/1405606",
       "fst001405606"
     ],
-    bad_uri: "http://id.worldcat.org/fast/wrong-id",
+    bad_uri: "http://id.worldcat.org/fast/0-wrong-id",
     expected: [
       id: "http://id.worldcat.org/fast/1405606",
       label: "White House Conference on Library and Information Services",

@@ -5,7 +5,7 @@
       "body": "",
       "url": "http://api.geonames.org/getJSON?geonameId=11887750&<<geonames_username>>",
       "headers": {
-        "User-Agent": "Authoritex"
+        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
       },
       "method": "get",
       "request_body": ""
@@ -15,8 +15,8 @@
       "type": "ok",
       "body": "{\"timezone\":{\"gmtOffset\":-6,\"timeZoneId\":\"America/Chicago\",\"dstOffset\":-5},\"bbox\":{\"east\":-80.518693,\"south\":35.995683,\"north\":49.384358,\"west\":-104.05769800000002,\"accuracyLevel\":0},\"asciiName\":\"Midwest\",\"astergdem\":338,\"countryId\":\"6252001\",\"fcl\":\"L\",\"srtm3\":335,\"countryCode\":\"US\",\"lat\":\"42.65982\",\"fcode\":\"RGN\",\"continentCode\":\"NA\",\"lng\":\"-93.93863\",\"geonameId\":11887750,\"toponymName\":\"Midwest\",\"population\":65000000,\"wikipediaURL\":\"en.wikipedia.org/wiki/Midwestern_United_States\",\"adminName5\":\"\",\"adminName4\":\"\",\"adminName3\":\"\",\"alternateNames\":[{\"name\":\"https://en.wikipedia.org/wiki/Midwestern_United_States\",\"lang\":\"link\"},{\"isPreferredName\":true,\"name\":\"Midwestern United States\"}],\"adminName2\":\"\",\"name\":\"Midwest\",\"fclName\":\"parks,area, ...\",\"countryName\":\"United States\",\"fcodeName\":\"region\",\"adminName1\":\"\"}",
       "headers": {
-        "Date": "Thu, 02 May 2024 16:45:51 GMT",
-        "Server": "Apache/2.4.57 (AlmaLinux) mod_jk/1.2.49 OpenSSL/3.0.7",
+        "Date": "Mon, 17 Mar 2025 17:31:40 GMT",
+        "Server": "Apache/2.4.37 (AlmaLinux) mod_jk/1.2.49 OpenSSL/1.1.1k",
         "Access-Control-Allow-Origin": "*",
         "X-Frame-Options": "sameorigin",
         "Cache-Control": "no-cache",

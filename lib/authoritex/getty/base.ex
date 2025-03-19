@@ -11,6 +11,8 @@ defmodule Authoritex.Getty.Base do
           ] do
       @behaviour Authoritex
 
+      alias Authoritex.HTTP.Client, as: HttpClient
+
       import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
@@ -80,10 +82,9 @@ defmodule Authoritex.Getty.Base do
 
       defp send(query) do
         "http://vocab.getty.edu/sparql.xml"
-        |> HTTPoison.get(
+        |> HttpClient.get(
           [
-            {"Accept", "application/sparql-results+xml;charset=UTF-8"},
-            {"User-Agent", "Authoritex"}
+            {"Accept", "application/sparql-results+xml;charset=UTF-8"}
           ],
           params: [
             query:
