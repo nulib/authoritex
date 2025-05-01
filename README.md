@@ -79,11 +79,11 @@ See `Authoritex.Mock`
 
 `Authoritex` supports (i.e., is tested against) a matrix consisting of the three most recent Elixir minor versions and up to three most recent Erlang/OTP major versions (depending on Elixir compatibility). Right now, that means:
 
-| Elixir/OTP | 24 | 23 | 22 |
+| Elixir/OTP | 25 | 26 | 27 |
 |------------|----|----|----|
-| **1.12**   | ✔️  | ✔️  | ✔️  |
-| **1.11**   | ✔️  | ✔️  | ✔️  |
-| **1.10**   |    | ✔️  | ✔️  |
+| **1.18**   |    | ✔️  | ✔️  |
+| **1.17**   |    | ✔️  |    |
+| **1.16**   | ✔️  |    |    |
 
 Support for other versions/combinations is possible (probable, even), but unsupported.
 
