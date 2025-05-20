@@ -5,7 +5,7 @@
       "body": "",
       "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+%3Fs+%3Fname+%3Fhint+%7B+%3Fs+a+skos%3AConcept%3B+luc%3Aterm+%22chicago+river%22%3B+skos%3AinScheme+%3Chttp%3A%2F%2Fvocab.getty.edu%2Ftgn%2F%3E+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+%3B+gvp%3AparentString+%3Fhint+.+FILTER+%28regex%28%3Fname%2C+%22chicago%22%2C+%22i%22%29+%26%26+regex%28%3Fname%2C+%22river%22%2C+%22i%22%29%29+.+%7D+ORDER+BY+DESC%28IF%28REGEX%28%3Fname%2C+%22%5Echicago+river%24%22%2C+%22i%22%29%2C+2%2C+IF%28REGEX%28%3Fname%2C+%22%5Echicago+river%22%2C+%22i%22%29%2C+1%2C+0%29%29%29+LIMIT+30",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Accept": "application/sparql-results+xml;charset=UTF-8"
       },
       "method": "get",
@@ -16,7 +16,7 @@
       "type": "ok",
       "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/2236134</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Chicago River</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>Cook, Illinois, United States, North and Central America, World</literal>\n\t\t\t</binding>\n\t\t</result>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/2676804</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>South Branch Chicago River</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>Cook, Illinois, United States, North and Central America, World</literal>\n\t\t\t</binding>\n\t\t</result>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/2680043</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>South Fork South Branch Chicago River</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>Cook, Illinois, United States, North and Central America, World</literal>\n\t\t\t</binding>\n\t\t</result>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/2543973</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>North Branch Chicago River</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>Illinois, United States, North and Central America, World</literal>\n\t\t\t</binding>\n\t\t</result>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/2760039</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>West Fork North Branch Chicago River</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>Illinois, United States, North and Central America, World</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
       "headers": {
-        "Date": "Mon, 17 Mar 2025 17:32:45 GMT",
+        "Date": "Tue, 20 May 2025 19:23:32 GMT",
         "Content-Type": "application/sparql-results+xml;charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",

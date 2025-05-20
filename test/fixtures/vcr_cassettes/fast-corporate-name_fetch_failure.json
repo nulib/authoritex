@@ -1,36 +1,13 @@
 [
   {
     "request": {
-      "options": [],
-      "body": "",
-      "url": "http://id.worldcat.org/fast/0-wrong-id/",
-      "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+      "options": {
+        "follow_redirect": "true"
       },
-      "method": "get",
-      "request_body": ""
-    },
-    "response": {
-      "binary": false,
-      "type": "ok",
       "body": "",
+      "url": "http://id.worldcat.org/fast/0-wrong-id",
       "headers": {
-        "Location": "https://id.worldcat.org/fast/0-wrong-id/",
-        "Server": "BigIP",
-        "Connection": "Keep-Alive",
-        "Content-Length": "0"
-      },
-      "status_code": 301
-    }
-  },
-  {
-    "request": {
-      "options": [],
-      "body": "",
-      "url": "https://id.worldcat.org/fast/0-wrong-id/",
-      "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -41,9 +18,23 @@
       "type": "ok",
       "body": "<error><code type=\"application\">recordNotFound</code><message>No authority record found.</message><detail>No record/history record found for dbName: 'fast', authorityId: '0-wrong-id'</detail></error>",
       "headers": {
+        "Date": "Tue, 20 May 2025 19:23:09 GMT",
         "Content-Type": "application/xml;charset=UTF-8",
         "Transfer-Encoding": "chunked",
-        "Date": "Mon, 17 Mar 2025 17:32:05 GMT"
+        "Connection": "keep-alive",
+        "X-RateLimit-Limit-day": "500000",
+        "X-RateLimit-Limit-month": "15000000",
+        "X-RateLimit-Remaining-day": "498539",
+        "X-RateLimit-Remaining-month": "14992135",
+        "RateLimit-Limit": "500000",
+        "RateLimit-Remaining": "498539",
+        "RateLimit-Reset": "16611",
+        "Kong-Request-ID": "a173c801-fdbd-47db-9af0-5901fa98564d#61823379",
+        "X-Kong-Upstream-Latency": "60",
+        "X-Kong-Proxy-Latency": "1",
+        "Via": "1.1 kong/3.9.0.1-enterprise-edition",
+        "X-Kong-Request-Id": "4e678b11e3cbc93866c1334fc1daf30b",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
       },
       "status_code": 404
     }

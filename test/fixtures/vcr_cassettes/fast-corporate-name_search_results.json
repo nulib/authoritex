@@ -1,11 +1,13 @@
 [
   {
     "request": {
-      "options": [],
+      "options": {
+        "follow_redirect": "true"
+      },
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=Charles%20Deering%20Library&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=Charles%20Deering%20Library&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -14,13 +16,13 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggest10:Library suggest10:Deering suggest10:Charles\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":5,\"start\":0,\"docs\":[{\"idroot\":[\"fst00534726\"],\"type\":\"alt\",\"suggest10\":[\"Charles Deering Library (Evanston, Ill.)\"],\"auth\":\"Northwestern University (Evanston, Ill.). Library\"},{\"idroot\":[\"fst00534726\"],\"type\":\"alt\",\"suggest10\":[\"Northwestern University (Evanston, Ill.). Charles Deering Library\"],\"auth\":\"Northwestern University (Evanston, Ill.). Library\"},{\"idroot\":[\"fst01585236\"],\"type\":\"auth\",\"suggest10\":[\"Charles Deering McCormick Library of Special Collections\"],\"auth\":\"Charles Deering McCormick Library of Special Collections\"},{\"idroot\":[\"fst01593634\"],\"type\":\"alt\",\"suggest10\":[\"Charles Deering McCormick Library of Special Collections. Women's Collection\"],\"auth\":\"Women's Collection (Northwestern University)\"},{\"idroot\":[\"fst01585236\"],\"type\":\"alt\",\"suggest10\":[\"Northwestern University (Evanston, Ill.). Library. Charles Deering McCormick Library of Special Collections\"],\"auth\":\"Charles Deering McCormick Library of Special Collections\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest10:Library suggest10:Deering suggest10:Charles\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":5,\"start\":0,\"docs\":[{\"idroot\":[\"fst00534726\"],\"type\":\"alt\",\"suggest10\":[\"Charles Deering Library (Evanston, Ill.)\"],\"auth\":\"Northwestern University (Evanston, Ill.). Library\"},{\"idroot\":[\"fst00534726\"],\"type\":\"alt\",\"suggest10\":[\"Northwestern University (Evanston, Ill.). Charles Deering Library\"],\"auth\":\"Northwestern University (Evanston, Ill.). Library\"},{\"idroot\":[\"fst01585236\"],\"type\":\"auth\",\"suggest10\":[\"Charles Deering McCormick Library of Special Collections\"],\"auth\":\"Charles Deering McCormick Library of Special Collections\"},{\"idroot\":[\"fst01593634\"],\"type\":\"alt\",\"suggest10\":[\"Charles Deering McCormick Library of Special Collections. Women's Collection\"],\"auth\":\"Women's Collection (Northwestern University)\"},{\"idroot\":[\"fst01585236\"],\"type\":\"alt\",\"suggest10\":[\"Northwestern University (Evanston, Ill.). Library. Charles Deering McCormick Library of Special Collections\"],\"auth\":\"Charles Deering McCormick Library of Special Collections\"}]}}\n",
       "headers": {
         "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "Content-Length": "1150",
-        "Date": "Mon, 17 Mar 2025 17:32:07 GMT"
+        "Date": "Tue, 20 May 2025 19:23:11 GMT"
       },
       "status_code": 200
     }

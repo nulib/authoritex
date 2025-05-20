@@ -36,8 +36,7 @@ defmodule Authoritex.FAST.Base do
       def fetch(id) do
         request =
           id
-          |> add_trailing_slash()
-          |> HttpClient.get([{"Content-Type", "application/json;"}], [])
+          |> HttpClient.get([{"Content-Type", "application/json;"}], follow_redirect: true)
           |> autoretry()
 
         case request do
@@ -53,13 +52,14 @@ defmodule Authoritex.FAST.Base do
       def search(query, max_results \\ 20) do
         request =
           HttpClient.get(
-            "http://fast.oclc.org/searchfast/fastsuggest?" <>
+            "https://fast.oclc.org/searchfast/fastsuggest?" <>
               "query=#{conform_query_to_spec(query)}" <>
               "&query_index=#{unquote(subauthority)}" <>
               "&suggest=autoSubject" <>
               "&queryReturn=#{unquote(subauthority)},idroot,auth,type" <>
               "&rows=#{max_results}",
-            [{"Content-Type", "application/json;"}]
+            [{"Content-Type", "application/json;"}],
+            follow_redirect: true
           )
           |> autoretry()
 
@@ -96,14 +96,6 @@ defmodule Authoritex.FAST.Base do
         end
       rescue
         _ -> {:error, {:bad_response, "OTHER PROBLEM"}}
-      end
-
-      defp parse_fetch_result(%{status_code: code} = response) when code in 300..399 do
-        response.headers
-        |> Enum.into(%{})
-        |> Map.get("Location")
-        |> String.replace(~r"^/", "http://id.worldcat.org/")
-        |> fetch()
       end
 
       defp parse_fetch_result(%{body: response, status_code: 404}),

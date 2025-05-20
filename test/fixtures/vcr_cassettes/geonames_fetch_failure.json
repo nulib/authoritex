@@ -5,7 +5,7 @@
       "body": "",
       "url": "http://api.geonames.org/getJSON?geonameId=42992769&<<geonames_username>>",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
       },
       "method": "get",
       "request_body": ""
@@ -15,7 +15,7 @@
       "type": "ok",
       "body": "{\"status\":{\"message\":\"the geoname feature does not exist.\",\"value\":11}}",
       "headers": {
-        "Date": "Mon, 17 Mar 2025 17:31:40 GMT",
+        "Date": "Tue, 20 May 2025 19:23:37 GMT",
         "Server": "Apache/2.4.37 (AlmaLinux) mod_jk/1.2.49 OpenSSL/1.1.1k",
         "Access-Control-Allow-Origin": "*",
         "X-Frame-Options": "sameorigin",
