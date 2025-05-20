@@ -11,7 +11,7 @@ defmodule Authoritex.FAST.BaseTest do
     code: "fast-base",
     description: "Faceted Application of Subject Terminology",
     test_uris: [
-      "http://id.worldcat.org/fast/521479/",
+      "http://id.worldcat.org/fast/521479",
       "fst00521479"
     ],
     bad_uri: "http://id.worldcat.org/fast/0-wrong-id",

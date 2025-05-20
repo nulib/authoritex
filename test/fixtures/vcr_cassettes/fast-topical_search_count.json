@@ -1,11 +1,13 @@
 [
   {
     "request": {
-      "options": [],
+      "options": {
+        "follow_redirect": "true"
+      },
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=authorities&query_index=suggest50&suggest=autoSubject&queryReturn=suggest50,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=authorities&query_index=suggest50&suggest=autoSubject&queryReturn=suggest50,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -14,24 +16,26 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggest50:authorities\",\"fl\":\"suggest50,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":42,\"start\":0,\"docs\":[{\"idroot\":[\"fst01072004\"],\"type\":\"alt\",\"suggest50\":[\"Port authorities\"],\"auth\":\"Port districts\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewer authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst00995442\"],\"type\":\"auth\",\"suggest50\":[\"Legal authorities\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Legal\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962386\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--U.S. states\"],\"auth\":\"Housing authorities--U.S. states\"},{\"idroot\":[\"fst00803678\"],\"type\":\"auth\",\"suggest50\":[\"Airport authorities\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00803678\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Airport\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00962371\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities\"],\"auth\":\"Housing authorities\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewerage authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Public\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Public authorities\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128992\"],\"type\":\"alt\",\"suggest50\":[\"Authorities (Persons)\"],\"auth\":\"Specialists\"},{\"idroot\":[\"fst00950115\"],\"type\":\"alt\",\"suggest50\":[\"Authorities of the Hadith\"],\"auth\":\"Hadith--Authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Primary authorities (Law)\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Secondary authorities (Law)\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00861737\"],\"type\":\"auth\",\"suggest50\":[\"Citation of legal authorities\"],\"auth\":\"Citation of legal authorities\"},{\"idroot\":[\"fst00962372\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Accounting\"],\"auth\":\"Housing authorities--Accounting\"},{\"idroot\":[\"fst00962373\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Administration\"],\"auth\":\"Housing authorities--Administration\"},{\"idroot\":[\"fst00962374\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Auditing\"],\"auth\":\"Housing authorities--Auditing\"},{\"idroot\":[\"fst00962375\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Corrupt practices\"],\"auth\":\"Housing authorities--Corrupt practices\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggest50:authorities\",\"fl\":\"suggest50,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":42,\"start\":0,\"docs\":[{\"idroot\":[\"fst01072004\"],\"type\":\"alt\",\"suggest50\":[\"Port authorities\"],\"auth\":\"Port districts\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewer authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst00995442\"],\"type\":\"auth\",\"suggest50\":[\"Legal authorities\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Legal\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962386\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--U.S. states\"],\"auth\":\"Housing authorities--U.S. states\"},{\"idroot\":[\"fst00803678\"],\"type\":\"auth\",\"suggest50\":[\"Airport authorities\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00803678\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Airport\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00962371\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities\"],\"auth\":\"Housing authorities\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewerage authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Public\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Public authorities\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128992\"],\"type\":\"alt\",\"suggest50\":[\"Authorities (Persons)\"],\"auth\":\"Specialists\"},{\"idroot\":[\"fst00950115\"],\"type\":\"alt\",\"suggest50\":[\"Authorities of the Hadith\"],\"auth\":\"Hadith--Authorities\"},{\"idroot\":[\"fst00861737\"],\"type\":\"auth\",\"suggest50\":[\"Citation of legal authorities\"],\"auth\":\"Citation of legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Primary authorities (Law)\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Secondary authorities (Law)\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962372\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Accounting\"],\"auth\":\"Housing authorities--Accounting\"},{\"idroot\":[\"fst00962373\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Administration\"],\"auth\":\"Housing authorities--Administration\"},{\"idroot\":[\"fst00962374\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Auditing\"],\"auth\":\"Housing authorities--Auditing\"},{\"idroot\":[\"fst00962375\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Corrupt practices\"],\"auth\":\"Housing authorities--Corrupt practices\"}]}}\n",
       "headers": {
         "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "Content-Length": "2436",
-        "Date": "Mon, 17 Mar 2025 17:32:03 GMT"
+        "Date": "Tue, 20 May 2025 19:23:19 GMT"
       },
       "status_code": 200
     }
   },
   {
     "request": {
-      "options": [],
+      "options": {
+        "follow_redirect": "true"
+      },
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=authorities&query_index=suggest50&suggest=autoSubject&queryReturn=suggest50,idroot,auth,type&rows=15",
+      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=authorities&query_index=suggest50&suggest=autoSubject&queryReturn=suggest50,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -40,13 +44,13 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":4,\"params\":{\"q\":\"suggest50:authorities\",\"fl\":\"suggest50,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":42,\"start\":0,\"docs\":[{\"idroot\":[\"fst01072004\"],\"type\":\"alt\",\"suggest50\":[\"Port authorities\"],\"auth\":\"Port districts\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewer authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst00995442\"],\"type\":\"auth\",\"suggest50\":[\"Legal authorities\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Legal\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962386\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--U.S. states\"],\"auth\":\"Housing authorities--U.S. states\"},{\"idroot\":[\"fst00803678\"],\"type\":\"auth\",\"suggest50\":[\"Airport authorities\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00803678\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Airport\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00962371\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities\"],\"auth\":\"Housing authorities\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewerage authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Public\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Public authorities\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128992\"],\"type\":\"alt\",\"suggest50\":[\"Authorities (Persons)\"],\"auth\":\"Specialists\"},{\"idroot\":[\"fst00950115\"],\"type\":\"alt\",\"suggest50\":[\"Authorities of the Hadith\"],\"auth\":\"Hadith--Authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Primary authorities (Law)\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Secondary authorities (Law)\"],\"auth\":\"Legal authorities\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest50:authorities\",\"fl\":\"suggest50,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":42,\"start\":0,\"docs\":[{\"idroot\":[\"fst01072004\"],\"type\":\"alt\",\"suggest50\":[\"Port authorities\"],\"auth\":\"Port districts\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewer authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst00995442\"],\"type\":\"auth\",\"suggest50\":[\"Legal authorities\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Legal\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962386\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--U.S. states\"],\"auth\":\"Housing authorities--U.S. states\"},{\"idroot\":[\"fst00803678\"],\"type\":\"auth\",\"suggest50\":[\"Airport authorities\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00803678\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Airport\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00962371\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities\"],\"auth\":\"Housing authorities\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewerage authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Public\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Public authorities\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128992\"],\"type\":\"alt\",\"suggest50\":[\"Authorities (Persons)\"],\"auth\":\"Specialists\"},{\"idroot\":[\"fst00950115\"],\"type\":\"alt\",\"suggest50\":[\"Authorities of the Hadith\"],\"auth\":\"Hadith--Authorities\"},{\"idroot\":[\"fst00861737\"],\"type\":\"auth\",\"suggest50\":[\"Citation of legal authorities\"],\"auth\":\"Citation of legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Primary authorities (Law)\"],\"auth\":\"Legal authorities\"}]}}\n",
       "headers": {
         "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
-        "Content-Length": "1772",
-        "Date": "Mon, 17 Mar 2025 17:32:03 GMT"
+        "Content-Length": "1787",
+        "Date": "Tue, 20 May 2025 19:23:20 GMT"
       },
       "status_code": 200
     }

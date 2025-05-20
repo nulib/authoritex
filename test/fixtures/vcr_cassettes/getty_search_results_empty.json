@@ -5,7 +5,7 @@
       "body": "",
       "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+%3Fs+%3Fname+%3Fhint+%7B+%3Fs+a+skos%3AConcept%3B+luc%3Aterm+%22M1551ng%22%3B+skos%3AinScheme+%5Brdfs%3Alabel+%3Fhint%5D+%3B+gvp%3AprefLabelGVP+%5Bskosxl%3AliteralForm+%3Fname%5D+.+%7D+LIMIT+30",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Accept": "application/sparql-results+xml;charset=UTF-8"
       },
       "method": "get",
@@ -16,7 +16,7 @@
       "type": "ok",
       "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t</results>\n</sparql>\n",
       "headers": {
-        "Date": "Mon, 17 Mar 2025 17:32:17 GMT",
+        "Date": "Tue, 20 May 2025 19:23:23 GMT",
         "Content-Type": "application/sparql-results+xml;charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",

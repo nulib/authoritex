@@ -1,11 +1,13 @@
 [
   {
     "request": {
-      "options": [],
+      "options": {
+        "follow_redirect": "true"
+      },
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=art&query_index=suggest55&suggest=autoSubject&queryReturn=suggest55,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=art&query_index=suggest55&suggest=autoSubject&queryReturn=suggest55,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -14,24 +16,26 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggest55:art\",\"fl\":\"suggest55,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":82,\"start\":0,\"docs\":[{\"idroot\":[\"fst01423702\"],\"type\":\"auth\",\"suggest55\":[\"Art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Fine art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01986266\"],\"type\":\"auth\",\"suggest55\":[\"Mail art\"],\"auth\":\"Mail art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Art works\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Artworks\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Fine arts\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Visual art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Works of art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01920007\"],\"type\":\"auth\",\"suggest55\":[\"Art music\"],\"auth\":\"Art music\"},{\"idroot\":[\"fst01985343\"],\"type\":\"auth\",\"suggest55\":[\"Sound art\"],\"auth\":\"Sound art\"},{\"idroot\":[\"fst01985343\"],\"type\":\"alt\",\"suggest55\":[\"Audio art\"],\"auth\":\"Sound art\"},{\"idroot\":[\"fst01986264\"],\"type\":\"auth\",\"suggest55\":[\"Digital art\"],\"auth\":\"Digital art\"},{\"idroot\":[\"fst01986266\"],\"type\":\"alt\",\"suggest55\":[\"Postal art\"],\"auth\":\"Mail art\"},{\"idroot\":[\"fst01986267\"],\"type\":\"auth\",\"suggest55\":[\"Video art\"],\"auth\":\"Video art\"},{\"idroot\":[\"fst01750153\"],\"type\":\"alt\",\"suggest55\":[\"Book art (Artists' books)\"],\"auth\":\"Artists' books\"},{\"idroot\":[\"fst01710575\"],\"type\":\"auth\",\"suggest55\":[\"Martial arts films\"],\"auth\":\"Martial arts films\"},{\"idroot\":[\"fst01726709\"],\"type\":\"alt\",\"suggest55\":[\"Art rock (Music)\"],\"auth\":\"Progressive rock (Music)\"},{\"idroot\":[\"fst01726728\"],\"type\":\"alt\",\"suggest55\":[\"Art songs, Sacred\"],\"auth\":\"Sacred songs\"},{\"idroot\":[\"fst01750153\"],\"type\":\"auth\",\"suggest55\":[\"Artists' books\"],\"auth\":\"Artists' books\"},{\"idroot\":[\"fst01750153\"],\"type\":\"alt\",\"suggest55\":[\"Artist books\"],\"auth\":\"Artists' books\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest55:art\",\"fl\":\"suggest55,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":82,\"start\":0,\"docs\":[{\"idroot\":[\"fst01423702\"],\"type\":\"auth\",\"suggest55\":[\"Art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Fine art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01986266\"],\"type\":\"auth\",\"suggest55\":[\"Mail art\"],\"auth\":\"Mail art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Art works\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Artworks\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Fine arts\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Visual art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01423702\"],\"type\":\"alt\",\"suggest55\":[\"Works of art\"],\"auth\":\"Art\"},{\"idroot\":[\"fst01920007\"],\"type\":\"auth\",\"suggest55\":[\"Art music\"],\"auth\":\"Art music\"},{\"idroot\":[\"fst01985343\"],\"type\":\"auth\",\"suggest55\":[\"Sound art\"],\"auth\":\"Sound art\"},{\"idroot\":[\"fst01985343\"],\"type\":\"alt\",\"suggest55\":[\"Audio art\"],\"auth\":\"Sound art\"},{\"idroot\":[\"fst01986264\"],\"type\":\"auth\",\"suggest55\":[\"Digital art\"],\"auth\":\"Digital art\"},{\"idroot\":[\"fst01986266\"],\"type\":\"alt\",\"suggest55\":[\"Postal art\"],\"auth\":\"Mail art\"},{\"idroot\":[\"fst01986267\"],\"type\":\"auth\",\"suggest55\":[\"Video art\"],\"auth\":\"Video art\"},{\"idroot\":[\"fst01750153\"],\"type\":\"alt\",\"suggest55\":[\"Book art (Artists' books)\"],\"auth\":\"Artists' books\"},{\"idroot\":[\"fst01710575\"],\"type\":\"auth\",\"suggest55\":[\"Martial arts films\"],\"auth\":\"Martial arts films\"},{\"idroot\":[\"fst01726709\"],\"type\":\"alt\",\"suggest55\":[\"Art rock (Music)\"],\"auth\":\"Progressive rock (Music)\"},{\"idroot\":[\"fst01726728\"],\"type\":\"alt\",\"suggest55\":[\"Art songs, Sacred\"],\"auth\":\"Sacred songs\"},{\"idroot\":[\"fst01750153\"],\"type\":\"auth\",\"suggest55\":[\"Artists' books\"],\"auth\":\"Artists' books\"},{\"idroot\":[\"fst01750153\"],\"type\":\"alt\",\"suggest55\":[\"Artist books\"],\"auth\":\"Artists' books\"}]}}\n",
       "headers": {
         "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "Content-Length": "1931",
-        "Date": "Mon, 17 Mar 2025 17:32:32 GMT"
+        "Date": "Tue, 20 May 2025 19:23:33 GMT"
       },
       "status_code": 200
     }
   },
   {
     "request": {
-      "options": [],
+      "options": {
+        "follow_redirect": "true"
+      },
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=art&query_index=suggest55&suggest=autoSubject&queryReturn=suggest55,idroot,auth,type&rows=15",
+      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=art&query_index=suggest55&suggest=autoSubject&queryReturn=suggest55,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -46,7 +50,7 @@
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "Content-Length": "1435",
-        "Date": "Mon, 17 Mar 2025 17:32:33 GMT"
+        "Date": "Tue, 20 May 2025 19:23:33 GMT"
       },
       "status_code": 200
     }

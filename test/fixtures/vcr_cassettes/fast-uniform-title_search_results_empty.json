@@ -1,11 +1,13 @@
 [
   {
     "request": {
-      "options": [],
+      "options": {
+        "follow_redirect": "true"
+      },
       "body": "",
-      "url": "http://fast.oclc.org/searchfast/fastsuggest?query=M1551ng&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=M1551ng&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -14,13 +16,13 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":2,\"params\":{\"q\":\"suggest30:M1551ng\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest30:M1551ng\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}\n",
       "headers": {
         "Server": "Apache-Coyote/1.1",
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
         "Content-Length": "181",
-        "Date": "Mon, 17 Mar 2025 17:31:52 GMT"
+        "Date": "Tue, 20 May 2025 19:23:25 GMT"
       },
       "status_code": 200
     }
