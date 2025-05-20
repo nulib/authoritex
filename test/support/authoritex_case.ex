@@ -23,7 +23,6 @@ defmodule Authoritex.TestCase do
     by a search (default: `30`)
   * `specified_results` (optional) -- A non-default number of results that can be
     used for testing `search/2` (default: `50`)
-  ```
 
   See this package's test suite for detailed examples.
   """
