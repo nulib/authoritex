@@ -13,7 +13,7 @@
   },
   {
     "request": {
-      "url": "https://id.loc.gov/search/?q=Authority+Busted&q=scheme%3Ahttp%3A%2F%2Fid.loc.gov%2Fauthorities%2FgenreForms&count=30&format=xml%2Batom"
+      "url": "https://id.loc.gov/authorities/genreForms/suggest2?q=Authority+Busted&count=30&searchtype=keyword"
     },
     "response": {
       "status_code": 200,

@@ -64,13 +64,13 @@ defmodule Authoritex.LOC.Base do
 
       @impl Authoritex
       def search(query, max_results \\ 30) do
-        query_params = [{:q, query} | unquote(query_filter)]
+        path = [unquote(subauthority), "suggest2"] |> Enum.reject(&is_nil/1) |> Path.join()
 
         request =
           HttpClient.get(
-            "https://id.loc.gov/search/",
-            [],
-            params: query_params ++ [count: max_results, format: "xml+atom"]
+            "https://id.loc.gov/#{path}",
+            [accept: "application/ld+json"],
+            params: [q: query, count: max_results, searchtype: "keyword"]
           )
           |> autoretry()
 
@@ -117,22 +117,21 @@ defmodule Authoritex.LOC.Base do
       defp parse_fetch_result(%{status_code: status_code}), do: {:error, status_code}
 
       defp parse_search_result(%{body: response, status_code: 200}) do
-        with doc <- SweetXml.parse(response) do
-          case doc |> SweetXml.xpath(~x"/feed") do
-            nil ->
-              {:error, {:bad_response, response}}
-
-            feed ->
-              {:ok,
-               SweetXml.xpath(feed, ~x"//entry"l,
-                 id: ~x{./link[@rel="alternate"][not(@type)]/@href}s,
-                 label: ~x"./title/text()"s,
-                 hint: ~x"./no_hint/text()"
-               )}
-          end
-        end
+        Jason.decode!(response, keys: :atoms)
+        |> parse_search_result()
       rescue
         _ -> {:error, {:bad_response, response}}
+      end
+
+      defp parse_search_result(%{count: count, hits: hits}) do
+        {:ok,
+         Enum.map(hits, fn hit ->
+           %{
+             id: hit.uri,
+             label: hit.aLabel,
+             hint: nil
+           }
+         end)}
       end
 
       defp parse_search_result(%{status_code: status_code}), do: {:error, status_code}
