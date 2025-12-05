@@ -5,7 +5,7 @@
       "body": "",
       "url": "https://id.loc.gov/vocabulary/organizations/iehs.rdf",
       "headers": {
-        "User-Agent": "Authoritex/1.2.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0"
       },
       "method": "get",
       "request_body": ""
@@ -15,10 +15,11 @@
       "type": "ok",
       "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\">\n  <madsrdf:CorporateName rdf:about=\"http://id.loc.gov/vocabulary/organizations/iehs\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <madsrdf:authoritativeLabel>Evanston Township High School</madsrdf:authoritativeLabel>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/code\">IEHS</madsrdf:code>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/normalized\">iehs</madsrdf:code>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/iso15511\">US-iehs</madsrdf:code>\n    <madsrdf:identifiesRWO>\n      <madsrdf:Address>\n\t<rdfs:label>Evanston Township High School</rdfs:label>\n\t<madsrdf:city>Evanston</madsrdf:city>\n\t<madsrdf:state>Illinois</madsrdf:state>\n\t<madsrdf:country>United States</madsrdf:country>\n\t<madsrdf:postcode>60204</madsrdf:postcode>\n      </madsrdf:Address>\n    </madsrdf:identifiesRWO>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/vocabulary/organizations\"/>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/vocabulary/organizations/collection_organizations\"/>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordContentSource>\n\t  <madsrdf:CorporateName rdf:about=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\">\n\t    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n\t    <madsrdf:authoritativeLabel>United States, Library of Congress, Network Development and MARC Standards Office</madsrdf:authoritativeLabel>\n\t    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/code\">DLC-MRC</madsrdf:code>\n\t    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/normalized\">dlcmrc</madsrdf:code>\n\t    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/iso15511\">US-dlcmrc</madsrdf:code>\n\t  </madsrdf:CorporateName>\n\t</ri:recordContentSource>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1990-01-01T00:00:00.000-04:00</ri:recordChangeDate>\n\t<ri:recordStatus xml:lang=\"en\">new</ri:recordStatus>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\">\n\t<ri:recordContentSource>\n\t  <madsrdf:CorporateName rdf:about=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\">\n\t    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n\t    <madsrdf:authoritativeLabel>United States, Library of Congress, Network Development and MARC Standards Office</madsrdf:authoritativeLabel>\n\t    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/code\">DLC-MRC</madsrdf:code>\n\t    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/normalized\">dlcmrc</madsrdf:code>\n\t    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/iso15511\">US-dlcmrc</madsrdf:code>\n\t  </madsrdf:CorporateName>\n\t</ri:recordContentSource>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2015-04-07T09:13:26.000-04:00</ri:recordChangeDate>\n\t<ri:recordStatus xml:lang=\"en\">modified</ri:recordStatus>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n    <skos:prefLabel>Evanston Township High School</skos:prefLabel>\n    <skos:notation rdf:datatype=\"http://id.loc.gov/datatypes/orgs/code\">IEHS</skos:notation>\n    <skos:notation rdf:datatype=\"http://id.loc.gov/datatypes/orgs/normalized\">iehs</skos:notation>\n    <skos:notation rdf:datatype=\"http://id.loc.gov/datatypes/orgs/iso15511\">US-iehs</skos:notation>\n    <skos:inScheme rdf:resource=\"http://id.loc.gov/vocabulary/organizations\"/>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/organizations/iehs\"/>\n\t<cs:creatorName>United States, Library of Congress, Network Development and MARC Standards OfficeDLC-MRCdlcmrcUS-dlcmrc</cs:creatorName>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1990-01-01T00:00:00.000-04:00</cs:createdDate>\n\t<cs:changeReason xml:lang=\"en\">new</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n    <skos:changeNote>\n      <cs:ChangeSet xmlns:cs=\"http://purl.org/vocab/changeset/schema#\">\n\t<cs:subjectOfChange rdf:resource=\"http://id.loc.gov/vocabulary/organizations/iehs\"/>\n\t<cs:creatorName>United States, Library of Congress, Network Development and MARC Standards OfficeDLC-MRCdlcmrcUS-dlcmrc</cs:creatorName>\n\t<cs:createdDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2015-04-07T09:13:26.000-04:00</cs:createdDate>\n\t<cs:changeReason xml:lang=\"en\">modified</cs:changeReason>\n      </cs:ChangeSet>\n    </skos:changeNote>\n  </madsrdf:CorporateName>\n</rdf:RDF>\n",
       "headers": {
-        "Date": "Tue, 05 Aug 2025 17:28:44 GMT",
+        "Date": "Fri, 05 Dec 2025 16:25:10 GMT",
         "Content-Type": "application/rdf+xml; charset=UTF-8",
         "Content-Length": "5249",
         "Connection": "keep-alive",
+        "CF-RAY": "9a94e5de2b4874e8-IAD",
         "x-frame-options": "DENY",
         "x-xss-protection": "1",
         "x-content-type-options": "nosniff",
@@ -33,13 +34,12 @@
         "x-preflabel-encoded": "Evanston%20Township%20High%20School",
         "x-uri": "http://id.loc.gov/vocabulary/organizations/iehs",
         "Cache-Control": "public, max-age=2419200",
-        "x-varnish": "275950532 288612288",
-        "Age": "4898",
+        "x-varnish": "510405034",
+        "Age": "0",
         "via": "1.1 varnish (Varnish/6.0)",
-        "accept-ranges": "bytes",
+        "Accept-Ranges": "bytes",
         "cf-cache-status": "DYNAMIC",
-        "Server": "cloudflare",
-        "CF-RAY": "96a8033f29238238-IAD"
+        "Server": "cloudflare"
       },
       "status_code": 200
     }
