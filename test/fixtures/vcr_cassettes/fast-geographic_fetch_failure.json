@@ -5,9 +5,10 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "http://id.worldcat.org/fast/0-wrong-id",
+      "url": "https://fast.oclc.org/fast/0-wrong-id",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "Accept": "application/rdf+xml",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -16,25 +17,30 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "<error><code type=\"application\">recordNotFound</code><message>No authority record found.</message><detail>No record/history record found for dbName: 'fast', authorityId: '0-wrong-id'</detail></error>",
+      "body": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> The requested resource [/fast/0-wrong-id] is not available</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/7.0.109</h3></body></html>",
       "headers": {
-        "Date": "Tue, 20 May 2025 19:23:14 GMT",
-        "Content-Type": "application/xml;charset=UTF-8",
+        "Date": "Fri, 05 Dec 2025 16:24:56 GMT",
+        "Content-Type": "text/html;charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
-        "X-RateLimit-Limit-day": "500000",
-        "X-RateLimit-Limit-month": "15000000",
-        "X-RateLimit-Remaining-day": "498534",
-        "X-RateLimit-Remaining-month": "14992130",
-        "RateLimit-Limit": "500000",
-        "RateLimit-Remaining": "498534",
-        "RateLimit-Reset": "16606",
-        "Kong-Request-ID": "a173c801-fdbd-47db-9af0-5901fa98564d#61823550",
-        "X-Kong-Upstream-Latency": "60",
+        "CF-RAY": "9a94e58b4877778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299907",
+        "RateLimit-Reset": "27304",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9907",
+        "X-RateLimit-Remaining-day": "9907",
+        "Content-Language": "en",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546374",
+        "X-Kong-Upstream-Latency": "1",
         "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.9.0.1-enterprise-edition",
-        "X-Kong-Request-Id": "d69d9909f3fdc86c1904ae0e6296bc62",
-        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "043e71521660206bfb516a5c2226173a",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=61x8RCDNr461vDZCqgyZaKSJNYWOYX_QCet9e_xrBDM-1764951896-1.0.1.1-gBcdAr9IKvtiSay7JCA3WT36KatiIajfOgDQs7esJ1yYmu6.MEedQgrJKk_btNAiYe2zYdizpRKGDGhMPY0gUz.bbyDJv2nL6TtQCGMXU0jxch97c9xkj2mZjJasZhZ_; path=/; expires=Fri, 05-Dec-25 16:54:56 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 404
     }

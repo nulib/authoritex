@@ -5,9 +5,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=test&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -18,11 +18,28 @@
       "type": "ok",
       "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest10:test\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":496,\"start\":0,\"docs\":[{\"idroot\":[\"fst00716965\"],\"type\":\"auth\",\"suggest10\":[\"Testa's (Restaurant)\"],\"auth\":\"Testa's (Restaurant)\"},{\"idroot\":[\"fst01637178\"],\"type\":\"alt\",\"suggest10\":[\"Adams' Tested Seeds\"],\"auth\":\"T. Lee Adams Seed Company\"},{\"idroot\":[\"fst01467926\"],\"type\":\"auth\",\"suggest10\":[\"Iris Test Gardens\"],\"auth\":\"Iris Test Gardens\"},{\"idroot\":[\"fst01580783\"],\"type\":\"alt\",\"suggest10\":[\"MACRO Testaccio\"],\"auth\":\"Museo d'arte contemporanea Roma\"},{\"idroot\":[\"fst00608829\"],\"type\":\"auth\",\"suggest10\":[\"Educational Testing Service. Test Collection\"],\"auth\":\"Educational Testing Service. Test Collection\"},{\"idroot\":[\"fst00727906\"],\"type\":\"auth\",\"suggest10\":[\"Santa Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"S. Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"Testona (Italy). Santa Maria di Testona\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00632478\"],\"type\":\"auth\",\"suggest10\":[\"GED Testing Service\"],\"auth\":\"GED Testing Service\"},{\"idroot\":[\"fst00706729\"],\"type\":\"alt\",\"suggest10\":[\"Aberdeen Test Center (Md.)\"],\"auth\":\"U.S. Army Aberdeen Test Center\"},{\"idroot\":[\"fst00570382\"],\"type\":\"alt\",\"suggest10\":[\"UTQG Test Center (U.S.)\"],\"auth\":\"San Angelo Uniform Tire Quality Grading Test Center\"},{\"idroot\":[\"fst00520547\"],\"type\":\"auth\",\"suggest10\":[\"Project Test Pattern\"],\"auth\":\"Project Test Pattern\"},{\"idroot\":[\"fst02050169\"],\"type\":\"alt\",\"suggest10\":[\"USAF Test Pilot School\"],\"auth\":\"United States. Air Force. Test Pilot School\"},{\"idroot\":[\"fst00712221\"],\"type\":\"auth\",\"suggest10\":[\"Air Force Eastern Test Range (U.S.)\"],\"auth\":\"Air Force Eastern Test Range (U.S.)\"},{\"idroot\":[\"fst00613654\"],\"type\":\"auth\",\"suggest10\":[\"Stiftung \\\"Dirck Koster Testament\\\"\"],\"auth\":\"Stiftung \\\"Dirck Koster Testament\\\"\"},{\"idroot\":[\"fst00614341\"],\"type\":\"auth\",\"suggest10\":[\"OSW San Diego Test Facility\"],\"auth\":\"OSW San Diego Test Facility\"},{\"idroot\":[\"fst00635413\"],\"type\":\"auth\",\"suggest10\":[\"Mississippi Test Facility\"],\"auth\":\"Mississippi Test Facility\"},{\"idroot\":[\"fst00635413\"],\"type\":\"alt\",\"suggest10\":[\"NASA Mississippi Test Facility\"],\"auth\":\"Mississippi Test Facility\"},{\"idroot\":[\"fst00647635\"],\"type\":\"auth\",\"suggest10\":[\"Testart Frères & Compagnie\"],\"auth\":\"Testart Frères & Compagnie\"},{\"idroot\":[\"fst00647635\"],\"type\":\"alt\",\"suggest10\":[\"Testart Frères and Compagnie\"],\"auth\":\"Testart Frères & Compagnie\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:25:20 GMT",
         "Content-Type": "application/json",
         "Content-Length": "2744",
-        "Date": "Tue, 20 May 2025 19:23:10 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e6183af7778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299885",
+        "RateLimit-Reset": "27281",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9885",
+        "X-RateLimit-Remaining-day": "9885",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547542",
+        "X-Kong-Upstream-Latency": "570",
+        "X-Kong-Proxy-Latency": "0",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "6e4ecb55d32d830a9101492943325d68",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=bRAqKgpWmCtg8EOp06amMTFadUUjC9OcmIM_jmBjPHk-1764951920-1.0.1.1-c5bglvCtt_HAeE4E0M3x2PdzF6ZZKevCf8FZMwFev.Ragyyy4rWUW2H_K7j3wqUcxqNMXu.3vCk1WmKwvoEpr9vSkqJ0VUknMK2yb5qzUq41tlU3Z_f86heqyCnhd7xE; path=/; expires=Fri, 05-Dec-25 16:55:20 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }
@@ -33,9 +50,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=test&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=15",
+      "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -44,13 +61,30 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":4,\"params\":{\"q\":\"suggest10:test\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":496,\"start\":0,\"docs\":[{\"idroot\":[\"fst00716965\"],\"type\":\"auth\",\"suggest10\":[\"Testa's (Restaurant)\"],\"auth\":\"Testa's (Restaurant)\"},{\"idroot\":[\"fst01637178\"],\"type\":\"alt\",\"suggest10\":[\"Adams' Tested Seeds\"],\"auth\":\"T. Lee Adams Seed Company\"},{\"idroot\":[\"fst01467926\"],\"type\":\"auth\",\"suggest10\":[\"Iris Test Gardens\"],\"auth\":\"Iris Test Gardens\"},{\"idroot\":[\"fst01580783\"],\"type\":\"alt\",\"suggest10\":[\"MACRO Testaccio\"],\"auth\":\"Museo d'arte contemporanea Roma\"},{\"idroot\":[\"fst00608829\"],\"type\":\"auth\",\"suggest10\":[\"Educational Testing Service. Test Collection\"],\"auth\":\"Educational Testing Service. Test Collection\"},{\"idroot\":[\"fst00727906\"],\"type\":\"auth\",\"suggest10\":[\"Santa Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"S. Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"Testona (Italy). Santa Maria di Testona\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00632478\"],\"type\":\"auth\",\"suggest10\":[\"GED Testing Service\"],\"auth\":\"GED Testing Service\"},{\"idroot\":[\"fst00706729\"],\"type\":\"alt\",\"suggest10\":[\"Aberdeen Test Center (Md.)\"],\"auth\":\"U.S. Army Aberdeen Test Center\"},{\"idroot\":[\"fst00570382\"],\"type\":\"alt\",\"suggest10\":[\"UTQG Test Center (U.S.)\"],\"auth\":\"San Angelo Uniform Tire Quality Grading Test Center\"},{\"idroot\":[\"fst00520547\"],\"type\":\"auth\",\"suggest10\":[\"Project Test Pattern\"],\"auth\":\"Project Test Pattern\"},{\"idroot\":[\"fst02050169\"],\"type\":\"alt\",\"suggest10\":[\"USAF Test Pilot School\"],\"auth\":\"United States. Air Force. Test Pilot School\"},{\"idroot\":[\"fst00712221\"],\"type\":\"auth\",\"suggest10\":[\"Air Force Eastern Test Range (U.S.)\"],\"auth\":\"Air Force Eastern Test Range (U.S.)\"},{\"idroot\":[\"fst00613654\"],\"type\":\"auth\",\"suggest10\":[\"Stiftung \\\"Dirck Koster Testament\\\"\"],\"auth\":\"Stiftung \\\"Dirck Koster Testament\\\"\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest10:test\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":496,\"start\":0,\"docs\":[{\"idroot\":[\"fst00716965\"],\"type\":\"auth\",\"suggest10\":[\"Testa's (Restaurant)\"],\"auth\":\"Testa's (Restaurant)\"},{\"idroot\":[\"fst01637178\"],\"type\":\"alt\",\"suggest10\":[\"Adams' Tested Seeds\"],\"auth\":\"T. Lee Adams Seed Company\"},{\"idroot\":[\"fst01467926\"],\"type\":\"auth\",\"suggest10\":[\"Iris Test Gardens\"],\"auth\":\"Iris Test Gardens\"},{\"idroot\":[\"fst01580783\"],\"type\":\"alt\",\"suggest10\":[\"MACRO Testaccio\"],\"auth\":\"Museo d'arte contemporanea Roma\"},{\"idroot\":[\"fst00608829\"],\"type\":\"auth\",\"suggest10\":[\"Educational Testing Service. Test Collection\"],\"auth\":\"Educational Testing Service. Test Collection\"},{\"idroot\":[\"fst00727906\"],\"type\":\"auth\",\"suggest10\":[\"Santa Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"S. Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"Testona (Italy). Santa Maria di Testona\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00632478\"],\"type\":\"auth\",\"suggest10\":[\"GED Testing Service\"],\"auth\":\"GED Testing Service\"},{\"idroot\":[\"fst00706729\"],\"type\":\"alt\",\"suggest10\":[\"Aberdeen Test Center (Md.)\"],\"auth\":\"U.S. Army Aberdeen Test Center\"},{\"idroot\":[\"fst00570382\"],\"type\":\"alt\",\"suggest10\":[\"UTQG Test Center (U.S.)\"],\"auth\":\"San Angelo Uniform Tire Quality Grading Test Center\"},{\"idroot\":[\"fst00520547\"],\"type\":\"auth\",\"suggest10\":[\"Project Test Pattern\"],\"auth\":\"Project Test Pattern\"},{\"idroot\":[\"fst02050169\"],\"type\":\"alt\",\"suggest10\":[\"USAF Test Pilot School\"],\"auth\":\"United States. Air Force. Test Pilot School\"},{\"idroot\":[\"fst00712221\"],\"type\":\"auth\",\"suggest10\":[\"Air Force Eastern Test Range (U.S.)\"],\"auth\":\"Air Force Eastern Test Range (U.S.)\"},{\"idroot\":[\"fst00613654\"],\"type\":\"auth\",\"suggest10\":[\"Stiftung \\\"Dirck Koster Testament\\\"\"],\"auth\":\"Stiftung \\\"Dirck Koster Testament\\\"\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:25:20 GMT",
         "Content-Type": "application/json",
         "Content-Length": "2133",
-        "Date": "Tue, 20 May 2025 19:23:10 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e61c1d84778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299884",
+        "RateLimit-Reset": "27280",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9884",
+        "X-RateLimit-Remaining-day": "9884",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547568",
+        "X-Kong-Upstream-Latency": "568",
+        "X-Kong-Proxy-Latency": "0",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "bc565516fac22629e02b3f453d561438",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=8voERMN4_QDXxsWSbTzI4vqxIGAl.AZix7oMWGLyAQU-1764951920-1.0.1.1-uutvqlfAk2cX3ZHrTXLA38JP553SHEeUBPGQy2UjjPoZ1V3mtqfurjrH6wn8cp2dFiwqNe4.pXcUZtESFZhThJ.3psDCo.Wa7Uv2F29_jfgSnh5ZpUk9O3qDXxLQBMxy; path=/; expires=Fri, 05-Dec-25 16:55:20 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }

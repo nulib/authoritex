@@ -5,9 +5,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=test&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -18,11 +18,28 @@
       "type": "ok",
       "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest30:test\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":1095,\"start\":0,\"docs\":[{\"idroot\":[\"fst01365476\"],\"type\":\"auth\",\"suggest30\":[\"Testrand\"],\"auth\":\"Testrand\"},{\"idroot\":[\"fst01386041\"],\"type\":\"alt\",\"suggest30\":[\"Test of time\"],\"auth\":\"Civilization II (Meier, Sid)\"},{\"idroot\":[\"fst01401552\"],\"type\":\"alt\",\"suggest30\":[\"Testament\"],\"auth\":\"Colecția Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"New Testament\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nouveau Testament\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Novo Testamento\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Novum Testamentum\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nuevo Testamento\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nuovo Testamento\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nye Testamente\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Antico Testamento\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Old Testament\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Stary Testament\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Velho Testamento\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01786992\"],\"type\":\"alt\",\"suggest30\":[\"Textile testing\"],\"auth\":\"Measuring the performance of textiles--textile testing\"},{\"idroot\":[\"fst01358564\"],\"type\":\"alt\",\"suggest30\":[\"Testament of Moses\"],\"auth\":\"Assumption of Moses\"},{\"idroot\":[\"fst01366329\"],\"type\":\"auth\",\"suggest30\":[\"Testament of Jacob\"],\"auth\":\"Testament of Jacob\"},{\"idroot\":[\"fst01366445\"],\"type\":\"auth\",\"suggest30\":[\"Testament of Job\"],\"auth\":\"Testament of Job\"},{\"idroot\":[\"fst01366445\"],\"type\":\"alt\",\"suggest30\":[\"Job, Testament of\"],\"auth\":\"Testament of Job\"},{\"idroot\":[\"fst01380681\"],\"type\":\"auth\",\"suggest30\":[\"Testament of Levi\"],\"auth\":\"Testament of Levi\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:24:53 GMT",
         "Content-Type": "application/json",
         "Content-Length": "2239",
-        "Date": "Tue, 20 May 2025 19:23:24 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e57309e3778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299915",
+        "RateLimit-Reset": "27308",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9915",
+        "X-RateLimit-Remaining-day": "9915",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546156",
+        "X-Kong-Upstream-Latency": "579",
+        "X-Kong-Proxy-Latency": "0",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "6c38fd01ff4aaf6ba5b3fc6ac30c5343",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=Tv.06dr9gt5zWRb0eq9OG_ZAXFYrfrd04NyLuPfOhXA-1764951893-1.0.1.1-GXXhx3ZBxuLO4yh5vaXrIhAmguS7tH9nMK.7wSIGu.8p8hWwAcuMMwhYtQb48vhkaztFN6Jv7b.0k6eXr9NnXDGy2KngWpscWcl2BbYncotxrLjmOb.y9YkeJU.YjgRG; path=/; expires=Fri, 05-Dec-25 16:54:53 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }
@@ -33,9 +50,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=test&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=15",
+      "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -46,11 +63,28 @@
       "type": "ok",
       "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest30:test\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":1095,\"start\":0,\"docs\":[{\"idroot\":[\"fst01365476\"],\"type\":\"auth\",\"suggest30\":[\"Testrand\"],\"auth\":\"Testrand\"},{\"idroot\":[\"fst01386041\"],\"type\":\"alt\",\"suggest30\":[\"Test of time\"],\"auth\":\"Civilization II (Meier, Sid)\"},{\"idroot\":[\"fst01401552\"],\"type\":\"alt\",\"suggest30\":[\"Testament\"],\"auth\":\"Colecția Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"New Testament\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nouveau Testament\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Novo Testamento\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Novum Testamentum\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nuevo Testamento\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nuovo Testamento\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808090\"],\"type\":\"alt\",\"suggest30\":[\"Nye Testamente\"],\"auth\":\"Bible. New Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Antico Testamento\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Old Testament\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Stary Testament\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01808092\"],\"type\":\"alt\",\"suggest30\":[\"Velho Testamento\"],\"auth\":\"Bible. Old Testament\"},{\"idroot\":[\"fst01786992\"],\"type\":\"alt\",\"suggest30\":[\"Textile testing\"],\"auth\":\"Measuring the performance of textiles--textile testing\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:24:54 GMT",
         "Content-Type": "application/json",
         "Content-Length": "1729",
-        "Date": "Tue, 20 May 2025 19:23:24 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e5770d77778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299914",
+        "RateLimit-Reset": "27307",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9914",
+        "X-RateLimit-Remaining-day": "9914",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546203",
+        "X-Kong-Upstream-Latency": "569",
+        "X-Kong-Proxy-Latency": "1",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "e6ebea173f67082232c94900e4e7ac75",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=QYEYx_TXASS_8eyFlvCAy4L3y0B0asv.lMeEcxFn7W4-1764951894-1.0.1.1-9lGgBlfRbZ_u6U5bM_Gz2xXpwsgAv3AiVBzMP_RqnnScGLWy.XA_w2s8tHQizH02.apM.STdg3ApXQDdJ5X1caDW1wPrlX3XwmRJM9ka0ng99ZWB60Ruh9uO0aNUfMBn; path=/; expires=Fri, 05-Dec-25 16:54:54 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }

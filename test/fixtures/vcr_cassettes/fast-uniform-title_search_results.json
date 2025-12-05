@@ -5,9 +5,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=benjamin%20franklin&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/fastsuggest?query=benjamin%20franklin&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -16,13 +16,30 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":16,\"params\":{\"q\":\"suggest30:franklin suggest30:benjamin\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":38,\"start\":0,\"docs\":[{\"idroot\":[\"fst01779716\"],\"type\":\"alt\",\"suggest30\":[\"Mr. Franklin (Franklin, Benjamin)\"],\"auth\":\"Correspondence (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Life of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01380063\"],\"type\":\"alt\",\"suggest30\":[\"Papers of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Archives (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Franklin on Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01375004\"],\"type\":\"alt\",\"suggest30\":[\"B. Franklin's morals of chess (Franklin, Benjamin)\"],\"auth\":\"Morals of chess (Franklin, Benjamin)\"},{\"idroot\":[\"fst01896803\"],\"type\":\"alt\",\"suggest30\":[\"Way to wealth (Franklin, Benjamin)\"],\"auth\":\"Way to wealth (Saunders, Richard)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"auth\",\"suggest30\":[\"Poor Richard (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361828\"],\"type\":\"alt\",\"suggest30\":[\"Parable (Franklin, Benjamin)\"],\"auth\":\"Parable against persecution (Franklin, Benjamin)\"},{\"idroot\":[\"fst01380063\"],\"type\":\"auth\",\"suggest30\":[\"Archives (Franklin, Benjamin)\"],\"auth\":\"Archives (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Benjamin Franklin's autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Autobiography of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Benjamin Franklin, his autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"alt\",\"suggest30\":[\"Some sayings of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01779716\"],\"type\":\"auth\",\"suggest30\":[\"Correspondence (Franklin, Benjamin)\"],\"auth\":\"Correspondence (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"auth\",\"suggest30\":[\"Autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"alt\",\"suggest30\":[\"Poor Richard's almanack (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361634\"],\"type\":\"alt\",\"suggest30\":[\"Old mistresses' apologue (Franklin, Benjamin)\"],\"auth\":\"Advice to a young man on the choice of a mistress (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361634\"],\"type\":\"alt\",\"suggest30\":[\"Letter on marriage (Franklin, Benjamin)\"],\"auth\":\"Advice to a young man on the choice of a mistress (Franklin, Benjamin)\"},{\"idroot\":[\"fst01375004\"],\"type\":\"auth\",\"suggest30\":[\"Morals of chess (Franklin, Benjamin)\"],\"auth\":\"Morals of chess (Franklin, Benjamin)\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest30:franklin suggest30:benjamin\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":38,\"start\":0,\"docs\":[{\"idroot\":[\"fst01779716\"],\"type\":\"alt\",\"suggest30\":[\"Mr. Franklin (Franklin, Benjamin)\"],\"auth\":\"Correspondence (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Life of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01380063\"],\"type\":\"alt\",\"suggest30\":[\"Papers of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Archives (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Franklin on Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01375004\"],\"type\":\"alt\",\"suggest30\":[\"B. Franklin's morals of chess (Franklin, Benjamin)\"],\"auth\":\"Morals of chess (Franklin, Benjamin)\"},{\"idroot\":[\"fst01896803\"],\"type\":\"alt\",\"suggest30\":[\"Way to wealth (Franklin, Benjamin)\"],\"auth\":\"Way to wealth (Saunders, Richard)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"auth\",\"suggest30\":[\"Poor Richard (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361828\"],\"type\":\"alt\",\"suggest30\":[\"Parable (Franklin, Benjamin)\"],\"auth\":\"Parable against persecution (Franklin, Benjamin)\"},{\"idroot\":[\"fst01380063\"],\"type\":\"auth\",\"suggest30\":[\"Archives (Franklin, Benjamin)\"],\"auth\":\"Archives (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Benjamin Franklin's autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Autobiography of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Benjamin Franklin, his autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"alt\",\"suggest30\":[\"Some sayings of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01779716\"],\"type\":\"auth\",\"suggest30\":[\"Correspondence (Franklin, Benjamin)\"],\"auth\":\"Correspondence (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"auth\",\"suggest30\":[\"Autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"alt\",\"suggest30\":[\"Poor Richard's almanack (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361634\"],\"type\":\"alt\",\"suggest30\":[\"Old mistresses' apologue (Franklin, Benjamin)\"],\"auth\":\"Advice to a young man on the choice of a mistress (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361634\"],\"type\":\"alt\",\"suggest30\":[\"Letter on marriage (Franklin, Benjamin)\"],\"auth\":\"Advice to a young man on the choice of a mistress (Franklin, Benjamin)\"},{\"idroot\":[\"fst01375004\"],\"type\":\"auth\",\"suggest30\":[\"Morals of chess (Franklin, Benjamin)\"],\"auth\":\"Morals of chess (Franklin, Benjamin)\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:24:52 GMT",
         "Content-Type": "application/json",
-        "Content-Length": "3174",
-        "Date": "Tue, 20 May 2025 19:23:25 GMT"
+        "Content-Length": "3173",
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e56e6c27778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299917",
+        "RateLimit-Reset": "27308",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9917",
+        "X-RateLimit-Remaining-day": "9917",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546101",
+        "X-Kong-Upstream-Latency": "572",
+        "X-Kong-Proxy-Latency": "1",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "69068f433de3476fdf51f34030aad810",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=q7u_Yc6bFLZCbUXew1YUfu0tMVr_uuzuoXlS_EP2m7c-1764951892-1.0.1.1-XuNxBhY0Bbwu0SCRa6ftCpNVUHguiooYxh7p5vWPXScu.k.o5L6sxxxjIs2l_4h2TShmQCoWcZuYLT65tYrRJIRG_huBIA4Oi.b1iaAwZgAWM7FqjyB4wNfdoxNX1Fak; path=/; expires=Fri, 05-Dec-25 16:54:52 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }

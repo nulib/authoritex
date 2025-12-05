@@ -33,10 +33,13 @@ defmodule Authoritex.FAST.Base do
         |> fetch()
       end
 
-      def fetch(id) do
+      def fetch(unquote(http_uri) <> "/" <> id) do
         request =
-          id
-          |> HttpClient.get([{"Content-Type", "application/json;"}], follow_redirect: true)
+          "https://fast.oclc.org/fast/#{id}"
+          |> HttpClient.get(
+            [{"Accept", "application/rdf+xml"}, {"Content-Type", "application/json;"}],
+            follow_redirect: true
+          )
           |> autoretry()
 
         case request do
@@ -52,7 +55,7 @@ defmodule Authoritex.FAST.Base do
       def search(query, max_results \\ 20) do
         request =
           HttpClient.get(
-            "https://fast.oclc.org/searchfast/fastsuggest?" <>
+            "https://fast.oclc.org/fastsuggest?" <>
               "query=#{conform_query_to_spec(query)}" <>
               "&query_index=#{unquote(subauthority)}" <>
               "&suggest=autoSubject" <>
