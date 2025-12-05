@@ -5,9 +5,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=herskovits%20library%20of%20african%20studies&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/fastsuggest?query=herskovits%20library%20of%20african%20studies&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -16,13 +16,30 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":2,\"params\":{\"q\":\"suggestall:studies suggestall:african suggestall:of suggestall:library suggestall:herskovits\",\"fl\":\"suggestall,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":3,\"start\":0,\"docs\":[{\"idroot\":[\"fst00521479\"],\"type\":\"alt\",\"suggestall\":[\"Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"},{\"idroot\":[\"fst00521479\"],\"type\":\"auth\",\"suggestall\":[\"Melville J. Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"},{\"idroot\":[\"fst00521479\"],\"type\":\"alt\",\"suggestall\":[\"Northwestern University (Evanston, Ill.). Library. Melville J. Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggestall:studies suggestall:african suggestall:of suggestall:library suggestall:herskovits\",\"fl\":\"suggestall,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":3,\"start\":0,\"docs\":[{\"idroot\":[\"fst00521479\"],\"type\":\"alt\",\"suggestall\":[\"Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"},{\"idroot\":[\"fst00521479\"],\"type\":\"auth\",\"suggestall\":[\"Melville J. Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"},{\"idroot\":[\"fst00521479\"],\"type\":\"alt\",\"suggestall\":[\"Northwestern University (Evanston, Ill.). Library. Melville J. Herskovits Library of African Studies\"],\"auth\":\"Melville J. Herskovits Library of African Studies\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:25:08 GMT",
         "Content-Type": "application/json",
         "Content-Length": "794",
-        "Date": "Tue, 20 May 2025 19:23:14 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e5cdabe2778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299903",
+        "RateLimit-Reset": "27293",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9903",
+        "X-RateLimit-Remaining-day": "9903",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546988",
+        "X-Kong-Upstream-Latency": "573",
+        "X-Kong-Proxy-Latency": "0",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "8c61111b3e582d337922e25673cc592a",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=tgyrvYssax.LL6.UD1hNbW6k80Jb_dFgqMq209CamTc-1764951908-1.0.1.1-_1B_crNzI0y6jvH31z0wq1M7iXOCaaV8zbCH.StO6pdYlepHv_VbnMpX.iiop2ilMjHdfcpB9WH2gixtOorfPPieBRNOmvJ6X_12PIlwzgClD6BUMOGDc9nyCl3JW.8g; path=/; expires=Fri, 05-Dec-25 16:55:08 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }

@@ -5,9 +5,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=dewey,%20m&query_index=suggest00&suggest=autoSubject&queryReturn=suggest00,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/fastsuggest?query=dewey,%20m&query_index=suggest00&suggest=autoSubject&queryReturn=suggest00,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -16,13 +16,30 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":11,\"params\":{\"q\":\"suggest00:m suggest00:dewey,\",\"fl\":\"suggest00,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":17,\"start\":0,\"docs\":[{\"idroot\":[\"fst01491515\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary E.\"],\"auth\":\"Dewey, Mary E.\"},{\"idroot\":[\"fst00188574\"],\"type\":\"auth\",\"suggest00\":[\"Beegle, Dewey M.\"],\"auth\":\"Beegle, Dewey M.\"},{\"idroot\":[\"fst00262346\"],\"type\":\"auth\",\"suggest00\":[\"Bertolini, Dewey M.\"],\"auth\":\"Bertolini, Dewey M.\"},{\"idroot\":[\"fst00314011\"],\"type\":\"alt\",\"suggest00\":[\"Markham, Dewey\"],\"auth\":\"Markham, Pigmeat\"},{\"idroot\":[\"fst01731364\"],\"type\":\"alt\",\"suggest00\":[\"Martin, Dewey\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01815702\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary Perrin, -1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01815702\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Mary Perrin, d. 1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01989213\"],\"type\":\"alt\",\"suggest00\":[\"Marler, George Dewey\"],\"auth\":\"Marler, George D.\"},{\"idroot\":[\"fst00041002\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Melvil, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"},{\"idroot\":[\"fst00470352\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Evelyn Margaret Grow, 1913-\"],\"auth\":\"Dewey, Evelyn Margaret Grow, 1913-\"},{\"idroot\":[\"fst00247048\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Frank Lenington, Mrs.\"],\"auth\":\"Dewey, Eleanor Gwathmey Powell\"},{\"idroot\":[\"fst01731364\"],\"type\":\"auth\",\"suggest00\":[\"Martin, Dewey, 1940-2009\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01489124\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, D. M. (Dellon Marcus), 1819-1889\"],\"auth\":\"Dewey, D. M. (Dellon Marcus), 1819-1889\"},{\"idroot\":[\"fst01943827\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mildred McLean Hazen, 1850-1931\"],\"auth\":\"Dewey, Mildred McLean Hazen, 1850-1931\"},{\"idroot\":[\"fst00041002\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Melville Louis Kossuth, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"},{\"idroot\":[\"fst00137867\"],\"type\":\"alt\",\"suggest00\":[\"Barnard, Mr. (Daniel Dewey), 1797-1861\"],\"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\"},{\"idroot\":[\"fst01489124\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Dellon Marcus, 1819-1889\"],\"auth\":\"Dewey, D. M. (Dellon Marcus), 1819-1889\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest00:m suggest00:dewey,\",\"fl\":\"suggest00,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":17,\"start\":0,\"docs\":[{\"idroot\":[\"fst01491515\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary E.\"],\"auth\":\"Dewey, Mary E.\"},{\"idroot\":[\"fst00188574\"],\"type\":\"auth\",\"suggest00\":[\"Beegle, Dewey M.\"],\"auth\":\"Beegle, Dewey M.\"},{\"idroot\":[\"fst00262346\"],\"type\":\"auth\",\"suggest00\":[\"Bertolini, Dewey M.\"],\"auth\":\"Bertolini, Dewey M.\"},{\"idroot\":[\"fst00314011\"],\"type\":\"alt\",\"suggest00\":[\"Markham, Dewey\"],\"auth\":\"Markham, Pigmeat\"},{\"idroot\":[\"fst01731364\"],\"type\":\"alt\",\"suggest00\":[\"Martin, Dewey\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01815702\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary Perrin, -1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01815702\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Mary Perrin, d. 1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01989213\"],\"type\":\"alt\",\"suggest00\":[\"Marler, George Dewey\"],\"auth\":\"Marler, George D.\"},{\"idroot\":[\"fst00041002\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Melvil, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"},{\"idroot\":[\"fst00470352\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Evelyn Margaret Grow, 1913-\"],\"auth\":\"Dewey, Evelyn Margaret Grow, 1913-\"},{\"idroot\":[\"fst00247048\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Frank Lenington, Mrs.\"],\"auth\":\"Dewey, Eleanor Gwathmey Powell\"},{\"idroot\":[\"fst01731364\"],\"type\":\"auth\",\"suggest00\":[\"Martin, Dewey, 1940-2009\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01489124\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, D. M. (Dellon Marcus), 1819-1889\"],\"auth\":\"Dewey, D. M. (Dellon Marcus), 1819-1889\"},{\"idroot\":[\"fst01943827\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mildred McLean Hazen, 1850-1931\"],\"auth\":\"Dewey, Mildred McLean Hazen, 1850-1931\"},{\"idroot\":[\"fst00041002\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Melville Louis Kossuth, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"},{\"idroot\":[\"fst00137867\"],\"type\":\"alt\",\"suggest00\":[\"Barnard, Mr. (Daniel Dewey), 1797-1861\"],\"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\"},{\"idroot\":[\"fst01489124\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Dellon Marcus, 1819-1889\"],\"auth\":\"Dewey, D. M. (Dellon Marcus), 1819-1889\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:24:38 GMT",
         "Content-Type": "application/json",
-        "Content-Length": "2241",
-        "Date": "Tue, 20 May 2025 19:23:08 GMT"
+        "Content-Length": "2240",
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e513ae18778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299931",
+        "RateLimit-Reset": "27323",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9931",
+        "X-RateLimit-Remaining-day": "9931",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66545403",
+        "X-Kong-Upstream-Latency": "572",
+        "X-Kong-Proxy-Latency": "1",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "57d99830e07ed73c307e0a1bb9886a58",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=z1XJpIiCz5GRylVEPiaZ82KZxqMM2r_xwYTA4LwUMys-1764951878-1.0.1.1-zM3sd4zBleBZhKP9Z18a_C0_7O9kJb1NbiqDzvTg7wJZ6_FLuiyYkuedVBKqNAKQNO2RuJkzMubPZ95eGJBS8t_TvJO5u5oML3C2pBFwbBcA73slcsU6uQPhJ9tMOz.O; path=/; expires=Fri, 05-Dec-25 16:54:38 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }

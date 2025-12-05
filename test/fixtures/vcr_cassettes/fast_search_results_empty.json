@@ -5,9 +5,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=M1551ng&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/fastsuggest?query=M1551ng&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -18,11 +18,28 @@
       "type": "ok",
       "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggestall:M1551ng\",\"fl\":\"suggestall,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:25:22 GMT",
         "Content-Type": "application/json",
         "Content-Length": "183",
-        "Date": "Tue, 20 May 2025 19:23:28 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e6275cad778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299880",
+        "RateLimit-Reset": "27279",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9880",
+        "X-RateLimit-Remaining-day": "9880",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547675",
+        "X-Kong-Upstream-Latency": "572",
+        "X-Kong-Proxy-Latency": "1",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "dbf37d1d54d5f170229c60175574642a",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=TnSwRHI6TRTZA4Hzfmb90rzMu29kfqoLjcKLH_FCDlQ-1764951922-1.0.1.1-1m0b3nVMl5DZF6rEuYaK8raLTy7wRnKRAmiOxE6fSPtoZHXp.h6W5fKZonfUgyyMmcBiqEPmNYHjTdOYpYLx.PZMQXdFyCVMW0ANHOtcTyj8roJ.pckAPsMrwIkcmqZS; path=/; expires=Fri, 05-Dec-25 16:55:22 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }

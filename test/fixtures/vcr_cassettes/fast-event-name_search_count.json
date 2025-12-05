@@ -5,9 +5,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=Library%20and%20Information&query_index=suggest11&suggest=autoSubject&queryReturn=suggest11,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/fastsuggest?query=Library%20and%20Information&query_index=suggest11&suggest=autoSubject&queryReturn=suggest11,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -16,13 +16,30 @@
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":2,\"params\":{\"q\":\"suggest11:Information suggest11:and suggest11:Library\",\"fl\":\"suggest11,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":58,\"start\":0,\"docs\":[{\"idroot\":[\"fst01796372\"],\"type\":\"auth\",\"suggest11\":[\"World Library and Information Congress\"],\"auth\":\"World Library and Information Congress\"},{\"idroot\":[\"fst01796372\"],\"type\":\"alt\",\"suggest11\":[\"IFLA World Library and Information Congress\"],\"auth\":\"World Library and Information Congress\"},{\"idroot\":[\"fst01405442\"],\"type\":\"auth\",\"suggest11\":[\"Ohio White House Conference on Library and Information Services\"],\"auth\":\"Ohio White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405442\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Ohio White House\"],\"auth\":\"Ohio White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405507\"],\"type\":\"auth\",\"suggest11\":[\"Missouri Governor's Conference on Library and Information Services\"],\"auth\":\"Missouri Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405507\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Missouri Governor's\"],\"auth\":\"Missouri Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"auth\",\"suggest11\":[\"Texas Conference on Library and Information Services\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Texas\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"alt\",\"suggest11\":[\"Library and Information Services, Texas Conference on\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"auth\",\"suggest11\":[\"Connecticut Governor's Conference on Library and Information Services\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Connecticut Governor's\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"alt\",\"suggest11\":[\"Governor's Conference on Library and Information Services (Conn.)\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"auth\",\"suggest11\":[\"North Carolina Governor's Conference on Library and Information Services\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, North Carolina Governor's\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"alt\",\"suggest11\":[\"Library and Information Services, North Carolina Governor's Conference on\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405606\"],\"type\":\"auth\",\"suggest11\":[\"White House Conference on Library and Information Services\"],\"auth\":\"White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405606\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, White House\"],\"auth\":\"White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405618\"],\"type\":\"auth\",\"suggest11\":[\"Wyoming Governor's Conference on Library and Information Services\"],\"auth\":\"Wyoming Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405618\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Wyoming Governor's\"],\"auth\":\"Wyoming Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405618\"],\"type\":\"alt\",\"suggest11\":[\"Governor's Conference on Library and Information Services, Wyoming\"],\"auth\":\"Wyoming Governor's Conference on Library and Information Services\"}]}}\n",
+      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest11:Information suggest11:and suggest11:Library\",\"fl\":\"suggest11,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":58,\"start\":0,\"docs\":[{\"idroot\":[\"fst01796372\"],\"type\":\"auth\",\"suggest11\":[\"World Library and Information Congress\"],\"auth\":\"World Library and Information Congress\"},{\"idroot\":[\"fst01796372\"],\"type\":\"alt\",\"suggest11\":[\"IFLA World Library and Information Congress\"],\"auth\":\"World Library and Information Congress\"},{\"idroot\":[\"fst01405442\"],\"type\":\"auth\",\"suggest11\":[\"Ohio White House Conference on Library and Information Services\"],\"auth\":\"Ohio White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405442\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Ohio White House\"],\"auth\":\"Ohio White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405507\"],\"type\":\"auth\",\"suggest11\":[\"Missouri Governor's Conference on Library and Information Services\"],\"auth\":\"Missouri Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405507\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Missouri Governor's\"],\"auth\":\"Missouri Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"auth\",\"suggest11\":[\"Texas Conference on Library and Information Services\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Texas\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"alt\",\"suggest11\":[\"Library and Information Services, Texas Conference on\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"auth\",\"suggest11\":[\"Connecticut Governor's Conference on Library and Information Services\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Connecticut Governor's\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"alt\",\"suggest11\":[\"Governor's Conference on Library and Information Services (Conn.)\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"auth\",\"suggest11\":[\"North Carolina Governor's Conference on Library and Information Services\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, North Carolina Governor's\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"alt\",\"suggest11\":[\"Library and Information Services, North Carolina Governor's Conference on\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405606\"],\"type\":\"auth\",\"suggest11\":[\"White House Conference on Library and Information Services\"],\"auth\":\"White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405606\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, White House\"],\"auth\":\"White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405618\"],\"type\":\"auth\",\"suggest11\":[\"Wyoming Governor's Conference on Library and Information Services\"],\"auth\":\"Wyoming Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405618\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Wyoming Governor's\"],\"auth\":\"Wyoming Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405618\"],\"type\":\"alt\",\"suggest11\":[\"Governor's Conference on Library and Information Services, Wyoming\"],\"auth\":\"Wyoming Governor's Conference on Library and Information Services\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:24:55 GMT",
         "Content-Type": "application/json",
         "Content-Length": "4024",
-        "Date": "Tue, 20 May 2025 19:23:16 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e57f3da2778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299911",
+        "RateLimit-Reset": "27306",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9911",
+        "X-RateLimit-Remaining-day": "9911",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546269",
+        "X-Kong-Upstream-Latency": "571",
+        "X-Kong-Proxy-Latency": "0",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "67ddad783a42be370fb32f66838a7d1d",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=foYwDa7WQ3__MqiVVCxr_1WMPLaqyfAGJ3JySsj7A3A-1764951895-1.0.1.1-ArLyAVrY9pjAWKvYRMUhL1QGdKFOC16.51fx_ED6wAAqxiZpe4yKihof4zT4lAp60YKSXopWh1hl1uoQg2FNoEzVScDZCzlfFdoqE6Ucuz27dfXCSJlJvK8obsib1Kt2; path=/; expires=Fri, 05-Dec-25 16:54:55 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }
@@ -33,9 +50,9 @@
         "follow_redirect": "true"
       },
       "body": "",
-      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=Library%20and%20Information&query_index=suggest11&suggest=autoSubject&queryReturn=suggest11,idroot,auth,type&rows=15",
+      "url": "https://fast.oclc.org/fastsuggest?query=Library%20and%20Information&query_index=suggest11&suggest=autoSubject&queryReturn=suggest11,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.2.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "Content-Type": "application/json;"
       },
       "method": "get",
@@ -46,11 +63,28 @@
       "type": "ok",
       "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest11:Information suggest11:and suggest11:Library\",\"fl\":\"suggest11,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":58,\"start\":0,\"docs\":[{\"idroot\":[\"fst01796372\"],\"type\":\"auth\",\"suggest11\":[\"World Library and Information Congress\"],\"auth\":\"World Library and Information Congress\"},{\"idroot\":[\"fst01796372\"],\"type\":\"alt\",\"suggest11\":[\"IFLA World Library and Information Congress\"],\"auth\":\"World Library and Information Congress\"},{\"idroot\":[\"fst01405442\"],\"type\":\"auth\",\"suggest11\":[\"Ohio White House Conference on Library and Information Services\"],\"auth\":\"Ohio White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405442\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Ohio White House\"],\"auth\":\"Ohio White House Conference on Library and Information Services\"},{\"idroot\":[\"fst01405507\"],\"type\":\"auth\",\"suggest11\":[\"Missouri Governor's Conference on Library and Information Services\"],\"auth\":\"Missouri Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405507\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Missouri Governor's\"],\"auth\":\"Missouri Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"auth\",\"suggest11\":[\"Texas Conference on Library and Information Services\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Texas\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405572\"],\"type\":\"alt\",\"suggest11\":[\"Library and Information Services, Texas Conference on\"],\"auth\":\"Texas Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"auth\",\"suggest11\":[\"Connecticut Governor's Conference on Library and Information Services\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, Connecticut Governor's\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405575\"],\"type\":\"alt\",\"suggest11\":[\"Governor's Conference on Library and Information Services (Conn.)\"],\"auth\":\"Connecticut Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"auth\",\"suggest11\":[\"North Carolina Governor's Conference on Library and Information Services\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"alt\",\"suggest11\":[\"Conference on Library and Information Services, North Carolina Governor's\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"},{\"idroot\":[\"fst01405583\"],\"type\":\"alt\",\"suggest11\":[\"Library and Information Services, North Carolina Governor's Conference on\"],\"auth\":\"North Carolina Governor's Conference on Library and Information Services\"}]}}\n",
       "headers": {
-        "Server": "Apache-Coyote/1.1",
-        "Access-Control-Allow-Origin": "*",
+        "Date": "Fri, 05 Dec 2025 16:24:56 GMT",
         "Content-Type": "application/json",
         "Content-Length": "3062",
-        "Date": "Tue, 20 May 2025 19:23:17 GMT"
+        "Connection": "keep-alive",
+        "CF-RAY": "9a94e58328c7778a-IAD",
+        "RateLimit-Limit": "10000",
+        "X-RateLimit-Limit-day": "10000",
+        "X-RateLimit-Remaining-month": "299910",
+        "RateLimit-Reset": "27305",
+        "X-RateLimit-Limit-month": "300000",
+        "RateLimit-Remaining": "9910",
+        "X-RateLimit-Remaining-day": "9910",
+        "Access-Control-Allow-Origin": "*",
+        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546303",
+        "X-Kong-Upstream-Latency": "570",
+        "X-Kong-Proxy-Latency": "0",
+        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "X-Kong-Request-Id": "51b7ae6a82c183705cdeb82d6346c936",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "Set-Cookie": "__cf_bm=gbkI4orgwsUlphS2GJL_.R6IOtVnEZjGwTEexgXMcs8-1764951896-1.0.1.1-bnlJJt9b_Ao9i8mg3yxwGxM5j_fsXONRQmFkf.LhcX6BO_5jvDWEQue8YlMsNJunHlx7MeUl25BsK3nddDZXCDnWnTvyANDnw3z2mAROd7b8mbphtMini3uRx0tw9f2Y; path=/; expires=Fri, 05-Dec-25 16:54:56 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "Server": "cloudflare"
       },
       "status_code": 200
     }
