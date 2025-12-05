@@ -5,7 +5,7 @@
       "body": "",
       "url": "https://id.loc.gov/authorities/genreForms/suggest2?q=&count=30&searchtype=keyword",
       "headers": {
-        "User-Agent": "Authoritex/1.2.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "accept": "application/ld+json"
       },
       "method": "get",
@@ -16,17 +16,17 @@
       "type": "ok",
       "body": "No search entered",
       "headers": {
-        "Date": "Tue, 05 Aug 2025 17:28:44 GMT",
+        "Date": "Fri, 05 Dec 2025 16:25:06 GMT",
         "Content-Type": "text/plain; charset=UTF-8",
         "Content-Length": "17",
         "Connection": "keep-alive",
+        "CF-RAY": "9a94e5c78ec274e8-IAD",
         "Cache-Control": "public, max-age=2419200",
-        "x-varnish": "275950530 289157908",
-        "Age": "1024",
+        "x-varnish": "535013739",
+        "Age": "0",
         "via": "1.1 varnish (Varnish/6.0)",
         "cf-cache-status": "DYNAMIC",
-        "Server": "cloudflare",
-        "CF-RAY": "96a8033e38438238-IAD"
+        "Server": "cloudflare"
       },
       "status_code": 404
     }
@@ -37,7 +37,7 @@
       "body": "",
       "url": "https://id.loc.gov/authorities/genreForms/suggest2?q=&count=50&searchtype=keyword",
       "headers": {
-        "User-Agent": "Authoritex/1.2.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "accept": "application/ld+json"
       },
       "method": "get",
@@ -48,17 +48,17 @@
       "type": "ok",
       "body": "No search entered",
       "headers": {
-        "Date": "Tue, 05 Aug 2025 17:28:44 GMT",
+        "Date": "Fri, 05 Dec 2025 16:25:06 GMT",
         "Content-Type": "text/plain; charset=UTF-8",
         "Content-Length": "17",
         "Connection": "keep-alive",
+        "CF-RAY": "9a94e5c7bf1e74e8-IAD",
         "Cache-Control": "public, max-age=2419200",
-        "x-varnish": "308306736 308815915",
-        "Age": "1024",
+        "x-varnish": "535013741",
+        "Age": "0",
         "via": "1.1 varnish (Varnish/6.0)",
         "cf-cache-status": "DYNAMIC",
-        "Server": "cloudflare",
-        "CF-RAY": "96a8033e58578238-IAD"
+        "Server": "cloudflare"
       },
       "status_code": 404
     }

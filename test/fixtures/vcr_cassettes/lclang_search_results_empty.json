@@ -5,7 +5,7 @@
       "body": "",
       "url": "https://id.loc.gov/vocabulary/languages/suggest2?q=M1551ng&count=30&searchtype=keyword",
       "headers": {
-        "User-Agent": "Authoritex/1.2.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
+        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
         "accept": "application/ld+json"
       },
       "method": "get",
@@ -16,7 +16,7 @@
       "type": "ok",
       "body": "{\"q\":\"M1551ng*\", \"count\":0, \"pagesize\":30, \"start\":1, \"sortmethod\":\"rank\", \"searchtype\":\"keyword\", \"directory\":\"/vocabulary/languages/\", \"hits\":[]}",
       "headers": {
-        "Date": "Tue, 05 Aug 2025 17:28:40 GMT",
+        "Date": "Fri, 05 Dec 2025 16:25:12 GMT",
         "Content-Type": "application/x-suggestions+json; charset=utf-8",
         "Content-Length": "147",
         "Connection": "keep-alive",
@@ -29,13 +29,13 @@
         "access-control-expose-headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
         "strict-transport-security": "max-age=31536000",
         "Cache-Control": "public, max-age=2419200",
-        "x-varnish": "284454312 284453405",
-        "Age": "1202",
+        "x-varnish": "533862272",
+        "Age": "0",
         "via": "1.1 varnish (Varnish/6.0)",
-        "accept-ranges": "bytes",
+        "Accept-Ranges": "bytes",
         "cf-cache-status": "DYNAMIC",
         "Server": "cloudflare",
-        "CF-RAY": "96a80327dafd8238-IAD"
+        "CF-RAY": "9a94e5eabaf074e8-IAD"
       },
       "status_code": 200
     }
