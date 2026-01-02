@@ -13,7 +13,6 @@ defmodule Authoritex.Getty.Base do
 
       alias Authoritex.HTTP.Client, as: HttpClient
 
-      import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
       require Logger
@@ -83,9 +82,7 @@ defmodule Authoritex.Getty.Base do
       defp send(query) do
         "http://vocab.getty.edu/sparql.xml"
         |> HttpClient.get(
-          [
-            {"Accept", "application/sparql-results+xml;charset=UTF-8"}
-          ],
+          headers: [{"accept", "application/sparql-results+xml;charset=UTF-8"}],
           params: [
             query:
               query
@@ -93,10 +90,9 @@ defmodule Authoritex.Getty.Base do
               |> String.trim()
           ]
         )
-        |> autoretry()
       end
 
-      defp parse_sparql_result({:ok, %{body: response, status_code: 200}}) do
+      defp parse_sparql_result({:ok, %{body: response, status: 200}}) do
         with doc <- SweetXml.parse(response) do
           case doc |> SweetXml.xpath(~x"/sparql/results") do
             nil ->
@@ -133,7 +129,7 @@ defmodule Authoritex.Getty.Base do
       defp remove_replaced_by(%{replaced_by: ""} = result), do: Map.delete(result, :replaced_by)
       defp remove_replaced_by(result), do: result
 
-      defp parse_sparql_result({:ok, response}), do: {:error, response.status_code}
+      defp parse_sparql_result({:ok, response}), do: {:error, response.status}
       defp parse_sparql_result({:error, error}), do: {:error, error}
     end
   end

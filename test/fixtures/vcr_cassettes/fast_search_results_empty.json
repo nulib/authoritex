@@ -1,45 +1,45 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=M1551ng&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggestall:M1551ng\",\"fl\":\"suggestall,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}\n",
+      "body": "g20AAAClH4sIAAAAAAAAA1SOsQrCQBAFez/j1VskQgr3A8TGQrCTFIt3xkhyF2/3CBLu3yUpBLuBKWYWJK9TDOpPXpxP4AVqYlnBFeFy7UcPPjSESZKMuvo3GJq7zqvJMPC5bpo6dCA8hj9DvUsxGkm2J9ln8iCkOCsY+wqE2cB4aQwohX4fayHk8RhzcNuDmiTbyMW7gm9tKbsvAAAA//8DAIw+lYy4AAAA",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:22 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "183",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e6275cad778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299880",
-        "RateLimit-Reset": "27279",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9880",
-        "X-RateLimit-Remaining-day": "9880",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547675",
-        "X-Kong-Upstream-Latency": "572",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "dbf37d1d54d5f170229c60175574642a",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:06 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9994",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299994",
+        "ratelimit-reset": "20275",
+        "ratelimit-remaining": "9994",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162461986",
+        "x-kong-upstream-latency": "751",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "acc8dc322f833378a8e2240b76d94f6d",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=TnSwRHI6TRTZA4Hzfmb90rzMu29kfqoLjcKLH_FCDlQ-1764951922-1.0.1.1-1m0b3nVMl5DZF6rEuYaK8raLTy7wRnKRAmiOxE6fSPtoZHXp.h6W5fKZonfUgyyMmcBiqEPmNYHjTdOYpYLx.PZMQXdFyCVMW0ANHOtcTyj8roJ.pckAPsMrwIkcmqZS; path=/; expires=Fri, 05-Dec-25 16:55:22 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=rKMm3jPYqIciHWCC9IYbodrrY8JJmx8IW37c7tJ_ii0-1767378126-1.0.1.1-SEBJgc4gPkNgkz8OAUpwh6czDg5iPNXVFJq5h2tKI4dX16IBbShSpWGEnjvpFehHbxX3a91YFHzk.umG.xrV8qy7Gszg7FnWXtxx2Lw5x0GYpISCnVILLTA1d_UkdKoW; path=/; expires=Fri, 02-Jan-26 18:52:06 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c47a30d98d630-IAD"
       },
       "status_code": 200
     }

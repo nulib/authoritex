@@ -1,49 +1,48 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fast/41002",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Accept": "application/rdf+xml",
-        "Content-Type": "application/json;"
+        "accept": "application/rdf+xml",
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "<rdf:RDF xmlns:coord=\"http://whatever/java/ORG.oclc.util.CoordToDecimal\"\n         xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n         xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n         xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n         xmlns:dct=\"http://purl.org/dc/terms/\"\n         xmlns:skosxl=\"http://www.w3.org/2008/05/skos-xl#\"\n         xmlns:mx=\"http://www.loc.gov/MARC21/slim\"\n         xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n         xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n         xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n         xmlns:void=\"http://rdfs.org/ns/void#\"\n         xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n         xmlns:schema=\"http://schema.org/\"\n         xmlns:norm=\"http://whatever/java/ORG.oclc.util.NormalFormC\"\n         xmlns:naco=\"http://whatever/java/ORG.oclc.util.NacoNormalize\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n         xml:base=\"http://id.worldcat.org/fast/\">\n   <rdf:Description rdf:about=\"41002\">\n      <dct:identifier>41002</dct:identifier>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#fast\"/>\n      <rdf:type rdf:resource=\"http://schema.org/Person\"/>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#facet-Personal\"/>\n      <skos:prefLabel>Dewey, Melvil, 1851-1931</skos:prefLabel>\n      <schema:name>Dewey, Melvil, 1851-1931</schema:name>\n      <skos:altLabel>Dewey, Melville Louis Kossuth, 1851-1931</skos:altLabel>\n      <schema:name>Dewey, Melville Louis Kossuth, 1851-1931</schema:name>\n      <skos:altLabel>Dīwī, Milfil Luwīs Kūst, 1851-1931</skos:altLabel>\n      <schema:name>Dīwī, Milfil Luwīs Kūst, 1851-1931</schema:name>\n      <skos:altLabel>Dui, Melvil, 1851-1931</skos:altLabel>\n      <schema:name>Dui, Melvil, 1851-1931</schema:name>\n      <skos:altLabel>Dyui, Melbil, 1851-1931</skos:altLabel>\n      <schema:name>Dyui, Melbil, 1851-1931</schema:name>\n      <skos:altLabel>Tyui, Melbil, 1851-1931</skos:altLabel>\n      <schema:name>Tyui, Melbil, 1851-1931</schema:name>\n      <schema:sameAs>\n         <rdf:Description rdf:about=\"http://id.loc.gov/authorities/names/n79091588\">\n            <rdfs:label>Dewey, Melvil, 1851-1931</rdfs:label>\n         </rdf:Description>\n      </schema:sameAs>\n      <rdfs:seeAlso rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://en.wikipedia.org/wiki/Melvil_Dewey</rdfs:seeAlso>\n   </rdf:Description>\n   <rdf:Description rdf:about=\"fst00041002\">\n      <rdfs:comment>This identifier is deprecated. See the rdfs:seeAlso link for the new identifier.</rdfs:comment>\n      <rdfs:seeAlso rdf:resource=\"41002\"/>\n   </rdf:Description>\n   <foaf:Document rdf:about=\"41002/rdf.xml\">\n      <void:inDataset rdf:resource=\"http://fast.oclc.org/fast/void/0.1\"/>\n      <foaf:primaryTopic rdf:resource=\"41002\"/>\n      <dc:format>application/rdf+xml</dc:format>\n      <dct:created rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2004-09-24T00:00:00.0</dct:created>\n      <dct:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2023-10-27T12:28:10.0</dct:modified>\n      <dct:language rdf:resource=\"http://lexvo.org/id/iso639-3/eng\"/>\n      <skos:changeNote xml:lang=\"en\">Cataloged by agency: OCoLC</skos:changeNote>\n      <skos:changeNote xml:lang=\"en\">Transcribed by agency: OCoLC</skos:changeNote>\n   </foaf:Document>\n   <void:Dataset rdf:about=\"http://fast.oclc.org/fast/void/0.1\">\n      <dct:title>FAST (Faceted Application of Subject Terminology) Data</dct:title>\n      <dct:license>\n         <rdf:Description rdf:about=\"http://www.oclc.org/research/activities/fast/odcby.htm\">\n            <dct:title>Open Data Commons Attribution License (ODC-By) v1.0</dct:title>\n            <rdfs:comment>This is OCLC's \"local copy\" of the ODC-By license</rdfs:comment>\n            <rdfs:seeAlso rdf:resource=\"http://opendatacommons.org/licenses/by/#toc-anchor-337-3\"/>\n            <owl:sameAs rdf:resource=\"http://opendatacommons.org/licenses/by/1-0/\"/>\n         </rdf:Description>\n      </dct:license>\n   </void:Dataset>\n</rdf:RDF>",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:38 GMT",
-        "Content-Type": "application/rdf+xml",
-        "Content-Length": "4000",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e5179a68778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299930",
-        "RateLimit-Reset": "27322",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9930",
-        "X-RateLimit-Remaining-day": "9930",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET",
-        "X-FRAME-OPTIONS": "SAMEORIGIN",
-        "X-Content-Security-Policy": "allow self",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66545431",
-        "X-Kong-Upstream-Latency": "5",
-        "X-Kong-Proxy-Latency": "2",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "cf905c5a5d6e6d234695bf431210051b",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:41:17 GMT",
+        "content-type": "application/rdf+xml",
+        "content-length": "4000",
+        "connection": "keep-alive",
+        "cf-ray": "9b7c63c21d67690e-IAD",
+        "ratelimit-limit": "10000",
+        "ratelimit-remaining": "9999",
+        "ratelimit-reset": "19123",
+        "x-ratelimit-remaining-month": "299999",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9999",
+        "x-ratelimit-limit-month": "300000",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-security-policy": "allow self",
+        "kong-request-id": "62ebacb8-9c2d-436d-8994-ee6032493982#83148933",
+        "x-kong-upstream-latency": "6",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "0dca323adde1d415f42d1e44fbffbd16",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=76BW60CTI5lIoHALNAScoCBNHS38kgrH.I.ei95mIBw-1764951878-1.0.1.1-BNtjxvd6BKy7Vx69amz7qJwbwCAkrWDmhsdXRLFgPuDn.0.v8bI214vz2U.Q6xBfjaNZ_Au06igKUFVJAeMcvhHzc73JapBodpVSxclLb1APCm9HgbbgB1vaSMi.H9ei; path=/; expires=Fri, 05-Dec-25 16:54:38 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=Km3fYsh0fxCWYnsX12_tV5pTrXL35Rs_2fRaCe7A4Lk-1767379277-1.0.1.1-Gtd.l3XhnPsmwRzRyVgfe5w9qc4PJ0hEWv.6b2c9LDUnn9U0VEMSoZFObLuRPdl8joMKBWZJZ.OxB3OycHGyCMl_2gb2BUKPZJlbJofe07iyx6LDvLLoY74OwKA91Eu5; path=/; expires=Fri, 02-Jan-26 19:11:17 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare"
       },
       "status_code": 200
     }

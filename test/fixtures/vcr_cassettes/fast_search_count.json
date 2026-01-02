@@ -1,90 +1,90 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggestall:test\",\"fl\":\"suggestall,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":7233,\"start\":0,\"docs\":[{\"idroot\":[\"fst00917492\"],\"type\":\"alt\",\"suggestall\":[\"Tests\"],\"auth\":\"Examinations\"},{\"idroot\":[\"fst01423780\"],\"type\":\"alt\",\"suggestall\":[\"Tests\"],\"auth\":\"Examinations\"},{\"idroot\":[\"fst00797374\"],\"type\":\"alt\",\"suggestall\":[\"ACI test\"],\"auth\":\"Adult-child interaction test\"},{\"idroot\":[\"fst00908804\"],\"type\":\"alt\",\"suggestall\":[\"EI tests\"],\"auth\":\"Emotional intelligence tests\"},{\"idroot\":[\"fst00908804\"],\"type\":\"alt\",\"suggestall\":[\"EQ tests\"],\"auth\":\"Emotional intelligence tests\"},{\"idroot\":[\"fst00856536\"],\"type\":\"alt\",\"suggestall\":[\"CSC test\"],\"auth\":\"Children's self-conceptions test\"},{\"idroot\":[\"fst01055240\"],\"type\":\"alt\",\"suggestall\":[\"PN test\"],\"auth\":\"Pattenoire test\"},{\"idroot\":[\"fst01076529\"],\"type\":\"alt\",\"suggestall\":[\"PLT Test\"],\"auth\":\"Principles of Learning and Teaching Test\"},{\"idroot\":[\"fst01084938\"],\"type\":\"alt\",\"suggestall\":[\"QRI test\"],\"auth\":\"Qualitative Reading Inventory\"},{\"idroot\":[\"fst01131345\"],\"type\":\"alt\",\"suggestall\":[\"SSW Test\"],\"auth\":\"Staggered Spondaic Word Test\"},{\"idroot\":[\"fst01148240\"],\"type\":\"auth\",\"suggestall\":[\"Testing\"],\"auth\":\"Testing\"},{\"idroot\":[\"fst01148269\"],\"type\":\"auth\",\"suggestall\":[\"Testis\"],\"auth\":\"Testis\"},{\"idroot\":[\"fst01148269\"],\"type\":\"alt\",\"suggestall\":[\"Testes\"],\"auth\":\"Testis\"},{\"idroot\":[\"fst01148292\"],\"type\":\"auth\",\"suggestall\":[\"Testudo\"],\"auth\":\"Testudo\"},{\"idroot\":[\"fst01158423\"],\"type\":\"auth\",\"suggestall\":[\"Tua test\"],\"auth\":\"Tua test\"},{\"idroot\":[\"fst01169447\"],\"type\":\"alt\",\"suggestall\":[\"ISA test\"],\"auth\":\"Wada test\"},{\"idroot\":[\"fst01179673\"],\"type\":\"alt\",\"suggestall\":[\"WJ Test\"],\"auth\":\"Woodcock-Johnson Psycho-Educational Battery\"},{\"idroot\":[\"fst00975867\"],\"type\":\"alt\",\"suggestall\":[\"IQ tests\"],\"auth\":\"Intelligence tests\"},{\"idroot\":[\"fst01052280\"],\"type\":\"auth\",\"suggestall\":[\"Pap test\"],\"auth\":\"Pap test\"},{\"idroot\":[\"fst01763390\"],\"type\":\"alt\",\"suggestall\":[\"FAS Test\"],\"auth\":\"FAS Verbal Fluency Test\"}]}}\n",
+      "body": "g20AAAJvH4sIAAAAAAAAA6yUS2/bMAyA7/sVBi+7OIDfr1sWtFiKYkiaYDkUPWgS42hTJE+S2wVF/vugpGtXN56DbUfTwveRFMVH0GgaJQ1+RMJQQ/UIxhLbGqgCH+ZLvkWoysyHhmiyNe7/d6jAtHWNxhIhKovGgg9r8Srsc6aVsj5p7ca3uwbBB60eDFQQBeDDg4UKvholYb/3n5NweNluL1UrGVR5FMe+S0fbQzZMUQPV7SMc2VDdwtrYICjDPCkjuPPhIKqACJfRSzLu5BKNNe6MywgquPhBtlwSy5U0sPe70DCJ4rwI/i80yMs8zpMB6Hgy9Q5NfeGOWSvsiG64YB6XFjWhznE8dsJTBkURDHkujppX+W+V4xJxsAjBa5QUn479tWf+z54izdI4G/BMFpNu3yauYxrle+MZFOsRVZJic7ievt6FQZpGydDFzz51VTNiLUrFNfaT8yyNyiHy9dJbdtCaS8obgcZTa+8aiZZc1h6RzFsioRv3sexzFkkZFwPO+c2biZu3RHBLLL9H7wYJc46pvEdpld6dEoVxGCfpgGixWHWLW1hS16iReYtGSUY49VZKs96CwqToXI/jnHqYXNa/eX5FepBZeRbSdInmPGDP7sDzea8XXF+CLVMdooucQqZFEsWDyJZ0B+M5dAqalUmSD9Q9XYy7zBVhf4DmZZbHA9DVVXeuVkoxqui30ZXaSKOkNzM7ulGjC9ZS8rR8Prg3e3KcgzJPi2ywlLebbXrOPguDNIqKwSGekebtlml6G5VncVwOLa7L8aLbKRf6jPoLEd6laFHS3dPju9vv3/0EAAD//wMAjKK9kSEIAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:16 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "2080",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e6032fc4778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299891",
-        "RateLimit-Reset": "27284",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9891",
-        "X-RateLimit-Remaining-day": "9891",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547386",
-        "X-Kong-Upstream-Latency": "583",
-        "X-Kong-Proxy-Latency": "0",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "91de1b41ed226d512452d441cc5d5c08",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:04 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9997",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299997",
+        "ratelimit-reset": "20277",
+        "ratelimit-remaining": "9997",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162461864",
+        "x-kong-upstream-latency": "688",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "cce925708c9ddc3e3ede4e2b41351132",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=IzBVaCykvqI3Vxo4thQbNKvZK56jM2hqHKENTttBPp0-1764951916-1.0.1.1-e.jGGzpPAoVL63JN37bzZjqUjSx9nZ4B.AUVnQJYxGSNrV7xcAGJCkccTPnYweQ0nv0DfOREaz33g4VAoW0511lCLQwSSgC80PBMNOAEABnbpUX93i8vsWh6rPe5I8B4; path=/; expires=Fri, 05-Dec-25 16:55:16 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=g5uAwBHo5q3i59lp9yVEH_gfL15Rn6znXAJ00ejqWGc-1767378124-1.0.1.1-fVl1gNHHZ.gwCQ5M2Gbe17WrIt1EqGMWqxfxwmk4Kzctnz6dYB7WtLmUKQOP0ghb7F1V2XJXvk5APF8hvtGUk8eM_GCGwYcYJHX67B3PaYggHcMh9K7Oi2Xyj.cfUjHF; path=/; expires=Fri, 02-Jan-26 18:52:04 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c47997d88d630-IAD"
       },
       "status_code": 200
     }
   },
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggestall:test\",\"fl\":\"suggestall,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":7233,\"start\":0,\"docs\":[{\"idroot\":[\"fst00917492\"],\"type\":\"alt\",\"suggestall\":[\"Tests\"],\"auth\":\"Examinations\"},{\"idroot\":[\"fst01423780\"],\"type\":\"alt\",\"suggestall\":[\"Tests\"],\"auth\":\"Examinations\"},{\"idroot\":[\"fst00797374\"],\"type\":\"alt\",\"suggestall\":[\"ACI test\"],\"auth\":\"Adult-child interaction test\"},{\"idroot\":[\"fst00908804\"],\"type\":\"alt\",\"suggestall\":[\"EI tests\"],\"auth\":\"Emotional intelligence tests\"},{\"idroot\":[\"fst00908804\"],\"type\":\"alt\",\"suggestall\":[\"EQ tests\"],\"auth\":\"Emotional intelligence tests\"},{\"idroot\":[\"fst00856536\"],\"type\":\"alt\",\"suggestall\":[\"CSC test\"],\"auth\":\"Children's self-conceptions test\"},{\"idroot\":[\"fst01055240\"],\"type\":\"alt\",\"suggestall\":[\"PN test\"],\"auth\":\"Pattenoire test\"},{\"idroot\":[\"fst01076529\"],\"type\":\"alt\",\"suggestall\":[\"PLT Test\"],\"auth\":\"Principles of Learning and Teaching Test\"},{\"idroot\":[\"fst01084938\"],\"type\":\"alt\",\"suggestall\":[\"QRI test\"],\"auth\":\"Qualitative Reading Inventory\"},{\"idroot\":[\"fst01131345\"],\"type\":\"alt\",\"suggestall\":[\"SSW Test\"],\"auth\":\"Staggered Spondaic Word Test\"},{\"idroot\":[\"fst01148240\"],\"type\":\"auth\",\"suggestall\":[\"Testing\"],\"auth\":\"Testing\"},{\"idroot\":[\"fst01148269\"],\"type\":\"auth\",\"suggestall\":[\"Testis\"],\"auth\":\"Testis\"},{\"idroot\":[\"fst01148269\"],\"type\":\"alt\",\"suggestall\":[\"Testes\"],\"auth\":\"Testis\"},{\"idroot\":[\"fst01148292\"],\"type\":\"auth\",\"suggestall\":[\"Testudo\"],\"auth\":\"Testudo\"},{\"idroot\":[\"fst01158423\"],\"type\":\"auth\",\"suggestall\":[\"Tua test\"],\"auth\":\"Tua test\"}]}}\n",
+      "body": "g20AAAH/H4sIAAAAAAAAA6yUTWvcMBCG7/0VYi69KODPta1bWFIaCCWbNeQQchDWrFdFK7mSnDQs/u9Fmzbpumu8tD16PDzPq9HHHiy6zmiHn5ELtMD24Dz3vQMWUVjVcofAioJCxy3fufD/GzBwfdui81wp5tF5oLBRR2UqhTXGU977LfUvHQIFa54dMIhzoPDsgcFXZzQMA30LEfC6330yvRbAiiRNaYhj/SGNMI0D9rCHVzawB9g4H0VVXGRVAo8UDiIGXIVE72FCZ43Ou9ATEgGDq+98JzX30mgHAx1D4yxJizL6v9CoqIq0yGagl8trchjqO/dS9MpfNFupBJHao+VNcLy2nfBUUVlGc56rV81R/p0JXK4OFqVki7rBn21/7Vn9s6fMF3m6mPEs18vx3JZhYhb1R0ccqs1FY3SD3WF7pmYXR3meZHMbf/tlrLrl3qM20uI0uVjkSTVHvqlJPUJbqRvZKXTEbMgNcqulbgnXgtTIm234qKecZVal5YxzdffHiVv1XEnPvXxCcodcBMe1fkLtjX05JYrTOM3yGdF6fT9e3NrztkWLgqw7owWXDbk3VkwuKM7K0fYEzqmLKXX7m+dXZQK5qM5CujHRnQeceDvwfN7xAzcVsBdmRAyVU8i8zJJ0Ftnz8cF4Kw2Pw/DhBwAAAP//AwB0fO3hQAYAAA==",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:17 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "1599",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e6072add778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299890",
-        "RateLimit-Reset": "27284",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9890",
-        "X-RateLimit-Remaining-day": "9890",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547413",
-        "X-Kong-Upstream-Latency": "574",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "d9a0f20ac9411c18329fe4279c40e950",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:05 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9996",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299996",
+        "ratelimit-reset": "20276",
+        "ratelimit-remaining": "9996",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162461932",
+        "x-kong-upstream-latency": "672",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "c2557d64f4c24269a6fa5c52a3cc502a",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=D1S7DifAx79fiYTgcoIsWSQMuqp.MV9y3mXMvRWM.EE-1764951917-1.0.1.1-43BM0B.LH5abyLnte7VYpwAeXcX1rfoIb481GhtSrxMBYz08V81jILdxw.63gJ0Wu.eSjMKlwpEQla2IIhLSaREvEMWS1lEARwuLXg7.DakowkNcqxoLmbLyj8hlBSOb; path=/; expires=Fri, 05-Dec-25 16:55:17 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=js1EhiDa7LYMzngsLdFZL5iQLkQheXufGgbQlkj2cws-1767378125-1.0.1.1-TaQNeWVWDRbF4zEVW1Nc6KnkJVs4AZ.Y8JbFJH0kGZDDcf_NovhvBg_c.W3Jo46haB5yBmOP.r8QHlmeJpIhh7b_.XvS7LKZGl1.tqDDA5Ycc66Qu9z6ia.Wm94gewR7; path=/; expires=Fri, 02-Jan-26 18:52:05 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c479e296fd630-IAD"
       },
       "status_code": 200
     }

@@ -1,46 +1,46 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fast/0-wrong-id",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Accept": "application/rdf+xml",
-        "Content-Type": "application/json;"
+        "accept": "application/rdf+xml",
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> The requested resource [/fast/0-wrong-id] is not available</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/7.0.109</h3></body></html>",
+      "body": "g20AAAHZH4sIAAAAAAAAA4SSwY7TMBCGX2UI17Zu2u6uaF1LK60QFxCC3BCHiTOJrXXtYE+3DVUl3oE33CdBSbYsK4G4+PB5/v8f/Rr5qgqau5bA8M4p2b/g0DfbjHympCGslGTLjtS7ovgInxl5n2A1X8Hjj5/wITC8DXtfSTEOycSdI+gttxnTkYVOKVNlqDo41cHztMaddd26QBN2OLmNFt0koU/TRNHWmzOYfAJmMQGznEAJJx1ciOuDsUybEvV9E/u86YhfXy2u7m6uB9WTf7Lfab1YtMceLv6E+fUIly/gaoDtCzaq8RJeOtT3mzPMnPUEJ0O2MbzO2+O/FypDrCiuffC0OUsxtKKkGPvs21DS5P+r1ORKmgjaYUrbrA/PQCjZKlmqomtJilJd5J+oDZGlaJ/+31NK2IwjhSGI9G1PiamCSCnsoyb4ImpMLObTQwy+mdrqK9gEPjDgA1qHpaNnvztKOtqWbfC/PUO0jfWQKD5QhMpWg7i2vgIEvY+RPEOkNlIiz9hroQ4R2BAwxob4eZkQL+EH65z1DXCAyibtQiJggwzBE9DRJk6zYa+/VGOW6rZFbQiKsNPI4mY2n+XzN1KYpZJiLF4Mt/4LAAD//wMAEGj4vPsCAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:45 GMT",
-        "Content-Type": "text/html;charset=utf-8",
-        "Transfer-Encoding": "chunked",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e5446f63778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299922",
-        "RateLimit-Reset": "27315",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9922",
-        "X-RateLimit-Remaining-day": "9922",
-        "Content-Language": "en",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66545751",
-        "X-Kong-Upstream-Latency": "3",
-        "X-Kong-Proxy-Latency": "0",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "51533c761a46005c8a9c040de2beba7e",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:45 GMT",
+        "content-type": "text/html;charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9985",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299985",
+        "ratelimit-reset": "20235",
+        "ratelimit-remaining": "9985",
+        "ratelimit-limit": "10000",
+        "content-language": "en",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162464862",
+        "x-kong-upstream-latency": "3",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "21105c06565c1d48ca13175062c0e06f",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=_3CLd5iHfM6W_tGvIWb2Hq5f8FyPDPIslChttI0rh90-1764951885-1.0.1.1-3M1xhgjG8OwW6jyZDvacxYk4_vKP1myTTL.wOdSl96sPHOgcHyhtEFUOgftHJ7LYjlZIrVKHEsfp7V.ugSpCqstcbH77cngUDA_ugM5N3lsX.fh_30yowMmNyyEAkOVo; path=/; expires=Fri, 05-Dec-25 16:54:45 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=elOidW.osoR2grHjLSG2dXqWWcY1CdlK4nd2rv4sXb0-1767378165-1.0.1.1-sMCivceprrD2eEy6jv99_473u46aGzTO.gpQOeq1Z3lDxv9Xs.lnlEhnlMEviEyBhu0QksscX3lVjd2v6qvfXCBCn4IqoYIYi2u2Zd1kKd57Sc2MvGtyZ5ca8XpFTyK.; path=/; expires=Fri, 02-Jan-26 18:52:45 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c489bcbb5d630-IAD"
       },
       "status_code": 404
     }

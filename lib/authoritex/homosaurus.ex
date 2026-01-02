@@ -4,8 +4,6 @@ defmodule Authoritex.Homosaurus do
 
   alias Authoritex.HTTP.Client, as: HttpClient
 
-  import HTTPoison.Retry
-
   @api_host "api.homosaurus.org"
   @http_uri_base "https://homosaurus.org/v3/"
 
@@ -26,16 +24,15 @@ defmodule Authoritex.Homosaurus do
       |> Map.put(:host, @api_host)
       |> Map.update(:path, nil, &(&1 <> ".json"))
 
-    case HttpClient.get(url)
-         |> autoretry() do
-      {:ok, %{body: response, status_code: 200}} ->
+    case HttpClient.get(url) do
+      {:ok, %{body: response, status: 200}} ->
         parse_fetch_result(response)
 
-      {:ok, %{status_code: 500}} ->
+      {:ok, %{status: 500}} ->
         {:error, 404}
 
-      {:ok, %{body: response, status_code: status_code}} ->
-        {:error, parse_homosaurus_error(response, status_code)}
+      {:ok, %{body: response, status: status}} ->
+        {:error, parse_homosaurus_error(response, status)}
 
       {:error, error} ->
         {:error, error}
@@ -44,20 +41,16 @@ defmodule Authoritex.Homosaurus do
 
   @impl Authoritex
   def search(query, _max_results \\ 30) do
-    request =
-      HttpClient.get(
-        "https://#{@api_host}/search/v3.jsonld",
-        [],
-        params: [q: query <> "*"]
-      )
-      |> autoretry()
-
-    case request do
-      {:ok, %{body: response, status_code: 200}} ->
+    HttpClient.get(
+      "https://#{@api_host}/search/v3.jsonld",
+      params: [q: query <> "*"]
+    )
+    |> case do
+      {:ok, %{body: response, status: 200}} ->
         {:ok, parse_search_result(response)}
 
-      {:ok, %{body: response, status_code: status_code}} ->
-        {:error, parse_homosaurus_error(response, status_code)}
+      {:ok, %{body: response, status: status}} ->
+        {:error, parse_homosaurus_error(response, status)}
 
       {:error, error} ->
         {:error, error}
@@ -108,13 +101,11 @@ defmodule Authoritex.Homosaurus do
     end
   end
 
-  defp parse_homosaurus_error(response, _status_code) do
-    case Jason.decode(response) do
-      {:ok, %{"status" => status, "error" => error}} ->
-        "Status #{status}: #{error}"
+  defp parse_homosaurus_error(%{"status" => status, "error" => error}, _status) do
+    "Status #{status}: #{error}"
+  end
 
-      {:error, error} ->
-        {:bad_response, error}
-    end
+  defp parse_homosaurus_error(error, _status) do
+    inspect(error)
   end
 end

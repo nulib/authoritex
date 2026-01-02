@@ -1,90 +1,90 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest10:test\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":496,\"start\":0,\"docs\":[{\"idroot\":[\"fst00716965\"],\"type\":\"auth\",\"suggest10\":[\"Testa's (Restaurant)\"],\"auth\":\"Testa's (Restaurant)\"},{\"idroot\":[\"fst01637178\"],\"type\":\"alt\",\"suggest10\":[\"Adams' Tested Seeds\"],\"auth\":\"T. Lee Adams Seed Company\"},{\"idroot\":[\"fst01467926\"],\"type\":\"auth\",\"suggest10\":[\"Iris Test Gardens\"],\"auth\":\"Iris Test Gardens\"},{\"idroot\":[\"fst01580783\"],\"type\":\"alt\",\"suggest10\":[\"MACRO Testaccio\"],\"auth\":\"Museo d'arte contemporanea Roma\"},{\"idroot\":[\"fst00608829\"],\"type\":\"auth\",\"suggest10\":[\"Educational Testing Service. Test Collection\"],\"auth\":\"Educational Testing Service. Test Collection\"},{\"idroot\":[\"fst00727906\"],\"type\":\"auth\",\"suggest10\":[\"Santa Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"S. Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"Testona (Italy). Santa Maria di Testona\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00632478\"],\"type\":\"auth\",\"suggest10\":[\"GED Testing Service\"],\"auth\":\"GED Testing Service\"},{\"idroot\":[\"fst00706729\"],\"type\":\"alt\",\"suggest10\":[\"Aberdeen Test Center (Md.)\"],\"auth\":\"U.S. Army Aberdeen Test Center\"},{\"idroot\":[\"fst00570382\"],\"type\":\"alt\",\"suggest10\":[\"UTQG Test Center (U.S.)\"],\"auth\":\"San Angelo Uniform Tire Quality Grading Test Center\"},{\"idroot\":[\"fst00520547\"],\"type\":\"auth\",\"suggest10\":[\"Project Test Pattern\"],\"auth\":\"Project Test Pattern\"},{\"idroot\":[\"fst02050169\"],\"type\":\"alt\",\"suggest10\":[\"USAF Test Pilot School\"],\"auth\":\"United States. Air Force. Test Pilot School\"},{\"idroot\":[\"fst00712221\"],\"type\":\"auth\",\"suggest10\":[\"Air Force Eastern Test Range (U.S.)\"],\"auth\":\"Air Force Eastern Test Range (U.S.)\"},{\"idroot\":[\"fst00613654\"],\"type\":\"auth\",\"suggest10\":[\"Stiftung \\\"Dirck Koster Testament\\\"\"],\"auth\":\"Stiftung \\\"Dirck Koster Testament\\\"\"},{\"idroot\":[\"fst00614341\"],\"type\":\"auth\",\"suggest10\":[\"OSW San Diego Test Facility\"],\"auth\":\"OSW San Diego Test Facility\"},{\"idroot\":[\"fst00635413\"],\"type\":\"auth\",\"suggest10\":[\"Mississippi Test Facility\"],\"auth\":\"Mississippi Test Facility\"},{\"idroot\":[\"fst00635413\"],\"type\":\"alt\",\"suggest10\":[\"NASA Mississippi Test Facility\"],\"auth\":\"Mississippi Test Facility\"},{\"idroot\":[\"fst00647635\"],\"type\":\"auth\",\"suggest10\":[\"Testart Frères & Compagnie\"],\"auth\":\"Testart Frères & Compagnie\"},{\"idroot\":[\"fst00647635\"],\"type\":\"alt\",\"suggest10\":[\"Testart Frères and Compagnie\"],\"auth\":\"Testart Frères & Compagnie\"}]}}\n",
+      "body": "g20AAAMDH4sIAAAAAAAAA8yWUW/aMBDH3/cpTn5YOylCSQgJ5A3RwqaNtSWgPbR98JID3CU2s51VqELaB9yHmpJ0LIDb0KkPk3hA8fn/+9/5fPIDkahWgit8jzRBScIHojTVuSKhbZGrKcuQhH7XIisqaaaK9e8kJCpfLFBpxw41Kk0sMk/rXy2WSCG0RXO9tPR6hcQiUtwrEhLXJha51yQkd0pwstlYWwuFOM+zoch5QkKv51uFF6lLK4mIFQmvH0glTcJrMlfatgPH7/kdcmuRkhOSgkmsv16KyCkqTU8UnE6KP7mkXL8rtpSxoXl5Y+2zHL8dOEG3zkr1Pqqf0EydQCGJCUSIiaqTWvAJEcqgchEGIltRvjbhPD/ouX5Dah8kUyUNRlQmyOu0wzUDpdO1g277+aTG/cHkolSiccxEDTHOFQpITqjUCLHgGrOVkJQjhYnIqAFo+3a36/Ya0jpP8phqJjhNSy7jC4hQ/mAxtqqUBiJNMS5CanZetM3gLXCDnt1U8ohyTWFMJaOQsFJWcAqng2Uu4yWEf75Y8EHTdF3vtBdvPcrj4YFFrf/b31a4kmmBGfzKzvy26+3eX8Ppjs7P9lunZsO0aqqB7Qe7PW6YFF9RJoj8sS+Ra5RwOk5a9QOZtaIW9GW2BlO4Cd0J7HbXfR49m16NdrEFZ68RoM8XmAqYcTYXMoMpkwhXOU2ZXsNI0qSoQZMZ1+54QUPFL6W4w1hXWpdUa5T1O21cPmS5dsd2/Iaaz6L+8FGIpUJDFC+FSOv15qyc25pqVC3oMwlDIbfTY2eX6dwd13Wdhny3onBOVZFNpT2hfIGHJ3FMtKnXnbbf8ZommWZznfMF3JAzJuNv8FEUiGrSZ8j1Dan3xBHRRide22uqyUX0pZgBcMZwIaoMhzRmRa/VHDwXZbzvHc9pN5DHTKnit1qxJ7lPxxxFPezDz/2oD69P9gK/fdRbSGoYSvz1U6KCt9UbZMEZ7r+Jngo7im2e+jualCf/AL/dbN78BgAA//8DANtIZse5CgAA",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:20 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "2744",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e6183af7778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299885",
-        "RateLimit-Reset": "27281",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9885",
-        "X-RateLimit-Remaining-day": "9885",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547542",
-        "X-Kong-Upstream-Latency": "570",
-        "X-Kong-Proxy-Latency": "0",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "6e4ecb55d32d830a9101492943325d68",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:38 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9986",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299986",
+        "ratelimit-reset": "20242",
+        "ratelimit-remaining": "9986",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162464334",
+        "x-kong-upstream-latency": "768",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "e87a7d476b2d7b47b4eea4185d663903",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=bRAqKgpWmCtg8EOp06amMTFadUUjC9OcmIM_jmBjPHk-1764951920-1.0.1.1-c5bglvCtt_HAeE4E0M3x2PdzF6ZZKevCf8FZMwFev.Ragyyy4rWUW2H_K7j3wqUcxqNMXu.3vCk1WmKwvoEpr9vSkqJ0VUknMK2yb5qzUq41tlU3Z_f86heqyCnhd7xE; path=/; expires=Fri, 05-Dec-25 16:55:20 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=zhIUN1bBiHYApf7EReBF2VetH72wGlZonw32j4IjxtY-1767378158-1.0.1.1-GRV8_3XXw5xahT46L4Gzmpqp8Ay8VkgQINzzyq6phXWnF.MPXF.o23D_Ln8FatY2eS9uAQHcr0jiw8bjzGg7y4hA.tKEt_UUKuQ3Eue2mpmXC4nKaI_zPKKtWzWsiF10; path=/; expires=Fri, 02-Jan-26 18:52:38 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c486fcd19d630-IAD"
       },
       "status_code": 200
     }
   },
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=test&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest10:test\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":496,\"start\":0,\"docs\":[{\"idroot\":[\"fst00716965\"],\"type\":\"auth\",\"suggest10\":[\"Testa's (Restaurant)\"],\"auth\":\"Testa's (Restaurant)\"},{\"idroot\":[\"fst01637178\"],\"type\":\"alt\",\"suggest10\":[\"Adams' Tested Seeds\"],\"auth\":\"T. Lee Adams Seed Company\"},{\"idroot\":[\"fst01467926\"],\"type\":\"auth\",\"suggest10\":[\"Iris Test Gardens\"],\"auth\":\"Iris Test Gardens\"},{\"idroot\":[\"fst01580783\"],\"type\":\"alt\",\"suggest10\":[\"MACRO Testaccio\"],\"auth\":\"Museo d'arte contemporanea Roma\"},{\"idroot\":[\"fst00608829\"],\"type\":\"auth\",\"suggest10\":[\"Educational Testing Service. Test Collection\"],\"auth\":\"Educational Testing Service. Test Collection\"},{\"idroot\":[\"fst00727906\"],\"type\":\"auth\",\"suggest10\":[\"Santa Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"S. Maria di Testona (Church : Testona, Italy)\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00727906\"],\"type\":\"alt\",\"suggest10\":[\"Testona (Italy). Santa Maria di Testona\"],\"auth\":\"Santa Maria di Testona (Church : Testona, Italy)\"},{\"idroot\":[\"fst00632478\"],\"type\":\"auth\",\"suggest10\":[\"GED Testing Service\"],\"auth\":\"GED Testing Service\"},{\"idroot\":[\"fst00706729\"],\"type\":\"alt\",\"suggest10\":[\"Aberdeen Test Center (Md.)\"],\"auth\":\"U.S. Army Aberdeen Test Center\"},{\"idroot\":[\"fst00570382\"],\"type\":\"alt\",\"suggest10\":[\"UTQG Test Center (U.S.)\"],\"auth\":\"San Angelo Uniform Tire Quality Grading Test Center\"},{\"idroot\":[\"fst00520547\"],\"type\":\"auth\",\"suggest10\":[\"Project Test Pattern\"],\"auth\":\"Project Test Pattern\"},{\"idroot\":[\"fst02050169\"],\"type\":\"alt\",\"suggest10\":[\"USAF Test Pilot School\"],\"auth\":\"United States. Air Force. Test Pilot School\"},{\"idroot\":[\"fst00712221\"],\"type\":\"auth\",\"suggest10\":[\"Air Force Eastern Test Range (U.S.)\"],\"auth\":\"Air Force Eastern Test Range (U.S.)\"},{\"idroot\":[\"fst00613654\"],\"type\":\"auth\",\"suggest10\":[\"Stiftung \\\"Dirck Koster Testament\\\"\"],\"auth\":\"Stiftung \\\"Dirck Koster Testament\\\"\"}]}}\n",
+      "body": "g20AAAKZH4sIAAAAAAAAA8yUTW/aQBCG7/0Vo70klSzLNmCDb4gkNGpREwynJIetPcCm9i7dHTdCEf89skmpgVWcSD30Zu3Mvs87H95nptGslTT4BXmGmsXPzBCn0rDYc9jtTBRYf6255oWpwr9YzEy5XKIh34sJDTGHLfLmqSMyrRQ5vKSVQ5s1Modp9WRYzPwec9gTsZg9GiXZduvsHVTisiyuVCkzFncHoVNZ0VTzM5UaFt89s500i+/YwpDnRX44CHvswWE1J2YVkzl/vVSZMzTEzwycT6uPUnNJn6srdW5sD2+dY5YfdiI/6jdZOR2jhhkvzBlUkphBgpiZJsmFb4hQJ9VBGKlizeXGhuuG0SAIW0q71sLUNBhznaFs0k5jFkqv70X9zttFTYaj6fdaiaepUA3EpDSoIDvjmhBSJQmLtdJcIoepKrgF6IVevx8MWsq6zMqUk1CS5zVXyCUkqH+LFN1dSSOV55hWKQ07H7pm8RYF0cBra3nCJXGYcC04ZKKWVZLD+WhV6nQF8Z8TB66J55vmpn346rs8ng4scf9vf3vhnYwLdvA/dhZ2gu7h/2uZ7vjy4nh1GjZsUVsPvDA63HHLS/EDdYYoX/cSJaGG80nmNgcydxMXhrrYgC3dhu5FXqcfvI2ez27Hh9iKc7QIMJRLzBXMpVgoXcBMaITbkueCNjDWPKt60GYm8HrdqKXjN1o9Yko7rRtOhLr5T1vDp6zA63l+2NLzeTK8ehUSuSJI0pVSebPfUtTvNnFC48JQaLhSev96HNyyzd0PgsBvqXcvCpfcVNXstKdcLvF0Eu/Jtu263wl73baXjMSCSrmEe3YhdPoTvqoKsXvpC5R0z5o78Y7s7cN2++kFAAD//wMAS6hF71UIAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:20 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "2133",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e61c1d84778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299884",
-        "RateLimit-Reset": "27280",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9884",
-        "X-RateLimit-Remaining-day": "9884",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547568",
-        "X-Kong-Upstream-Latency": "568",
-        "X-Kong-Proxy-Latency": "0",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "bc565516fac22629e02b3f453d561438",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:39 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9985",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299985",
+        "ratelimit-reset": "20242",
+        "ratelimit-remaining": "9985",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162464379",
+        "x-kong-upstream-latency": "578",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "c0a3230ba1af257e2140892776fab43e",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=8voERMN4_QDXxsWSbTzI4vqxIGAl.AZix7oMWGLyAQU-1764951920-1.0.1.1-uutvqlfAk2cX3ZHrTXLA38JP553SHEeUBPGQy2UjjPoZ1V3mtqfurjrH6wn8cp2dFiwqNe4.pXcUZtESFZhThJ.3psDCo.Wa7Uv2F29_jfgSnh5ZpUk9O3qDXxLQBMxy; path=/; expires=Fri, 05-Dec-25 16:55:20 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=9uFENEg_r9.SXa1o974ArlhlTJA4g6C1BPJcs0zC1KA-1767378159-1.0.1.1-VJoGRyl16kjWfRHBGjqT1YwtrO0RSdxRi4Qj4.nvWGEm4.Q8nV.bOgjGHsMQ5PhDu6NXuouQwx45M02Cx0bRdwxn2IdNCsi83cXm7vKSoHMi1PJyyGtiUzAALW_lM5LG; path=/; expires=Fri, 02-Jan-26 18:52:39 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c4874ed34d630-IAD"
       },
       "status_code": 200
     }

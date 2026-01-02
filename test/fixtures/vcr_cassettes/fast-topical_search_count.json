@@ -1,90 +1,90 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=authorities&query_index=suggest50&suggest=autoSubject&queryReturn=suggest50,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggest50:authorities\",\"fl\":\"suggest50,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":42,\"start\":0,\"docs\":[{\"idroot\":[\"fst01072004\"],\"type\":\"alt\",\"suggest50\":[\"Port authorities\"],\"auth\":\"Port districts\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewer authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst00995442\"],\"type\":\"auth\",\"suggest50\":[\"Legal authorities\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Legal\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962386\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--U.S. states\"],\"auth\":\"Housing authorities--U.S. states\"},{\"idroot\":[\"fst00803678\"],\"type\":\"auth\",\"suggest50\":[\"Airport authorities\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00803678\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Airport\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00962371\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities\"],\"auth\":\"Housing authorities\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewerage authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Public\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Public authorities\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128992\"],\"type\":\"alt\",\"suggest50\":[\"Authorities (Persons)\"],\"auth\":\"Specialists\"},{\"idroot\":[\"fst00950115\"],\"type\":\"alt\",\"suggest50\":[\"Authorities of the Hadith\"],\"auth\":\"Hadith--Authorities\"},{\"idroot\":[\"fst00861737\"],\"type\":\"auth\",\"suggest50\":[\"Citation of legal authorities\"],\"auth\":\"Citation of legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Primary authorities (Law)\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Secondary authorities (Law)\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962372\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Accounting\"],\"auth\":\"Housing authorities--Accounting\"},{\"idroot\":[\"fst00962373\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Administration\"],\"auth\":\"Housing authorities--Administration\"},{\"idroot\":[\"fst00962374\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Auditing\"],\"auth\":\"Housing authorities--Auditing\"},{\"idroot\":[\"fst00962375\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--Corrupt practices\"],\"auth\":\"Housing authorities--Corrupt practices\"}]}}\n",
+      "body": "g20AAAIVH4sIAAAAAAAAA7SVwY6bMBCG730KNKddyVkZAiHxLVqpymEPqdKeVjm44BBXYFN7ULSKePfKSdslyxII2x5hfs/3zzAejmCELbWyYiV4KgywI1jkWFlglMCXr7IQwIKAQMkNL6yL/wQGtsoyYTGijFe410aiFBYI7PJmkMjUaI3EaQi+lAIIGH2wwCCgQOCAwOCH1Qrqmvx14hiqKj7rSqXAwoA4RwZPhlKdWGDPRzhnBvYMO4vUp3FAaQhbAicMA54jkFcnTrjWBr2m3S0B9wjsHEqlRSMTtFCTFsD3QxoH1wEbcRCmg3COXUPQxSIKwwuEO/qG8SQynncw2rFBlHYhy9cUxDtlvZkyC6bzWU8tK11ZqbJmrsnk28PmwXMjeFFar/QdD3M6ncXzHg9LacruuXgvOojU09PfeW8nub7G/u19vd7KDw08z8Tomff9YD6f0hs6t66+5zJpQkqRSJ5/HHPO3FXKQMpiMfxqeXdrYaxW9r4NkrZjR0TU96PhCL3zcC+8FU8l7ptDcHoxmSx7Bnvmx9O4Z9weJXKUWjlYfmU9XdeNXFVrIwtuXpqpvLsnfrj/H3txIxKt0n+Dcxc5GLMgl0miK4VSZX37saHscjAd5SAtpHIX4fQ5e11cqruchKOcVKkc1Ik/ui56NIb+qI2pSvRKwxOUSf8Pq32g3tb1p18AAAD//wMAETXmI4UJAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:14 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "2436",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e5f67cca778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299896",
-        "RateLimit-Reset": "27286",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9896",
-        "X-RateLimit-Remaining-day": "9896",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547307",
-        "X-Kong-Upstream-Latency": "574",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "2e40e70d4fd3037a4819194cf3c99a55",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:31 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9990",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299990",
+        "ratelimit-reset": "20249",
+        "ratelimit-remaining": "9990",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162463741",
+        "x-kong-upstream-latency": "712",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "d1b8735460e4021342590d496f701500",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=ZQ3k5YJWIBafH2CXQIZRkFaZQlc8HygVFcUiOQhT5Bg-1764951914-1.0.1.1-l3O1CA2j.EGE8VFtkrs8HQGl.z4nL6EyIvrhlitw4a8dju7GT5Fc7Bi4boRHyDmjuOJkdz7zCD7BJLqqnuOLLf0W.xCTdtZk6kw_4TVEPS6RzDNC.GNc8Cz8A3PhJZFz; path=/; expires=Fri, 05-Dec-25 16:55:14 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=1amRjlu7YV2BqDtIKGt_pQr52QOh.Eg220Rqk_EGc4k-1767378151-1.0.1.1-wA5LfAWbFCvLfybDfgm_BHL8zPccDUtNB4y9NQHER.MrKgKh.mgJp9UEL6ZIsvwK2q86yJDHNXQdYQxMpiWi4DVRwGN1uVnfwT4zh8RaHGlS_qqdsbpZtP1QAG2IN4X8; path=/; expires=Fri, 02-Jan-26 18:52:31 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c4843ed72d630-IAD"
       },
       "status_code": 200
     }
   },
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=authorities&query_index=suggest50&suggest=autoSubject&queryReturn=suggest50,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest50:authorities\",\"fl\":\"suggest50,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":42,\"start\":0,\"docs\":[{\"idroot\":[\"fst01072004\"],\"type\":\"alt\",\"suggest50\":[\"Port authorities\"],\"auth\":\"Port districts\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewer authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst00995442\"],\"type\":\"auth\",\"suggest50\":[\"Legal authorities\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Legal\"],\"auth\":\"Legal authorities\"},{\"idroot\":[\"fst00962386\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities--U.S. states\"],\"auth\":\"Housing authorities--U.S. states\"},{\"idroot\":[\"fst00803678\"],\"type\":\"auth\",\"suggest50\":[\"Airport authorities\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00803678\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Airport\"],\"auth\":\"Airport authorities\"},{\"idroot\":[\"fst00962371\"],\"type\":\"auth\",\"suggest50\":[\"Housing authorities\"],\"auth\":\"Housing authorities\"},{\"idroot\":[\"fst01114072\"],\"type\":\"alt\",\"suggest50\":[\"Sewerage authorities\"],\"auth\":\"Sewer districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Authorities, Public\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128830\"],\"type\":\"alt\",\"suggest50\":[\"Public authorities\"],\"auth\":\"Special districts\"},{\"idroot\":[\"fst01128992\"],\"type\":\"alt\",\"suggest50\":[\"Authorities (Persons)\"],\"auth\":\"Specialists\"},{\"idroot\":[\"fst00950115\"],\"type\":\"alt\",\"suggest50\":[\"Authorities of the Hadith\"],\"auth\":\"Hadith--Authorities\"},{\"idroot\":[\"fst00861737\"],\"type\":\"auth\",\"suggest50\":[\"Citation of legal authorities\"],\"auth\":\"Citation of legal authorities\"},{\"idroot\":[\"fst00995442\"],\"type\":\"alt\",\"suggest50\":[\"Primary authorities (Law)\"],\"auth\":\"Legal authorities\"}]}}\n",
+      "body": "g20AAAHIH4sIAAAAAAAAA6SUT2+bQBDF7/0UaE6JtI52MRi8NytS5EMOrtKeIh+2Zo23wizdGWRFFt+9WrtqSBz+ODnCDO/3ZvSYIziNlS1RL7XKtAN5BCRFNYLkDL7/MHsNUjColFN79OU/IAHrPNdIMZeqpp11hoxGYLAt2kVmMmctMd/D6KXSwMDZA4IEEQODA4GE32hLaBr234hnlPX+wdZlBjIKmTfk6OQnsxsE+XyEszLIZ9giccGTkPMI1gxOGAmqIGCvTnzjyjoK2nbXDPwjyHMpM0jObAihYRcAISKehP2AJ33QroNwrvUh+HweR9EbhP/0HeNR56roYFzWRlEuB1m8SrDgpHo1ZRZO09nALEtboynzttZk8vPu6S7wCXwz2mDrBx5SPp0l6YCHhXFVdy4+qo4iDez0n+71JL/XRFy/1/5VfinwKtefzrwQYZpO+RWbW9W/CrNpQyq9Mar4Ouas3DXKSMp8Pv7XCm5W2qEt8fYSZLDjRsRciHg8wm4D2ulgqTJDu3YITi8mk8VAsGcimSYDcbs3pMjY0sOKnvPU3/fJU7VyZq/cS1squHlUh9v+i7Vumm9/AQAA//8DAD8xA8L7BgAA",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:15 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "1787",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e5fa7813778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299895",
-        "RateLimit-Reset": "27286",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9895",
-        "X-RateLimit-Remaining-day": "9895",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547328",
-        "X-Kong-Upstream-Latency": "570",
-        "X-Kong-Proxy-Latency": "0",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "1deb6d22078ade2ec4fb674bf3abcd53",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:32 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9999",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299999",
+        "ratelimit-reset": "20249",
+        "ratelimit-remaining": "9999",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162463793",
+        "x-kong-upstream-latency": "578",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "c4f4fe7b16aec31ce5c6e41b54364d7e",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=uJCR3dEDTAh4xnTtuGmmAf2EuSVdscZe2YJZBnFL2Qs-1764951915-1.0.1.1-1yiyYPv11hu.1kxVCAXZ3Ca3hWceDXDJZalZuEpHsbftyYiSV0JMsLYYu2XHFbfcr2Z5TUuKXErPzfRoRuHeuaD._r.zio4MT6HWKFppH_rGoC2LY1loYRCcXmxDPPgF; path=/; expires=Fri, 05-Dec-25 16:55:15 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=0Ehfh9qnDCUC9no_CzI2_iUyIdPZp2gvZbYI3Lfi49Q-1767378152-1.0.1.1-lHHWeIHjK0ycB0VRV9UJtsFdrGCn0_xw6HnZBEQ03TZrCMG.sWcoThNtBWdQwpjGY5Krb69BUOs95NZ_wvmGOLOt4MZJ1TjP6HYDgWxAKLKxn3JlaMWm1cu7pg4PuRfX; path=/; expires=Fri, 02-Jan-26 18:52:32 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c4848a91fd630-IAD"
       },
       "status_code": 200
     }

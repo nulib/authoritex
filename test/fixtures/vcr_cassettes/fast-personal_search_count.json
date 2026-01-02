@@ -1,90 +1,90 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=dewey,%20m&query_index=suggest00&suggest=autoSubject&queryReturn=suggest00,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest00:m suggest00:dewey,\",\"fl\":\"suggest00,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":17,\"start\":0,\"docs\":[{\"idroot\":[\"fst01491515\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary E.\"],\"auth\":\"Dewey, Mary E.\"},{\"idroot\":[\"fst00188574\"],\"type\":\"auth\",\"suggest00\":[\"Beegle, Dewey M.\"],\"auth\":\"Beegle, Dewey M.\"},{\"idroot\":[\"fst00262346\"],\"type\":\"auth\",\"suggest00\":[\"Bertolini, Dewey M.\"],\"auth\":\"Bertolini, Dewey M.\"},{\"idroot\":[\"fst00314011\"],\"type\":\"alt\",\"suggest00\":[\"Markham, Dewey\"],\"auth\":\"Markham, Pigmeat\"},{\"idroot\":[\"fst01731364\"],\"type\":\"alt\",\"suggest00\":[\"Martin, Dewey\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01815702\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary Perrin, -1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01815702\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Mary Perrin, d. 1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01989213\"],\"type\":\"alt\",\"suggest00\":[\"Marler, George Dewey\"],\"auth\":\"Marler, George D.\"},{\"idroot\":[\"fst00041002\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Melvil, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"},{\"idroot\":[\"fst00470352\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Evelyn Margaret Grow, 1913-\"],\"auth\":\"Dewey, Evelyn Margaret Grow, 1913-\"},{\"idroot\":[\"fst00247048\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Frank Lenington, Mrs.\"],\"auth\":\"Dewey, Eleanor Gwathmey Powell\"},{\"idroot\":[\"fst01731364\"],\"type\":\"auth\",\"suggest00\":[\"Martin, Dewey, 1940-2009\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01489124\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, D. M. (Dellon Marcus), 1819-1889\"],\"auth\":\"Dewey, D. M. (Dellon Marcus), 1819-1889\"},{\"idroot\":[\"fst01943827\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mildred McLean Hazen, 1850-1931\"],\"auth\":\"Dewey, Mildred McLean Hazen, 1850-1931\"},{\"idroot\":[\"fst00041002\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Melville Louis Kossuth, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"},{\"idroot\":[\"fst00137867\"],\"type\":\"alt\",\"suggest00\":[\"Barnard, Mr. (Daniel Dewey), 1797-1861\"],\"auth\":\"Barnard, Daniel D. (Daniel Dewey), 1797-1861\"},{\"idroot\":[\"fst01489124\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Dellon Marcus, 1819-1889\"],\"auth\":\"Dewey, D. M. (Dellon Marcus), 1819-1889\"}]}}\n",
+      "body": "g20AAAJmH4sIAAAAAAAAA6SVTW/bMAyG7/sVAk8boASSrcSyLwOKfgFrgA7YrehBqFnXqyx1krwgK/LfB7lbmyZK4603w6T4UC9f2o/g0D9Y4/EcVY0OqkfwQYXeQ8UofP3Wdjg8PSinOh/DP6AC3zcN+sBY1ZGX5xqXuKJA4VZv5tC2dtYGqvpwR8PqAYGCs0sPFWQMKCwDVPDdWwPrNX3uJ6JM353a3tRQ8YLGvlwYmqntjYfq6hGeKkN1Bbc+MC5KPuMzuKYwYCqISKAvrcTM46FLslBuRU6mMXnIqrYDa7pdn3EpZ4U4UP8IsdFIyVCOLDYJO6EEI5tnuZgfZLhgdWvaPZjdaIKUc8E43yTpsA1aKHd/p7o/hTYYz4HLtulQhQSAFznP5+IgILQmWf/lPSW8FGySMVamOJLPCpb9w9gv0blYfMKlyD/vscBW0iju7v1SFespeR+4lGXG84PCanSUnKF1Dab0fRVOOoQJzkYLi/pnqynhcsYnvMx54nY7KQmmKFg+G8k8+Yl6ZaJqjXIYyJmzy+gVnk926W8lp/ZQFEzIUcM9dcrckws0rWmCNZQsnE98WE40KmMdOVuqcNfhilzaJWo9bnMSIuxdkf/bIiFLnolxwh9PyWJKPh6j1naQ9Kb3n+JgeTnhUpa7lz94ImVzkcusGGm/VtcOa7K4uUBlyLn6hWZwGttnxgMHRq3D/n0frK6RXNi+9eSL9T7+/d69HTwv5Lx4u4Uj5YxydbRhVFyZFvWTA6LgRVlMuJxvNvB84G/uW8dGOWevLq/m/07DXK/XH34DAAD//wMAAgNumsAIAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:39 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "2240",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e517fb9f778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299929",
-        "RateLimit-Reset": "27322",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9929",
-        "X-RateLimit-Remaining-day": "9929",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66545432",
-        "X-Kong-Upstream-Latency": "573",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "4e9fb26f6d08941477004902b7c0902f",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:41:19 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "ratelimit-limit": "10000",
+        "ratelimit-remaining": "9999",
+        "ratelimit-reset": "19121",
+        "x-ratelimit-remaining-month": "299999",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9999",
+        "x-ratelimit-limit-month": "300000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "62ebacb8-9c2d-436d-8994-ee6032493982#83149025",
+        "x-kong-upstream-latency": "596",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "72ed15664d5434772aeb5c3a6c02f840",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=Qm92c99k2cfZKKANs8JB5RxdPOORVmVub9l_VZwK7_c-1764951879-1.0.1.1-O6toCl5DyBDv8amabFxj4mvUZ1AE.QdpVKW6GGF.TP6bq3gFKzqRHXpn7Lb0xeeETHAVgieZvcFRlMQLvagwhw1icgTzFte0LK4Ds1jSrhHAzNCNg3dAA3Y8VBC2v3W9; path=/; expires=Fri, 05-Dec-25 16:54:39 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=dI1sOTDebAyWM.zE.eMNIHRamFw1PFWSzEbSj74Fc54-1767379279-1.0.1.1-YkmXEB.RVKbyn28rBeWlvG2c8TxmziMI5KWk1rfnBGQvvhCsHx18BplfjyrXXMDGda1sleAdelOIKrbzD_R06IQNnSnLxES0G5c8cMglK0h2wimwY4LosAT8EuWo.qco; path=/; expires=Fri, 02-Jan-26 19:11:19 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c63cdf8aa690e-IAD"
       },
       "status_code": 200
     }
   },
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=dewey,%20m&query_index=suggest00&suggest=autoSubject&queryReturn=suggest00,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest00:m suggest00:dewey,\",\"fl\":\"suggest00,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":17,\"start\":0,\"docs\":[{\"idroot\":[\"fst01491515\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary E.\"],\"auth\":\"Dewey, Mary E.\"},{\"idroot\":[\"fst00188574\"],\"type\":\"auth\",\"suggest00\":[\"Beegle, Dewey M.\"],\"auth\":\"Beegle, Dewey M.\"},{\"idroot\":[\"fst00262346\"],\"type\":\"auth\",\"suggest00\":[\"Bertolini, Dewey M.\"],\"auth\":\"Bertolini, Dewey M.\"},{\"idroot\":[\"fst00314011\"],\"type\":\"alt\",\"suggest00\":[\"Markham, Dewey\"],\"auth\":\"Markham, Pigmeat\"},{\"idroot\":[\"fst01731364\"],\"type\":\"alt\",\"suggest00\":[\"Martin, Dewey\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01815702\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mary Perrin, -1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01815702\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Mary Perrin, d. 1843?\"],\"auth\":\"Dewey, Mary Perrin, -1843?\"},{\"idroot\":[\"fst01989213\"],\"type\":\"alt\",\"suggest00\":[\"Marler, George Dewey\"],\"auth\":\"Marler, George D.\"},{\"idroot\":[\"fst00041002\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Melvil, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"},{\"idroot\":[\"fst00470352\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Evelyn Margaret Grow, 1913-\"],\"auth\":\"Dewey, Evelyn Margaret Grow, 1913-\"},{\"idroot\":[\"fst00247048\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Frank Lenington, Mrs.\"],\"auth\":\"Dewey, Eleanor Gwathmey Powell\"},{\"idroot\":[\"fst01731364\"],\"type\":\"auth\",\"suggest00\":[\"Martin, Dewey, 1940-2009\"],\"auth\":\"Martin, Dewey, 1940-2009\"},{\"idroot\":[\"fst01489124\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, D. M. (Dellon Marcus), 1819-1889\"],\"auth\":\"Dewey, D. M. (Dellon Marcus), 1819-1889\"},{\"idroot\":[\"fst01943827\"],\"type\":\"auth\",\"suggest00\":[\"Dewey, Mildred McLean Hazen, 1850-1931\"],\"auth\":\"Dewey, Mildred McLean Hazen, 1850-1931\"},{\"idroot\":[\"fst00041002\"],\"type\":\"alt\",\"suggest00\":[\"Dewey, Melville Louis Kossuth, 1851-1931\"],\"auth\":\"Dewey, Melvil, 1851-1931\"}]}}\n",
+      "body": "g20AAAI2H4sIAAAAAAAAA6SV32vbMBDH3/dXiHvaQAmSLcc/XgYjaQtrIIO9lT6I+Op4laVOkhuykv992BtNFiuLu70J3en7OZ2+Z7+ARfdktMMblCVaKF7AeelbBwWj8OVr3WC/epJWNq4Lf4cCXFtV6DxjRUMO6xK3uKNA4UEd59C6tMZ4Klu/oX73hEDBmq2DAngCFLYeCvjmjIb9nr7W06F021yZVpdQ8JR2dVnfF1OatYPi7gV+KUNxBw/OMy5ynvAE7in0mAI6JNBDKV3mvK+SLKXdkcW0S+6zitPAnp7qM55lSSou6H9CrBRS0suR5TFhEAowolkUi9lFhvVG1bo+gxlGA6SYC8b5MUn5U9BS2seNbH4LHTFeA6u6alD6AICnMY9n4iLA1zqof9inhOeCTSLG8hAn40nKojc8+wqt7cQnPBPxxzMWOEkaxR3eL6RYTsn/gfMsj3h8sbEKLSXXaGyFof7+EQ46hAnORjcW1XOtKOFZwic8j3ngdoOUAFOkLE5GMhfPqHa661olLXpybc228wqPJ0P635JDcyhSJrJRj3tlpX4kt6hrXXmjKVlaF/iwLBRKbSy53kq/aXBHVmaLSo2bnEATzo7Iv02RyHIeiXGNn0/Jckrez1Ep07d03boP3cPyfMKzLB9e/uKJkM1FnEXpSPvVqrRYkuX6FqUmN/IH6t5p7JwZLxwYNQ7n5723ukJya9rakc/Gue7v98bpuN/v3/0EAAD//wMAyoiS7KIHAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:39 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "1954",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e51c0f68778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299928",
-        "RateLimit-Reset": "27321",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9928",
-        "X-RateLimit-Remaining-day": "9928",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66545466",
-        "X-Kong-Upstream-Latency": "569",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "5e71ff002226145546fd7f4b92a08161",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:41:20 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "ratelimit-limit": "10000",
+        "ratelimit-remaining": "9998",
+        "ratelimit-reset": "19121",
+        "x-ratelimit-remaining-month": "299998",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9998",
+        "x-ratelimit-limit-month": "300000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "62ebacb8-9c2d-436d-8994-ee6032493982#83149060",
+        "x-kong-upstream-latency": "579",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "f1b27e2bef06e15901da9e3a1cf8f603",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=cNp7bCzhD2jnODTVPpbUbfOgTiJNWi.op3UaBY5ZlDM-1764951879-1.0.1.1-A5Kco_gDZOt5RS7vO6YIk.LyrfnzVhsa8XdPEJKsooqpBIQaSltjKpUFleaw_X8U6Nq6yLxXlbTRgGrxvYhxIHhLAMJxbbcv0pHv.DWskwqYgX2ugfhLzf9MuBvn6sts; path=/; expires=Fri, 05-Dec-25 16:54:39 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=1h3JihEN47ukDyO6PrDPQi685aojXa.0DtbUDIcvBhc-1767379280-1.0.1.1-E24STxgoFvOkPON6Fe5ub7xdm8d8l2c44j0lperHqgLxMx.cC64mmeBk6Y7hb0cmNnRmg3DhYRfo3lLsUGaKg2V6vB1QFGzewuIVESagywNcjO84PyYFxlw381F1VGG0; path=/; expires=Fri, 02-Jan-26 19:11:20 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c63d20c12690e-IAD"
       },
       "status_code": 200
     }

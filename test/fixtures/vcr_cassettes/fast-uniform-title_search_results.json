@@ -1,45 +1,45 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=benjamin%20franklin&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest30:franklin suggest30:benjamin\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":38,\"start\":0,\"docs\":[{\"idroot\":[\"fst01779716\"],\"type\":\"alt\",\"suggest30\":[\"Mr. Franklin (Franklin, Benjamin)\"],\"auth\":\"Correspondence (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Life of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01380063\"],\"type\":\"alt\",\"suggest30\":[\"Papers of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Archives (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Franklin on Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01375004\"],\"type\":\"alt\",\"suggest30\":[\"B. Franklin's morals of chess (Franklin, Benjamin)\"],\"auth\":\"Morals of chess (Franklin, Benjamin)\"},{\"idroot\":[\"fst01896803\"],\"type\":\"alt\",\"suggest30\":[\"Way to wealth (Franklin, Benjamin)\"],\"auth\":\"Way to wealth (Saunders, Richard)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"auth\",\"suggest30\":[\"Poor Richard (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361828\"],\"type\":\"alt\",\"suggest30\":[\"Parable (Franklin, Benjamin)\"],\"auth\":\"Parable against persecution (Franklin, Benjamin)\"},{\"idroot\":[\"fst01380063\"],\"type\":\"auth\",\"suggest30\":[\"Archives (Franklin, Benjamin)\"],\"auth\":\"Archives (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Benjamin Franklin's autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Autobiography of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"alt\",\"suggest30\":[\"Benjamin Franklin, his autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"alt\",\"suggest30\":[\"Some sayings of Benjamin Franklin (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01779716\"],\"type\":\"auth\",\"suggest30\":[\"Correspondence (Franklin, Benjamin)\"],\"auth\":\"Correspondence (Franklin, Benjamin)\"},{\"idroot\":[\"fst01356244\"],\"type\":\"auth\",\"suggest30\":[\"Autobiography (Franklin, Benjamin)\"],\"auth\":\"Autobiography (Franklin, Benjamin)\"},{\"idroot\":[\"fst01358390\"],\"type\":\"alt\",\"suggest30\":[\"Poor Richard's almanack (Franklin, Benjamin)\"],\"auth\":\"Poor Richard (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361634\"],\"type\":\"alt\",\"suggest30\":[\"Old mistresses' apologue (Franklin, Benjamin)\"],\"auth\":\"Advice to a young man on the choice of a mistress (Franklin, Benjamin)\"},{\"idroot\":[\"fst01361634\"],\"type\":\"alt\",\"suggest30\":[\"Letter on marriage (Franklin, Benjamin)\"],\"auth\":\"Advice to a young man on the choice of a mistress (Franklin, Benjamin)\"},{\"idroot\":[\"fst01375004\"],\"type\":\"auth\",\"suggest30\":[\"Morals of chess (Franklin, Benjamin)\"],\"auth\":\"Morals of chess (Franklin, Benjamin)\"}]}}\n",
+      "body": "g20AAAJaH4sIAAAAAAAAA8yWS2/aQBDH7/0Uq7nQSqvKQALGt6RS1ENQH4nUQ5TDYA/2JvYu3VkHIcR3rxbCo+BiREKam+WdnflpHv+dKVjikdFMXwkTshBNgR26kiEKJPy4VQVB1AoljNBiwf78N0TAZZoSu3YQDS3qx1xpsf41IP2AhdIgYZhvGkuVWGOcxNJl0k1GBBKsGTNE0ApAwthBBA9sNMxmckXmY+qyuDKlTiBqh9ITWjcHTEzMEN1NYeEZojsYsgua3W6v2+zAvYR5mAgwdyDXJN6wbz+LqyX9x+WXFJfP+J/8dY8KEXwxdoGTkI6p2nomdzDa553W2dl+jGs1JGGGK0cHM12UzgyUSS2OssnhSGEQdNr7kb7jiCwfB2XjTD0Rv2qKVsHNybPTPQ+CGprLdds0WBTGYj7PVZwRcx1W/xDzCrCw1wmDmrL9wolwRowJc5fVgWwZ32CpE7IsxU8VZ2iTfxQrbPeCTQrvbLt7jLFLL3UU9bZVFJ1m2ArrWtjiIKfa+M9mmKLS7ITve4pLp4x+wURVJGX/XJx4fnamuMEC6+fjxcN0AFqfCqMWWuMyErkXQ9SJGFvllE75LZXxANy/Pb8vth0UKTL1RoXeloVduhtTkGCcHF3Uo6Ridw+omM1DHvcTrAJVKvE+arWZai8VeYEa48dTiXmnXdPZ3/JEFIqdJWbihsCRyU1a1pbqInlSMflnDsXElDoVBc6XCC81cWb8oRkKXDl/Veprco6sD1egtQrT/8m7s9dUdF//FKvM/Wz24Q8AAAD//wMA3VdzS2YMAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:52 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "3173",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e56e6c27778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299917",
-        "RateLimit-Reset": "27308",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9917",
-        "X-RateLimit-Remaining-day": "9917",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546101",
-        "X-Kong-Upstream-Latency": "572",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "69068f433de3476fdf51f34030aad810",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:09 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9996",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299996",
+        "ratelimit-reset": "20272",
+        "ratelimit-remaining": "9996",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162462229",
+        "x-kong-upstream-latency": "607",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "91de7872d7dfb22d18565f099531be36",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=q7u_Yc6bFLZCbUXew1YUfu0tMVr_uuzuoXlS_EP2m7c-1764951892-1.0.1.1-XuNxBhY0Bbwu0SCRa6ftCpNVUHguiooYxh7p5vWPXScu.k.o5L6sxxxjIs2l_4h2TShmQCoWcZuYLT65tYrRJIRG_huBIA4Oi.b1iaAwZgAWM7FqjyB4wNfdoxNX1Fak; path=/; expires=Fri, 05-Dec-25 16:54:52 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=1AlZ6KLBDpOVtWHEfqXCNd8xrQ.f6DWvrinU.zIF5Do-1767378129-1.0.1.1-DmwC9icnKHu_Dko4wH4EeT3Nvc6PD6YCN0jID7wllELv7Ec5zVH1PvHoa6HvWWUAkHqbL2i2dtAff7D_nk3n0d1rZ82sq8CMVqusa2rg2pX8QdNPtX9P4LjblFE2Lj13; path=/; expires=Fri, 02-Jan-26 18:52:09 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c47ba0a13d630-IAD"
       },
       "status_code": 200
     }
