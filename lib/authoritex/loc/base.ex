@@ -28,7 +28,6 @@ defmodule Authoritex.LOC.Base do
 
       alias Authoritex.HTTP.Client, as: HttpClient
 
-      import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
       @impl Authoritex
@@ -48,11 +47,7 @@ defmodule Authoritex.LOC.Base do
 
       def fetch(id) do
         with url <- String.replace(id, ~r/^http:/, "https:") do
-          request =
-            HttpClient.get(url <> ".rdf")
-            |> autoretry()
-
-          case request do
+          case HttpClient.get(url <> ".rdf") do
             {:ok, response} ->
               parse_fetch_result(response)
 
@@ -66,15 +61,13 @@ defmodule Authoritex.LOC.Base do
       def search(query, max_results \\ 30) do
         path = [unquote(subauthority), "suggest2"] |> Enum.reject(&is_nil/1) |> Path.join()
 
-        request =
-          HttpClient.get(
-            "https://id.loc.gov/#{path}",
-            [accept: "application/ld+json"],
-            params: [q: query, count: max_results, searchtype: "keyword"]
-          )
-          |> autoretry()
-
-        case request do
+        HttpClient.get(
+          "https://id.loc.gov/#{path}",
+          headers: [{"accept", "application/ld+json"}],
+          params: [q: query, count: max_results, searchtype: "keyword"],
+          decode_json: [keys: :atoms]
+        )
+        |> case do
           {:ok, response} ->
             parse_search_result(response)
 
@@ -83,7 +76,7 @@ defmodule Authoritex.LOC.Base do
         end
       end
 
-      defp parse_fetch_result(%{body: response, status_code: 200}) do
+      defp parse_fetch_result(%{body: response, status: 200}) do
         with doc <- SweetXml.parse(response) do
           case doc |> SweetXml.xpath(~x"/rdf:RDF") do
             nil ->
@@ -106,7 +99,7 @@ defmodule Authoritex.LOC.Base do
         _ -> {:error, {:bad_response, response}}
       end
 
-      defp parse_fetch_result(%{status_code: code} = response) when code in 300..399 do
+      defp parse_fetch_result(%{status: code} = response) when code in 300..399 do
         response.headers
         |> Enum.into(%{})
         |> Map.get("Location")
@@ -114,13 +107,10 @@ defmodule Authoritex.LOC.Base do
         |> fetch()
       end
 
-      defp parse_fetch_result(%{status_code: status_code}), do: {:error, status_code}
+      defp parse_fetch_result(%{status: status}), do: {:error, status}
 
-      defp parse_search_result(%{body: response, status_code: 200}) do
-        Jason.decode!(response, keys: :atoms)
-        |> parse_search_result()
-      rescue
-        _ -> {:error, {:bad_response, response}}
+      defp parse_search_result(%{body: response, status: 200}) do
+        parse_search_result(response)
       end
 
       defp parse_search_result(%{count: count, hits: hits}) do
@@ -134,7 +124,9 @@ defmodule Authoritex.LOC.Base do
          end)}
       end
 
-      defp parse_search_result(%{status_code: status_code}), do: {:error, status_code}
+      defp parse_search_result(%{status: status}), do: {:error, status}
+
+      defp parse_search_result(response), do: {:error, {:bad_response, response}}
     end
   end
 end

@@ -1,45 +1,45 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=M1551ng&query_index=suggest50&suggest=autoSubject&queryReturn=suggest50,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest50:M1551ng\",\"fl\":\"suggest50,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}\n",
+      "body": "g20AAACiH4sIAAAAAAAAA0yOsQrCQBAFez/j1VskwjX7AWJjIdiJxZE7Y8Tcxts9goT7d0kKsRsYGGZBjjpJ0niMPsQMXqDmrSi4IZwvwxjBjjD57Edd9RsMLX0f1VzDp9a5NvUg3F//goaQRYx8sQfZZ4ogZJkVjH0DwmxgPFUSaqXfxNpPZTxISWEbUPPZNgrSKfh6q3X3BQAA//8DAICvvNa1AAAA",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:17 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "181",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e60b0e0c778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299889",
-        "RateLimit-Reset": "27283",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9889",
-        "X-RateLimit-Remaining-day": "9889",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547435",
-        "X-Kong-Upstream-Latency": "573",
-        "X-Kong-Proxy-Latency": "0",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "7bdcdd62b7b4f52b386040256422204d",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:33 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9997",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299997",
+        "ratelimit-reset": "20248",
+        "ratelimit-remaining": "9997",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162463856",
+        "x-kong-upstream-latency": "578",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "ad8aed0bda2097679e995b7c20bec167",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=0mtcsdxesmhH7zKr0x13SOUq9LKhQUZbGJNGYKPnk_w-1764951917-1.0.1.1-iBB2hCzFaQ.z0TXwqupBek5WAFsRry3Zav3.D9LwQIBuJvd2M2l5s92yMv7yENhgM3kd_MmChhq8nMIslJlHruJ0QSbpGNi1yxtLMe0yM.qlyjuGn2gIEy4d85Pn2V8Q; path=/; expires=Fri, 05-Dec-25 16:55:17 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=Rmtft3f4naEnGM3ckBBc6o1Jcu5uVazs30vz30QDNjk-1767378153-1.0.1.1-7Pp2yvzIIXGWCBF8p1c98.6D0Yb4eCnaJhWVcqwsWW2yTOmtxJD7arXJqop8iTnanhkuuaFeHrYySdnqSaPHUQTTZRakIDk1IJsEuy0cr9Gr8poTlgD2GQTB3vtSwELB; path=/; expires=Fri, 02-Jan-26 18:52:33 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c484d0c2fd630-IAD"
       },
       "status_code": 200
     }

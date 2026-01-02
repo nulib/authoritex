@@ -4,8 +4,6 @@ defmodule Authoritex.GeoNames do
 
   alias Authoritex.HTTP.Client, as: HttpClient
 
-  import HTTPoison.Retry
-
   @http_uri_base "https://sws.geonames.org/"
 
   @error_codes %{
@@ -44,23 +42,19 @@ defmodule Authoritex.GeoNames do
         {:error, 404}
 
       geoname_id ->
-        request =
-          HttpClient.get(
-            "http://api.geonames.org/getJSON",
-            [],
-            params: [
-              geonameId: geoname_id,
-              username: username()
-            ]
-          )
-          |> autoretry()
-
-        case request do
-          {:ok, %{body: response, status_code: 200}} ->
+        HttpClient.get(
+          "http://api.geonames.org/getJSON",
+          params: [
+            geonameId: geoname_id,
+            username: username()
+          ]
+        )
+        |> case do
+          {:ok, %{body: response, status: 200}} ->
             parse_fetch_result(response)
 
-          {:ok, %{body: response, status_code: status_code}} ->
-            {:error, parse_geonames_error(response, status_code)}
+          {:ok, %{body: response, status: status}} ->
+            {:error, parse_geonames_error(response, status)}
 
           {:error, error} ->
             {:error, error}
@@ -70,24 +64,20 @@ defmodule Authoritex.GeoNames do
 
   @impl Authoritex
   def search(query, max_results \\ 30) do
-    request =
-      HttpClient.get(
-        "http://api.geonames.org/searchJSON",
-        [],
-        params: [
-          q: query,
-          username: username(),
-          maxRows: max_results
-        ]
-      )
-      |> autoretry()
-
-    case request do
-      {:ok, %{body: response, status_code: 200}} ->
+    HttpClient.get(
+      "http://api.geonames.org/searchJSON",
+      params: [
+        q: query,
+        username: username(),
+        maxRows: max_results
+      ]
+    )
+    |> case do
+      {:ok, %{body: response, status: 200}} ->
         {:ok, parse_search_result(response)}
 
-      {:ok, %{body: response, status_code: status_code}} ->
-        {:error, parse_geonames_error(response, status_code)}
+      {:ok, %{body: response, status: status}} ->
+        {:error, parse_geonames_error(response, status)}
 
       {:error, error} ->
         {:error, error}
@@ -96,7 +86,6 @@ defmodule Authoritex.GeoNames do
 
   defp parse_search_result(response) do
     response
-    |> Jason.decode!()
     |> Map.get("geonames")
     |> Enum.map(fn result ->
       %{
@@ -147,16 +136,13 @@ defmodule Authoritex.GeoNames do
     end
   end
 
-  defp parse_geonames_error(response, status_code) do
-    case Jason.decode(response) do
-      {:ok, %{"status" => %{"value" => 11}}} ->
-        status_code
-
-      {:ok, %{"status" => %{"message" => message, "value" => error_code}}} ->
-        "Status #{status_code}: #{error_description(to_string(error_code))} (#{to_string(error_code)}). #{message}"
-
-      {:error, error} ->
-        {:bad_response, error}
+  defp parse_geonames_error(%{"status" => %{"value" => 11}}, status), do: status
+  defp parse_geonames_error(%{"status" => %{"message" => message, "value" => error_code}}, status),
+    do: "Status #{status}: #{error_description(to_string(error_code))} (#{to_string(error_code)}). #{message}"
+  defp parse_geonames_error(error, status) do
+    case Jason.decode(error) do
+      {:ok, decoded} -> parse_geonames_error(decoded, status)
+      _ -> {:bad_response, error}
     end
   end
 

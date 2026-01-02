@@ -13,7 +13,6 @@ defmodule Authoritex.FAST.Base do
 
       alias Authoritex.HTTP.Client, as: HttpClient
 
-      import HTTPoison.Retry
       import SweetXml, only: [sigil_x: 2]
 
       @impl Authoritex
@@ -34,15 +33,11 @@ defmodule Authoritex.FAST.Base do
       end
 
       def fetch(unquote(http_uri) <> "/" <> id) do
-        request =
-          "https://fast.oclc.org/fast/#{id}"
-          |> HttpClient.get(
-            [{"Accept", "application/rdf+xml"}, {"Content-Type", "application/json;"}],
-            follow_redirect: true
-          )
-          |> autoretry()
-
-        case request do
+        "https://fast.oclc.org/fast/#{id}"
+        |> HttpClient.get(
+          headers: [{"Accept", "application/rdf+xml"}, {"Content-Type", "application/json;"}]
+        )
+        |> case do
           {:ok, response} ->
             parse_fetch_result(response)
 
@@ -53,32 +48,28 @@ defmodule Authoritex.FAST.Base do
 
       @impl Authoritex
       def search(query, max_results \\ 20) do
-        request =
-          HttpClient.get(
-            "https://fast.oclc.org/fastsuggest?" <>
-              "query=#{conform_query_to_spec(query)}" <>
-              "&query_index=#{unquote(subauthority)}" <>
-              "&suggest=autoSubject" <>
-              "&queryReturn=#{unquote(subauthority)},idroot,auth,type" <>
-              "&rows=#{max_results}",
-            [{"Content-Type", "application/json;"}],
-            follow_redirect: true
-          )
-          |> autoretry()
-
-        case request do
-          {:ok, %{body: response, status_code: 200}} ->
+        HttpClient.get(
+          "https://fast.oclc.org/fastsuggest?" <>
+            "query=#{conform_query_to_spec(query)}" <>
+            "&query_index=#{unquote(subauthority)}" <>
+            "&suggest=autoSubject" <>
+            "&queryReturn=#{unquote(subauthority)},idroot,auth,type" <>
+            "&rows=#{max_results}",
+          headers: [{"Content-Type", "application/json;"}]
+        )
+        |> case do
+          {:ok, %{body: response, status: 200}} ->
             {:ok, parse_search_result(response)}
 
           {:ok, response} ->
-            {:error, response.status_code}
+            {:error, response.status}
 
           {:error, error} ->
             {:error, error}
         end
       end
 
-      defp parse_fetch_result(%{body: response, status_code: 200}) do
+      defp parse_fetch_result(%{body: response, status: 200}) do
         with doc <- SweetXml.parse(response) do
           case doc |> SweetXml.xpath(~x"/rdf:RDF") do
             nil ->
@@ -101,12 +92,11 @@ defmodule Authoritex.FAST.Base do
         _ -> {:error, {:bad_response, "OTHER PROBLEM"}}
       end
 
-      defp parse_fetch_result(%{body: response, status_code: 404}),
+      defp parse_fetch_result(%{body: response, status: 404}),
         do: {:error, 404}
 
       defp parse_search_result(response) do
         response
-        |> Jason.decode!()
         |> get_in(["response", "docs"])
         |> Enum.map(&handle_result/1)
       end

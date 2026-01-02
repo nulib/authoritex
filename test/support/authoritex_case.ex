@@ -53,7 +53,7 @@ defmodule Authoritex.TestCase do
             explicit_results: use_opts[:explicit_results] || 50
           ] do
       use ExUnit.Case, async: true
-      use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
+      use ExVCR.Mock, adapter: ExVCR.Adapter.Finch
 
       test "implements the Authoritex behaviour" do
         assert unquote(module).__info__(:attributes)

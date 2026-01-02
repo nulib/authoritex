@@ -1,45 +1,45 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=M1551ng&query_index=suggest30&suggest=autoSubject&queryReturn=suggest30,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":30,\"params\":{\"q\":\"suggest30:M1551ng\",\"fl\":\"suggest30,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}\n",
+      "body": "g20AAACkH4sIAAAAAAAAA0yOsQrCQBAFez/j1VskkVjsB4iNhWAnFoe3xoi5i7d7BAn375IUYjcwMMyMJDrGoHIQ5yWBZ6g5ywquCKdzPwi42RFGl9ygi3+DobnrRG1b8bFu2zp0INxf/4J6n2I0ctkeZJ9RQEhxUjCaCoTJwHhqDCiFfhdLP+RhH3Pw64GaS7aSjzcFX66lbL4AAAD//wMAtK20LrYAAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:07 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "182",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e5c98fe6778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299904",
-        "RateLimit-Reset": "27294",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9904",
-        "X-RateLimit-Remaining-day": "9904",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66546938",
-        "X-Kong-Upstream-Latency": "606",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "fcd81e41dad1106aad5fcf3c8666f25c",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:08 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9997",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299997",
+        "ratelimit-reset": "20272",
+        "ratelimit-remaining": "9997",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162462187",
+        "x-kong-upstream-latency": "606",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "50efd64d4282c524cc1d5848439c9a2a",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=CwF6rPDNm10ZsE4hitGsQLmP4tUzk2.DKt.rqEQWQJA-1764951907-1.0.1.1-TX2nhdTYlwwggZTe0bcFXVu04FvIphrNYvWb44D__CD_JHrLBBUrIZzBC.SURk3YuJrGVq3kJyJ1UHJ_L_OJcbSQGGxAjgedeeXpipRzPdrSk5M.qBci1oMnjo1Az3v.; path=/; expires=Fri, 05-Dec-25 16:55:07 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=4X7P7szdO1NjFZWEndZEWBH1byNJL0xMKDS1MXBFChI-1767378128-1.0.1.1-yvPgwRAPUGB3VtbrvbBdOftYse5ek3GoFOGQaSy50kfEg1X6k31UYMezjjFSjbLIVTdm3kW7bVfdDinJiFrX4A_3Lla6BC7rayVRx_fPJdLXy_2gPOCH6IzDqKV0Dn3I; path=/; expires=Fri, 02-Jan-26 18:52:08 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c47b5df59d630-IAD"
       },
       "status_code": 200
     }

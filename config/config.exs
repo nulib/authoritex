@@ -23,9 +23,4 @@ config :authoritex,
     Authoritex.LOC
   ]
 
-config :httpoison_retry,
-  max_attempts: 3,
-  wait: 1_000,
-  retry_unknown_errors: false
-
 import_config "#{Mix.env()}.exs"

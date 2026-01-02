@@ -1,45 +1,45 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=Charles%20Deering%20Library&query_index=suggest10&suggest=autoSubject&queryReturn=suggest10,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":44,\"params\":{\"q\":\"suggest10:Library suggest10:Deering suggest10:Charles\",\"fl\":\"suggest10,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":5,\"start\":0,\"docs\":[{\"idroot\":[\"fst00534726\"],\"type\":\"alt\",\"suggest10\":[\"Charles Deering Library (Evanston, Ill.)\"],\"auth\":\"Northwestern University (Evanston, Ill.). Library\"},{\"idroot\":[\"fst00534726\"],\"type\":\"alt\",\"suggest10\":[\"Northwestern University (Evanston, Ill.). Charles Deering Library\"],\"auth\":\"Northwestern University (Evanston, Ill.). Library\"},{\"idroot\":[\"fst01585236\"],\"type\":\"auth\",\"suggest10\":[\"Charles Deering McCormick Library of Special Collections\"],\"auth\":\"Charles Deering McCormick Library of Special Collections\"},{\"idroot\":[\"fst01593634\"],\"type\":\"alt\",\"suggest10\":[\"Charles Deering McCormick Library of Special Collections. Women's Collection\"],\"auth\":\"Women's Collection (Northwestern University)\"},{\"idroot\":[\"fst01585236\"],\"type\":\"alt\",\"suggest10\":[\"Northwestern University (Evanston, Ill.). Library. Charles Deering McCormick Library of Special Collections\"],\"auth\":\"Charles Deering McCormick Library of Special Collections\"}]}}\n",
+      "body": "g20AAAFqH4sIAAAAAAAAA7ySTU/CQBCG7/6KzVyEZENKS/3YK2o0UROjxgPhsLYDrG53684WQkj/uynyUYNERON1Pt553pmZgUPKrSG8RJmiAzED8tIXBCLgcPegMgQRhRxy6WRGVf4NBFAxHCL5diCu1bOTbsrWkTNEp8ywFumOpNNIwGGg681cpc5az2XhR9xPcwQOzk4IBIQBcJh4EPBC1kBZ8hVpxWCK7MIWJgUR8wrY+TlvahMC0ZvBhzCIHgzIB0EcdY7DI+hzmE8RILUHvgapCheQbIm/NNY4H0tD3hrOrrRuNSuVChgE3FrnRxMkj86wR6PG6Ej5zZbWUgxKvhfb7oO2uPhj6HZ8EofRJ+hK/JuN3iRd6zKVvK52awfsPsdESc26VmtMvLKGarB7S3zFfBodRZ2fPcGu81rsyWZoDqkWrNnYTLLGljs0d1v3b35kYWXzWf71QP2yPHgHAAD//wMAJEm6rn8EAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:25:19 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "1151",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e6137d5a778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299887",
-        "RateLimit-Reset": "27282",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9887",
-        "X-RateLimit-Remaining-day": "9887",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66547503",
-        "X-Kong-Upstream-Latency": "616",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "cd3672316d72e96110086a3a70f2e43d",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:22:40 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9985",
+        "x-ratelimit-limit-month": "300000",
+        "x-ratelimit-remaining-month": "299985",
+        "ratelimit-reset": "20240",
+        "ratelimit-remaining": "9985",
+        "ratelimit-limit": "10000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#162464485",
+        "x-kong-upstream-latency": "605",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "733cb264dd1b5d41682bcb52c2a9de20",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=ZqjBf12ZU3uF6RS8X.cDa2A1ANHgVmCAZbx26luoiuE-1764951919-1.0.1.1-ZiBZKlJyf4KuK3gsxBJ9oeFX0yzDwCjTv8BXbqX5U3Vnz5UyiUSFpAVOVFA.8aEf5jxS6K1pRsdgwGJuVZW6_Xphad79zjCQxE3F2GBicwgd3zsl.rCYWcjfgCqFB.PB; path=/; expires=Fri, 05-Dec-25 16:55:19 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=AnkVFmsDezEx1b86mXM6f1pyhtYzXSyK1Fwdn4MTFlc-1767378160-1.0.1.1-KpwUGPtmfPwKkPyanZjTYzNNglc1Lpetm53.5HwXTr.D14q1YyIatxqZKYFmKblzJ_YapTZLAsIFOYohRHIXj5uqlFjTzS64NGhhVJMb6PYkKgssyoHcQ3pRlcYpFmBO; path=/; expires=Fri, 02-Jan-26 18:52:40 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c487d6ce9d630-IAD"
       },
       "status_code": 200
     }

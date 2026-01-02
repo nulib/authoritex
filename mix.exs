@@ -1,7 +1,7 @@
 defmodule Authoritex.MixProject do
   use Mix.Project
 
-  @version "1.3.1"
+  @version "2.0.0"
   @url "https://github.com/nulib/authoritex"
 
   def project do
@@ -40,7 +40,7 @@ defmodule Authoritex.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :httpoison]
+      extra_applications: [:logger]
     ]
   end
 
@@ -51,9 +51,8 @@ defmodule Authoritex.MixProject do
       {:ex_doc, "~> 0.19", only: [:dev, :docs]},
       {:excoveralls, "~> 0.18.0", only: [:dev, :test]},
       {:exvcr, "~> 0.11", only: :test},
-      {:httpoison, "~> 1.8.0"},
-      {:httpoison_retry, "~> 1.1.0"},
       {:jason, "~> 1.4.0"},
+      {:req, "~> 0.5.16"},
       {:sweet_xml, "~> 0.6"}
     ]
   end

@@ -5,25 +5,26 @@
       "body": "",
       "url": "http://vocab.getty.edu/sparql.xml?query=SELECT+DISTINCT+%3Fs+%3Fname+%3Fhint+%3FreplacedBy+%28group_concat%28%3Falt%3B+separator%3D%22%7C%22%29+AS+%3Fvariants%29+%7B+BIND%28%3Chttp%3A%2F%2Fvocab.getty.edu%2Ftgn%2Fwrong-id%3E+as+%3Fs%29+OPTIONAL+%7B%3Fs+gvp%3AprefLabelGVP%2Fxl%3AliteralForm+%3Fname%7D+OPTIONAL+%7B%3Fs+gvp%3AparentString+%3Fhint%7D+OPTIONAL+%7B%3Fs+dcterms%3AisReplacedBy+%3FreplacedBy%7D+OPTIONAL+%7B%3Fs+xl%3AaltLabel%2Fxl%3AliteralForm+%3Falt%7D+%7D+GROUP+BY+%3Fs+%3Fname+%3Fhint+%3FreplacedBy+LIMIT+1",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Accept": "application/sparql-results+xml;charset=UTF-8"
+        "accept": "application/sparql-results+xml;charset=UTF-8",
+        "accept-encoding": "gzip",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t\t<variable name='replacedBy'/>\n\t\t<variable name='variants'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/tgn/wrong-id</uri>\n\t\t\t</binding>\n\t\t\t<binding name='variants'>\n\t\t\t\t<literal></literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:37 GMT",
-        "Content-Type": "application/sparql-results+xml;charset=utf-8",
-        "Transfer-Encoding": "chunked",
-        "Connection": "keep-alive",
-        "Access-Control-Allow-Origin": "*",
-        "Link": "<http://opendatacommons.org/licenses/by/1.0/>; rel=\"license\"",
-        "Content-Disposition": "attachment; filename=\"sparql.xml\"",
-        "Content-Language": "en"
+        "date": "Fri, 02 Jan 2026 18:22:35 GMT",
+        "content-type": "application/sparql-results+xml;charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "access-control-allow-origin": "*",
+        "link": "<http://opendatacommons.org/licenses/by/1.0/>; rel=\"license\"",
+        "content-disposition": "attachment; filename=\"sparql.xml\"",
+        "content-language": "en"
       },
       "status_code": 200
     }

@@ -1,90 +1,90 @@
 [
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=great%20lake&query_index=suggest51&suggest=autoSubject&queryReturn=suggest51,idroot,auth,type&rows=20",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":1,\"params\":{\"q\":\"suggest51:lake suggest51:great\",\"fl\":\"suggest51,idroot,auth,type\",\"rows\":\"20\",\"wt\":\"json\"}},\"response\":{\"numFound\":60,\"start\":0,\"docs\":[{\"idroot\":[\"fst01240563\"],\"type\":\"auth\",\"suggest51\":[\"Great Lakes\"],\"auth\":\"Great Lakes\"},{\"idroot\":[\"fst01245743\"],\"type\":\"alt\",\"suggest51\":[\"Great Lakes States\"],\"auth\":\"Lake States\"},{\"idroot\":[\"fst01258523\"],\"type\":\"auth\",\"suggest51\":[\"Great Lakes Region\"],\"auth\":\"Great Lakes Region\"},{\"idroot\":[\"fst01308974\"],\"type\":\"alt\",\"suggest51\":[\"African Great Lakes\"],\"auth\":\"Africa--Great Lakes\"},{\"idroot\":[\"fst01265083\"],\"type\":\"auth\",\"suggest51\":[\"Great Lakes Watershed\"],\"auth\":\"Great Lakes Watershed\"},{\"idroot\":[\"fst01240563\"],\"type\":\"alt\",\"suggest51\":[\"Laurentian Great Lakes\"],\"auth\":\"Great Lakes\"},{\"idroot\":[\"fst01891296\"],\"type\":\"auth\",\"suggest51\":[\"Asia--Great Lakes Basin\"],\"auth\":\"Asia--Great Lakes Basin\"},{\"idroot\":[\"fst01346046\"],\"type\":\"auth\",\"suggest51\":[\"Iowa--Iowa Great Lakes Region\"],\"auth\":\"Iowa--Iowa Great Lakes Region\"},{\"idroot\":[\"fst01308974\"],\"type\":\"auth\",\"suggest51\":[\"Africa--Great Lakes\"],\"auth\":\"Africa--Great Lakes\"},{\"idroot\":[\"fst01240571\"],\"type\":\"auth\",\"suggest51\":[\"Utah--Great Salt Lake\"],\"auth\":\"Utah--Great Salt Lake\"},{\"idroot\":[\"fst01246068\"],\"type\":\"alt\",\"suggest51\":[\"China--Great Lake\"],\"auth\":\"China--Tai Lake\"},{\"idroot\":[\"fst01246223\"],\"type\":\"auth\",\"suggest51\":[\"Iowa--Iowa Great Lakes\"],\"auth\":\"Iowa--Iowa Great Lakes\"},{\"idroot\":[\"fst01246223\"],\"type\":\"alt\",\"suggest51\":[\"Iowa--Great Lakes\"],\"auth\":\"Iowa--Iowa Great Lakes\"},{\"idroot\":[\"fst01865544\"],\"type\":\"alt\",\"suggest51\":[\"Cambodia--Great Lake (Lake)\"],\"auth\":\"Cambodia--Tonle Sap (Lake)\"},{\"idroot\":[\"fst01240571\"],\"type\":\"alt\",\"suggest51\":[\"Utah--Salt Lake (Great Salt Lake)\"],\"auth\":\"Utah--Great Salt Lake\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"Illinois--Great Lakes Naval Training Center (Great Lakes)\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"alt\",\"suggest51\":[\"Illinois--Great Lakes Naval Training Station (Great Lakes)\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01711955\"],\"type\":\"auth\",\"suggest51\":[\"Illinois--Great Lakes--Great Lakes Naval Training Center\"],\"auth\":\"Illinois--Great Lakes--Great Lakes Naval Training Center\"},{\"idroot\":[\"fst01871209\"],\"type\":\"auth\",\"suggest51\":[\"Maine--Great Moose Lake\"],\"auth\":\"Maine--Great Moose Lake\"},{\"idroot\":[\"fst01695286\"],\"type\":\"auth\",\"suggest51\":[\"Canada--Great Bear Lake\"],\"auth\":\"Canada--Great Bear Lake\"}]}}\n",
+      "body": "g20AAAJEH4sIAAAAAAAAA8RVW2/aMBR+36+wzlMrGSkJcQh5a5F2kdpJG0x7qPpw1hjwGmxmO0MTyn+fAg0kYBLoVO3FUnw+fRefY2cNmpulkoZ/5JhyDckajEWbG0g8Cl8mYsEh6QcUlqhxYcr6L0jA5LMZN5b5SYbPnOw/Z5qjBQrTrI6iItVKWYq5nVP7Z8mBglYrAwkEHlBYWUjgp1ESioLuLJViMl+8V7lMIYk8WlrTduMsVU8Gkoc1bJkheYCpsZ4fhB6L+vBIYSOTQCkJdG+lRH4oTZI7fOamRG4gSWO3oA5mNggbzJltISZji7bBX25Xuy5+FrPgAufkK58JJd0BqqJDp+/Fw0HYnuNmqsUTSuI+qG211+s6sIh58SWBvqPl2sx5eiLTvu5sz2Hjj2PdYa65tOJkso5E8dAPhlFHohsjmmdDbtGIep9OIVzNCiMv7FL8pFbY65UraZ2PdtxZo+LK65iGy2cl9NjA71D6ZnFeMY0x29LVtNx1p1rkRXH7rIzmQjZ814ReahMUbRJB5212N6SzY+fpHUfasv2rUhwxFna8HyNc/FBpc8rJVble149xh5oomXEyxmUFOmtEjnW3E7DrPbk6GIbr10zLwPeHjHUcbZYJqYRpXuvP+BszMtEopJAzMuLScl2Z2kDqhpwcZxC+qefyfyWU/E+mXXfmtYJv4zke+IE37PB8j0LySuBeKcMPX5RTCIdiNGRB3PVLGKHEdHf9bjnqozfsBKJ4LIp3fwEAAP//AwCeHVeDFwoAAA==",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:46 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "2582",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e5494e48778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299919",
-        "RateLimit-Reset": "27314",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9919",
-        "X-RateLimit-Remaining-day": "9919",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66545786",
-        "X-Kong-Upstream-Latency": "570",
-        "X-Kong-Proxy-Latency": "1",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "dbdd200e605add6f66de7b37b75f614b",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:42:04 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "ratelimit-limit": "10000",
+        "ratelimit-remaining": "9999",
+        "ratelimit-reset": "19076",
+        "x-ratelimit-remaining-month": "299999",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9999",
+        "x-ratelimit-limit-month": "300000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "62ebacb8-9c2d-436d-8994-ee6032493982#83151411",
+        "x-kong-upstream-latency": "612",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "cd238a1df11f0e6d50b712783355d056",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=y0yAfdHsdss5SrLN2pVU5Gp9Ihdvc_b3wrnaun8Wzhw-1764951886-1.0.1.1-5k28M3x7JtACemFYleTFKXJbz5rJTEBihe.EKiz.vx.VbgouFcjNrr7BTYsG5WH0hLP1MYK_EysfAglMwzsBhAJL7Czij4y.PFtZu9E8wyHA.eqAs56dr88Uwyi6KbzP; path=/; expires=Fri, 05-Dec-25 16:54:46 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=KVmqGFnqNSS8d.qr1wvMTYegQ7GEL4CB_1tgPnmDW0o-1767379324-1.0.1.1-iCRm_XtoEgQy9ZgNwgJxzCXSiVjXKjV6XnJDKtj_J_ZudeAuqj6AKo5_1Db9J4Ca5.i412bRskoXimS5McZtUDHwWkVDtQp3ia6WZPoKsbS_LFMGANnUZ6QjjutqK9MQ; path=/; expires=Fri, 02-Jan-26 19:12:04 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c64e76a4d690e-IAD"
       },
       "status_code": 200
     }
   },
   {
     "request": {
-      "options": {
-        "follow_redirect": "true"
-      },
+      "options": [],
       "body": "",
       "url": "https://fast.oclc.org/fastsuggest?query=great%20lake&query_index=suggest51&suggest=autoSubject&queryReturn=suggest51,idroot,auth,type&rows=15",
       "headers": {
-        "User-Agent": "Authoritex/1.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) httpoison/1.8.2 hackney/1.23.0",
-        "Content-Type": "application/json;"
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
-      "binary": false,
+      "binary": true,
       "type": "ok",
-      "body": "{\"responseHeader\":{\"status\":0,\"QTime\":0,\"params\":{\"q\":\"suggest51:lake suggest51:great\",\"fl\":\"suggest51,idroot,auth,type\",\"rows\":\"15\",\"wt\":\"json\"}},\"response\":{\"numFound\":60,\"start\":0,\"docs\":[{\"idroot\":[\"fst01240563\"],\"type\":\"auth\",\"suggest51\":[\"Great Lakes\"],\"auth\":\"Great Lakes\"},{\"idroot\":[\"fst01245743\"],\"type\":\"alt\",\"suggest51\":[\"Great Lakes States\"],\"auth\":\"Lake States\"},{\"idroot\":[\"fst01258523\"],\"type\":\"auth\",\"suggest51\":[\"Great Lakes Region\"],\"auth\":\"Great Lakes Region\"},{\"idroot\":[\"fst01308974\"],\"type\":\"alt\",\"suggest51\":[\"African Great Lakes\"],\"auth\":\"Africa--Great Lakes\"},{\"idroot\":[\"fst01265083\"],\"type\":\"auth\",\"suggest51\":[\"Great Lakes Watershed\"],\"auth\":\"Great Lakes Watershed\"},{\"idroot\":[\"fst01240563\"],\"type\":\"alt\",\"suggest51\":[\"Laurentian Great Lakes\"],\"auth\":\"Great Lakes\"},{\"idroot\":[\"fst01891296\"],\"type\":\"auth\",\"suggest51\":[\"Asia--Great Lakes Basin\"],\"auth\":\"Asia--Great Lakes Basin\"},{\"idroot\":[\"fst01346046\"],\"type\":\"auth\",\"suggest51\":[\"Iowa--Iowa Great Lakes Region\"],\"auth\":\"Iowa--Iowa Great Lakes Region\"},{\"idroot\":[\"fst01308974\"],\"type\":\"auth\",\"suggest51\":[\"Africa--Great Lakes\"],\"auth\":\"Africa--Great Lakes\"},{\"idroot\":[\"fst01240571\"],\"type\":\"auth\",\"suggest51\":[\"Utah--Great Salt Lake\"],\"auth\":\"Utah--Great Salt Lake\"},{\"idroot\":[\"fst01246068\"],\"type\":\"alt\",\"suggest51\":[\"China--Great Lake\"],\"auth\":\"China--Tai Lake\"},{\"idroot\":[\"fst01246223\"],\"type\":\"auth\",\"suggest51\":[\"Iowa--Iowa Great Lakes\"],\"auth\":\"Iowa--Iowa Great Lakes\"},{\"idroot\":[\"fst01246223\"],\"type\":\"alt\",\"suggest51\":[\"Iowa--Great Lakes\"],\"auth\":\"Iowa--Iowa Great Lakes\"},{\"idroot\":[\"fst01865544\"],\"type\":\"alt\",\"suggest51\":[\"Cambodia--Great Lake (Lake)\"],\"auth\":\"Cambodia--Tonle Sap (Lake)\"},{\"idroot\":[\"fst01240571\"],\"type\":\"alt\",\"suggest51\":[\"Utah--Salt Lake (Great Salt Lake)\"],\"auth\":\"Utah--Great Salt Lake\"}]}}\n",
+      "body": "g20AAAHcH4sIAAAAAAAAA6RUwW7iMBC971dYc2olIyU0DsG3bqVtV+plF1Y9VD1MGwPehpi1HaEVyr+vTAokxcSgvViy5+m9eTMv2YAWZqVKIx4E5kID34CxaCsDPKLwYyqXAnhMYYUal8aV/wAHU83nwlgW8wLfBTlc51qgBQqzoo2iMtdKWYqVXVD7dyWAglZrAxxiBhTWFjj8NqqEuqb7jpxYWS2/qarMgacRdZ1pu20sV28G+PMGGmbgzzAzNoqHScTSG3ihsJXh4CSBHlpxyHvXJHnEd2EccgvhndeaepjZKOkwF7aHmEws2g6/e969+vhZxoYXdE5+irlUpd/ArujRuYmy8Sjp93E70/INS+IfVFMdDEIDS1mUXWLoCa3QZiHyE54Ode96Pi/+2NYjVlqUVp50FnCUjePhOA04ujWyOxvyFY1s7+kUwresJI2SkOJ3tcbBwJ2kNx/9uLOi4vPrScPlWUkiNooDSr8sLnZMEywaupaWv+5VS6M068/K3UKWnb5bQh+1Kco+iWHwa/YvJLix8/SOLTVs/6uUpYwlgf/HHS5fVd5NObly53V7jHvUVJWFIBNc7UBnReRYt0nAfvfk6lMYrsNpeanrL/8AAAD//wMAi+tCFBUHAAA=",
       "headers": {
-        "Date": "Fri, 05 Dec 2025 16:24:47 GMT",
-        "Content-Type": "application/json",
-        "Content-Length": "1813",
-        "Connection": "keep-alive",
-        "CF-RAY": "9a94e54d2af5778a-IAD",
-        "RateLimit-Limit": "10000",
-        "X-RateLimit-Limit-day": "10000",
-        "X-RateLimit-Remaining-month": "299918",
-        "RateLimit-Reset": "27314",
-        "X-RateLimit-Limit-month": "300000",
-        "RateLimit-Remaining": "9918",
-        "X-RateLimit-Remaining-day": "9918",
-        "Access-Control-Allow-Origin": "*",
-        "Kong-Request-ID": "21bd1c46-4eb5-42c7-b3eb-0df3d1401afb#66545808",
-        "X-Kong-Upstream-Latency": "571",
-        "X-Kong-Proxy-Latency": "0",
-        "Via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "X-Kong-Request-Id": "0e61fb6fb467aa6e6ea07632774f592a",
-        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "date": "Fri, 02 Jan 2026 18:42:05 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "ratelimit-limit": "10000",
+        "ratelimit-remaining": "9998",
+        "ratelimit-reset": "19076",
+        "x-ratelimit-remaining-month": "299998",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9998",
+        "x-ratelimit-limit-month": "300000",
+        "access-control-allow-origin": "*",
+        "kong-request-id": "62ebacb8-9c2d-436d-8994-ee6032493982#83151449",
+        "x-kong-upstream-latency": "986",
+        "x-kong-proxy-latency": "0",
+        "via": "1.1 kong/3.11.0.6-enterprise-edition",
+        "x-kong-request-id": "0239292dee94b242d545362bf582a23e",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "Set-Cookie": "__cf_bm=IXoSNi1KkPfpdRkgWE76EdGTdsQSn6WZpBKhzLw53jo-1764951887-1.0.1.1-VDZXTYM7wvSkxjw5VM0_ntGXrgFmPA1QHuuF3Ofk67uywDiG.yVoyZY0TDxetIDu7BWKIZAtunc65rUJFSMaon8ZqcAlLgI5mEvr.vYPy6RTGpIRClvmi9q_adnbpRtD; path=/; expires=Fri, 05-Dec-25 16:54:47 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "Server": "cloudflare"
+        "set-cookie": "__cf_bm=a1ZIFymzc.8g1wm0dvvNrfMSdImAwtAyyqgqTs6LUBc-1767379325-1.0.1.1-bvXf2gBMJWOpamkY0iGl8T2g0EDnYEY.WxgOfEToiPPTaw6YiSxWi8M7QbQfVHNS8aUuJUxjZRmABxBpNrSMOrcehJy0hFM_zkqQNEx6pNmU02Uif2b0jjwZgENDVDku; path=/; expires=Fri, 02-Jan-26 19:12:05 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare",
+        "cf-ray": "9b7c64ebae44690e-IAD"
       },
       "status_code": 200
     }
