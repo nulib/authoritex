@@ -4,6 +4,7 @@ defmodule Authoritex.HTTP.Client do
   def new(opts \\ []) do
     opts
     |> Keyword.put_new(:finch, Application.get_env(:authoritex, :connection_pool))
+    |> Keyword.put_new(:plug, Application.get_env(:authoritex, :plug))
     |> Req.new()
     |> Req.Request.append_request_steps(
       set_user_agent: &Req.Request.put_header(&1, "user-agent", ua())
