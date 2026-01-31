@@ -7,7 +7,7 @@
       "headers": {
         "accept": "application/ld+json",
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
       },
       "request_body": "",
       "method": "get"
@@ -17,11 +17,11 @@
       "type": "ok",
       "body": "{\"q\":\"M1551ng*\", \"count\":0, \"pagesize\":30, \"start\":1, \"sortmethod\":\"rank\", \"searchtype\":\"keyword\", \"directory\":\"/authorities/genreForms/\", \"hits\":[]}",
       "headers": {
-        "date": "Fri, 02 Jan 2026 18:22:54 GMT",
+        "date": "Sat, 31 Jan 2026 22:19:43 GMT",
         "content-type": "application/x-suggestions+json; charset=utf-8",
         "content-length": "149",
         "connection": "keep-alive",
-        "cf-ray": "9b7c48d4dfafd46a-IAD",
+        "cf-ray": "9c6c979bccb64d20-IAD",
         "x-frame-options": "DENY",
         "x-xss-protection": "1",
         "x-content-type-options": "nosniff",
@@ -31,8 +31,8 @@
         "access-control-expose-headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
         "strict-transport-security": "max-age=31536000",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "166731577 170754284",
-        "age": "10",
+        "x-varnish": "73500585 50611839",
+        "age": "84488",
         "via": "1.1 varnish (Varnish/6.0)",
         "accept-ranges": "bytes",
         "cf-cache-status": "DYNAMIC",

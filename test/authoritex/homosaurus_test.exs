@@ -12,7 +12,8 @@ defmodule Authoritex.HomosaurusTest do
   #     label: "Adopted LGBTQ+ people",
   #     qualified_label: "Adopted LGBTQ+ people",
   #     variants: ["Adopted people (LGBTQ)", "LGBTQ+ adopted people"],
-  #     hint: nil
+  #     hint: nil,
+  #     extra: []
   #   ],
   #   search_result_term: "adop",
   #   search_count_term: "adop",

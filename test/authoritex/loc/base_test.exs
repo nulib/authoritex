@@ -23,8 +23,7 @@ defmodule Authoritex.LOC.BaseTest do
       variants: [
         "Collage animation films",
         "Cut-out animation films",
-        "Paper cut-out animation films",
-        "Cutout animation films"
+        "Paper cut-out animation films"
       ]
     ],
     search_result_term: "paper",

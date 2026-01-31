@@ -1,5 +1,6 @@
 defmodule Authoritex.GeoNamesTest do
   alias Authoritex.GeoNames
+  alias Authoritex.Record
 
   use Authoritex.TestCase,
     module: Authoritex.GeoNames,
@@ -51,7 +52,7 @@ defmodule Authoritex.GeoNamesTest do
       use_cassette "geonames_custom_hint", match_requests_on: [:query] do
         assert GeoNames.fetch("https://sws.geonames.org/11887750/") ==
                  {:ok,
-                  %{
+                  %Record{
                     hint: "United States",
                     id: "https://sws.geonames.org/11887750/",
                     label: "Midwest",

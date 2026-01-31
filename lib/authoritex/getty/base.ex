@@ -19,9 +19,11 @@ defmodule Authoritex.Getty.Base do
 
       @impl Authoritex
       def can_resolve?(unquote(http_uri) <> _id), do: true
+
       def can_resolve?(unquote(prefix) <> _ = id) do
         unquote(prefix) != ":"
       end
+
       def can_resolve?(_), do: false
 
       @impl Authoritex
@@ -35,20 +37,16 @@ defmodule Authoritex.Getty.Base do
 
       def fetch(id) do
         case sparql_fetch(id) |> send() |> parse_sparql_result() do
-          {:ok, [%{label: label} = result]}
-          when label == "" and not is_map_key(result, :replaced_by) ->
+          {:ok, [%{label: label} = result]} when label == "" ->
             {:error, 404}
-
-          {:ok, [%{replaced_by: replaced_by}] = result} when replaced_by != "" ->
-            Logger.warning("#{id} is obsolete. Fetching replacement term #{replaced_by}.")
-            fetch(replaced_by)
 
           {:ok, [result]} ->
             {:ok,
              result
-             |> Map.delete(:replaced_by)
              |> ensure_variants()
-             |> put_qualified_label()}
+             |> put_qualified_label()
+             |> add_extras()}
+             |> Authoritex.fetch_result()
 
           other ->
             other
@@ -61,8 +59,6 @@ defmodule Authoritex.Getty.Base do
       defp ensure_variants(result), do: Map.put(result, :variants, [])
 
       defp put_qualified_label(result) do
-        result = Map.delete(result, :replaced_by)
-
         case result.hint do
           nil -> Map.put(result, :qualified_label, result.label)
           "" -> Map.put(result, :qualified_label, result.label)
@@ -75,6 +71,7 @@ defmodule Authoritex.Getty.Base do
         sparql_search(query, max_results)
         |> send()
         |> parse_sparql_result()
+        |> Authoritex.search_results()
       end
 
       defp sanitize(query), do: query |> String.replace(~r"[^\w\s-]", "")
@@ -113,7 +110,6 @@ defmodule Authoritex.Getty.Base do
                  result
                  |> nilify_hint()
                  |> remove_empty_variants()
-                 |> remove_replaced_by()
                end)
                |> Enum.map(&process_result/1)}
           end
@@ -126,8 +122,16 @@ defmodule Authoritex.Getty.Base do
       defp nilify_hint(result), do: result
       defp remove_empty_variants(%{variants: [""]} = result), do: Map.delete(result, :variants)
       defp remove_empty_variants(result), do: result
-      defp remove_replaced_by(%{replaced_by: ""} = result), do: Map.delete(result, :replaced_by)
-      defp remove_replaced_by(result), do: result
+
+      defp add_extras(result) do
+        result
+        |> Map.put_new(:extra, [])
+        |> Enum.reduce(%{}, fn
+          {:replaced_by, ""}, acc -> acc
+          {:replaced_by, value}, acc -> put_in(acc, [:extra, :replaced_by], value)
+          {key, value}, acc -> Map.put(acc, key, value)
+        end)
+      end
 
       defp parse_sparql_result({:ok, response}), do: {:error, response.status}
       defp parse_sparql_result({:error, error}), do: {:error, error}

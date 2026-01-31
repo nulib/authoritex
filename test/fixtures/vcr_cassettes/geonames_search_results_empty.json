@@ -6,7 +6,7 @@
       "url": "http://api.geonames.org/searchJSON?q=M1551ng&<<geonames_username>>&maxRows=30",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
       },
       "request_body": "",
       "method": "get"
@@ -16,8 +16,8 @@
       "type": "ok",
       "body": "{\"totalResultsCount\":0,\"geonames\":[]}",
       "headers": {
-        "date": "Fri, 02 Jan 2026 18:22:33 GMT",
-        "server": "Apache/2.4.37 (AlmaLinux) mod_jk/1.2.49 OpenSSL/1.1.1k",
+        "date": "Sat, 31 Jan 2026 22:19:07 GMT",
+        "server": "Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips",
         "access-control-allow-origin": "*",
         "x-frame-options": "sameorigin",
         "cache-control": "no-cache",

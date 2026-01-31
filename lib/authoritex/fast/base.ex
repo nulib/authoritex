@@ -32,7 +32,7 @@ defmodule Authoritex.FAST.Base do
         |> fetch()
       end
 
-      def fetch(unquote(http_uri) <> "/" <> id) do
+      def fetch(unquote(http_uri) <> "/" <> id = uri) do
         "https://fast.oclc.org/fast/#{id}"
         |> HttpClient.get(
           headers: [{"Accept", "application/rdf+xml"}, {"Content-Type", "application/json;"}]
@@ -40,10 +40,12 @@ defmodule Authoritex.FAST.Base do
         |> case do
           {:ok, response} ->
             parse_fetch_result(response)
+            |> maybe_add_replaced_by(uri)
 
           {:error, error} ->
             {:error, error}
         end
+        |> Authoritex.fetch_result()
       end
 
       @impl Authoritex
@@ -67,6 +69,7 @@ defmodule Authoritex.FAST.Base do
           {:error, error} ->
             {:error, error}
         end
+        |> Authoritex.search_results()
       end
 
       defp parse_fetch_result(%{body: response, status: 200}) do
@@ -135,6 +138,18 @@ defmodule Authoritex.FAST.Base do
           _ -> str <> "/"
         end
       end
+
+      defp maybe_add_replaced_by({:ok, %{id: id}} = result, id), do: result
+
+      defp maybe_add_replaced_by({:ok, result}, original_id) do
+        {:ok,
+         result
+         |> Map.put_new(:extra, [])
+         |> put_in([:extra, :replaced_by], result.id)
+         |> Map.put(:id, original_id)}
+      end
+
+      defp maybe_add_replaced_by(result, _original_id), do: result
     end
   end
 end

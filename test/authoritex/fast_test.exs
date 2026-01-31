@@ -26,4 +26,20 @@ defmodule Authoritex.FASTTest do
     search_count_term: "test",
     default_results: 20,
     explicit_results: 15
+
+  describe "obsolete ID" do
+    test "fetch" do
+      use_cassette "fast_obsolete_id", match_requests_on: [:query] do
+        assert {:ok,
+                %Authoritex.Record{
+                  id: "http://id.worldcat.org/fast/fst01205331",
+                  label: "Liberia",
+                  qualified_label: "Liberia",
+                  hint: nil,
+                  variants: _,
+                  extra: [replaced_by: "http://id.worldcat.org/fast/1205331"]
+                }} = FAST.fetch("http://id.worldcat.org/fast/fst01205331")
+      end
+    end
+  end
 end
