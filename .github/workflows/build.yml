@@ -7,10 +7,11 @@ jobs:
     strategy:
       matrix:
         elixir:
-          - 1.16-25
           - 1.17-26
           - 1.18-26
           - 1.18-27
+          - 1.19-27
+          - 1.19-28
     env:
       MIX_ENV: test
     steps:
