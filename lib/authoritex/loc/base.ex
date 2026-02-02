@@ -97,7 +97,7 @@ defmodule Authoritex.LOC.Base do
                  replaced_by:
                    ~x".//madsrdf:useInstead/@rdf:resource"s
                )
-               |> add_extras()
+               |> add_related()
                |> ensure_labels()}
           end
         end
@@ -134,12 +134,11 @@ defmodule Authoritex.LOC.Base do
 
       defp parse_search_result(response), do: {:error, {:bad_response, response}}
 
-      defp add_extras(result) do
+      defp add_related(result) do
         result
-        |> Map.put_new(:extra, [])
-        |> Enum.reduce(%{}, fn
+        |> Enum.reduce(%{related: []}, fn
           {:replaced_by, ""}, acc -> acc
-          {:replaced_by, value}, acc -> put_in(acc, [:extra, :replaced_by], value)
+          {:replaced_by, value}, acc -> put_in(acc, [:related, :replaced_by], value)
           {key, value}, acc -> Map.put(acc, key, value)
         end)
       end

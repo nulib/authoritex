@@ -30,7 +30,7 @@ defmodule Authoritex.Getty.ULANTest do
                     label: "unknown",
                     qualified_label: "unknown",
                     variants: [],
-                    extra: [replaced_by: "http://vocab.getty.edu/ulan/500125274"]
+                    related: [replaced_by: "http://vocab.getty.edu/ulan/500125274"]
                   }}
       end
     end

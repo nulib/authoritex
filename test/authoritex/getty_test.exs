@@ -29,7 +29,7 @@ defmodule Authoritex.GettyTest do
                     qualified_label: "dollars (paper money)",
                     hint: nil,
                     variants: ["dollar (paper money)", "dollar bills", "dollar bill", "Dollars"],
-                    extra: []
+                    related: []
                   }}
 
         assert Getty.fetch("http://vocab.getty.edu/tgn/2236134") ==
@@ -50,7 +50,7 @@ defmodule Authoritex.GettyTest do
                     qualified_label: "Palmer, Potter (American businessman, 1826-1902)",
                     hint: "American businessman, 1826-1902",
                     variants: ["Potter Palmer", "P. Palmer"],
-                    extra: []
+                    related: []
                   }}
       end
     end

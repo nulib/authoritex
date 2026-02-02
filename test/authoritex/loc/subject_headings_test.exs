@@ -37,7 +37,7 @@ defmodule Authoritex.LOC.SubjectHeadingsTest do
                     qualified_label: "Gaṇeśa (Hindu deity)",
                     hint: nil,
                     variants: ["Gaṇeśa (Hindu deity)"],
-                    extra: [replaced_by: "http://id.loc.gov/authorities/names/n2017065815"]
+                    related: [replaced_by: "http://id.loc.gov/authorities/names/n2017065815"]
                   }}
       end
     end

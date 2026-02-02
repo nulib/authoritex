@@ -45,7 +45,7 @@ defmodule Authoritex.Getty.Base do
              result
              |> ensure_variants()
              |> put_qualified_label()
-             |> add_extras()}
+             |> add_related()}
              |> Authoritex.fetch_result()
 
           other ->
@@ -123,12 +123,11 @@ defmodule Authoritex.Getty.Base do
       defp remove_empty_variants(%{variants: [""]} = result), do: Map.delete(result, :variants)
       defp remove_empty_variants(result), do: result
 
-      defp add_extras(result) do
+      defp add_related(result) do
         result
-        |> Map.put_new(:extra, [])
-        |> Enum.reduce(%{}, fn
+        |> Enum.reduce(%{related: []}, fn
           {:replaced_by, ""}, acc -> acc
-          {:replaced_by, value}, acc -> put_in(acc, [:extra, :replaced_by], value)
+          {:replaced_by, value}, acc -> put_in(acc, [:related, :replaced_by], value)
           {key, value}, acc -> Map.put(acc, key, value)
         end)
       end

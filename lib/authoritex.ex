@@ -9,7 +9,7 @@ defmodule Authoritex do
       :qualified_label,
       hint: nil,
       variants: [],
-      extra: []
+      related: []
     ]
   end
 
@@ -25,7 +25,7 @@ defmodule Authoritex do
           qualified_label: String.t(),
           hint: String.t() | nil,
           variants: list(String.t()),
-          extra: list({atom(), any()})
+          related: list({atom(), any()})
         }
   @type search_result :: %__MODULE__.SearchResult{
           id: String.t(),
@@ -65,7 +65,7 @@ defmodule Authoritex do
         hint: nil,
         qualified_label: "Valim, Jose",
         variants: [],
-        extra: []
+        related: []
       }}
 
     iex> Authoritex.fetch("http://id.loc.gov/authorities/names/unknown-id")
@@ -82,7 +82,7 @@ defmodule Authoritex do
         qualified_label: "eating fork",
         hint: nil,
         variants: [],
-        extra: [replaced_by: "https://vocab.getty.edu/aat/300043099"]
+        related: [replaced_by: "https://vocab.getty.edu/aat/300043099"]
       }}
 
     iex> Authoritex.fetch("http://vocab.getty.edu/aat/300423926", redirect: true)
@@ -94,7 +94,7 @@ defmodule Authoritex do
       hint: nil,
       variants: ["fork (flatware)", "eating fork", "叉子", "vork", "prakijzers",
         "Gabeln (Essbestecke)", "tenedor"],
-      extra: [replaces: "http://vocab.getty.edu/aat/300423926"]
+      related: [replaces: "http://vocab.getty.edu/aat/300423926"]
     }}
     ```
   """
@@ -113,7 +113,7 @@ defmodule Authoritex do
   end
 
   defp maybe_refetch({:ok, record}, true) do
-    case Keyword.get(record.extra, :replaced_by) do
+    case Keyword.get(record.related, :replaced_by) do
       nil ->
         {:ok, record}
 
@@ -121,8 +121,8 @@ defmodule Authoritex do
         {:ok, result} = fetch(new_id, redirect: true)
 
         {:ok,
-         Map.update!(result, :extra, fn extra ->
-           Keyword.put(extra, :replaces, record.id)
+         Map.update!(result, :related, fn related ->
+           Keyword.put(related, :replaces, record.id)
          end)}
     end
   end

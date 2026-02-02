@@ -1,0 +1,46 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://api.homosaurus.org/v3/homoit0002336.json",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\"@context\":{\"skos\":\"http://www.w3.org/2004/02/skos/core#\",\"dc\":\"http://purl.org/dc/terms/\",\"rdfs\":\"http://www.w3.org/2000/01/rdf-schema#\",\"xsd\":\"http://www.w3.org/2001/XMLSchema#\"},\"@id\":\"https://homosaurus.org/v3/homoit0002336\",\"dc:identifier\":\"homoit0002336\",\"skos:prefLabel\":\"Adopted LGBTQ+ people\",\"skos:altLabel\":[\"Adopted people (LGBTQ)\",\"LGBTQ+ adopted people\"],\"rdfs:comment\":\"LGBTQ+ people who were adopted, whether or not by LGBTQ+ parents.\",\"dc:issued\":{\"@type\":\"xsd:date\",\"@value\":\"2022-12-13\"},\"dc:modified\":{\"@type\":\"xsd:date\",\"@value\":\"2022-12-13\"},\"@type\":\"skos:Concept\",\"skos:inScheme\":{\"@id\":\"https://homosaurus.org/v3\"},\"skos:broader\":[[{\"@id\":\"https://homosaurus.org/v3/homoit0000915\",\"skos:prefLabel\":\"LGBTQ+ people\"}]],\"skos:hasTopConcept\":[[{\"@id\":\"https://homosaurus.org/v3/homoit0002336\",\"skos:prefLabel\":\"Adopted LGBTQ+ people\"}]]}",
+      "headers": {
+        "date": "Mon, 02 Feb 2026 18:47:16 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "server": "cloudflare",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "1; mode=block",
+        "x-request-id": "d4a4907b-c7cd-4334-8016-0f53fcd50ff7",
+        "x-download-options": "noopen",
+        "x-frame-options": "SAMEORIGIN",
+        "x-runtime": "0.012651",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Phusion Passenger(R) 6.0.27",
+        "etag": "W/\"273b87538d7b5c035fd66a451bd087e3\"",
+        "status": "200 OK",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XHwpqlvszGr%2B3IM9LD9cIAJtludYyirNUhavE8OgtNItCMq3ZGBnbqgD%2FABcrplde3wdmLxb9BP0b1vXHcvIZOBjO2cbWABCd5yEVDMsavlT8g%3D%3D\"}]}",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "cf-cache-status": "DYNAMIC",
+        "server-timing": "cfCacheStatus;desc=\"DYNAMIC\"",
+        "cf-ray": "9c7bdb25195cdb3c-IAD",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "status_code": 200
+    }
+  }
+]

@@ -60,7 +60,7 @@ defmodule AuthoritexTest do
                   qualified_label: "Gaṇeśa (Hindu deity)",
                   hint: nil,
                   variants: _,
-                  extra: [replaced_by: "http://id.loc.gov/authorities/names/n2017065815"]
+                  related: [replaced_by: "http://id.loc.gov/authorities/names/n2017065815"]
                 }} = Authoritex.fetch("http://id.loc.gov/authorities/subjects/sh87003768")
       end
     end
@@ -74,7 +74,7 @@ defmodule AuthoritexTest do
                   qualified_label: "Gaṇeśa (Hindu deity)",
                   hint: nil,
                   variants: _,
-                  extra: [replaces: "http://id.loc.gov/authorities/subjects/sh87003768"]
+                  related: [replaces: "http://id.loc.gov/authorities/subjects/sh87003768"]
                 }} =
                  Authoritex.fetch("http://id.loc.gov/authorities/subjects/sh87003768",
                    redirect: true

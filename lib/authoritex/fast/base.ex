@@ -144,8 +144,8 @@ defmodule Authoritex.FAST.Base do
       defp maybe_add_replaced_by({:ok, result}, original_id) do
         {:ok,
          result
-         |> Map.put_new(:extra, [])
-         |> put_in([:extra, :replaced_by], result.id)
+         |> Map.put_new(:related, [])
+         |> put_in([:related, :replaced_by], result.id)
          |> Map.put(:id, original_id)}
       end
 

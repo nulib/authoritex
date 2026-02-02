@@ -1,5 +1,6 @@
 defmodule Authoritex.MockTest do
   alias Authoritex.Mock
+  alias Authoritex.{Record, SearchResult}
 
   use ExUnit.Case, async: true
 
@@ -64,7 +65,7 @@ defmodule Authoritex.MockTest do
     test "success" do
       assert Mock.fetch("mock:result2") ==
                {:ok,
-                %{
+                %Record{
                   id: "mock:result2",
                   label: "Second Result",
                   qualified_label: "Second Result (2)",
@@ -98,7 +99,7 @@ defmodule Authoritex.MockTest do
       end
 
       with {:ok, results} <- Mock.search("any") do
-        assert Enum.member?(results, %{
+        assert Enum.member?(results, %SearchResult{
                  id: "mock:result2",
                  label: "Second Result",
                  hint: "(2)"

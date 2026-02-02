@@ -1,0 +1,94 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://fast.oclc.org/fast/fst01205331",
+      "headers": {
+        "accept": "application/rdf+xml",
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "request_body": "",
+      "method": "get"
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "",
+      "headers": {
+        "date": "Mon, 02 Feb 2026 16:13:30 GMT",
+        "content-length": "0",
+        "connection": "keep-alive",
+        "cf-ray": "9c7af9e969a0a471-IAD",
+        "x-ratelimit-remaining-month": "299999",
+        "x-ratelimit-limit-month": "300000",
+        "ratelimit-reset": "27990",
+        "ratelimit-limit": "10000",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9999",
+        "ratelimit-remaining": "9999",
+        "location": "/fast/1205331",
+        "kong-request-id": "52ae217e-2620-4571-a99e-0c287f786b75#5575881",
+        "x-kong-upstream-latency": "2",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.12.0.2-enterprise-edition",
+        "x-kong-request-id": "e6ce8271b50c472f4bdc461fe968052f",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=m12nBiBfNJILd6fD4L6UPQzIbUgmLUta1Dwx1t.YsHo-1770048810-1.0.1.1-lMqRDF.Frhgj6nFiCUZf60I5vHx97aLGY7914RoFgrrtuZVGRY_iKsKKpBQ68YkZbqYnsNEUSrdZ8N36bh1fWqd._VYQLWkUTw8T4PzVFleIKG.MEzyqw5Yauw.CSQi1; path=/; expires=Mon, 02-Feb-26 16:43:30 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare"
+      },
+      "status_code": 301
+    }
+  },
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://fast.oclc.org/fast/1205331",
+      "headers": {
+        "accept": "application/rdf+xml",
+        "accept-encoding": "gzip",
+        "content-type": "application/json;",
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "request_body": "",
+      "method": "get"
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "<rdf:RDF xmlns:coord=\"http://whatever/java/ORG.oclc.util.CoordToDecimal\"\n         xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n         xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n         xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n         xmlns:dct=\"http://purl.org/dc/terms/\"\n         xmlns:skosxl=\"http://www.w3.org/2008/05/skos-xl#\"\n         xmlns:mx=\"http://www.loc.gov/MARC21/slim\"\n         xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n         xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n         xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n         xmlns:void=\"http://rdfs.org/ns/void#\"\n         xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n         xmlns:schema=\"http://schema.org/\"\n         xmlns:norm=\"http://whatever/java/ORG.oclc.util.NormalFormC\"\n         xmlns:naco=\"http://whatever/java/ORG.oclc.util.NacoNormalize\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n         xml:base=\"http://id.worldcat.org/fast/\">\n   <rdf:Description rdf:about=\"1205331\">\n      <dct:identifier>1205331</dct:identifier>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#fast\"/>\n      <rdf:type rdf:resource=\"http://schema.org/Place\"/>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#facet-Geographic\"/>\n      <skos:prefLabel>Liberia</skos:prefLabel>\n      <schema:name>Liberia</schema:name>\n      <skos:altLabel>Dēmokratia tēs Liverias</skos:altLabel>\n      <schema:name>Dēmokratia tēs Liverias</schema:name>\n      <skos:altLabel>Gweriniaeth Liberia</skos:altLabel>\n      <schema:name>Gweriniaeth Liberia</schema:name>\n      <skos:altLabel>Komara Lîberyayê</skos:altLabel>\n      <schema:name>Komara Lîberyayê</schema:name>\n      <skos:altLabel>Labiriyaa</skos:altLabel>\n      <schema:name>Labiriyaa</schema:name>\n      <skos:altLabel>Laibeer</skos:altLabel>\n      <schema:name>Laibeer</schema:name>\n      <skos:altLabel>Libearia</skos:altLabel>\n      <schema:name>Libearia</schema:name>\n      <skos:altLabel>Libeeria</skos:altLabel>\n      <schema:name>Libeeria</schema:name>\n      <skos:altLabel>Libeeria Vabariik</skos:altLabel>\n      <schema:name>Libeeria Vabariik</schema:name>\n      <skos:altLabel>Libeïa</skos:altLabel>\n      <schema:name>Libeïa</schema:name>\n      <skos:altLabel>Libéir</skos:altLabel>\n      <schema:name>Libéir</schema:name>\n      <skos:altLabel>Libèiria</skos:altLabel>\n      <schema:name>Libèiria</schema:name>\n      <skos:altLabel>Liberi</skos:altLabel>\n      <schema:name>Liberi</schema:name>\n      <skos:altLabel>Liberia--IGNU</skos:altLabel>\n      <schema:name>Liberia--IGNU</schema:name>\n      <skos:altLabel>Liberia--Interim Government of National Unity</skos:altLabel>\n      <schema:name>Liberia--Interim Government of National Unity</schema:name>\n      <skos:altLabel>Libériai Köztársaság</skos:altLabel>\n      <schema:name>Libériai Köztársaság</schema:name>\n      <skos:altLabel>Liberiako Errepublika</skos:altLabel>\n      <schema:name>Liberiako Errepublika</schema:name>\n      <skos:altLabel>Liberië</skos:altLabel>\n      <schema:name>Liberië</schema:name>\n      <skos:altLabel>Liberii︠a︡</skos:altLabel>\n      <schema:name>Liberii︠a︡</schema:name>\n      <skos:altLabel>Liberii︠a︡ respublika</skos:altLabel>\n      <schema:name>Liberii︠a︡ respublika</schema:name>\n      <skos:altLabel>Liberija</skos:altLabel>\n      <schema:name>Liberija</schema:name>\n      <skos:altLabel>Libērijas Republika</skos:altLabel>\n      <schema:name>Libērijas Republika</schema:name>\n      <skos:altLabel>Liberijos Respublika</skos:altLabel>\n      <schema:name>Liberijos Respublika</schema:name>\n      <skos:altLabel>Liberio</skos:altLabel>\n      <schema:name>Liberio</schema:name>\n      <skos:altLabel>Liberiya</skos:altLabel>\n      <schema:name>Liberiya</schema:name>\n      <skos:altLabel>Liberiya Respublikası</skos:altLabel>\n      <schema:name>Liberiya Respublikası</schema:name>\n      <skos:altLabel>Liberja</skos:altLabel>\n      <schema:name>Liberja</schema:name>\n      <skos:altLabel>Liberya</skos:altLabel>\n      <schema:name>Liberya</schema:name>\n      <skos:altLabel>Liberyah</skos:altLabel>\n      <schema:name>Liberyah</schema:name>\n      <skos:altLabel>Liberyi︠a︡</skos:altLabel>\n      <schema:name>Liberyi︠a︡</schema:name>\n      <skos:altLabel>Libiliya</skos:altLabel>\n      <schema:name>Libiliya</schema:name>\n      <skos:altLabel>Libirya</skos:altLabel>\n      <schema:name>Libirya</schema:name>\n      <skos:altLabel>Liveria</skos:altLabel>\n      <schema:name>Liveria</schema:name>\n      <skos:altLabel>Lýðveldið Líbería</skos:altLabel>\n      <schema:name>Lýðveldið Líbería</schema:name>\n      <skos:altLabel>Pobblaght ny Laibeer</skos:altLabel>\n      <schema:name>Pobblaght ny Laibeer</schema:name>\n      <skos:altLabel>Poblachd Libèiria</skos:altLabel>\n      <schema:name>Poblachd Libèiria</schema:name>\n      <skos:altLabel>Reppubliek Liberië</skos:altLabel>\n      <schema:name>Reppubliek Liberië</schema:name>\n      <skos:altLabel>Repubblica di Liberia</skos:altLabel>\n      <schema:name>Repubblica di Liberia</schema:name>\n      <skos:altLabel>Republic of Liberia</skos:altLabel>\n      <schema:name>Republic of Liberia</schema:name>\n      <skos:altLabel>Republica de Liberia</skos:altLabel>\n      <schema:name>Republica de Liberia</schema:name>\n      <skos:altLabel>Republiek Liberia</skos:altLabel>\n      <schema:name>Republiek Liberia</schema:name>\n      <skos:altLabel>Republiek van Liberië</skos:altLabel>\n      <schema:name>Republiek van Liberië</schema:name>\n      <skos:altLabel>Republik Liberia</skos:altLabel>\n      <schema:name>Republik Liberia</schema:name>\n      <skos:altLabel>Republika Liberii︠a︡</skos:altLabel>\n      <schema:name>Republika Liberii︠a︡</schema:name>\n      <skos:altLabel>Republika Liberija</skos:altLabel>\n      <schema:name>Republika Liberija</schema:name>\n      <skos:altLabel>Republiḳat Liberyah</skos:altLabel>\n      <schema:name>Republiḳat Liberyah</schema:name>\n      <skos:altLabel>Republíki ya Liberia</skos:altLabel>\n      <schema:name>Republíki ya Liberia</schema:name>\n      <skos:altLabel>République du Liberia</skos:altLabel>\n      <schema:name>République du Liberia</schema:name>\n      <skos:altLabel>Riberia</skos:altLabel>\n      <schema:name>Riberia</schema:name>\n      <skos:altLabel>Riberia Kyōwakoku</skos:altLabel>\n      <schema:name>Riberia Kyōwakoku</schema:name>\n      <skos:altLabel>Tlācatlahtohcāyōtl Liberia</skos:altLabel>\n      <schema:name>Tlācatlahtohcāyōtl Liberia</schema:name>\n      <schema:sameAs>\n         <rdf:Description rdf:about=\"http://id.loc.gov/authorities/names/n79060233\">\n            <rdfs:label>Liberia</rdfs:label>\n         </rdf:Description>\n      </schema:sameAs>\n      <schema:sameAs>\n         <rdf:Description rdf:about=\"http://www.geonames.org/2275384\">\n            <rdfs:label>Republic of Liberia</rdfs:label>\n         </rdf:Description>\n      </schema:sameAs>\n      <schema:geo>\n         <schema:GeoCoordinates>\n            <schema:latitude>6.50000</schema:latitude>\n            <schema:longitude>-9.50000</schema:longitude>\n         </schema:GeoCoordinates>\n      </schema:geo>\n   </rdf:Description>\n   <rdf:Description rdf:about=\"fst01205331\">\n      <rdfs:comment>This identifier is deprecated. See the rdfs:seeAlso link for the new identifier.</rdfs:comment>\n      <rdfs:seeAlso rdf:resource=\"1205331\"/>\n   </rdf:Description>\n   <foaf:Document rdf:about=\"1205331/rdf.xml\">\n      <void:inDataset rdf:resource=\"http://fast.oclc.org/fast/void/0.1\"/>\n      <foaf:primaryTopic rdf:resource=\"1205331\"/>\n      <dc:format>application/rdf+xml</dc:format>\n      <dct:created rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2006-06-20T00:00:00.0</dct:created>\n      <dct:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2021-10-11T15:07:57.0</dct:modified>\n      <dct:language rdf:resource=\"http://lexvo.org/id/iso639-3/eng\"/>\n      <skos:changeNote xml:lang=\"en\">Cataloged by agency: OCoLC</skos:changeNote>\n      <skos:changeNote xml:lang=\"en\">Transcribed by agency: OCoLC</skos:changeNote>\n   </foaf:Document>\n   <void:Dataset rdf:about=\"http://fast.oclc.org/fast/void/0.1\">\n      <dct:title>FAST (Faceted Application of Subject Terminology) Data</dct:title>\n      <dct:license>\n         <rdf:Description rdf:about=\"http://www.oclc.org/research/activities/fast/odcby.htm\">\n            <dct:title>Open Data Commons Attribution License (ODC-By) v1.0</dct:title>\n            <rdfs:comment>This is OCLC's \"local copy\" of the ODC-By license</rdfs:comment>\n            <rdfs:seeAlso rdf:resource=\"http://opendatacommons.org/licenses/by/#toc-anchor-337-3\"/>\n            <owl:sameAs rdf:resource=\"http://opendatacommons.org/licenses/by/1-0/\"/>\n         </rdf:Description>\n      </dct:license>\n   </void:Dataset>\n</rdf:RDF>",
+      "headers": {
+        "date": "Mon, 02 Feb 2026 16:13:30 GMT",
+        "content-type": "application/rdf+xml",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cf-ray": "9c7af9ea4bf1a471-IAD",
+        "x-ratelimit-remaining-month": "299999",
+        "x-ratelimit-limit-day": "10000",
+        "x-ratelimit-remaining-day": "9999",
+        "ratelimit-reset": "27990",
+        "ratelimit-remaining": "9999",
+        "ratelimit-limit": "10000",
+        "x-ratelimit-limit-month": "300000",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-security-policy": "allow self",
+        "kong-request-id": "ff7ed5ee-30a8-4987-a207-58d7134001ea#5237443",
+        "x-kong-upstream-latency": "9",
+        "x-kong-proxy-latency": "1",
+        "via": "1.1 kong/3.12.0.2-enterprise-edition",
+        "x-kong-request-id": "80249a79b18eb0355cada97efc326f16",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=A72rV8LP_sdoJP69BaS1mvFCcrBxVJL6.U_uZ6AMDsw-1770048810-1.0.1.1-uPPZK6actgPbcHv7fTI0PlQTXxmv9watdIi48Ftbrc1sX4rL9C4TTNgUMQKHy4IpE6IYPWFb5zuWY_ADPvVXJjb3CS5YPevnCXqDnl.wXTFK9waF3lHjquwTfdWn8i03; path=/; expires=Mon, 02-Feb-26 16:43:30 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "server": "cloudflare"
+      },
+      "status_code": 200
+    }
+  }
+]
