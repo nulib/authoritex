@@ -10,9 +10,13 @@ defmodule Authoritex.Getty.AAT do
     """
     SELECT DISTINCT ?s ?name ?replacedBy (group_concat(?alt; separator="|") AS ?variants) {
       BIND(<#{id}> as ?s)
-      OPTIONAL {?s gvp:prefLabelGVP/xl:literalForm ?name}
-      OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
+      OPTIONAL {?s gvp:prefLabelGVP/xl:literalForm ?prefLabel}
+      OPTIONAL {
+        ?s dcterms:isReplacedBy ?replacedBy .
+        ?s rdfs:label ?obsoleteLabel
+      }
       OPTIONAL {?s xl:altLabel/xl:literalForm ?alt}
+      BIND(COALESCE(?prefLabel, ?obsoleteLabel) AS ?name)
     }
     GROUP BY ?s ?name ?replacedBy
     LIMIT 1

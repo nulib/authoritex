@@ -37,6 +37,7 @@ defmodule Authoritex.Homosaurus do
       {:error, error} ->
         {:error, error}
     end
+    |> Authoritex.fetch_result()
   end
 
   @impl Authoritex
@@ -55,6 +56,7 @@ defmodule Authoritex.Homosaurus do
       {:error, error} ->
         {:error, error}
     end
+    |> Authoritex.search_results()
   end
 
   defp parse_search_result(response) do

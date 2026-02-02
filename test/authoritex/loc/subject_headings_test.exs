@@ -1,6 +1,8 @@
 defmodule Authoritex.LOC.SubjectHeadingsTest do
+  alias Authoritex.LOC.SubjectHeadings
+
   use Authoritex.TestCase,
-    module: Authoritex.LOC.SubjectHeadings,
+    module: SubjectHeadings,
     code: "lcsh",
     description: "Library of Congress Subject Headings",
     test_uris: [
@@ -23,4 +25,21 @@ defmodule Authoritex.LOC.SubjectHeadingsTest do
     ],
     search_result_term: "authority",
     search_count_term: "authority"
+
+  describe "obsolete subjects" do
+    test "fetch" do
+      use_cassette "lcsh_obsolete_subject", match_requests_on: [:query] do
+        assert SubjectHeadings.fetch("http://id.loc.gov/authorities/subjects/sh87003768") ==
+                 {:ok,
+                  %Authoritex.Record{
+                    id: "http://id.loc.gov/authorities/subjects/sh87003768",
+                    label: "Gaṇeśa (Hindu deity)",
+                    qualified_label: "Gaṇeśa (Hindu deity)",
+                    hint: nil,
+                    variants: ["Gaṇeśa (Hindu deity)"],
+                    related: [replaced_by: "http://id.loc.gov/authorities/names/n2017065815"]
+                  }}
+      end
+    end
+  end
 end

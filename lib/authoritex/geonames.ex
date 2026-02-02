@@ -60,6 +60,7 @@ defmodule Authoritex.GeoNames do
             {:error, error}
         end
     end
+    |> Authoritex.fetch_result()
   end
 
   @impl Authoritex
@@ -82,6 +83,7 @@ defmodule Authoritex.GeoNames do
       {:error, error} ->
         {:error, error}
     end
+    |> Authoritex.search_results()
   end
 
   defp parse_search_result(response) do

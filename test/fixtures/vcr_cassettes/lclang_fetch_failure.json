@@ -3,10 +3,10 @@
     "request": {
       "options": [],
       "body": "",
-      "url": "https://id.loc.gov/vocabulary/languages/wrong-id.rdf",
+      "url": "https://id.loc.gov/vocabulary/languages/wrong-id.madsrdf.rdf",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
       },
       "request_body": "",
       "method": "get"
@@ -16,7 +16,7 @@
       "type": "ok",
       "body": "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",
       "headers": {
-        "date": "Fri, 02 Jan 2026 18:22:37 GMT",
+        "date": "Sat, 31 Jan 2026 22:19:43 GMT",
         "content-type": "text/html; charset=UTF-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
@@ -31,12 +31,12 @@
         "strict-transport-security": "max-age=31536000",
         "content-security-policy": "frame-ancestors self",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "149507527",
-        "age": "0",
+        "x-varnish": "166594691 167546303",
+        "age": "68",
         "via": "1.1 varnish (Varnish/6.0)",
         "cf-cache-status": "DYNAMIC",
         "server": "cloudflare",
-        "cf-ray": "9b7c486d8a47d46a-IAD"
+        "cf-ray": "9c6c9799ae3f4d20-IAD"
       },
       "status_code": 404
     }

@@ -61,6 +61,7 @@ defmodule Authoritex.Mock do
       nil -> {:error, :unknown_authority}
       record -> {:ok, record}
     end
+    |> Authoritex.fetch_result()
   end
 
   @impl Authoritex
@@ -73,6 +74,7 @@ defmodule Authoritex.Mock do
      get_data()
      |> Enum.map(&Map.delete(&1, :qualified_label))
      |> Enum.take(max_results)}
+    |> Authoritex.search_results()
   rescue
     ArgumentError -> {:error, 500}
   end

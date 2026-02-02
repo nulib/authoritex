@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "url": "https://id.loc.gov/authorities/genreForms/gf2011026181.rdf"
+      "url": "https://id.loc.gov/authorities/genreForms/gf2011026181.madsrdf.rdf"
     },
     "response": {
       "status_code": 500,

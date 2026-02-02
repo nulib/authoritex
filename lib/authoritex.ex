@@ -1,15 +1,37 @@
 defmodule Authoritex do
   @moduledoc "Elixir authority lookup behavior"
 
+  defmodule Record do
+    @moduledoc false
+    defstruct [
+      :id,
+      :label,
+      :qualified_label,
+      hint: nil,
+      variants: [],
+      related: []
+    ]
+  end
+
+  defmodule SearchResult do
+    @moduledoc false
+    defstruct [:id, :label, :hint]
+  end
+
   @type authority :: {module(), String.t(), String.t()}
-  @type fetch_result :: %{
+  @type fetch_result :: %__MODULE__.Record{
           id: String.t(),
           label: String.t(),
           qualified_label: String.t(),
           hint: String.t() | nil,
-          variants: list(String.t())
+          variants: list(String.t()),
+          related: list({atom(), any()})
         }
-  @type search_result :: %{id: String.t(), label: String.t(), hint: String.t() | nil}
+  @type search_result :: %__MODULE__.SearchResult{
+          id: String.t(),
+          label: String.t(),
+          hint: String.t() | nil
+        }
 
   @doc "Returns true if the module can resolve the given identifier"
   @callback can_resolve?(String.t()) :: true | false
@@ -27,27 +49,85 @@ defmodule Authoritex do
   @callback search(String.t(), integer()) :: {:ok, list(:search_result)} | {:error, term()}
 
   @doc """
-  Returns a label given an id.
+  Returns term details given an id.
+
+  ## Options
+
+  * `:redirect` - controls whether to follow redirects for obsolete terms (default: `false`)
 
   Examples:
     ```
     iex> Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251")
-    {:ok, "Valim, Jose"}
+    {:ok,
+      %{
+        id: "http://id.loc.gov/authorities/names/no2011087251",
+        label: "Valim, Jose",
+        hint: nil,
+        qualified_label: "Valim, Jose",
+        variants: [],
+        related: []
+      }}
 
     iex> Authoritex.fetch("http://id.loc.gov/authorities/names/unknown-id")
     {:error, 404}
 
     iex> Authoritex.fetch("http://fake.authority.org/not-a-real-thing")
     {:error, :unknown_authority}
+
+    iex> Authoritex.fetch("http://vocab.getty.edu/aat/300423926")
+    {:ok,
+      %{
+        id: "http://vocab.getty.edu/aat/300423926",
+        label: "eating fork",
+        qualified_label: "eating fork",
+        hint: nil,
+        variants: [],
+        related: [replaced_by: "https://vocab.getty.edu/aat/300043099"]
+      }}
+
+    iex> Authoritex.fetch("http://vocab.getty.edu/aat/300423926", redirect: true)
+    {:ok,
+    %Authoritex.Record{
+      id: "http://vocab.getty.edu/aat/300043099",
+      label: "forks (flatware)",
+      qualified_label: "forks (flatware)",
+      hint: nil,
+      variants: ["fork (flatware)", "eating fork", "叉子", "vork", "prakijzers",
+        "Gabeln (Essbestecke)", "tenedor"],
+      related: [replaces: "http://vocab.getty.edu/aat/300423926"]
+    }}
     ```
   """
-  @spec fetch(binary()) :: {:ok, fetch_result()} | {:error, term()}
-  def fetch(id) do
+  @spec fetch(binary(), keyword()) :: {:ok, fetch_result()} | {:error, term()}
+  def fetch(id, opts \\ []) do
+    opts = Keyword.validate!(opts, redirect: false)
+
     case authority_for(id) do
-      nil -> {:error, :unknown_authority}
-      {authority, _, _} -> authority.fetch(id)
+      nil ->
+        {:error, :unknown_authority}
+
+      {authority, _, _} ->
+        authority.fetch(id)
+        |> maybe_refetch(opts[:redirect])
     end
   end
+
+  defp maybe_refetch({:ok, record}, true) do
+    case Keyword.get(record.related, :replaced_by) do
+      nil ->
+        {:ok, record}
+
+      new_id ->
+        {:ok, result} = fetch(new_id, redirect: true)
+
+        {:ok,
+         Map.update!(result, :related, fn related ->
+           Keyword.put(related, :replaces, record.id)
+         end)}
+    end
+  end
+
+  defp maybe_refetch(result, _), do: result
 
   @doc """
   Returns search results for a given query.
@@ -133,6 +213,26 @@ defmodule Authoritex do
     authorities()
     |> Enum.find(fn {authority, _, _} -> authority.can_resolve?(id) end)
   end
+
+  @doc """
+  Turns a fetch result map into a struct.
+  """
+  @spec fetch_result({:ok, map()} | {:error, any()}) :: fetch_result()
+  def fetch_result({:ok, result}) do
+    {:ok, struct(Authoritex.Record, result)}
+  end
+
+  def fetch_result({:error, reason}), do: {:error, reason}
+
+  @doc """
+  Turns a list of search result maps into structs.
+  """
+  @spec search_results({:ok, list(map())} | {:error, any()}) :: list(search_result())
+  def search_results({:ok, results}) do
+    {:ok, Enum.map(results, &struct(Authoritex.SearchResult, &1))}
+  end
+
+  def search_results({:error, reason}), do: {:error, reason}
 
   defp find_authority(code) do
     authorities()

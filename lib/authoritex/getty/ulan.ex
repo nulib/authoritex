@@ -10,10 +10,14 @@ defmodule Authoritex.Getty.ULAN do
     """
     SELECT DISTINCT ?s ?name ?hint ?replacedBy (group_concat(?alt; separator="|") AS ?variants) {
       BIND(<#{id}> as ?s)
-      OPTIONAL {?s gvp:prefLabelGVP [skosxl:literalForm ?name]}
+      OPTIONAL {?s gvp:prefLabelGVP [skosxl:literalForm ?prefLabel]}
       OPTIONAL {?s foaf:focus/gvp:biographyPreferred [schema:description ?hint]}
-      OPTIONAL {?s dcterms:isReplacedBy ?replacedBy}
+      OPTIONAL {
+        ?s dcterms:isReplacedBy ?replacedBy .
+        ?s rdfs:label ?obsoleteLabel
+      }
       OPTIONAL {?s xl:altLabel/xl:literalForm ?alt}
+      BIND(COALESCE(?prefLabel, ?obsoleteLabel) AS ?name)
     }
     GROUP BY ?s ?name ?hint ?replacedBy
     LIMIT 1

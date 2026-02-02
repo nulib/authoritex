@@ -47,13 +47,14 @@ defmodule Authoritex.LOC.Base do
 
       def fetch(id) do
         with url <- String.replace(id, ~r/^http:/, "https:") do
-          case HttpClient.get(url <> ".rdf") do
+          case HttpClient.get(url <> ".madsrdf.rdf") do
             {:ok, response} ->
               parse_fetch_result(response)
 
             {:error, error} ->
               {:error, error}
           end
+          |> Authoritex.fetch_result()
         end
       end
 
@@ -74,6 +75,7 @@ defmodule Authoritex.LOC.Base do
           {:error, error} ->
             {:error, error}
         end
+        |> Authoritex.search_results()
       end
 
       defp parse_fetch_result(%{body: response, status: 200}) do
@@ -91,8 +93,12 @@ defmodule Authoritex.LOC.Base do
                  hint: ~x"./no_hint/text()",
                  variants:
                    ~x".//madsrdf:variantLabel/text()"ls
-                   |> SweetXml.transform_by(&Enum.uniq/1)
-               )}
+                   |> SweetXml.transform_by(&Enum.uniq/1),
+                 replaced_by:
+                   ~x".//madsrdf:useInstead/@rdf:resource"s
+               )
+               |> add_related()
+               |> ensure_labels()}
           end
         end
       rescue
@@ -127,6 +133,22 @@ defmodule Authoritex.LOC.Base do
       defp parse_search_result(%{status: status}), do: {:error, status}
 
       defp parse_search_result(response), do: {:error, {:bad_response, response}}
+
+      defp add_related(result) do
+        result
+        |> Enum.reduce(%{related: []}, fn
+          {:replaced_by, ""}, acc -> acc
+          {:replaced_by, value}, acc -> put_in(acc, [:related, :replaced_by], value)
+          {key, value}, acc -> Map.put(acc, key, value)
+        end)
+      end
+
+      defp ensure_labels(%{label: "", qualified_label: "", variants: [v|_]} = record) do
+        Map.put(record, :qualified_label, v)
+        |> ensure_labels()
+      end
+      defp ensure_labels(%{label: "", qualified_label: ql} = record), do: Map.put(record, :label, ql)
+      defp ensure_labels(record), do: record
     end
   end
 end

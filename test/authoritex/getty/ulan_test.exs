@@ -1,8 +1,6 @@
 defmodule Authoritex.Getty.ULANTest do
   alias Authoritex.Getty.ULAN
 
-  import ExUnit.CaptureLog
-
   use Authoritex.TestCase,
     module: ULAN,
     code: "ulan",
@@ -25,20 +23,15 @@ defmodule Authoritex.Getty.ULANTest do
   describe "obsolete subjects" do
     test "fetch" do
       use_cassette "ulan_obsolete_subject", match_requests_on: [:query] do
-        log =
-          capture_log(fn ->
-            assert ULAN.fetch("http://vocab.getty.edu/ulan/500461126") ==
-                     {:ok,
-                      %{
-                        hint: "unknown cultural designation",
-                        id: "http://vocab.getty.edu/ulan/500125274",
-                        label: "unknown",
-                        qualified_label: "unknown (unknown cultural designation)",
-                        variants: ["anonymous"]
-                      }}
-          end)
-
-        assert log |> String.contains?("replacement term")
+        assert ULAN.fetch("http://vocab.getty.edu/ulan/500461126") ==
+                 {:ok,
+                  %Authoritex.Record{
+                    id: "http://vocab.getty.edu/ulan/500461126",
+                    label: "unknown",
+                    qualified_label: "unknown",
+                    variants: [],
+                    related: [replaced_by: "http://vocab.getty.edu/ulan/500125274"]
+                  }}
       end
     end
   end

@@ -1,21 +1,22 @@
 defmodule Authoritex.HomosaurusTest do
-  # alias Authoritex.Homosaurus
+  alias Authoritex.Homosaurus
 
-  # use Authoritex.TestCase,
-  #   module: Homosaurus,
-  #   code: "homosaurus",
-  #   description: "Homosaurus International LGBTQ+ Linked Data Vocabulary",
-  #   test_uris: ["https://homosaurus.org/v3/homoit0002336"],
-  #   bad_uri: "https://homosaurus.org/v3/not-a-real-thing",
-  #   expected: [
-  #     id: "https://homosaurus.org/v3/homoit0002336",
-  #     label: "Adopted LGBTQ+ people",
-  #     qualified_label: "Adopted LGBTQ+ people",
-  #     variants: ["Adopted people (LGBTQ)", "LGBTQ+ adopted people"],
-  #     hint: nil
-  #   ],
-  #   search_result_term: "adop",
-  #   search_count_term: "adop",
-  #   default_results: 50,
-  #   explicit_results: 50
+  use Authoritex.TestCase,
+    module: Homosaurus,
+    code: "homosaurus",
+    description: "Homosaurus International LGBTQ+ Linked Data Vocabulary",
+    test_uris: ["https://homosaurus.org/v3/homoit0002336"],
+    bad_uri: "https://homosaurus.org/v3/not-a-real-thing",
+    expected: [
+      id: "https://homosaurus.org/v3/homoit0002336",
+      label: "Adopted LGBTQ+ people",
+      qualified_label: "Adopted LGBTQ+ people",
+      variants: ["Adopted people (LGBTQ)", "LGBTQ+ adopted people"],
+      hint: nil,
+      related: []
+    ],
+    search_result_term: "adop",
+    search_count_term: "adop",
+    default_results: 50,
+    explicit_results: 50
 end

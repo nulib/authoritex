@@ -1,0 +1,48 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://id.loc.gov/authorities/subjects/sh87003768.madsrdf.rdf",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:lcc=\"http://id.loc.gov/ontologies/lcc#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:pmo=\"http://performedmusicontology.org/ontology/\" xmlns:lclocal=\"http://id.loc.gov/ontologies/lclocal/\">\n  <madsrdf:Topic rdf:about=\"http://id.loc.gov/authorities/subjects/sh87003768\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Variant\"/>\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#DeprecatedAuthority\"/>\n    <madsrdf:variantLabel xml:lang=\"en\">Gaṇeśa (Hindu deity)</madsrdf:variantLabel>\n    <madsrdf:elementList rdf:parseType=\"Collection\">\n      <madsrdf:TopicElement>\n\t<madsrdf:elementValue xml:lang=\"en\">Gaṇeśa (Hindu deity)</madsrdf:elementValue>\n      </madsrdf:TopicElement>\n    </madsrdf:elementList>\n    <madsrdf:deletionNote xml:lang=\"en\">This authority record has been deleted because the subject heading is covered by an identical name heading (DLC)n 2017065815</madsrdf:deletionNote>\n    <madsrdf:useInstead rdf:resource=\"http://id.loc.gov/authorities/names/n2017065815\"/>\n    <owl:sameAs rdf:resource=\"info:lc/authorities/sh87003768\"/>\n    <owl:sameAs rdf:resource=\"http://id.loc.gov/authorities/sh87003768#concept\"/>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1987-06-12T00:00:00</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2018-01-05T13:54:56</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">deprecated</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n  </madsrdf:Topic>\n</rdf:RDF>\n",
+      "headers": {
+        "date": "Sat, 31 Jan 2026 22:31:30 GMT",
+        "content-type": "application/rdf+xml; charset=UTF-8",
+        "content-length": "2372",
+        "connection": "keep-alive",
+        "cf-ray": "9c6ca8ddbc56c5c3-IAD",
+        "x-frame-options": "DENY",
+        "x-xss-protection": "1",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "*",
+        "access-control-allow-method": "HEAD, POST, GET, OPTIONS",
+        "access-control-allow-headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+        "access-control-expose-headers": "Content-Type, Cache-Control, X-URI, X-PrefLabel, X-PrefLabel-Escaped, X-PrefLabel-Encoded",
+        "strict-transport-security": "max-age=31536000",
+        "etag": "0f64e41bbd4ee15eeb28cc7ec7a76708",
+        "x-preflabel": "Gaṇeśa (Hindu deity)",
+        "x-preflabel-escaped": "Ga%E1%B9%87e%C5%9Ba (Hindu deity)",
+        "x-preflabel-encoded": "Ga%E1%B9%87e%C5%9Ba%20%28Hindu%20deity%29",
+        "x-uri": "http://id.loc.gov/authorities/subjects/sh87003768",
+        "cache-control": "public, max-age=2419200",
+        "x-varnish": "161980828 169445685",
+        "age": "1423",
+        "via": "1.1 varnish (Varnish/6.0)",
+        "accept-ranges": "bytes",
+        "cf-cache-status": "DYNAMIC",
+        "server": "cloudflare"
+      },
+      "status_code": 200
+    }
+  }
+]

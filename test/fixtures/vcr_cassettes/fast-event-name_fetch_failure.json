@@ -8,7 +8,7 @@
         "accept": "application/rdf+xml",
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/1.3.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.16 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
       },
       "request_body": "",
       "method": "get"
@@ -18,29 +18,29 @@
       "type": "ok",
       "body": "g20AAAHZH4sIAAAAAAAAA4SSwY7TMBCGX2UI17Zu2u6uaF1LK60QFxCC3BCHiTOJrXXtYE+3DVUl3oE33CdBSbYsK4G4+PB5/v8f/Rr5qgqau5bA8M4p2b/g0DfbjHympCGslGTLjtS7ovgInxl5n2A1X8Hjj5/wITC8DXtfSTEOycSdI+gttxnTkYVOKVNlqDo41cHztMaddd26QBN2OLmNFt0koU/TRNHWmzOYfAJmMQGznEAJJx1ciOuDsUybEvV9E/u86YhfXy2u7m6uB9WTf7Lfab1YtMceLv6E+fUIly/gaoDtCzaq8RJeOtT3mzPMnPUEJ0O2MbzO2+O/FypDrCiuffC0OUsxtKKkGPvs21DS5P+r1ORKmgjaYUrbrA/PQCjZKlmqomtJilJd5J+oDZGlaJ/+31NK2IwjhSGI9G1PiamCSCnsoyb4ImpMLObTQwy+mdrqK9gEPjDgA1qHpaNnvztKOtqWbfC/PUO0jfWQKD5QhMpWg7i2vgIEvY+RPEOkNlIiz9hroQ4R2BAwxob4eZkQL+EH65z1DXCAyibtQiJggwzBE9DRJk6zYa+/VGOW6rZFbQiKsNPI4mY2n+XzN1KYpZJiLF4Mt/4LAAD//wMAEGj4vPsCAAA=",
       "headers": {
-        "date": "Fri, 02 Jan 2026 18:41:38 GMT",
+        "date": "Sat, 31 Jan 2026 22:19:19 GMT",
         "content-type": "text/html;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
         "content-encoding": "gzip",
-        "ratelimit-limit": "10000",
+        "x-ratelimit-remaining-day": "9999",
+        "ratelimit-reset": "6041",
         "ratelimit-remaining": "9999",
-        "ratelimit-reset": "19102",
+        "ratelimit-limit": "10000",
+        "x-ratelimit-limit-month": "300000",
         "x-ratelimit-remaining-month": "299999",
         "x-ratelimit-limit-day": "10000",
-        "x-ratelimit-remaining-day": "9999",
-        "x-ratelimit-limit-month": "300000",
         "content-language": "en",
-        "kong-request-id": "62ebacb8-9c2d-436d-8994-ee6032493982#83150212",
-        "x-kong-upstream-latency": "8",
-        "x-kong-proxy-latency": "0",
-        "via": "1.1 kong/3.11.0.6-enterprise-edition",
-        "x-kong-request-id": "24cd913fcaefc7543dea487edf580a02",
+        "kong-request-id": "119c87f1-7ee4-44ff-8504-5785f88a18dc#3190403",
+        "x-kong-upstream-latency": "2",
+        "x-kong-proxy-latency": "2",
+        "via": "1.1 kong/3.12.0.2-enterprise-edition",
+        "x-kong-request-id": "61470822a229d93c81f5b1039febe267",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "set-cookie": "__cf_bm=ELz4q6yJ8dztLlEFSvzBtysCQnOoFHPUceYq0hUVOgY-1767379298-1.0.1.1-5lQRBFSK5bOsBIkISn6zhGOjOXAJ5iJPakzr8GB4jYU7H8A.4BNiwH4jjzmjIl_NU.XKZpDRpVX7_wGW.5TpGWqFU_cXZrPv45qpBNCN.c_ujVXPoIyj6iRhCGzoR48J; path=/; expires=Fri, 02-Jan-26 19:11:38 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
+        "set-cookie": "__cf_bm=Z5a1RUuB0_LENxpqV_FXQvadhgGEmTkNDU6JmVUtJKI-1769897959-1.0.1.1-vhjwkJR_.OZ6IwVyWwz21.nHJZrDy465RjgOINHMpCHHDf6OM8AROdFSxhew9mKzNctUqgXb.nFzNkacp8D8gUMEYyHH60vAk_GEzHsEfQjBOsRucb8nmdfTPbnsFi8H; path=/; expires=Sat, 31-Jan-26 22:49:19 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
         "server": "cloudflare",
-        "cf-ray": "9b7c64473b0b690e-IAD"
+        "cf-ray": "9c6c9707f8dac9bb-IAD"
       },
       "status_code": 404
     }

@@ -1,6 +1,7 @@
 defmodule AuthoritexTest do
   use ExUnit.Case, async: false
   use ExVCR.Mock, adapter: ExVCR.Adapter.Finch
+  alias Authoritex.{Record, SearchResult}
 
   describe "authorities/0" do
     test "authorities configured" do
@@ -18,7 +19,7 @@ defmodule AuthoritexTest do
   describe "fetch/1" do
     test "success" do
       use_cassette "authoritex_fetch_success", match_requests_on: [:query] do
-        expected = %{
+        expected = %Record{
           hint: nil,
           id: "http://id.loc.gov/authorities/names/no2011087251",
           label: "Valim, Jose",
@@ -49,6 +50,37 @@ defmodule AuthoritexTest do
       assert Authoritex.fetch(":http://id.loc.gov/authorities/names/no2009131449") ==
                {:error, :unknown_authority}
     end
+
+    test "do not automatically redirect" do
+      use_cassette "authoritex_fetch_no_redirect", match_requests_on: [:query] do
+        assert {:ok,
+                %Authoritex.Record{
+                  id: "http://id.loc.gov/authorities/subjects/sh87003768",
+                  label: "Gaṇeśa (Hindu deity)",
+                  qualified_label: "Gaṇeśa (Hindu deity)",
+                  hint: nil,
+                  variants: _,
+                  related: [replaced_by: "http://id.loc.gov/authorities/names/n2017065815"]
+                }} = Authoritex.fetch("http://id.loc.gov/authorities/subjects/sh87003768")
+      end
+    end
+
+    test "redirects on request" do
+      use_cassette "authoritex_fetch_redirect", match_requests_on: [:query] do
+        assert {:ok,
+                %Authoritex.Record{
+                  id: "http://id.loc.gov/authorities/names/n2017065815",
+                  label: "Gaṇeśa (Hindu deity)",
+                  qualified_label: "Gaṇeśa (Hindu deity)",
+                  hint: nil,
+                  variants: _,
+                  related: [replaces: "http://id.loc.gov/authorities/subjects/sh87003768"]
+                }} =
+                 Authoritex.fetch("http://id.loc.gov/authorities/subjects/sh87003768",
+                   redirect: true
+                 )
+      end
+    end
   end
 
   describe "search/2" do
@@ -67,7 +99,7 @@ defmodule AuthoritexTest do
     test "expected result" do
       use_cassette "authoritex_search_results", match_requests_on: [:query] do
         with {:ok, results} <- Authoritex.search("lcnaf", "valim") do
-          assert Enum.member?(results, %{
+          assert Enum.member?(results, %SearchResult{
                    id: "http://id.loc.gov/authorities/names/no2011087251",
                    label: "Valim, Jose",
                    hint: nil
