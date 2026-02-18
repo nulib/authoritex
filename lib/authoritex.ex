@@ -4,6 +4,7 @@ defmodule Authoritex do
   defmodule Record do
     @moduledoc false
     @derive Jason.Encoder
+    if Version.match?(System.version(), ">= 1.18.0"), do: @derive JSON.Encoder
     defstruct [
       :id,
       :label,
@@ -17,6 +18,7 @@ defmodule Authoritex do
   defmodule SearchResult do
     @moduledoc false
     @derive Jason.Encoder
+    if Version.match?(System.version(), ">= 1.18.0"), do: @derive JSON.Encoder
     defstruct [:id, :label, :hint]
   end
 

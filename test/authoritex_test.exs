@@ -148,4 +148,30 @@ defmodule AuthoritexTest do
       end
     end
   end
+
+  if Version.match?(System.version(), ">= 1.18.0") do
+    describe "JSON.Encoder implementation" do
+      test "Authoritex.SearchResult" do
+        use_cassette "authoritex_search_results", match_requests_on: [:query] do
+          with {:ok, results} <- Authoritex.search("lcnaf", "valim"),
+               json <- JSON.encode!(results) do
+            assert String.contains?(json, ~s("id":"http://id.loc.gov/authorities/names/no2011087251"))
+            assert String.contains?(json, ~s("label":"Valim, Jose"))
+          end
+        end
+      end
+
+      test "Authoritex.Record" do
+        use_cassette "authoritex_fetch_success", match_requests_on: [:query] do
+          with {:ok, record} <-
+                Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251"),
+               json <- JSON.encode!(record) do
+            assert String.contains?(json, ~s("id":"http://id.loc.gov/authorities/names/no2011087251"))
+            assert String.contains?(json, ~s("label":"Valim, Jose"))
+            assert String.contains?(json, ~s("qualified_label":"Valim, Jose"))
+          end
+        end
+      end
+    end
+  end
 end
