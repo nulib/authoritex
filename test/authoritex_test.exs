@@ -124,4 +124,28 @@ defmodule AuthoritexTest do
                Authoritex.search(authority_code, "term", 3)
     end
   end
+
+  describe "Jason.Encoder implementation" do
+    test "Authoritex.SearchResult" do
+      use_cassette "authoritex_search_results", match_requests_on: [:query] do
+        with {:ok, results} <- Authoritex.search("lcnaf", "valim"),
+             {:ok, json} <- Jason.encode(results) do
+          assert String.contains?(json, ~s("id":"http://id.loc.gov/authorities/names/no2011087251"))
+          assert String.contains?(json, ~s("label":"Valim, Jose"))
+        end
+      end
+    end
+
+    test "Authoritex.Record" do
+      use_cassette "authoritex_fetch_success", match_requests_on: [:query] do
+        with {:ok, record} <-
+               Authoritex.fetch("http://id.loc.gov/authorities/names/no2011087251"),
+             {:ok, json} <- Jason.encode(record) do
+          assert String.contains?(json, ~s("id":"http://id.loc.gov/authorities/names/no2011087251"))
+          assert String.contains?(json, ~s("label":"Valim, Jose"))
+          assert String.contains?(json, ~s("qualified_label":"Valim, Jose"))
+        end
+      end
+    end
+  end
 end

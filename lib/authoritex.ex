@@ -3,6 +3,7 @@ defmodule Authoritex do
 
   defmodule Record do
     @moduledoc false
+    @derive Jason.Encoder
     defstruct [
       :id,
       :label,
@@ -15,6 +16,7 @@ defmodule Authoritex do
 
   defmodule SearchResult do
     @moduledoc false
+    @derive Jason.Encoder
     defstruct [:id, :label, :hint]
   end
 
