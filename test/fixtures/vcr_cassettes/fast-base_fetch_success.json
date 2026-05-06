@@ -8,41 +8,41 @@
         "accept": "application/rdf+xml",
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
       },
-      "request_body": "",
-      "method": "get"
+      "method": "get",
+      "request_body": ""
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "<rdf:RDF xmlns:coord=\"http://whatever/java/ORG.oclc.util.CoordToDecimal\"\n         xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n         xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n         xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n         xmlns:dct=\"http://purl.org/dc/terms/\"\n         xmlns:skosxl=\"http://www.w3.org/2008/05/skos-xl#\"\n         xmlns:mx=\"http://www.loc.gov/MARC21/slim\"\n         xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n         xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n         xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n         xmlns:void=\"http://rdfs.org/ns/void#\"\n         xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n         xmlns:schema=\"http://schema.org/\"\n         xmlns:norm=\"http://whatever/java/ORG.oclc.util.NormalFormC\"\n         xmlns:naco=\"http://whatever/java/ORG.oclc.util.NacoNormalize\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n         xml:base=\"http://id.worldcat.org/fast/\">\n   <rdf:Description rdf:about=\"521479\">\n      <dct:identifier>521479</dct:identifier>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#fast\"/>\n      <rdf:type rdf:resource=\"http://schema.org/Organization\"/>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#facet-Corporate\"/>\n      <skos:prefLabel>Melville J. Herskovits Library of African Studies</skos:prefLabel>\n      <schema:name>Melville J. Herskovits Library of African Studies</schema:name>\n      <skos:altLabel>Herskovits Library of African Studies</skos:altLabel>\n      <schema:name>Herskovits Library of African Studies</schema:name>\n      <skos:altLabel>Northwestern University (Evanston, Ill.). Africana Library</skos:altLabel>\n      <schema:name>Northwestern University (Evanston, Ill.). Africana Library</schema:name>\n      <skos:altLabel>Northwestern University (Evanston, Ill.). Library. Melville J. Herskovits Library of African Studies</skos:altLabel>\n      <schema:name>Northwestern University (Evanston, Ill.). Library. Melville J. Herskovits Library of African Studies</schema:name>\n      <skos:related>\n         <rdf:Description rdf:about=\"2054892\">\n            <rdfs:label>Northwestern University (Evanston, Ill.). Library. African Department</rdfs:label>\n         </rdf:Description>\n      </skos:related>\n      <skos:related>\n         <rdf:Description rdf:about=\"534726\">\n            <rdfs:label>Northwestern University (Evanston, Ill.). Library</rdfs:label>\n         </rdf:Description>\n      </skos:related>\n      <schema:sameAs>\n         <rdf:Description rdf:about=\"http://id.loc.gov/authorities/names/n50079904\">\n            <rdfs:label>Melville J. Herskovits Library of African Studies</rdfs:label>\n         </rdf:Description>\n      </schema:sameAs>\n   </rdf:Description>\n   <rdf:Description rdf:about=\"fst00521479\">\n      <rdfs:comment>This identifier is deprecated. See the rdfs:seeAlso link for the new identifier.</rdfs:comment>\n      <rdfs:seeAlso rdf:resource=\"521479\"/>\n   </rdf:Description>\n   <foaf:Document rdf:about=\"521479/rdf.xml\">\n      <void:inDataset rdf:resource=\"http://fast.oclc.org/fast/void/0.1\"/>\n      <foaf:primaryTopic rdf:resource=\"521479\"/>\n      <dc:format>application/rdf+xml</dc:format>\n      <dct:created rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2005-05-13T00:00:00.0</dct:created>\n      <dct:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2022-09-16T14:40:09.0</dct:modified>\n      <dct:language rdf:resource=\"http://lexvo.org/id/iso639-3/eng\"/>\n      <skos:changeNote xml:lang=\"en\">Cataloged by agency: OCoLC</skos:changeNote>\n      <skos:changeNote xml:lang=\"en\">Transcribed by agency: OCoLC</skos:changeNote>\n   </foaf:Document>\n   <void:Dataset rdf:about=\"http://fast.oclc.org/fast/void/0.1\">\n      <dct:title>FAST (Faceted Application of Subject Terminology) Data</dct:title>\n      <dct:license>\n         <rdf:Description rdf:about=\"http://www.oclc.org/research/activities/fast/odcby.htm\">\n            <dct:title>Open Data Commons Attribution License (ODC-By) v1.0</dct:title>\n            <rdfs:comment>This is OCLC's \"local copy\" of the ODC-By license</rdfs:comment>\n            <rdfs:seeAlso rdf:resource=\"http://opendatacommons.org/licenses/by/#toc-anchor-337-3\"/>\n            <owl:sameAs rdf:resource=\"http://opendatacommons.org/licenses/by/1-0/\"/>\n         </rdf:Description>\n      </dct:license>\n   </void:Dataset>\n</rdf:RDF>",
       "headers": {
-        "date": "Sat, 31 Jan 2026 22:19:29 GMT",
+        "date": "Wed, 06 May 2026 18:26:07 GMT",
         "content-type": "application/rdf+xml",
         "content-length": "4338",
         "connection": "keep-alive",
-        "cf-ray": "9c6c97467f53c9bb-IAD",
+        "set-cookie": "__cf_bm=ipDpZ.G6rbFk0myqa6hrYiJX.s7twLJ_1V4xxSwRrz4-1778091967.1434805-1.0.1.1-.AtdFp9kBNsw_k5Wsc5.wskT7bM0BmzCwYtbr48RtV6cdwafZy4eNIlsXnu4spbM6yyZEOtc.YOehHwMU5Pgx9oi3dW5izRqY07DE07SVQPs_3LwU2a6UVS8kf4l59Rh0l0bYOKgOGiJf9X4FGIsNg; HttpOnly; Secure; Path=/; Domain=oclc.org; Expires=Wed, 06 May 2026 18:56:07 GMT",
+        "x-ratelimit-limit-month": "300000",
         "x-ratelimit-remaining-month": "299999",
         "x-ratelimit-limit-day": "10000",
         "x-ratelimit-remaining-day": "9999",
-        "ratelimit-reset": "6031",
         "ratelimit-remaining": "9999",
         "ratelimit-limit": "10000",
-        "x-ratelimit-limit-month": "300000",
+        "ratelimit-reset": "20033",
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "GET",
         "x-frame-options": "SAMEORIGIN",
         "x-content-security-policy": "allow self",
-        "kong-request-id": "08797aed-fb1f-430c-a336-a05e2c507cfe#3001730",
-        "x-kong-upstream-latency": "7",
+        "kong-request-id": "bfc8a094-0dce-4662-8738-6b8f290f1e1d#148013",
+        "x-kong-upstream-latency": "41",
         "x-kong-proxy-latency": "1",
-        "via": "1.1 kong/3.12.0.2-enterprise-edition",
-        "x-kong-request-id": "3efe330b2579e311c7f81b06f0379e35",
+        "via": "1.1 kong/3.14.0.2-enterprise-edition",
+        "x-kong-request-id": "58b06c00338d8e2d63babd5bb60fdf6e",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "set-cookie": "__cf_bm=RpSiIG7o_vMgvD5E2q1I347oD10t3QJrm.l_VLe9WHU-1769897969-1.0.1.1-eHp7lFTGxSuAziz08z5rOsQ6XGtpxRcZtTKKybcsOirtqJGa7pzub1RedlwsPv6BiC5FT1nQX92JBmkyjGZ2BxCY6iDmIl0pmP_PO3_o9r45TV6EBGrkkInF20XXJLU7; path=/; expires=Sat, 31-Jan-26 22:49:29 GMT; domain=.oclc.org; HttpOnly; Secure; SameSite=None",
-        "server": "cloudflare"
+        "server": "cloudflare",
+        "cf-ray": "9f7a080aade8d6b4-IAD"
       },
       "status_code": 200
     }

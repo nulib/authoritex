@@ -46,7 +46,7 @@ defmodule Authoritex.Getty.Base do
              |> ensure_variants()
              |> put_qualified_label()
              |> add_related()}
-             |> Authoritex.fetch_result()
+            |> Authoritex.fetch_result()
 
           other ->
             other
@@ -77,7 +77,7 @@ defmodule Authoritex.Getty.Base do
       defp sanitize(query), do: query |> String.replace(~r"[^\w\s-]", "")
 
       defp send(query) do
-        "http://vocab.getty.edu/sparql.xml"
+        "https://vocab.getty.edu/sparql.xml"
         |> HttpClient.get(
           headers: [{"accept", "application/sparql-results+xml;charset=UTF-8"}],
           params: [

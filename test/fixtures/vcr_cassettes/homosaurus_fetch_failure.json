@@ -6,7 +6,7 @@
       "url": "https://api.homosaurus.org/v3/not-a-real-thing.json",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
       },
       "method": "get",
       "request_body": ""
@@ -16,20 +16,20 @@
       "type": "ok",
       "body": "{\"status\":500,\"error\":\"Internal Server Error\"}",
       "headers": {
-        "date": "Mon, 02 Feb 2026 18:47:17 GMT",
+        "date": "Wed, 06 May 2026 18:25:56 GMT",
         "content-type": "application/json; charset=utf-8",
         "content-length": "46",
         "connection": "keep-alive",
         "server": "cloudflare",
-        "x-request-id": "5f32faf9-1ee3-443e-b8f2-c7a46db037db",
-        "x-runtime": "0.002868",
+        "x-request-id": "ebacc9df-36e3-4914-a85c-aa8a32f2487b",
+        "x-runtime": "0.003635",
         "x-powered-by": "Phusion Passenger(R) 6.0.27",
         "status": "500 Internal Server Error",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "cf-cache-status": "DYNAMIC",
         "server-timing": "cfCacheStatus;desc=\"DYNAMIC\"",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YEyLoF7LcfDwFvoe04yJN%2BAgpE%2FA8z7jyD50figYmaVhbTgCYov7HSCC8gfMA7UmFxZHMVqOoakfw5Hgkh%2FCYE2qdulBS6DAbIfypAAC7ffI4A%3D%3D\"}]}",
-        "cf-ray": "9c7bdb2eaf2fdb3c-IAD",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=g2XgEpzq5dfsal3Irve0tLl3%2FcaSCsU%2FotcY32q1G6AK1DyWs64GsxpbuZDvoSt3pSeCGv7m%2B8hD5DbMGtEm0E%2BB%2FSQdUOUKlgv7MbLaabiYvhR11t05TpBnEjhk1N%2BSDGouhPk%3D\"}]}",
+        "cf-ray": "9f7a07c50e908f73-BOS",
         "alt-svc": "h3=\":443\"; ma=86400"
       },
       "status_code": 500

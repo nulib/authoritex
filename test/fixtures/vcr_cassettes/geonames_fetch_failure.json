@@ -6,17 +6,17 @@
       "url": "http://api.geonames.org/getJSON?geonameId=42992769&<<geonames_username>>",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/2.0.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
       },
-      "request_body": "",
-      "method": "get"
+      "method": "get",
+      "request_body": ""
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "{\"status\":{\"message\":\"the geoname feature does not exist.\",\"value\":11}}",
       "headers": {
-        "date": "Sat, 31 Jan 2026 22:19:06 GMT",
+        "date": "Wed, 06 May 2026 18:26:04 GMT",
         "server": "Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips",
         "access-control-allow-origin": "*",
         "x-frame-options": "sameorigin",
