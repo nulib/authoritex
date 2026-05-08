@@ -56,12 +56,15 @@ defmodule Authoritex.OpenSearch do
           bool: %{
             must: [%{term: %{authority: %{value: code}}}],
             should: [
-              %{match_phrase: %{label: %{query: query, boost: 2}}},
+              %{term: %{label: %{value: query, boost: 10}}},
+              %{match_phrase: %{label: %{query: query, boost: 5}}},
+              %{term: %{variants: %{value: query, boost: 2}}},
               %{match_phrase: %{variants: %{query: query, boost: 1}}}
             ]
           }
         }
       }
+      |> IO.inspect(label: "Search Body")
     end
   end
 
