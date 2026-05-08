@@ -64,7 +64,6 @@ defmodule Authoritex.OpenSearch do
           }
         }
       }
-      |> IO.inspect(label: "Search Body")
     end
   end
 

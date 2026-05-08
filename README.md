@@ -14,7 +14,7 @@ Add `authoritex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:authoritex, "~> 3.1.0"}
+    {:authoritex, "~> 3.0"}
   ]
 end
 ```
