@@ -46,7 +46,8 @@ defmodule Authoritex.TestCase do
             search_result_term: use_opts[:search_result_term],
             search_count_term: use_opts[:search_count_term],
             default_results: use_opts[:default_results] || 30,
-            explicit_results: use_opts[:explicit_results] || 50
+            explicit_results: use_opts[:explicit_results] || 50,
+            custom_cassette: !!use_opts[:custom_cassette]
           ] do
       use ExUnit.Case, async: true
       use ExVCR.Mock, adapter: ExVCR.Adapter.Finch
@@ -80,17 +81,25 @@ defmodule Authoritex.TestCase do
 
       describe "fetch/1" do
         test "success" do
-          use_cassette "#{unquote(code)}_fetch_success", match_requests_on: [:query] do
+          use_cassette "#{unquote(code)}_fetch_success",
+            match_requests_on: [:query],
+            custom: unquote(custom_cassette) do
             unquote(test_uris)
             |> Enum.each(fn uri ->
               assert unquote(module).fetch(uri) ==
-                       {:ok, struct(Record, Keyword.put(unquote(expected), :hint, unquote(expected_fetch_hint)))}
+                       {:ok,
+                        struct(
+                          Record,
+                          Keyword.put(unquote(expected), :hint, unquote(expected_fetch_hint))
+                        )}
             end)
           end
         end
 
         test "failure" do
-          use_cassette "#{unquote(code)}_fetch_failure", match_requests_on: [:query] do
+          use_cassette "#{unquote(code)}_fetch_failure",
+            match_requests_on: [:query],
+            custom: unquote(custom_cassette) do
             assert unquote(module).fetch(unquote(bad_uri)) == {:error, 404}
           end
         end
@@ -98,7 +107,9 @@ defmodule Authoritex.TestCase do
 
       describe "search/2" do
         test "result count" do
-          use_cassette "#{unquote(code)}_search_count", match_requests_on: [:query] do
+          use_cassette "#{unquote(code)}_search_count",
+            match_requests_on: [:query],
+            custom: unquote(custom_cassette) do
             with {:ok, results} <- unquote(module).search(unquote(search_count_term)) do
               assert length(results) == unquote(default_results)
             end
@@ -111,7 +122,9 @@ defmodule Authoritex.TestCase do
         end
 
         test "expected result" do
-          use_cassette "#{unquote(code)}_search_results", match_requests_on: [:query] do
+          use_cassette "#{unquote(code)}_search_results",
+            match_requests_on: [:query],
+            custom: unquote(custom_cassette) do
             with {:ok, results} <- unquote(module).search(unquote(search_result_term)) do
               assert Enum.member?(results, struct(SearchResult, unquote(expected)))
             end
@@ -119,7 +132,9 @@ defmodule Authoritex.TestCase do
         end
 
         test "no results" do
-          use_cassette "#{unquote(code)}_search_results_empty", match_requests_on: [:query] do
+          use_cassette "#{unquote(code)}_search_results_empty",
+            match_requests_on: [:query],
+            custom: unquote(custom_cassette) do
             assert {:ok, []} = unquote(module).search("M1551ng")
           end
         end

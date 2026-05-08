@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "{\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"label\":{\"query\":\"M1551ng\",\"boost\":2}}},{\"match_phrase\":{\"variants\":{\"query\":\"M1551ng\",\"boost\":1}}}],\"must\":[{\"term\":{\"authority\":{\"value\":\"opensearch_test\"}}}],\"minimum_should_match\":1}}}",
+      "url": "http://localhost:9200/_search?size=20",
+      "headers": {
+        "accept": "application/json",
+        "accept-encoding": "gzip",
+        "content-type": "application/json",
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": true,
+      "type": "ok",
+      "body": "g20AAACNH4sIAAAAAAAAAEyLwQqDMBAF/+Wdc+ilhe6vlBKWuGJwNTa7KQXJvwuC0NsMzOzwUmbQPcDzIkMszUEjq0lAtInrYKAdXpwV9HwEWEtJzMZ2+Zy3TQbQLWDkrCf2gCn7/7rjy9rkzKooey4rCPJBD1j4Fy2VKqC1qV7z6937AQAA//8DAPGKzvSiAAAA",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "content-encoding": "gzip",
+        "content-length": "141",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Fri, 08 May 2026 15:51:04 GMT"
+      },
+      "status_code": 200
+    }
+  }
+]

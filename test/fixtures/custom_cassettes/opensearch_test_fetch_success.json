@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "{\"size\":1,\"query\":{\"bool\":{\"must\":[{\"term\":{\"authority\":{\"value\":\"opensearch_test\"}}},{\"term\":{\"uri\":{\"value\":\"http://test.example.edu/opensearch_test/300265149\"}}}]}}}",
+      "url": "http://localhost:9200/_search",
+      "headers": {
+        "accept": "application/json",
+        "accept-encoding": "gzip",
+        "content-type": "application/json",
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": true,
+      "type": "ok",
+      "body": "g20AAAFXH4sIAAAAAAAAAJxQy04CQRD8FVInTUZeiglz9i8I2TQ7ve6E2Z1lHgSy2ZPx6g948j+MF/wV42+YAQnI0VtVd1dXdbcI1i4hJwJBV6wyGwNkQcazQOZLcspDtgg2kIGc3gv4mOfsfRGPfKmbhhXkUKAgbfawEyh1OJe2WJOJDDkScGwoaFtDglfoBCraZD63jiHH/eFRO2uR6VrxBhKBfbihGErrdNhCINMKEmUIjRwMUrfPG6oaw31WcWAbrj2Ty8ss9Qa3w+H4fjK6mybluVPmbXQ5pxtXkYwuNKvM0IINJJQ1hpzvXTXUsOtVtubtNVK8OkDW0RiBUyaJC1cIXGyCwJqcpjq9ZoaH/X6IX6PeQhvzl/kTvQxxEJ8GDjE1u0c2KqWsWPe2keoj3L0f8Odrqu/eEvn+ePl6fsJcIDr9r3923bzrfgAAAP//AwC8BQ+YRwIAAA==",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "content-encoding": "gzip",
+        "content-length": "343",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Fri, 08 May 2026 15:51:04 GMT"
+      },
+      "status_code": 200
+    }
+  }
+]

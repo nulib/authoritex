@@ -1,0 +1,54 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "http://169.254.169.254/latest/api/token",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "authoritex/aws-imds-client",
+        "x-aws-ec2-metadata-token-ttl-seconds": "60"
+      },
+      "request_body": "",
+      "method": "put"
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "",
+      "headers": {
+        "date": "Fri, 08 May 2026 16:31:16 GMT",
+        "server": "EC2ws",
+        "connection": "close",
+        "content-type": "text/plain"
+      },
+      "status_code": 500
+    }
+  },
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "http://169.254.169.254/latest/meta-data/iam/security-credentials/",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "authoritex/aws-imds-client"
+      },
+      "request_body": "",
+      "method": "get"
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "",
+      "headers": {
+        "x-aws-ec2-metadata-token-ttl-seconds": "60",
+        "date": "Fri, 08 May 2026 16:31:16 GMT",
+        "server": "EC2ws",
+        "connection": "close",
+        "content-type": "text/plain"
+      },
+      "status_code": 500
+    }
+  }
+]
