@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "{\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"label\":{\"query\":\"dollars\",\"boost\":2}}},{\"match_phrase\":{\"variants\":{\"query\":\"dollars\",\"boost\":1}}}],\"must\":[{\"term\":{\"authority\":{\"value\":\"opensearch_test\"}}}],\"minimum_should_match\":1}}}",
+      "url": "http://localhost:9200/_search?size=20",
+      "headers": {
+        "accept": "application/json",
+        "accept-encoding": "gzip",
+        "content-type": "application/json",
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": true,
+      "type": "ok",
+      "body": "g20AAAV+H4sIAAAAAAAAALRXzWsbRxT/V4a5RIG1rI/V56200Etzyy0EMdp98k41mpVnZm0LI0gIKaU0hrYuhRoKaS9piXPpocS0vqxL/pEIx/9FebMr7a7kVK3sXJZ9H/Pmzfu9N+/NITVhOKTdpkMNH4HfCyNDuwMmNDi0pwOmfE27h9SEhgna7TQdqiPPA60H0Zwe8vEYfNqtOHTAuLC/U4cG3OSXHtI9JiKg3WrFoQoEMzyUtEthl04dOmIHPe2FCuWNslvrtNy5hQeHtMelDwe0Sw1os8UiE4SKmwl1aI/7tEsDY8bd7W2UluGAjcYCyuBH2+EYpAamvKCHsu16pVJrNqpuB1eubNfTYaQ8wOPuRkzwAQe/J1gfBO1SPxSCKU1KYzYGRUahhMldij5KQ7syEsKhmWNdurQ1deiSJerQPaY4kxilB/QTa5866Uakz4UoUjojl51IFmcKiZsc1A4IH70cASeTiMn5b/xn8n9xgvz4ORKX50ezp0/oQ4dGim8U1OnUuVWsKvVWrV3JY+WWa406YvdfkPJCLvVtYuTHvwumQJMSwu8ztJ3wCpwlJEvoh1W1AlIaRdJkNFqLpAGrkmI0SfGZQzN7+oSULp+/nL3+5e5GAKWRvG2Aqp2quwxQtVrrVDprMApCAROS1tRGVbRsIV9LKSYs0kYxwZkMF0CBJjl2rmIcYi0uYNIOUVzuoG85X5dIXI9a6UmKFApNKHfIED8TLucVaP5+htw33yI7PkV+UoHmToQC+7X6aRpcPfpxdnp89dWjTeszxelDwN8q3KX1crPmNtqtdfAzMbgZ+kUDefA9kIaMOXigHTLgA9smfBjxrSTd8ggHTAyoQ60WyS1EmLMdUipbj7KUQpADJvYgS4E8ieIR+DwkSU7OSZ3SgAoFZ60bG9U4gtzq0A8AcrNY47Vyp9qorYHYKObPg2KD9L/75LKFayrcC0egPM5sp5xfzgumDW56xzjEmrNoSR+EXiRDgbY1m/N8UyAwYrcNhL3DC9VWK7ca9UZ7DRK7EVMG1I3qbdVGoeRwh5Ag3vMs9yxLF3gLKFJr1KGgAqIDHpD9iAwA70BQyMjo+AUy4lOy/+aYDC6+Q53hPlMmK7g8mdRT/MID3HqPyx2z5XG5a8sKhfOTLLpy8WiZRlbuqYYmdo2dKN6efT179vjt2fHsyy+WyKRNb5Q4KcIfInHq1fwYVS3XWpX22knqHs6n5H4ACjS7Uf68z1KhppMh1iGfwR6TJl+7heXUoYlGzqOEwSUocp8JsPcsI4KTCcM8EMCJDphtqn2eCuOXZPLmiPjxr0TgHKyDi8dJP+7HL/MGTNHAGA1cd6AVtgnQF8y6vDpnWz5jwrdeXi9YXZI7q12ylaDCmUmPW+RuzaNg2SbRBXmtMsiFtpVjwO4xFZ8yct8ij3di/FyASup5RZac0kFBli74oPjmt6uzH96e/TQ7/+Pd9+fvjo5whLlBbdSrt36p1hrtVsPN1Uaz7HbaHXzn/usj42MxGQPTRoXcZ6QUKh/UZk+NgqWlR+FcBnYb6tD3bbu4WjWTPlZOJMkBDqajyLbG15IcxKdIx6+pQ1Eruz9zFCYekrnpxkSSBHph6/LkfPbXz5cnr0jp8uTVZq+RNOi3fc+59Wqr3ihgWWm0mh3XXTer7IfpgYm94TcbV1aNFHpkyKVDzEKp0Kd8iA5yFZ5pWX826iVpMG47xjhkNvNDiFtuuu2m21wX4x0FIPvMG24W3cLyfFw/GoHiQ8akJn0mh30uPgfsHRkfcgJjZ4y8bDEHrjLR08W+1KGfzo+Q56PSQpCM+5x4AcMnZ/J7J/nHFuMFF4+RuDw/uvryeCNcUwCm04fT6T8AAAD//wMAXN4Fsb0TAAA=",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "content-encoding": "gzip",
+        "content-length": "1406",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Fri, 08 May 2026 15:51:04 GMT"
+      },
+      "status_code": 200
+    }
+  }
+]

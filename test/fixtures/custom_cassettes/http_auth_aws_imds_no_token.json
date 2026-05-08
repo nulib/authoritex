@@ -1,0 +1,86 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "http://169.254.169.254/latest/api/token",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "authoritex/aws-imds-client",
+        "x-aws-ec2-metadata-token-ttl-seconds": "60"
+      },
+      "request_body": "",
+      "method": "put"
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "",
+      "headers": {
+        "x-aws-ec2-metadata-token-ttl-seconds": "60",
+        "date": "Fri, 08 May 2026 16:31:16 GMT",
+        "server": "EC2ws",
+        "connection": "close",
+        "content-type": "text/plain"
+      },
+      "status_code": 500
+    }
+  },
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "http://169.254.169.254/latest/meta-data/iam/security-credentials/",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "authoritex/aws-imds-client"
+      },
+      "request_body": "",
+      "method": "get"
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "instance-role",
+      "headers": {
+        "content-type": "text/plain",
+        "accept-ranges": "none",
+        "last-modified": "Fri, 08 May 2026 15:35:33 GMT",
+        "content-length": "21",
+        "date": "Fri, 08 May 2026 16:31:16 GMT",
+        "server": "EC2ws",
+        "connection": "close"
+      },
+      "status_code": 200
+    }
+  },
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "http://169.254.169.254/latest/meta-data/iam/security-credentials/instance-role",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "authoritex/aws-imds-client"
+      },
+      "request_body": "",
+      "method": "get"
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"Code\" : \"Success\",\n  \"LastUpdated\" : \"2026-05-08T15:35:02Z\",\n  \"Type\" : \"AWS-HMAC\",\n  \"AccessKeyId\" : \"ASIA__ACCESS_KEY__ID7SZ\",\n  \"SecretAccessKey\" : \"TMnCgAz__SECRET_ACCESS_KEY__Vt9oFyAM\",\n  \"Token\" : \"IQoJb3JpZ2__VERY_LONG_AWS_SESSION_TOKEN__Ust4QV4ZeHLJLcFBwrnwZ4x5E=\",\n  \"Expiration\" : \"2026-05-08T22:00:38Z\"\n}",
+      "headers": {
+        "x-aws-ec2-metadata-token-ttl-seconds": "60",
+        "content-type": "text/plain",
+        "accept-ranges": "none",
+        "last-modified": "Fri, 08 May 2026 15:35:33 GMT",
+        "content-length": "1582",
+        "date": "Fri, 08 May 2026 16:31:16 GMT",
+        "server": "EC2ws",
+        "connection": "close"
+      },
+      "status_code": 200
+    }
+  }
+]

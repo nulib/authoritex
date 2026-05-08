@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "{\"size\":1,\"query\":{\"bool\":{\"must\":[{\"term\":{\"authority\":{\"value\":\"opensearch_test\"}}},{\"term\":{\"uri\":{\"value\":\"http://test.example.edu/opensearch_test/wrong-id\"}}}]}}}",
+      "url": "http://localhost:9200/_search",
+      "headers": {
+        "accept": "application/json",
+        "accept-encoding": "gzip",
+        "content-type": "application/json",
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": true,
+      "type": "ok",
+      "body": "g20AAACOH4sIAAAAAAAAAEyLwQqDMBAF/+Wdc+ihFLq/UkpY4orB1djsphQk/y4IQm8zMLPDS5lB9wDPiwyxNAeNrCYB0Saug4F2eHFW0PMRYC0lMRvb5XPeNhlAt4CRs57YA6bs/+uOL2uTM6ui7LmsIMgHPWDhX7RUqoDWpnrNr3fvBwAAAP//AwB1o6n/ogAAAA==",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "content-encoding": "gzip",
+        "content-length": "142",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Fri, 08 May 2026 15:51:04 GMT"
+      },
+      "status_code": 200
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "{\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"label\":{\"query\":\"paint\",\"boost\":2}}},{\"match_phrase\":{\"variants\":{\"query\":\"paint\",\"boost\":1}}}],\"must\":[{\"term\":{\"authority\":{\"value\":\"opensearch_test\"}}}],\"minimum_should_match\":1}}}",
+      "url": "http://localhost:9200/_search?size=20",
+      "headers": {
+        "accept": "application/json",
+        "accept-encoding": "gzip",
+        "content-type": "application/json",
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": true,
+      "type": "ok",
+      "body": "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",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "content-encoding": "gzip",
+        "content-length": "1664",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Fri, 08 May 2026 15:51:04 GMT"
+      },
+      "status_code": 200
+    }
+  },
+  {
+    "request": {
+      "options": [],
+      "body": "{\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"label\":{\"query\":\"paint\",\"boost\":2}}},{\"match_phrase\":{\"variants\":{\"query\":\"paint\",\"boost\":1}}}],\"must\":[{\"term\":{\"authority\":{\"value\":\"opensearch_test\"}}}],\"minimum_should_match\":1}}}",
+      "url": "http://localhost:9200/_search?size=15",
+      "headers": {
+        "accept": "application/json",
+        "accept-encoding": "gzip",
+        "content-type": "application/json",
+        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": true,
+      "type": "ok",
+      "body": "g20AAAWEH4sIAAAAAAAAALRYzY7bNhB+FYKXbAF5Vz+2JOsZir5AEBi0NGuzpigtSWXXWPhaoKeeWrRAge4CvQRBLz335j5L2n2LghRtiXYQN7Jzsjmc4ZDffJwZ8RGrqlrhLPA9rGgJxaxqFM5uCZPg4ZlcElFInD1iVSnCcDaNPSybPAcpb5vdeEXrGgqc+R6+JZSZvxsPL6nqmz7it4Q1gLN06mEBjChacZxhuMMbD5fkYSbzSgDOgvB6Ok4TP94t8foRzygv4AFnWIFUI9KoZSWoWmMPz2iBM7xUqs5ubvTsNTyQsmZwDUVzU9XAJRCRL2d67ibyfT+Y+MlEWx77m8mqETnoA981hNFbCsWMkTkwnGHCFb2tGkb5AtWEcoX1BrnCGW8Y83C3qwwf+MUe/tQqb4mghGu0XmNC+EJUQO9BAC8AvQVxiz3jfE5yBYIStnff31JJBOXgTI0Ot3tL+AKVQFG+fEWxDpcd35nR9lkPt+8ouvv7PfZwWbFiJEBSqQhX+6XLqvmo3IDiIWer2MM9sd2PK9ztspO6fvtyx7GeoFw1ghifecUVKSknXAH28MvPf778+v2Hv77DbzzcCDqIJZuNd1HyRdMgSmKXfOl4nEaR5uMnyCdrQdZn0M61dwgHopJVxykbLmOAPWx+Ry3fhwBpT3xxIJPpJJy6QIZJGMfBCSB1LqAKck2b7tAD7vFH1+kDu+N9X3EYhO1ZLw3hOEyTOOlDGFynYRol8QkIzcFQTQo5KAM65keA6XWxhxUp64qjumoEqsHcchgEnj3lFwEvGgxeTvg54FnzY/BywnVWrBQq4AK4RV+GdE4C/CzSrWBxDm7WvI/bnAjKHLRsxUIrWAxnXHxx5KJkGk8Cl3FJPInG6amMx1br4ozSQRx7p3ToGd2cdBo6Ou1Q9w1873aXDI3FoDrSHv/S91h3g5Oxi2qcTKd+cgJVRhQ8nIGqa99HtZ25Moh9ZTpHBQ+2DWzn7okCcQitmep6pZ5mr08qALHtc6vYW8VDrfWQwFgELx2YKPWj0GnTg+vxeBqcYvuCVVKeERfXvh+XBSNc2ji0Wl2MLL2NeBCK9riXRlFXv+SgxkeTqR+dapPaIi1VxeGchLtf4LhUmakdX0f7EV2UwBUqKd++E4QNAtOe+uJg+uNpcFC7PgNM1czPwnJnfwylntE9k3bg7bmvqWpndn+HcXPcnvvScJrEkbqpNwrHSXSq/yS5WDOan3HJD1dwippdPa9YJXQ1649NeesJmkONRvRV3BpoDSW6cvzrHG8ENrdox43wkFXqfSy3jrXAdsRo+4TYq1bxrgF0JddcLUHRvF9+tYP9h3Iutn8wmhN0VeoqQgkz04xIbdVe+8P9DS4L6cVJE8ZxGoQHpPFD3/9/CW2+Rrwp56DD9vnffC06/TWO7uJovh7tPRzoa2YYUaf0ERFSkC+5DudOXT847Z1qC5kvKSv0AxGqan2gEsSgRGnRvPTNDtIomfhukMIkCfXr4SdfOYDnpOmIOChIx2v0g5SDIAh4vn02fgj2cGewu/KuxNzxTtQV/Z2sDRXwldk7rEzPhpYNQWvCEaOk0pLtE1o22ye03j5r4fZJS23fsF/96G67Pva3+OAIeznTE3obZnH7OOYeV1GuDiG4J7vG5p50Ta3+r6CsQWiY/n367Z8f3788//Dhp18Gkc2y4tJk8/147DsvQcF1GMRReupJzbY4y6o+q8Ox9n2SfU3yFQUBAihwdEV50UglKDAG6BuYA1/AfPt7U4BOvT1lV1Ue65ZkQfRXVQEorxoGbbWxUnkg7s7XdVl2s1L/dp2CrBuqa8G35r3P/gf9kqAIYyDM53FLpr0MjLuddFCFaAO32bzZbP4DAAD//wMAKh8fFogYAAA=",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "content-encoding": "gzip",
+        "content-length": "1412",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Fri, 08 May 2026 15:51:04 GMT"
+      },
+      "status_code": 200
+    }
+  }
+]
