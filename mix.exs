@@ -52,7 +52,7 @@ defmodule Authoritex.MixProject do
       {:excoveralls, "~> 0.18.0", only: [:dev, :test]},
       {:exvcr, "~> 0.11", only: :test},
       {:jason, "~> 1.4.0"},
-      {:req, "~> 0.5.16"},
+      {:req, "~> 0.6.2"},
       {:sweet_xml, "~> 0.6"}
     ]
   end
