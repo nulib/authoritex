@@ -6,17 +6,17 @@
       "url": "https://id.loc.gov/authorities/names/no2011087251.madsrdf.rdf",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:lcc=\"http://id.loc.gov/ontologies/lcc#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:pmo=\"http://performedmusicontology.org/ontology/\" xmlns:lclocal=\"http://id.loc.gov/ontologies/lclocal/\">\n  <madsrdf:PersonalName rdf:about=\"http://id.loc.gov/authorities/names/no2011087251\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <madsrdf:authoritativeLabel>Valim, Jose</madsrdf:authoritativeLabel>\n    <madsrdf:elementList rdf:parseType=\"Collection\">\n      <madsrdf:FullNameElement>\n\t<madsrdf:elementValue>Valim, Jose</madsrdf:elementValue>\n      </madsrdf:FullNameElement>\n    </madsrdf:elementList>\n    <bflc:marcKey>1001 $aValim, Jose</bflc:marcKey>\n    <madsrdf:identifiesRWO>\n      <madsrdf:RWO rdf:about=\"http://id.loc.gov/rwo/agents/no2011087251\">\n\t<rdf:type rdf:resource=\"http://id.loc.gov/ontologies/bibframe/Person\"/>\n\t<rdf:type rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n\t<rdfs:label>Valim, Jose</rdfs:label>\n\t<madsrdf:isIdentifiedByAuthority rdf:resource=\"http://id.loc.gov/authorities/names/no2011087251\"/>\n      </madsrdf:RWO>\n    </madsrdf:identifiesRWO>\n    <madsrdf:hasSource>\n      <madsrdf:Source>\n\t<madsrdf:citationStatus>found</madsrdf:citationStatus>\n\t<madsrdf:citationSource>Crafting Rails applications, c2011:</madsrdf:citationSource>\n\t<madsrdf:citationNote>t.p. (Jose Valim)</madsrdf:citationNote>\n      </madsrdf:Source>\n    </madsrdf:hasSource>\n    <identifiers:lccn xmlns:identifiers=\"http://id.loc.gov/vocabulary/identifiers/\">no2011087251</identifiers:lccn>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings\"/>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/authorities/names\"/>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/authorities/names/collection_LCNAF\"/>\n    <madsrdf:hasExactExternalAuthority rdf:resource=\"http://viaf.org/en/viaf/LC%7Cno2011087251\"/>\n    <madsrdf:identifiesRWO rdf:resource=\"https://d-nb.info/gnd/1106268318\"/>\n    <madsrdf:identifiesRWO rdf:resource=\"https://isni.org/isni/0000000120491044\"/>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2011-06-06T00:00:00</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2025-08-04T18:47:25</ri:recordChangeDate>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">revised</ri:recordStatus>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/oco\"/>\n\t<ri:languageOfCataloging rdf:resource=\"http://id.loc.gov/vocabulary/iso639-2/eng\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n  </madsrdf:PersonalName>\n</rdf:RDF>\n",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:43 GMT",
+        "date": "Wed, 15 Jul 2026 18:26:21 GMT",
         "content-type": "application/rdf+xml; charset=UTF-8",
         "content-length": "3488",
         "connection": "keep-alive",
@@ -36,12 +36,12 @@
         "x-uri": "http://id.loc.gov/authorities/names/no2011087251",
         "server": "cloudflare",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "19464554 1067976356",
-        "age": "15",
+        "x-varnish": "8450724 12530369",
+        "age": "3722",
         "via": "1.1 varnish (Varnish/6.0)",
         "accept-ranges": "bytes",
         "cf-cache-status": "DYNAMIC",
-        "cf-ray": "9f7a08eb2bc4c997-IAD"
+        "cf-ray": "a1bad0a16a2d114a-ORD"
       },
       "status_code": 200
     }

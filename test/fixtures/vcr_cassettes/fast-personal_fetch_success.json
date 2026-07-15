@@ -8,41 +8,39 @@
         "accept": "application/rdf+xml",
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "<rdf:RDF xmlns:coord=\"http://whatever/java/ORG.oclc.util.CoordToDecimal\"\n         xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n         xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n         xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n         xmlns:dct=\"http://purl.org/dc/terms/\"\n         xmlns:skosxl=\"http://www.w3.org/2008/05/skos-xl#\"\n         xmlns:mx=\"http://www.loc.gov/MARC21/slim\"\n         xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n         xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n         xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n         xmlns:void=\"http://rdfs.org/ns/void#\"\n         xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n         xmlns:schema=\"http://schema.org/\"\n         xmlns:norm=\"http://whatever/java/ORG.oclc.util.NormalFormC\"\n         xmlns:naco=\"http://whatever/java/ORG.oclc.util.NacoNormalize\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n         xml:base=\"http://id.worldcat.org/fast/\">\n   <rdf:Description rdf:about=\"41002\">\n      <dct:identifier>41002</dct:identifier>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#fast\"/>\n      <rdf:type rdf:resource=\"http://schema.org/Person\"/>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#facet-Personal\"/>\n      <skos:prefLabel>Dewey, Melvil, 1851-1931</skos:prefLabel>\n      <schema:name>Dewey, Melvil, 1851-1931</schema:name>\n      <skos:altLabel>Dewey, Melville Louis Kossuth, 1851-1931</skos:altLabel>\n      <schema:name>Dewey, Melville Louis Kossuth, 1851-1931</schema:name>\n      <skos:altLabel>Dīwī, Milfil Luwīs Kūst, 1851-1931</skos:altLabel>\n      <schema:name>Dīwī, Milfil Luwīs Kūst, 1851-1931</schema:name>\n      <skos:altLabel>Dui, Melvil, 1851-1931</skos:altLabel>\n      <schema:name>Dui, Melvil, 1851-1931</schema:name>\n      <skos:altLabel>Dyui, Melbil, 1851-1931</skos:altLabel>\n      <schema:name>Dyui, Melbil, 1851-1931</schema:name>\n      <skos:altLabel>Tyui, Melbil, 1851-1931</skos:altLabel>\n      <schema:name>Tyui, Melbil, 1851-1931</schema:name>\n      <schema:sameAs>\n         <rdf:Description rdf:about=\"http://id.loc.gov/authorities/names/n79091588\">\n            <rdfs:label>Dewey, Melvil, 1851-1931</rdfs:label>\n         </rdf:Description>\n      </schema:sameAs>\n      <rdfs:seeAlso rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://en.wikipedia.org/wiki/Melvil_Dewey</rdfs:seeAlso>\n   </rdf:Description>\n   <rdf:Description rdf:about=\"fst00041002\">\n      <rdfs:comment>This identifier is deprecated. See the rdfs:seeAlso link for the new identifier.</rdfs:comment>\n      <rdfs:seeAlso rdf:resource=\"41002\"/>\n   </rdf:Description>\n   <foaf:Document rdf:about=\"41002/rdf.xml\">\n      <void:inDataset rdf:resource=\"http://fast.oclc.org/fast/void/0.1\"/>\n      <foaf:primaryTopic rdf:resource=\"41002\"/>\n      <dc:format>application/rdf+xml</dc:format>\n      <dct:created rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2004-09-24T00:00:00.0</dct:created>\n      <dct:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2023-10-27T12:28:10.0</dct:modified>\n      <dct:language rdf:resource=\"http://lexvo.org/id/iso639-3/eng\"/>\n      <skos:changeNote xml:lang=\"en\">Cataloged by agency: OCoLC</skos:changeNote>\n      <skos:changeNote xml:lang=\"en\">Transcribed by agency: OCoLC</skos:changeNote>\n   </foaf:Document>\n   <void:Dataset rdf:about=\"http://fast.oclc.org/fast/void/0.1\">\n      <dct:title>FAST (Faceted Application of Subject Terminology) Data</dct:title>\n      <dct:license>\n         <rdf:Description rdf:about=\"http://www.oclc.org/research/activities/fast/odcby.htm\">\n            <dct:title>Open Data Commons Attribution License (ODC-By) v1.0</dct:title>\n            <rdfs:comment>This is OCLC's \"local copy\" of the ODC-By license</rdfs:comment>\n            <rdfs:seeAlso rdf:resource=\"http://opendatacommons.org/licenses/by/#toc-anchor-337-3\"/>\n            <owl:sameAs rdf:resource=\"http://opendatacommons.org/licenses/by/1-0/\"/>\n         </rdf:Description>\n      </dct:license>\n   </void:Dataset>\n</rdf:RDF>",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:32 GMT",
+        "date": "Wed, 15 Jul 2026 18:25:46 GMT",
         "content-type": "application/rdf+xml",
         "content-length": "4000",
         "connection": "keep-alive",
-        "set-cookie": "__cf_bm=tB5DMNsOiHcymtWlZQ1ryGJIfzYYKT38itj6250PmpY-1778091992.3444974-1.0.1.1-LPvsYZI8AabwAUetS5WC4e.BOl.2twXbW0nu.6CfyJx0SnIStH1WTgNd_nMOpOFH0.KoW0Nuw3nnkivxq1bdVT31wH19jpFvYw4z78OhjRxrO6A2Eh3Jvd3egBX5lvJRRFkbrhWrop3cfR_YAuKnYQ; HttpOnly; Secure; Path=/; Domain=oclc.org; Expires=Wed, 06 May 2026 18:56:32 GMT",
-        "ratelimit-reset": "20008",
-        "x-ratelimit-remaining-month": "299999",
+        "set-cookie": "__cf_bm=r6OBCQdhDrb3zO_2Tbs2oZVlEIv8UG.oqE_eplq.d3I-1784139946.9410357-1.0.1.1-OTtZvr0nWcLT17TcP0N4eQ4GzcbJtE49VxooVZQ__vUhBFrHNDkGssfwWACinlfrbpmnYcYB6BJQLivLh6XHoUe2zo0ngXlbwwvZeMsNDmSAR7Tb_GdKjNWXNbClMWsJTbujiX1DvjKCfBexf6h30Q; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 15 Jul 2026 18:55:46 GMT",
         "x-ratelimit-limit-day": "10000",
-        "x-ratelimit-remaining-day": "9999",
-        "ratelimit-remaining": "9999",
+        "x-ratelimit-remaining-day": "9908",
+        "ratelimit-reset": "20054",
+        "ratelimit-remaining": "9908",
         "ratelimit-limit": "10000",
-        "x-ratelimit-limit-month": "300000",
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "GET",
         "x-frame-options": "SAMEORIGIN",
         "x-content-security-policy": "allow self",
-        "kong-request-id": "7d2d1ae5-326c-4b49-b87e-47810e1f1eb3#59571",
-        "x-kong-upstream-latency": "7",
-        "x-kong-proxy-latency": "1",
+        "kong-request-id": "2a27bb1f-2a48-4796-b2fc-36913af6d96f#43731240",
+        "x-kong-upstream-latency": "33",
+        "x-kong-proxy-latency": "2",
         "via": "1.1 kong/3.14.0.2-enterprise-edition",
-        "x-kong-request-id": "3637fb296fb3433152c02e2dffb8e27d",
+        "x-kong-request-id": "1c1cc93e6c3e7a35f61ba8408aef6568",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
         "server": "cloudflare",
-        "cf-ray": "9f7a08a82929d6b4-IAD"
+        "cf-ray": "a1bacfcc5e6fae29-ORD"
       },
       "status_code": 200
     }

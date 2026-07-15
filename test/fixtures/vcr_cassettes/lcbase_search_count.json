@@ -7,27 +7,27 @@
       "headers": {
         "accept": "application/ld+json",
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "No search entered",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:07 GMT",
+        "date": "Wed, 15 Jul 2026 18:25:43 GMT",
         "content-type": "text/plain; charset=UTF-8",
         "content-length": "17",
         "connection": "keep-alive",
         "server": "cloudflare",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "17696754",
-        "age": "0",
+        "x-varnish": "8450633 11693289",
+        "age": "3686",
         "via": "1.1 varnish (Varnish/6.0)",
         "cf-cache-status": "DYNAMIC",
-        "cf-ray": "9f7a080bfe91c997-IAD"
+        "cf-ray": "a1bacfb5d918114a-ORD"
       },
       "status_code": 404
     }
@@ -40,27 +40,27 @@
       "headers": {
         "accept": "application/ld+json",
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "No search entered",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:07 GMT",
+        "date": "Wed, 15 Jul 2026 18:25:43 GMT",
         "content-type": "text/plain; charset=UTF-8",
         "content-length": "17",
         "connection": "keep-alive",
         "server": "cloudflare",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "17696756",
-        "age": "0",
+        "x-varnish": "13017020 10791623",
+        "age": "3686",
         "via": "1.1 varnish (Varnish/6.0)",
         "cf-cache-status": "DYNAMIC",
-        "cf-ray": "9f7a080c3f39c997-IAD"
+        "cf-ray": "a1bacfb6095c114a-ORD"
       },
       "status_code": 404
     }

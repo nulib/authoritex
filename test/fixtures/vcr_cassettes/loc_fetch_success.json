@@ -6,17 +6,17 @@
       "url": "https://id.loc.gov/vocabulary/organizations/iehs.madsrdf.rdf",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:lcc=\"http://id.loc.gov/ontologies/lcc#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:pmo=\"http://performedmusicontology.org/ontology/\" xmlns:lclocal=\"http://id.loc.gov/ontologies/lclocal/\">\n  <madsrdf:CorporateName rdf:about=\"http://id.loc.gov/vocabulary/organizations/iehs\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <madsrdf:authoritativeLabel>Evanston Township High School</madsrdf:authoritativeLabel>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/code\">IEHS</madsrdf:code>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/normalized\">iehs</madsrdf:code>\n    <madsrdf:code rdf:datatype=\"http://id.loc.gov/datatypes/orgs/iso15511\">US-iehs</madsrdf:code>\n    <madsrdf:identifiesRWO>\n      <madsrdf:Address>\n\t<rdfs:label>Evanston Township High School</rdfs:label>\n\t<madsrdf:city>Evanston</madsrdf:city>\n\t<madsrdf:state>Illinois</madsrdf:state>\n\t<madsrdf:country>United States</madsrdf:country>\n\t<madsrdf:postcode>60204</madsrdf:postcode>\n      </madsrdf:Address>\n    </madsrdf:identifiesRWO>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/vocabulary/organizations\"/>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/vocabulary/organizations/collection_organizations\"/>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1990-01-01T00:00:00.000-04:00</ri:recordChangeDate>\n\t<ri:recordStatus xml:lang=\"en\">new</ri:recordStatus>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2015-04-07T09:13:26.000-04:00</ri:recordChangeDate>\n\t<ri:recordStatus xml:lang=\"en\">modified</ri:recordStatus>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n  </madsrdf:CorporateName>\n</rdf:RDF>\n",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:16 GMT",
+        "date": "Wed, 15 Jul 2026 18:25:55 GMT",
         "content-type": "application/rdf+xml; charset=UTF-8",
         "content-length": "2445",
         "connection": "keep-alive",
@@ -35,12 +35,12 @@
         "x-uri": "http://id.loc.gov/vocabulary/organizations/iehs",
         "server": "cloudflare",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "62391092",
-        "age": "0",
+        "x-varnish": "11262620 8199326",
+        "age": "3697",
         "via": "1.1 varnish (Varnish/6.0)",
         "accept-ranges": "bytes",
         "cf-cache-status": "DYNAMIC",
-        "cf-ray": "9f7a08444e7ac997-IAD"
+        "cf-ray": "a1bacffedf56114a-ORD"
       },
       "status_code": 200
     }

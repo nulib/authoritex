@@ -75,7 +75,10 @@ defmodule Authoritex.HTTP.Auth do
   defp get_imdsv2_token do
     case Req.put("#{@imds_base}/latest/api/token",
            user_agent: @user_agent,
-           headers: [{"x-aws-ec2-metadata-token-ttl-seconds", to_string(@ttl_seconds)}],
+           headers: [
+             {"accept-encoding", "gzip"},
+             {"x-aws-ec2-metadata-token-ttl-seconds", to_string(@ttl_seconds)}
+           ],
            connect_options: [timeout: @connect_timeout_msec],
            retry: false
          ) do
@@ -96,7 +99,11 @@ defmodule Authoritex.HTTP.Auth do
       user_agent: @user_agent
     ]
 
-    opts = Keyword.merge(base_opts, extra_opts)
+    opts =
+      Keyword.merge(base_opts, extra_opts)
+      |> Keyword.update(:headers, [{"accept-encoding", "gzip"}], fn headers ->
+        Keyword.put_new(headers, :"accept-encoding", "gzip")
+      end)
 
     with {:ok, %{status: 200, body: role}} <-
            Req.get("#{@imds_base}/latest/meta-data/iam/security-credentials/", opts),

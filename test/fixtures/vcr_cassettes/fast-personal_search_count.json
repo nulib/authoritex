@@ -7,39 +7,37 @@
       "headers": {
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": true,
       "type": "ok",
-      "body": "g20AAAJjH4sIAAAAAAAA/6WVTW8aMRCG7/0Vlk+tZJC9a9iPS6UoX1KDRKXeqhwsdrLZxmuntjeIIv577U1LCJiwbW4WM55n/M47yxobsI9aWbgGUYHB5RpbJ1xncUkJ/vqtaQGXaUbwozCitSH+E5fYdnUN1lFatujlXMESVgQTfCd3c0hTGa0dEZ27J271CD7D6KUvhhPqz0vnTz+sVnizIduGAkp17aXuVIVL5lvwjRnX91Xphb/9fY2fK/sjvvMkxgs2YRN8S3CPKXFAesK2lZB53neJZsKs0MU4JPdZ5X5gQ/brU5bnk4yfqH8GUEsgqC+HZruEg1CEkUyTlE9PMozTslHNEcxhNEJKGaeM7ZKk2wd5MR7uRfun0A5jG5g3dQvCRQAsS1k65ScBrlHR+i+/E8QKTkcJpUWMk7NJRpN/GPscjAnFRyzn6ecjFthLGsQ9fF+sYjVG7wMXeZGw9KSwEgxBV6BNDTF9X4WjDqGc0cHCgnxqpJ9UPmEjVqQs8rqDlAiTZzSdDGRePIFcqaBaLQw4dOU/K8ErLB0d0t9Kju2hb4Tng4Z7aYR6QDegGlU77Sc3MzbyYbmQIJQ26Gop3H3r13KulyDlsM2JiHB0Rf5vi3hesIQPE/587L8p6OO5b1/3ki46+ykMlhXetXlx+PiTN2I252meZAPt18jKQIVmixuvMroWv0D1TqPHzHjiwqB1OL7vvdUloBvdNRZ90daGf793bwdLs3yavd3CmTBKmCrYMCguVAPy2QFB8KzIvODT3Qa2F/7mvnVtkHOO6vJq/u80zO1m8+E35gkbicEIAAA=",
+      "body": "g20AAAJgH4sIAAAAAAAA/6WVTW8aMRCG7/0Vlk+tZJC9a9iPS6UoX1KDRKXeqhwsdrLZxmuntjeIIv577U1LCJiwbW4WM55n/M47yxobsI9aWbgGUYHB5RpbJ1xncUkJ/vqtaaE/PQojWhvCP3GJbVfXYB2lZYtezhUsYUUwwXdyN4c0ldHaEdG5e+JWj+AzjF76Yjih/rx0/vTDaoU3G7LtJ6BU117qTlW4ZBkJfRnXN1Pphb/9fY2fK/sjvvMkxgs2YRN8S3CPKXFAesK2lZB53neJZsKs0MU4JPdZ5X5gQ/brU5bnk4yfqH8GUEsgqC+HZruEg1CEkUyTlE9PMozTslHNEcxhNEJKGaeM7ZKk2wd5MR7uRfun0A5jG5g3dQvCRQAsS1k65ScBrlHR+i+/E8QKTkcJpUWMk7NJRpN/GPscjAnFRyzn6ecjFthLGsQ9fF+sYjVG7wMXeZGw9KSwEgxBV6BNDTF9X4WjDqGc0cHCgnxqpJ9UPmEjVqQs8rqDlAiTZzSdDGRePIFcqaBaLQw4dOU/K8ErLB0d0t9Kju2hb4Tng4Z7aYR6QDegGlU77Sc3MzbyYbmQIJQ26Gop3H3r13KulyDlsM2JiHB0Rf5vi3hesIQPE/587L8p6OO5b1/3ki46+ykMlhXetXlx+PiTN2I252meZAPt18jKQIVmixuvMroWv0D1TqPHzHjiwqB1OL7vvdUloBvdNRZ90daGf793bwdLs3yavd3CmTBKmCrYMCguVAPy2QFB8KzIvODT3Qa2F/7mvnVtkHOO6vJq/u80zO1m8+E3AgNumsAIAAA=",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:28 GMT",
+        "date": "Wed, 15 Jul 2026 18:25:49 GMT",
         "content-type": "application/json",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cf_bm=Y94z3BpIYPH2T.pyeNzPkAFmUiv2Wud3uYhsar70C0s-1778091987.4636714-1.0.1.1-o1LhP2HZjp_lwOc26D.Fc3LIRitG_idXyJjP9oaR7duI11zRPHJaNdiqV2L47KJzQ81T.qFkMJR7OahZrwJPZ.9WbtlRnb4MMAPOupbIZYExWZQh2xOF8NL4xPg333y8wXWvQFviNGc8ePA0LW4yoQ; HttpOnly; Secure; Path=/; Domain=oclc.org; Expires=Wed, 06 May 2026 18:56:28 GMT",
-        "ratelimit-reset": "20013",
-        "x-ratelimit-remaining-month": "299999",
+        "set-cookie": "__cf_bm=48cfPI8stNyh5plJtSHL8LBRsHHVAcN5Qkkve2o0lCg-1784139948.4840121-1.0.1.1-5VKVXwZbYpXc3ztoeb27fYuDf7AgxzoO4XAYJK6g5Lr7D_SKLKkXWECUuZaI2ulrP.wR3C4GniHmQstbqTtHwramYIhCtiIPvNqNV_dapsiOhMwpvvewTnw93eRBRvvnvTE4LSOOUL_IUCfs5rPKIQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 15 Jul 2026 18:55:49 GMT",
         "x-ratelimit-limit-day": "10000",
-        "x-ratelimit-remaining-day": "9999",
-        "ratelimit-remaining": "9999",
+        "x-ratelimit-remaining-day": "9904",
+        "ratelimit-reset": "20052",
+        "ratelimit-remaining": "9904",
         "ratelimit-limit": "10000",
-        "x-ratelimit-limit-month": "300000",
         "access-control-allow-origin": "*",
-        "kong-request-id": "7d2d1ae5-326c-4b49-b87e-47810e1f1eb3#59533",
-        "x-kong-upstream-latency": "619",
+        "kong-request-id": "2a27bb1f-2a48-4796-b2fc-36913af6d96f#43731269",
+        "x-kong-upstream-latency": "585",
         "x-kong-proxy-latency": "1",
         "via": "1.1 kong/3.14.0.2-enterprise-edition",
-        "x-kong-request-id": "f74bd16dba9a6c558d85bf1266a7f11b",
+        "x-kong-request-id": "52cd5c4bfdf2125dbe2d367f9c913f5e",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
         "content-encoding": "gzip",
         "server": "cloudflare",
-        "cf-ray": "9f7a0889ae07d6b4-IAD"
+        "cf-ray": "a1bacfd60f64ae29-ORD"
       },
       "status_code": 200
     }
@@ -52,39 +50,37 @@
       "headers": {
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": true,
       "type": "ok",
       "body": "g20AAAIwH4sIAAAAAAAA/6WVTY/aMBCG7/0Vlk+tZJCdGPJxqVTBslJBolJv1R4sMhvSdWJqO4so4r/XyVYsJabJtrdRZvw+4/lwjliD2anKwD2IDDROj9hYYWuDU0rwl69FCa21E1qUpnH/wCk2dZ6DsZSmJXq1M9jDgWCCH+VlDCkyrZQlorZbYg87cBFa7Z0YZhNn762zvhtV4dOJnPNpUFVd3qm6ynDKItLkpW2bTKY27vS3I35RdiZ+dCTGEzZxkg8Et5gUN0hHOKfSRM7aLNFK6AOaj5vgNiq9dpzItT5lcTyJeI/+J4BcAkGtHFpdEjouDyOYBiGf9jK0VbKoihuYrtdDChmnjF2SpL0GuWI8bUX5W+iCcXasi7wEYT0AFoUsnPJegC0qr/7rd4JYwukooDTxcWI2iWjwhravQetGfMRiHn68MQJXQYO43fv5FLMx+j9wEicBC3sLK0ETtAClc/DV9w+3d0IoZ3RwYUE+F9J1Kp6wEUtC5rldJ8TD5BENJwOZ82eQh6qpWi40WLRwz0ozKywcdel/C/btoUuEx4Oae6dF9YSWUBVVbpXr3Eobz8MylyAqpdFiL+y2dGu5VnuQctjmeIpwc0X+bYt4nLCADyv8bOzeFPR+5tJXbUk3tfnQNJYlbmrjpHv53hO+MedhHEQDx6+QmYYMrTZLV2V0L35C1U4avTWMPQcGrcPtfW9HXQJaqrow6LMypvn7vXE7Hk6nd78AyoiS7KIHAAA=",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:31 GMT",
+        "date": "Wed, 15 Jul 2026 18:25:49 GMT",
         "content-type": "application/json",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cf_bm=WNBC2jdaxX8F5NOiPbkRt_32_gcCFWZuDXIfTuboKYg-1778091988.1432269-1.0.1.1-bZgA0q88R13K4v1Llmn6H.5jp7siaABOqY1gE_Q4YagQpdhnoy9g50wWGC3GV7Pdws5JyTvBd_mQoAZ14PlmatMPYIOs2Q9pJ5J6MnBfwxKiKSo5j0gJxq77Y0Ftda9gmS.9y8f0xOajgdeJHXLM9A; HttpOnly; Secure; Path=/; Domain=oclc.org; Expires=Wed, 06 May 2026 18:56:31 GMT",
-        "ratelimit-reset": "20012",
-        "x-ratelimit-remaining-month": "299999",
+        "set-cookie": "__cf_bm=19z0CPEylyvelvpZ8SC4aO4K77FcCf0NdtrEI.Lwdyg-1784139949.096407-1.0.1.1-n2lVhPvdYDimY3vOR1tICuWoOQrUbEARpmLWZ6Mq9ClDigYvncRgooWTVlRe.5TNp2MIUD.m8SCP2g7B0QD15B6CMKWDYKqJCmvvyqzCBL_wglbA3CINY8uODOhYirIna3kKOg.iVUBjWyMgifjl.g; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 15 Jul 2026 18:55:49 GMT",
         "x-ratelimit-limit-day": "10000",
-        "x-ratelimit-remaining-day": "9999",
-        "ratelimit-remaining": "9999",
+        "x-ratelimit-remaining-day": "9903",
+        "ratelimit-reset": "20051",
+        "ratelimit-remaining": "9903",
         "ratelimit-limit": "10000",
-        "x-ratelimit-limit-month": "300000",
         "access-control-allow-origin": "*",
-        "kong-request-id": "7d2d1ae5-326c-4b49-b87e-47810e1f1eb3#59539",
-        "x-kong-upstream-latency": "2854",
-        "x-kong-proxy-latency": "14",
+        "kong-request-id": "2a27bb1f-2a48-4796-b2fc-36913af6d96f#43731278",
+        "x-kong-upstream-latency": "578",
+        "x-kong-proxy-latency": "0",
         "via": "1.1 kong/3.14.0.2-enterprise-edition",
-        "x-kong-request-id": "6e8bc63b3cf09a7aa527790f4df66f24",
+        "x-kong-request-id": "ca094650c883fc4e2c42660ab8f70218",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
         "content-encoding": "gzip",
         "server": "cloudflare",
-        "cf-ray": "9f7a088de861d6b4-IAD"
+        "cf-ray": "a1bacfd9dd8eae29-ORD"
       },
       "status_code": 200
     }

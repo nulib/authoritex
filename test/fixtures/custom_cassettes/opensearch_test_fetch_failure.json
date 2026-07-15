@@ -7,8 +7,7 @@
       "headers": {
         "accept": "application/json",
         "accept-encoding": "gzip",
-        "content-type": "application/json",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "content-type": "application/json"
       },
       "method": "post",
       "request_body": ""

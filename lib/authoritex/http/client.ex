@@ -3,6 +3,10 @@ defmodule Authoritex.HTTP.Client do
 
   def new(opts \\ []) do
     opts
+    |> Keyword.put_new(:compressed, true)
+    |> Keyword.update(:headers, [{:"accept-encoding", "gzip"}], fn headers ->
+      Keyword.put_new(headers, :"accept-encoding", "gzip")
+    end)
     |> Keyword.put_new(:finch, Application.get_env(:authoritex, :connection_pool))
     |> Keyword.put_new(:plug, Application.get_env(:authoritex, :plug))
     |> Keyword.put_new(:user_agent, ua())
