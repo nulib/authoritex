@@ -6,30 +6,30 @@
       "url": "https://api.homosaurus.org/v3/not-a-real-thing.json",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "{\"status\":500,\"error\":\"Internal Server Error\"}",
       "headers": {
-        "date": "Wed, 06 May 2026 18:25:56 GMT",
+        "date": "Wed, 15 Jul 2026 18:25:49 GMT",
         "content-type": "application/json; charset=utf-8",
         "content-length": "46",
         "connection": "keep-alive",
         "server": "cloudflare",
-        "x-request-id": "ebacc9df-36e3-4914-a85c-aa8a32f2487b",
-        "x-runtime": "0.003635",
+        "x-request-id": "217c8a17-4195-4a73-8664-eb94ef9cf789",
+        "x-runtime": "0.002728",
         "x-powered-by": "Phusion Passenger(R) 6.0.27",
         "status": "500 Internal Server Error",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "cf-cache-status": "DYNAMIC",
         "server-timing": "cfCacheStatus;desc=\"DYNAMIC\"",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=g2XgEpzq5dfsal3Irve0tLl3%2FcaSCsU%2FotcY32q1G6AK1DyWs64GsxpbuZDvoSt3pSeCGv7m%2B8hD5DbMGtEm0E%2BB%2FSQdUOUKlgv7MbLaabiYvhR11t05TpBnEjhk1N%2BSDGouhPk%3D\"}]}",
-        "cf-ray": "9f7a07c50e908f73-BOS",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KNz1eDpfYMjYw%2BhfQu7kzHRAeEel2eI5bN5yBPN73nb7utVzjCYm0hpRdnM5rbwrq5LG6V%2FY9UC%2FIiiVj3MACUs6HoJUI4JQpn3ckRQYLJRqUmokKY0p9akT2CeV9aqZZfJJqQ8%3D\"}]}",
+        "cf-ray": "a1bacfde5e816076-ORD",
         "alt-svc": "h3=\":443\"; ma=86400"
       },
       "status_code": 500

@@ -7,17 +7,17 @@
       "headers": {
         "accept": "application/sparql-results+xml;charset=UTF-8",
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.0.3 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.5.17 finch/0.20.0 mint/1.7.1"
+        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t</results>\n</sparql>\n",
       "headers": {
-        "date": "Wed, 06 May 2026 18:26:02 GMT",
+        "date": "Wed, 15 Jul 2026 18:26:11 GMT",
         "content-type": "application/sparql-results+xml;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
