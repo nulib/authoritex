@@ -6,7 +6,7 @@
       "url": "https://id.loc.gov/vocabulary/languages/ang.madsrdf.rdf",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
+        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -16,7 +16,7 @@
       "type": "ok",
       "body": "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:lcc=\"http://id.loc.gov/ontologies/lcc#\" xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\" xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\" xmlns:ri=\"http://id.loc.gov/ontologies/RecordInfo#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:pmo=\"http://performedmusicontology.org/ontology/\" xmlns:lclocal=\"http://id.loc.gov/ontologies/lclocal/\">\n  <madsrdf:Language rdf:about=\"http://id.loc.gov/vocabulary/languages/ang\">\n    <rdf:type rdf:resource=\"http://www.loc.gov/mads/rdf/v1#Authority\"/>\n    <rdf:type rdf:resource=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource\"/>\n    <rdf:type rdf:resource=\"http://id.loc.gov/vocabulary/languages/MARC_Language\"/>\n    <madsrdf:authoritativeLabel xml:lang=\"en\">English, Old (ca. 450-1100)</madsrdf:authoritativeLabel>\n    <madsrdf:authoritativeLabel xml:lang=\"de\">Altenglisch</madsrdf:authoritativeLabel>\n    <madsrdf:authoritativeLabel xml:lang=\"fr\">anglo-saxon (vers 450-1100)</madsrdf:authoritativeLabel>\n    <madsrdf:code rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">ang</madsrdf:code>\n    <madsrdf:editorialNote>Non-English forms of the name are contributed by National agencies.</madsrdf:editorialNote>\n    <madsrdf:isMemberOfMADSScheme rdf:resource=\"http://id.loc.gov/vocabulary/languages\"/>\n    <madsrdf:isMemberOfMADSCollection rdf:resource=\"http://id.loc.gov/vocabulary/languages/collection_PastPresentLanguagesEntries\"/>\n    <owl:sameAs rdf:resource=\"info:lc/vocabulary/languages/ang\"/>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">new</ri:recordStatus>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">1970-01-01T00:00:00</ri:recordChangeDate>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">changed</ri:recordStatus>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-08-02T00:00:00</ri:recordChangeDate>\n\t<ri:recordChangeNote rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Added German AuthLabel.</ri:recordChangeNote>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n    <madsrdf:adminMetadata>\n      <ri:RecordInfo>\n\t<ri:recordStatus rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">changed</ri:recordStatus>\n\t<ri:recordChangeDate rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2026-05-13T00:00:00</ri:recordChangeDate>\n\t<ri:recordChangeNote rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Added French AuthLabel.</ri:recordChangeNote>\n\t<ri:recordContentSource rdf:resource=\"http://id.loc.gov/vocabulary/organizations/dlcmrc\"/>\n      </ri:RecordInfo>\n    </madsrdf:adminMetadata>\n  </madsrdf:Language>\n</rdf:RDF>\n",
       "headers": {
-        "date": "Wed, 15 Jul 2026 18:25:46 GMT",
+        "date": "Mon, 24 Aug 2026 21:11:37 GMT",
         "content-type": "application/rdf+xml; charset=UTF-8",
         "content-length": "3181",
         "connection": "keep-alive",
@@ -35,12 +35,12 @@
         "x-uri": "http://id.loc.gov/vocabulary/languages/ang",
         "server": "cloudflare",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "11262581 12694889",
-        "age": "3706",
+        "x-varnish": "153928170 154044350",
+        "age": "6804",
         "via": "1.1 varnish (Varnish/6.0)",
         "accept-ranges": "bytes",
         "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a1bacfc6ed9e114a-ORD"
+        "cf-ray": "a30559b868a94616-ORD"
       },
       "status_code": 200
     }

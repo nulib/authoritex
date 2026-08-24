@@ -7,7 +7,7 @@ defmodule Authoritex.HTTP.Client do
     |> Keyword.update(:headers, [{:"accept-encoding", "gzip"}], fn headers ->
       Keyword.put_new(headers, :"accept-encoding", "gzip")
     end)
-    |> Keyword.put_new(:finch, Application.get_env(:authoritex, :connection_pool))
+    |> Keyword.put_new(:finch, [name: Application.get_env(:authoritex, :connection_pool)])
     |> Keyword.put_new(:plug, Application.get_env(:authoritex, :plug))
     |> Keyword.put_new(:user_agent, ua())
     |> Req.new()

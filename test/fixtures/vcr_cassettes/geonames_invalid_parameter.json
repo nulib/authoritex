@@ -6,7 +6,7 @@
       "url": "http://api.geonames.org/getJSON?geonameId=wrong&<<geonames_username>>",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
+        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -16,7 +16,7 @@
       "type": "ok",
       "body": "{\"status\":{\"message\":\"For input string: \\\"wrong\\\"\",\"value\":14}}",
       "headers": {
-        "date": "Wed, 15 Jul 2026 18:26:43 GMT",
+        "date": "Mon, 24 Aug 2026 21:12:21 GMT",
         "server": "Apache/2.4.37 (AlmaLinux) mod_jk/1.2.49 OpenSSL/1.1.1k",
         "access-control-allow-origin": "*",
         "x-frame-options": "sameorigin",
