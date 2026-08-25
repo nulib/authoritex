@@ -1,3 +1,4 @@
+# credo:disable-for-this-file Credo.Check.Refactor.LongQuoteBlocks
 defmodule Authoritex.FAST.Base do
   @moduledoc "Abstract Authoritex implementation for FAST authorities & vocabularies"
 
@@ -32,15 +33,32 @@ defmodule Authoritex.FAST.Base do
         |> fetch()
       end
 
+      def fetch(unquote(http_uri) <> "/fst0" <> id = original_uri) do
+        (unquote(http_uri) <> "/" <> String.trim_leading(id, "0"))
+        |> fetch()
+        |> maybe_add_replaced_by(original_uri)
+      end
+
+      def fetch(unquote(http_uri) <> "/fst" <> id = original_uri) do
+        (unquote(http_uri) <> "/" <> id)
+        |> fetch()
+        |> maybe_add_replaced_by(original_uri)
+      end
+
+      def fetch(unquote(http_uri) <> "/0" <> id = original_uri) do
+        (unquote(http_uri) <> "/" <> String.trim_leading(id, "0"))
+        |> fetch()
+        |> maybe_add_replaced_by(original_uri)
+      end
+
       def fetch(unquote(http_uri) <> "/" <> id = uri) do
-        "https://fast.oclc.org/fast/#{id}"
+        "https://fast.oclc.org/FAST/#{id}/rdf.xml"
         |> HttpClient.get(
-          headers: [{"Accept", "application/rdf+xml"}, {"Content-Type", "application/json;"}]
+          headers: [{"Accept", "application/xml"}, {"Content-Type", "application/json;"}]
         )
         |> case do
           {:ok, response} ->
             parse_fetch_result(response)
-            |> maybe_add_replaced_by(uri)
 
           {:error, error} ->
             {:error, error}
@@ -51,13 +69,13 @@ defmodule Authoritex.FAST.Base do
       @impl Authoritex
       def search(query, max_results \\ 20) do
         HttpClient.get(
-          "https://fast.oclc.org/fastsuggest?" <>
+          "https://fast.oclc.org/searchfast/fastsuggest?" <>
             "query=#{conform_query_to_spec(query)}" <>
             "&query_index=#{unquote(subauthority)}" <>
             "&suggest=autoSubject" <>
             "&queryReturn=#{unquote(subauthority)},idroot,auth,type" <>
             "&rows=#{max_results}",
-          headers: [{"Content-Type", "application/json;"}]
+          headers: [{"Accept", "application/json"}, {"Content-Type", "application/json"}]
         )
         |> case do
           {:ok, %{body: response, status: 200}} ->
@@ -144,8 +162,7 @@ defmodule Authoritex.FAST.Base do
       defp maybe_add_replaced_by({:ok, result}, original_id) do
         {:ok,
          result
-         |> Map.put_new(:related, [])
-         |> put_in([:related, :replaced_by], result.id)
+         |> Map.put(:related, [replaced_by: result.id])
          |> Map.put(:id, original_id)}
       end
 
