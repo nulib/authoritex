@@ -7,7 +7,7 @@
       "headers": {
         "accept": "application/ld+json",
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
+        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -17,7 +17,7 @@
       "type": "ok",
       "body": "{\"q\":\"NO_resulteeeees*\", \"count\":0, \"pagesize\":30, \"start\":1, \"sortmethod\":\"rank\", \"searchtype\":\"keyword\", \"directory\":\"/authorities/names/\", \"hits\":[]}",
       "headers": {
-        "date": "Wed, 15 Jul 2026 18:26:20 GMT",
+        "date": "Mon, 24 Aug 2026 21:12:31 GMT",
         "content-type": "application/x-suggestions+json; charset=utf-8",
         "content-length": "152",
         "connection": "keep-alive",
@@ -31,12 +31,12 @@
         "strict-transport-security": "max-age=31536000",
         "server": "cloudflare",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "8450723 2775048",
-        "age": "3706",
+        "x-varnish": "153588646 154017358",
+        "age": "6438",
         "via": "1.1 varnish (Varnish/6.0)",
         "accept-ranges": "bytes",
         "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a1bad0a0e9d0114a-ORD"
+        "cf-ray": "a3055b0abbc36e89-ORD"
       },
       "status_code": 200
     }

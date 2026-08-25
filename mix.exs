@@ -50,9 +50,9 @@ defmodule Authoritex.MixProject do
       {:credo, "~> 1.7", only: [:dev, :test]},
       {:ex_doc, "~> 0.19", only: [:dev, :docs]},
       {:excoveralls, "~> 0.18", only: [:dev, :test]},
-      {:exvcr, "~> 0.11", only: :test},
+      {:exvcr, github: "nulib-labs/exvcr", branch: "finch-stream-while", only: :test},
       {:jason, "~> 1.4"},
-      {:req, "~> 0.6"},
+      {:req, "~> 0.7"},
       {:sweet_xml, "~> 0.6"}
     ]
   end

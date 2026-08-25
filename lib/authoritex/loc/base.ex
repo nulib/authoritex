@@ -66,7 +66,7 @@ defmodule Authoritex.LOC.Base do
           "https://id.loc.gov/#{path}",
           headers: [{"accept", "application/ld+json"}],
           params: [q: query, count: max_results, searchtype: "keyword"],
-          decode_json: [keys: :atoms]
+          decoders: [json: &Jason.decode(&1, [keys: :atoms])]
         )
         |> case do
           {:ok, response} ->
