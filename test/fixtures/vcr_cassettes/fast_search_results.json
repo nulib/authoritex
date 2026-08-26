@@ -3,11 +3,12 @@
     "request": {
       "options": [],
       "body": "",
-      "url": "https://fast.oclc.org/fastsuggest?query=herskovits%20library%20of%20african%20studies&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
+      "url": "https://fast.oclc.org/searchfast/fastsuggest?query=herskovits%20library%20of%20african%20studies&query_index=suggestall&suggest=autoSubject&queryReturn=suggestall,idroot,auth,type&rows=20",
       "headers": {
+        "accept": "application/json",
         "accept-encoding": "gzip",
-        "content-type": "application/json;",
-        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
+        "content-type": "application/json",
+        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -17,27 +18,17 @@
       "type": "ok",
       "body": "g20AAAEyH4sIAAAAAAAA/72QP0/EMAzFdz5F5AmkqCoHCJGNAXQgQELAhG4I1/QaSJMSu62qqt+d5P5REMMxwGY7znu/5x68wspZVFMlM+VB9IAkqUYQKYf7R12qZVVJL0uMz+8gAOvFQoU9YwRSnWmFbDSSuddzaccjl487o1+89N14VCiPb67RhMAhN188uM68c8RlTQWnrlJhxbs20MAkDXVLoXpFZ2EY+DZQZLV1eelqm4E44jGXp2WYzM3D5+ceVsKhhBwpTU8mh8enZzDjsHQRIA0F/U+SuDndkrKbdY6Q7nyd+WF1jqgRcYPGrTKNNkax64Tt9nfgO5BF8e9ov7f6c8wfDnjnPBVt6JW37MnqJrhp6tj+RSMtkrOcXRmTHCQb84T9c7DZMOx9AA3rHZkaAwAA",
       "headers": {
-        "date": "Wed, 15 Jul 2026 18:26:03 GMT",
+        "date": "Tue, 25 Aug 2026 04:07:12 GMT",
         "content-type": "application/json",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
-        "set-cookie": "__cf_bm=Z2m8oYbRbXwV.azaHC4pK86K35pBaN4kX43HH4ZJwIk-1784139963.3628914-1.0.1.1-Qi75vaMkjWlLwFT91sYpZbvSbnOsH6FIw5Kz16kiPjgqYlBxp1sObs5Dr_7hZUOnCsa5DFyk7dA_nbhxFTRjPQIfEPk.wKvuh0uuiy2cQr.gtWrFqGFU0HqBTuYQuoqhJmSSgbzwYlxxaAs5hwaoQA; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 15 Jul 2026 18:56:03 GMT",
-        "x-ratelimit-limit-day": "10000",
-        "x-ratelimit-remaining-day": "9879",
-        "ratelimit-reset": "20037",
-        "ratelimit-remaining": "9879",
-        "ratelimit-limit": "10000",
+        "server": "cloudflare",
         "access-control-allow-origin": "*",
-        "kong-request-id": "2a27bb1f-2a48-4796-b2fc-36913af6d96f#43731640",
-        "x-kong-upstream-latency": "577",
-        "x-kong-proxy-latency": "1",
-        "via": "1.1 kong/3.14.0.2-enterprise-edition",
-        "x-kong-request-id": "cf60210393ed9d1041eedd71cf44d172",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=h2dXWkkO9N0FiG7Up2oD6Nya5s0tEPuFPyd0rtTVP_c-1787630831.5750654-1.0.1.1-9izijJPv9dKGemM3aXiHgSRGBn8WQf2o6jjjZWt80j0tGXl1QUSwZWO1AW7ceenMN01g3xGZRT.o2ipyGr9oOo.hbYt6plTTFDxT8W1ZhXE_w57Tk72deClQtbHu_OHyYTN2i7PXIzbU14.g1g3cOQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Tue, 25 Aug 2026 04:37:12 GMT",
         "content-encoding": "gzip",
-        "server": "cloudflare",
-        "cf-ray": "a1bad03308d1ae29-ORD"
+        "cf-ray": "a307ba795db6bc23-ORD"
       },
       "status_code": 200
     }

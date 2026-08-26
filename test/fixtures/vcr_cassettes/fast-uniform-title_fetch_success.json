@@ -3,12 +3,12 @@
     "request": {
       "options": [],
       "body": "",
-      "url": "https://fast.oclc.org/fast/1356244",
+      "url": "https://fast.oclc.org/FAST/1356244/rdf.xml",
       "headers": {
-        "accept": "application/rdf+xml",
+        "accept": "application/xml",
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/3.1.1 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.6.2 finch/0.23.0 mint/1.9.2"
+        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -18,29 +18,19 @@
       "type": "ok",
       "body": "<rdf:RDF xmlns:coord=\"http://whatever/java/ORG.oclc.util.CoordToDecimal\"\n         xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n         xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n         xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n         xmlns:dct=\"http://purl.org/dc/terms/\"\n         xmlns:skosxl=\"http://www.w3.org/2008/05/skos-xl#\"\n         xmlns:mx=\"http://www.loc.gov/MARC21/slim\"\n         xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n         xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n         xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n         xmlns:void=\"http://rdfs.org/ns/void#\"\n         xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n         xmlns:schema=\"http://schema.org/\"\n         xmlns:norm=\"http://whatever/java/ORG.oclc.util.NormalFormC\"\n         xmlns:naco=\"http://whatever/java/ORG.oclc.util.NacoNormalize\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n         xml:base=\"http://id.worldcat.org/fast/\">\n   <rdf:Description rdf:about=\"1356244\">\n      <dct:identifier>1356244</dct:identifier>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#fast\"/>\n      <rdf:type rdf:resource=\"http://schema.org/CreativeWork\"/>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#facet-Title\"/>\n      <skos:prefLabel>Autobiography (Franklin, Benjamin)</skos:prefLabel>\n      <schema:name>Autobiography (Franklin, Benjamin)</schema:name>\n      <skos:altLabel>Benjamin Franklin's autobiography (Franklin, Benjamin)</skos:altLabel>\n      <schema:name>Benjamin Franklin's autobiography (Franklin, Benjamin)</schema:name>\n      <skos:altLabel>Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)</skos:altLabel>\n      <schema:name>Memoirs of the life and writings of Benjamin Franklin (Franklin, Benjamin)</schema:name>\n      <skos:altLabel>Autobiography of Benjamin Franklin (Franklin, Benjamin)</skos:altLabel>\n      <schema:name>Autobiography of Benjamin Franklin (Franklin, Benjamin)</schema:name>\n      <skos:altLabel>Franklin on Franklin (Franklin, Benjamin)</skos:altLabel>\n      <schema:name>Franklin on Franklin (Franklin, Benjamin)</schema:name>\n      <skos:altLabel>Benjamin Franklin, his autobiography (Franklin, Benjamin)</skos:altLabel>\n      <schema:name>Benjamin Franklin, his autobiography (Franklin, Benjamin)</schema:name>\n      <skos:altLabel>Life of Benjamin Franklin (Franklin, Benjamin)</skos:altLabel>\n      <schema:name>Life of Benjamin Franklin (Franklin, Benjamin)</schema:name>\n      <schema:sameAs>\n         <rdf:Description rdf:about=\"http://id.loc.gov/authorities/names/n86080078\">\n            <rdfs:label>Franklin, Benjamin, 1706-1790.</rdfs:label>\n         </rdf:Description>\n      </schema:sameAs>\n   </rdf:Description>\n   <rdf:Description rdf:about=\"fst01356244\">\n      <rdfs:comment>This identifier is deprecated. See the rdfs:seeAlso link for the new identifier.</rdfs:comment>\n      <rdfs:seeAlso rdf:resource=\"1356244\"/>\n   </rdf:Description>\n   <foaf:Document rdf:about=\"1356244/rdf.xml\">\n      <void:inDataset rdf:resource=\"http://fast.oclc.org/fast/void/0.1\"/>\n      <foaf:primaryTopic rdf:resource=\"1356244\"/>\n      <dc:format>application/rdf+xml</dc:format>\n      <dct:created rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2006-11-16T00:00:00.0</dct:created>\n      <dct:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-07-06T14:07:21.0</dct:modified>\n      <dct:language rdf:resource=\"http://lexvo.org/id/iso639-3/eng\"/>\n      <skos:changeNote xml:lang=\"en\">Cataloged by agency: OCoLC</skos:changeNote>\n      <skos:changeNote xml:lang=\"en\">Transcribed by agency: OCoLC</skos:changeNote>\n   </foaf:Document>\n   <void:Dataset rdf:about=\"http://fast.oclc.org/fast/void/0.1\">\n      <dct:title>FAST (Faceted Application of Subject Terminology) Data</dct:title>\n      <dct:license>\n         <rdf:Description rdf:about=\"http://www.oclc.org/research/activities/fast/odcby.htm\">\n            <dct:title>Open Data Commons Attribution License (ODC-By) v1.0</dct:title>\n            <rdfs:comment>This is OCLC's \"local copy\" of the ODC-By license</rdfs:comment>\n            <rdfs:seeAlso rdf:resource=\"http://opendatacommons.org/licenses/by/#toc-anchor-337-3\"/>\n            <owl:sameAs rdf:resource=\"http://opendatacommons.org/licenses/by/1-0/\"/>\n         </rdf:Description>\n      </dct:license>\n   </void:Dataset>\n</rdf:RDF>",
       "headers": {
-        "date": "Wed, 15 Jul 2026 18:25:59 GMT",
+        "date": "Tue, 25 Aug 2026 04:07:19 GMT",
         "content-type": "application/rdf+xml",
         "content-length": "4341",
         "connection": "keep-alive",
-        "set-cookie": "__cf_bm=ELTfw_F6FZdydBxgKUzGrWq_IvBIZBNtN0A_Kp7L9hg-1784139959.305604-1.0.1.1-5t4iL.3YwgPF5m23hawJ39wTQg60DlovyDXoguCB255GnG0L0Vbp_w1ElUqMoFMLcQf4iclSkzxpCdSSuCgDeV2cezcM7uY7azXkzmy.hgvWdnxObMgZm6eD4zRbKEEb6Z8aTUZzHTVbURGXQI3RyA; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 15 Jul 2026 18:55:59 GMT",
-        "x-ratelimit-limit-day": "10000",
-        "x-ratelimit-remaining-day": "9890",
-        "ratelimit-reset": "20041",
-        "ratelimit-remaining": "9890",
-        "ratelimit-limit": "10000",
+        "server": "cloudflare",
         "access-control-allow-origin": "*",
         "access-control-allow-methods": "GET",
         "x-frame-options": "SAMEORIGIN",
         "x-content-security-policy": "allow self",
-        "kong-request-id": "2a27bb1f-2a48-4796-b2fc-36913af6d96f#43731543",
-        "x-kong-upstream-latency": "56",
-        "x-kong-proxy-latency": "2",
-        "via": "1.1 kong/3.14.0.2-enterprise-edition",
-        "x-kong-request-id": "75c3a435a3644b2dbb18780a6505ae2a",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "server": "cloudflare",
-        "cf-ray": "a1bad019ad6dae29-ORD"
+        "set-cookie": "__cf_bm=h6CWmXqyHNiJ2oSVjbZlP4GSzYR.9jKRT_gbtsDrfVw-1787630839.610952-1.0.1.1-x2Eh6egKjhmb5aNNIxJUyLkOV7LBGy5MG4PQepGGxJOZPvs71h90Fef3ivvdnXlrohauVe_FsfUD3rx.PTZqKlB_arxFTFAgnn9aW9GfwJn.o3CuY4erKPMBoE9IDgwgOOl3svthzZSiXthJu_sEEg; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Tue, 25 Aug 2026 04:37:19 GMT",
+        "cf-ray": "a307baab8efdbc23-ORD"
       },
       "status_code": 200
     }

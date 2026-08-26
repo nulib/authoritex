@@ -39,6 +39,16 @@ defmodule Authoritex.FASTTest do
                   variants: _,
                   related: [replaced_by: "http://id.worldcat.org/fast/1205331"]
                 }} = FAST.fetch("http://id.worldcat.org/fast/fst01205331")
+
+        assert {:ok,
+                %Authoritex.Record{
+                  id: "http://id.worldcat.org/fast/01205331",
+                  label: "Liberia",
+                  qualified_label: "Liberia",
+                  hint: nil,
+                  variants: _,
+                  related: [replaced_by: "http://id.worldcat.org/fast/1205331"]
+                }} = FAST.fetch("http://id.worldcat.org/fast/01205331")
       end
     end
   end
