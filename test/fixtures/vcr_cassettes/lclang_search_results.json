@@ -7,7 +7,7 @@
       "headers": {
         "accept": "application/ld+json",
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -17,7 +17,7 @@
       "type": "ok",
       "body": "{\"q\":\"english*\", \"count\":4, \"pagesize\":30, \"start\":1, \"sortmethod\":\"rank\", \"searchtype\":\"keyword\", \"directory\":\"/vocabulary/languages/\", \"hits\":[{\"suggestLabel\":\" CODE for: English\", \"uri\":\"http://id.loc.gov/vocabulary/languages/eng\", \"aLabel\":\"English\", \"vLabel\":\"\", \"sLabel\":\"\", \"code\":\"eng\", \"token\":\"eng\", \"rank\":\"20880\", \"more\":{\"nonlatinLabels\":[\"Englisch\", \"anglais\"], \"vernacularLabels\":[\"Englisch@de\", \"anglais@fr\"], \"rdftypes\":[\"Language\", \"SimpleType\", \"Authority\", \"Resource\", \"Language\"], \"collections\":[\"http://id.loc.gov/vocabulary/languages/collection_PastPresentLanguagesEntries\"], \"notes\":[\"Non-English forms of the name are contributed by National agencies.\"], \"relateds\":[], \"gacs\":[], \"authorizedNNs\":[], \"lastmods\":[\"2012-08-02\"]}}, {\"suggestLabel\":\" CODE for: English, Old (ca. 450-1100)\", \"uri\":\"http://id.loc.gov/vocabulary/languages/ang\", \"aLabel\":\"English, Old (ca. 450-1100)\", \"vLabel\":\"\", \"sLabel\":\"\", \"code\":\"ang\", \"token\":\"ang\", \"rank\":\"517\", \"more\":{\"nonlatinLabels\":[\"Altenglisch\", \"anglo-saxon (vers 450-1100)\"], \"vernacularLabels\":[\"Altenglisch@de\", \"anglo-saxon (vers 450-1100)@fr\"], \"rdftypes\":[\"Language\", \"SimpleType\", \"Authority\", \"Resource\", \"Language\"], \"collections\":[\"http://id.loc.gov/vocabulary/languages/collection_PastPresentLanguagesEntries\"], \"notes\":[\"Non-English forms of the name are contributed by National agencies.\"], \"relateds\":[], \"gacs\":[], \"authorizedNNs\":[], \"lastmods\":[\"2012-08-02\"]}}, {\"suggestLabel\":\" CODE for: English, Middle (1100-1500)\", \"uri\":\"http://id.loc.gov/vocabulary/languages/enm\", \"aLabel\":\"English, Middle (1100-1500)\", \"vLabel\":\"\", \"sLabel\":\"\", \"code\":\"enm\", \"token\":\"enm\", \"rank\":\"517\", \"more\":{\"nonlatinLabels\":[\"Mittelenglisch\", \"anglais, moyen (1100-1500)\"], \"vernacularLabels\":[\"Mittelenglisch@de\", \"anglais, moyen (1100-1500)@fr\"], \"rdftypes\":[\"Language\", \"SimpleType\", \"Authority\", \"Resource\", \"Language\"], \"collections\":[\"http://id.loc.gov/vocabulary/languages/collection_PastPresentLanguagesEntries\"], \"notes\":[\"Non-English forms of the name are contributed by National agencies.\"], \"relateds\":[], \"gacs\":[], \"authorizedNNs\":[], \"lastmods\":[\"2012-08-02\"]}}, {\"suggestLabel\":\" CODE for: Creoles and Pidgins, English-based (Other)\", \"uri\":\"http://id.loc.gov/vocabulary/languages/cpe\", \"aLabel\":\"Creoles and Pidgins, English-based (Other)\", \"vLabel\":\"\", \"sLabel\":\"\", \"code\":\"cpe\", \"token\":\"cpe\", \"rank\":\"413\", \"more\":{\"nonlatinLabels\":[\"Kreolisch-Englisch (Andere)\", \"créoles et pidgins anglais, autre\"], \"vernacularLabels\":[\"Kreolisch-Englisch (Andere)@de\", \"créoles et pidgins anglais, autre@fr\"], \"rdftypes\":[\"Language\", \"SimpleType\", \"Authority\", \"Resource\", \"Language\"], \"collections\":[\"http://id.loc.gov/vocabulary/languages/collection_PastPresentLanguagesEntries\"], \"notes\":[\"Non-English forms of the name are contributed by National agencies.\"], \"relateds\":[], \"useFors\":[\"Bamyili Creole\", \"Djuka\", \"Fitzroy Valley Kriol\", \"Hawaiian Pidgin English\", \"Jamaican Creole\", \"Krio\", \"Kriol\", \"Pijin\", \"Pidgin English\", \"Saramaccan\", \"Sea Islands Creole\"], \"gacs\":[], \"authorizedNNs\":[], \"lastmods\":[\"2012-08-02\"]}}]}",
       "headers": {
-        "date": "Mon, 24 Aug 2026 21:11:37 GMT",
+        "date": "Wed, 26 Aug 2026 15:35:54 GMT",
         "content-type": "application/x-suggestions+json; charset=utf-8",
         "content-length": "3106",
         "connection": "keep-alive",
@@ -31,12 +31,12 @@
         "strict-transport-security": "max-age=31536000",
         "server": "cloudflare",
         "cache-control": "public, max-age=2419200",
-        "x-varnish": "153990268 142951706",
-        "age": "6455",
+        "x-varnish": "189511499 188057200",
+        "age": "159461",
         "via": "1.1 varnish (Varnish/6.0)",
         "accept-ranges": "bytes",
         "cf-cache-status": "DYNAMIC",
-        "cf-ray": "a30559b9effb4616-ORD"
+        "cf-ray": "a313e8b5185538bd-ORD"
       },
       "status_code": 200
     }

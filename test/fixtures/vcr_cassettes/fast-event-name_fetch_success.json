@@ -8,7 +8,7 @@
         "accept": "application/xml",
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -18,7 +18,7 @@
       "type": "ok",
       "body": "<rdf:RDF xmlns:coord=\"http://whatever/java/ORG.oclc.util.CoordToDecimal\"\n         xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n         xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n         xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n         xmlns:dct=\"http://purl.org/dc/terms/\"\n         xmlns:skosxl=\"http://www.w3.org/2008/05/skos-xl#\"\n         xmlns:mx=\"http://www.loc.gov/MARC21/slim\"\n         xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n         xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n         xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n         xmlns:void=\"http://rdfs.org/ns/void#\"\n         xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n         xmlns:schema=\"http://schema.org/\"\n         xmlns:norm=\"http://whatever/java/ORG.oclc.util.NormalFormC\"\n         xmlns:naco=\"http://whatever/java/ORG.oclc.util.NacoNormalize\"\n         xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n         xml:base=\"http://id.worldcat.org/fast/\">\n   <rdf:Description rdf:about=\"1405606\">\n      <dct:identifier>1405606</dct:identifier>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#fast\"/>\n      <rdf:type rdf:resource=\"http://id.loc.gov/ontologies/bibframe/Meeting\"/>\n      <skos:inScheme rdf:resource=\"ontology/1.0/#facet-Meeting\"/>\n      <skos:prefLabel>White House Conference on Library and Information Services</skos:prefLabel>\n      <schema:name>White House Conference on Library and Information Services</schema:name>\n      <skos:altLabel>Conference on Library and Information Services, White House</skos:altLabel>\n      <schema:name>Conference on Library and Information Services, White House</schema:name>\n      <skos:altLabel>White House Conference on Libraries and Information Services</skos:altLabel>\n      <schema:name>White House Conference on Libraries and Information Services</schema:name>\n      <skos:altLabel>WHCLIS</skos:altLabel>\n      <schema:name>WHCLIS</schema:name>\n      <schema:sameAs>\n         <rdf:Description rdf:about=\"http://id.loc.gov/authorities/names/n79151249\">\n            <rdfs:label>White House Conference on Library and Information Services</rdfs:label>\n         </rdf:Description>\n      </schema:sameAs>\n   </rdf:Description>\n   <rdf:Description rdf:about=\"fst01405606\">\n      <rdfs:comment>This identifier is deprecated. See the rdfs:seeAlso link for the new identifier.</rdfs:comment>\n      <rdfs:seeAlso rdf:resource=\"1405606\"/>\n   </rdf:Description>\n   <foaf:Document rdf:about=\"1405606/rdf.xml\">\n      <void:inDataset rdf:resource=\"http://fast.oclc.org/fast/void/0.1\"/>\n      <foaf:primaryTopic rdf:resource=\"1405606\"/>\n      <dc:format>application/rdf+xml</dc:format>\n      <dct:created rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2006-10-09T00:00:00.0</dct:created>\n      <dct:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2012-07-06T14:07:21.0</dct:modified>\n      <dct:language rdf:resource=\"http://lexvo.org/id/iso639-3/eng\"/>\n      <skos:changeNote xml:lang=\"en\">Cataloged by agency: OCoLC</skos:changeNote>\n      <skos:changeNote xml:lang=\"en\">Transcribed by agency: OCoLC</skos:changeNote>\n   </foaf:Document>\n   <void:Dataset rdf:about=\"http://fast.oclc.org/fast/void/0.1\">\n      <dct:title>FAST (Faceted Application of Subject Terminology) Data</dct:title>\n      <dct:license>\n         <rdf:Description rdf:about=\"http://www.oclc.org/research/activities/fast/odcby.htm\">\n            <dct:title>Open Data Commons Attribution License (ODC-By) v1.0</dct:title>\n            <rdfs:comment>This is OCLC's \"local copy\" of the ODC-By license</rdfs:comment>\n            <rdfs:seeAlso rdf:resource=\"http://opendatacommons.org/licenses/by/#toc-anchor-337-3\"/>\n            <owl:sameAs rdf:resource=\"http://opendatacommons.org/licenses/by/1-0/\"/>\n         </rdf:Description>\n      </dct:license>\n   </void:Dataset>\n</rdf:RDF>",
       "headers": {
-        "date": "Tue, 25 Aug 2026 04:07:32 GMT",
+        "date": "Wed, 26 Aug 2026 15:36:12 GMT",
         "content-type": "application/rdf+xml",
         "content-length": "3814",
         "connection": "keep-alive",
@@ -29,8 +29,8 @@
         "x-content-security-policy": "allow self",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "set-cookie": "__cf_bm=RJId4uwE1w9EsySJAfhjsuOY4KX8liByjSf3_1O.9FY-1787630852.1513362-1.0.1.1-NBSGdSBc8p98ZGvMXsHRGfBUlJ0u6PH3.kEaKEuivFVYqhdtce4JqRJ5FWkrNxxSR4LwcDrlbfQmY1Foo_6P9rb7YK71iIeUGwo3IIubbn1_n9At9w5ZUSvjzzoG3y4r35hI0LSXQqr_iFgcWKBelg; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Tue, 25 Aug 2026 04:37:32 GMT",
-        "cf-ray": "a307baf9fb75bc23-ORD"
+        "set-cookie": "__cf_bm=5wiDwgolgzWeWJEtwEbnugXHLhdFLyu_Q5TlHqkBHdY-1787758572.0705128-1.0.1.1-Jwsl9kI4iMX0lZQNrKsq2deIx89byGB18aNCp_SsTxQi9pGXgL3bNLrKRxPvK5Ft02e2v1UB31NP1Cgir.9NABE8C6JdnanZbur5xYiERkdAoo5zCFpUErnl.VvRH3pQQke3JMy_AoMxrD2KRk0_Gw; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 26 Aug 2026 16:06:12 GMT",
+        "cf-ray": "a313e9236babdc1f-ORD"
       },
       "status_code": 200
     }

@@ -8,7 +8,7 @@
         "accept": "application/json",
         "accept-encoding": "gzip",
         "content-type": "application/json",
-        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -16,9 +16,9 @@
     "response": {
       "binary": true,
       "type": "ok",
-      "body": "g20AAAHyH4sIAAAAAAAA/82WS08bMRSF9/0VljeAZKEJ5MXsEBIPiYKqIrGoWJiZm8RVxje1PUAUzX+vPVRpGhKNiZ00O8/jnvOd6zsjz6gCPUGp4Rp4DoqmM6oNN6WmacLotwdRQL2acMUL7R7/oinV5XAI2rRa6Y0coCq4ESjJ37tc5gtXt+JZcTWljA7Gi8VM5ArRMF6aETPTCdg3FL5aF3qS2PWrsaufGiWtKjYHdQyyLC6xlDlNO33mgJWpKXPMbPWPGX1Xtks60CZp9c66p70T+sRobZNSZ2kd5ijuzUdU45z8gSUuwmK4C5RDi6CdSF2d+hZUzINnbJZxbi5vz8kOmdpJp91u6tH9SCB5HAkD5BpLDU5xAApkBsTqr/P9DupFZLAIGqrkleBjVz/nwsgy5tYTdJJewx58FVpjqQS5whdQEtWB3nwbIoh55QjfiRWkO8nR+N94gDcesAMblXuxhve8ZvtPrJ50/9Jsi7XTMAPWRkJmRFaaKJ9lHD2vNOFTshp2X9JsbEgOHffx0a6C9E8bhuwOlRmRC65wLCSPMmfRJL0yhY/aWt49yhSQYu3PbMuZukm36XAc48wX/bC0xB0+X6tPevG5W/2mfk+xEHIY5SMP1/JKEaH7H0D3IcXGhvNAcVM8VdWX33j2G5O4DwAA",
+      "body": "g20AAAH0H4sIAAAAAAAA/82WS08bMRSF9/0V1t0AkoVmIC9mh5B4SBRUFYlFxcLMOImrjG9qe4Aomv9eO1RpGhKNiZ00O8/jnvOd6zsjT0FxPUap+TVnBVeQTUEbZioNWULh24MoOWQphTFTrNTu8S/IQFeDAdcmTbMb2UdVMiNQkr93mSwWrm7Fs2JqAhT6o8ViKgqFaCirzJCayZjbNxS+Whc4Sez61djVT40S6prOQR2DrMpLrGQBWbtHHbAyM94Cc1v9YwrvynYJfW2StHvWOe2ewBOFmU0GztI6zFHcm4+oRgX5A0tchMVwFygHFkE7kVl15ltQUw+ekVnGubm8PSc7ZGol7VarqUf3Q4HkcSgMJ9dYae4U+1xxmXNi9df5fufqReR8ETRUySvBx65+zoWSZcytJ2gn3YY9+Cq0xkoJcoUvXElUB3rzbYgg5pUjfCdWkO4kR+N/44G/sYAd2KjcizW85zO2/8TqSfcvzbZY2w0zYG0kz43IKxPls4yj55UmfEpWw+5Lmo0NyaHjPj7aVZDeacOQ3aEyQ3LBFI6EZFHmLJqkV6bwUVvLu0eZAlKs/ZltOVMn6TQdjmOc+aIflpa4w+dr9UkvPnfaa+r3BEshB1E+8nAtrxQRuv8BdB9SbGw4DxQ3xVNdf/kNQNXcz7gPAAA=",
       "headers": {
-        "date": "Tue, 25 Aug 2026 04:07:30 GMT",
+        "date": "Wed, 26 Aug 2026 15:36:10 GMT",
         "content-type": "application/json",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
@@ -26,9 +26,9 @@
         "access-control-allow-origin": "*",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "set-cookie": "__cf_bm=9r17Lz.vjtT771KeWvSOoO9xxBeUt1lyij.1OPI0UzE-1787630849.5267282-1.0.1.1-qhPaQZHKJfZZ.a3NBkfLaFepnsVqXfOnwhNjcMx3PXcT8WIBYghu1nOzbOspM2Ey2N9ktK_VWoZCc4ZwvLRFZMnTJCnXaJgyG2wO68xrEiGxPNXgfP_jyBcfxOf8RK9pUGX1dA7CTEvVO1ipelj2BA; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Tue, 25 Aug 2026 04:37:30 GMT",
+        "set-cookie": "__cf_bm=sDqJzD3W75g7r2TPWfPoMRurJXmaSDTyMqqQ5zIT02U-1787758569.6008482-1.0.1.1-894mUmzMW7_OVLGbXBZYwH2bpgGUrLVbBR5QoO14dAPN73ono.JkyE385rGfo7paodccVFlUM9lKJXdUHMoUQvCkOFMewVcyQu8C7YNMxj_APm1Cs70ya0XqWxnwddtU7lqmf0hbe5dOGYdtrXnJ0Q; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 26 Aug 2026 16:06:10 GMT",
         "content-encoding": "gzip",
-        "cf-ray": "a307bae98d35bc23-ORD"
+        "cf-ray": "a313e913f957dc1f-ORD"
       },
       "status_code": 200
     }

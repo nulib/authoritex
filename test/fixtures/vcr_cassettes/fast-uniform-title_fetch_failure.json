@@ -8,7 +8,7 @@
         "accept": "application/xml",
         "accept-encoding": "gzip",
         "content-type": "application/json;",
-        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -18,7 +18,7 @@
       "type": "ok",
       "body": "g20AAAHYH4sIAAAAAAAA/4VS3W7TMBR+lUO4bev+bROtG6nSNHEDQix3iAvHOYktXDvYp2tLNYl34A15Ek6SjjEJxEUi5/P3c/w58lUVNJ1aBEM7l8vuDU75ZpOhz/gbVZVLsuQwf1sUH+CeFO0TLKdL+Pn9B7wPBHdh7yspBpJMdHIIneUmIzyS0ClleRmqE5zr4Glcq511p1WhTNip0TZa5UZJ+TROGG29fgQzG4GZ87MYQQlnHVyIq4OxhOtS6S9N7PLGA/z6an51e3Pdqy7+yX7D1XzeHjtw/ic4ux7AxQtw2YPtC2xQq6fw0nEuAxNnPcLZoG0MrWZM+udAZYgVxpUPHtePUvSt5FIMfXZtcLez/1XKDGkiaKdS2mRdeAYily075AU3LEWZP8k/YhsiSdFe9t9hSqoZKIVBiPh1j4mw4lUK+6gRPom77X0hxocYfDO2lYhVPTnu3GewCTyPoR6Udap0+Gx7i0lH25IN/rd1iLaxHvj+HjBCZateXFtfcYV6HyN64tSWg3mlOi3UIQKxllRskJ5nYvgSfrCOT9wABbZM2oXEbKMIuFLAo02UJv1cf2nILPJtqzT7F2GnFYmbyXQym77hShd8C0P/ov/lfwEYoRH9AgMAAA==",
       "headers": {
-        "date": "Tue, 25 Aug 2026 04:07:18 GMT",
+        "date": "Wed, 26 Aug 2026 15:36:06 GMT",
         "content-type": "text/html;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
@@ -26,9 +26,9 @@
         "content-language": "en",
         "strict-transport-security": "max-age=31536000 ; includeSubDomains",
         "cf-cache-status": "DYNAMIC",
-        "set-cookie": "__cf_bm=SXHQ68XzEUSrHXVuaGzR2OrMHEgiSw2ONdI.ybzScOw-1787630838.900245-1.0.1.1-LwTq.52_Y2AXxn8mx8sHXn6.ID6DaLaCAhLoV4qGZigMm8t6YUgUtnpiIuqOm8XpelVYvesfJ9qvel0gIrrwVv5KjvBCMsCF47C90UREseiZ5N.pRmVO6H2bXYT2UFSzQJRUnwPfjJy8g161y4a.5Q; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Tue, 25 Aug 2026 04:37:18 GMT",
+        "set-cookie": "__cf_bm=gEFmvW2r61LDsml.HJayrbn6HN4D0E9Qp_x4mzCs3VA-1787758566.656234-1.0.1.1-lqLLQPW2oWRlFqJ_TXTorU2DLQDXv_5xnl_NLsm7wrAWtuTHJIgbRW4p74WLwj5dHV1g51EFykjLH57xE2W4DPGIdS0663gQyZVhPccrrMXJ05On2jZP_7r5RNvJZa_QgGqGrTKHEEn6qvknuts4ZA; HttpOnly; SameSite=None; Secure; Path=/; Domain=oclc.org; Expires=Wed, 26 Aug 2026 16:06:06 GMT",
         "content-encoding": "gzip",
-        "cf-ray": "a307baa71974bc23-ORD"
+        "cf-ray": "a313e9019e9edc1f-ORD"
       },
       "status_code": 404
     }

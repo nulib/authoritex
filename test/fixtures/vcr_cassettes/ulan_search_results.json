@@ -7,7 +7,7 @@
       "headers": {
         "accept": "application/sparql-results+xml;charset=UTF-8",
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -17,7 +17,7 @@
       "type": "ok",
       "body": "<?xml version='1.0' encoding='UTF-8'?>\n<sparql xmlns='http://www.w3.org/2005/sparql-results#'>\n\t<head>\n\t\t<variable name='s'/>\n\t\t<variable name='name'/>\n\t\t<variable name='hint'/>\n\t</head>\n\t<results>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/ulan/500447664</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Palmer, Potter</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>American businessman, 1826-1902</literal>\n\t\t\t</binding>\n\t\t</result>\n\t\t<result>\n\t\t\t<binding name='s'>\n\t\t\t\t<uri>http://vocab.getty.edu/ulan/500323640</uri>\n\t\t\t</binding>\n\t\t\t<binding name='name'>\n\t\t\t\t<literal>Palmer, Bertha Honoré</literal>\n\t\t\t</binding>\n\t\t\t<binding name='hint'>\n\t\t\t\t<literal>American collector and exhibition organizer, 1849-1918</literal>\n\t\t\t</binding>\n\t\t</result>\n\t</results>\n</sparql>\n",
       "headers": {
-        "date": "Mon, 24 Aug 2026 21:11:25 GMT",
+        "date": "Wed, 26 Aug 2026 15:36:03 GMT",
         "content-type": "application/sparql-results+xml;charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",

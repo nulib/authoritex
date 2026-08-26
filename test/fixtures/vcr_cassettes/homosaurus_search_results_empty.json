@@ -6,7 +6,7 @@
       "url": "https://api.homosaurus.org/search/v3.jsonld?q=M1551ng%2A",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.1.2 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
       "request_body": "",
       "method": "get"
@@ -16,7 +16,7 @@
       "type": "ok",
       "body": "{}",
       "headers": {
-        "date": "Mon, 24 Aug 2026 21:11:48 GMT",
+        "date": "Wed, 26 Aug 2026 15:36:14 GMT",
         "content-type": "application/ld+json; charset=utf-8",
         "transfer-encoding": "chunked",
         "connection": "keep-alive",
@@ -25,19 +25,19 @@
         "referrer-policy": "strict-origin-when-cross-origin",
         "x-permitted-cross-domain-policies": "none",
         "x-xss-protection": "1; mode=block",
-        "x-request-id": "e091450b-efb7-489e-91eb-af3482a2d1b2",
+        "x-request-id": "13af92bb-c47f-4388-bc1c-d756db84a087",
         "x-download-options": "noopen",
         "x-frame-options": "SAMEORIGIN",
-        "x-runtime": "0.009166",
+        "x-runtime": "0.010692",
         "x-content-type-options": "nosniff",
         "x-powered-by": "Phusion Passenger(R) 6.0.27",
         "etag": "W/\"44136fa355b3678a1146ad16f7e8649e\"",
         "status": "200 OK",
-        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=a4DrU3byaYMMHk5my29MeMxaVZypHWzZvt7U9Dr6jZqlDqsjUeDCUaCvwWPFXz2nf1P7wGFN8FgkDzgl3QOq6m25OLIzIWI8tT1idN2POfrvPui%2Bom5EFFWqxyHyYfof0%2Bk9x9I%3D\"}]}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BFBHKQmyTnfp56wTDtUuH7dNk2wCIxzcpJRAd4OqegaFMm94Pif5sk7zo5zB4l7lA8IyRjo28G6zteATFu6sbxIZUEDqO5nX6C3Xxlnp2tjmILs238X1MuYoR5qjE8IJCnGVAv4%3D\"}]}",
         "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
         "cf-cache-status": "DYNAMIC",
         "server-timing": "cfCacheStatus;desc=\"DYNAMIC\"",
-        "cf-ray": "a30559ff2bf9e80d-ORD",
+        "cf-ray": "a313e930cafd1d76-ATL",
         "alt-svc": "h3=\":443\"; ma=86400"
       },
       "status_code": 200
