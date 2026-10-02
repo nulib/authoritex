@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://id.nlm.nih.gov/mesh/lookup/descriptor?label=myocardial+infarction&match=contains&limit=30",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "[{\"resource\":\"http://id.nlm.nih.gov/mesh/D056988\",\"label\":\"Anterior Wall Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D056989\",\"label\":\"Inferior Wall Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D009203\",\"label\":\"Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D000072658\",\"label\":\"Non-ST Elevated Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D000072657\",\"label\":\"ST Elevation Myocardial Infarction\"}]",
+      "headers": {
+        "date": "Fri, 02 Oct 2026 15:21:18 GMT",
+        "server": "Apache",
+        "x-frame-options": "SAMEORIGIN",
+        "x-forwarded-proto": "https",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET, POST, PUT",
+        "access-control-allow-headers": "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With",
+        "access-control-max-age": "1800",
+        "content-type": "application/json",
+        "set-cookie": "JSESSIONID=C5099B44DD177E4BF27B1B8C90BED5E1; Path=/mesh; Secure; HttpOnly",
+        "transfer-encoding": "chunked",
+        "x-count": "9",
+        "x-vip-info": "130.14.16.63:443",
+        "x-pool-info": "/Common/id_pool",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+      },
+      "status_code": 200
+    }
+  }
+]
