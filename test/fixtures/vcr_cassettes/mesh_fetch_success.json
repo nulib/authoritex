@@ -1,0 +1,74 @@
+[
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://id.nlm.nih.gov/mesh/lookup/details?descriptor=D009203",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\"descriptor\":\"http://id.nlm.nih.gov/mesh/D009203\",\"terms\":[{\"resource\":\"http://id.nlm.nih.gov/mesh/T027447\",\"label\":\"Myocardial Infarction\",\"preferred\":true},{\"resource\":\"http://id.nlm.nih.gov/mesh/T855594\",\"label\":\"Cardiovascular Stroke\",\"preferred\":false},{\"resource\":\"http://id.nlm.nih.gov/mesh/T000866941\",\"label\":\"Heart Attack\",\"preferred\":false},{\"resource\":\"http://id.nlm.nih.gov/mesh/T027448\",\"label\":\"Myocardial Infarct\",\"preferred\":false}],\"qualifiers\":[{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000097\",\"label\":\"blood\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000134\",\"label\":\"cerebrospinal fluid\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000139\",\"label\":\"chemically induced\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000145\",\"label\":\"classification\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000150\",\"label\":\"complications\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000151\",\"label\":\"congenital\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000175\",\"label\":\"diagnosis\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000000981\",\"label\":\"diagnostic imaging\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000178\",\"label\":\"diet therapy\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000188\",\"label\":\"drug therapy\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000191\",\"label\":\"economics\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000196\",\"label\":\"embryology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000201\",\"label\":\"enzymology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000453\",\"label\":\"epidemiology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000208\",\"label\":\"ethnology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000209\",\"label\":\"etiology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000235\",\"label\":\"genetics\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000266\",\"label\":\"history\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000276\",\"label\":\"immunology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000378\",\"label\":\"metabolism\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000382\",\"label\":\"microbiology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000401\",\"label\":\"mortality\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000451\",\"label\":\"nursing\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000469\",\"label\":\"parasitology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000473\",\"label\":\"pathology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000503\",\"label\":\"physiopathology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000517\",\"label\":\"prevention & control\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000523\",\"label\":\"psychology\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000532\",\"label\":\"radiotherapy\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000534\",\"label\":\"rehabilitation\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000601\",\"label\":\"surgery\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000628\",\"label\":\"therapy\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000652\",\"label\":\"urine\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000662\",\"label\":\"veterinary\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/Q000821\",\"label\":\"virology\"}],\"seealso\":[{\"resource\":\"http://id.nlm.nih.gov/mesh/D006342\",\"label\":\"Heart Rupture, Post-Infarction\"}]}",
+      "headers": {
+        "date": "Fri, 02 Oct 2026 15:21:18 GMT",
+        "server": "Apache",
+        "x-frame-options": "SAMEORIGIN",
+        "x-forwarded-proto": "https",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET, POST, PUT",
+        "access-control-allow-headers": "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With",
+        "access-control-max-age": "1800",
+        "content-type": "application/json",
+        "set-cookie": "JSESSIONID=006C1540E70DD3AF0CB4BFA434B15314; Path=/mesh; Secure; HttpOnly",
+        "transfer-encoding": "chunked",
+        "x-count": "4",
+        "x-vip-info": "130.14.16.63:443",
+        "x-pool-info": "/Common/id_pool",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+      },
+      "status_code": 200
+    }
+  },
+  {
+    "request": {
+      "options": [],
+      "body": "",
+      "url": "https://id.nlm.nih.gov/mesh/D009203.json",
+      "headers": {
+        "accept-encoding": "gzip",
+        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "\r\n\r\n{\n  \"@id\" : \"http://id.nlm.nih.gov/mesh/D009203\",\n  \"@type\" : \"http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor\",\n  \"http://id.nlm.nih.gov/mesh/vocab#active\" : true,\n  \"allowableQualifier\" : [ \"http://id.nlm.nih.gov/mesh/Q000188\", \"http://id.nlm.nih.gov/mesh/Q000401\", \"http://id.nlm.nih.gov/mesh/Q000652\", \"http://id.nlm.nih.gov/mesh/Q000517\", \"http://id.nlm.nih.gov/mesh/Q000178\", \"http://id.nlm.nih.gov/mesh/Q000534\", \"http://id.nlm.nih.gov/mesh/Q000378\", \"http://id.nlm.nih.gov/mesh/Q000196\", \"http://id.nlm.nih.gov/mesh/Q000134\", \"http://id.nlm.nih.gov/mesh/Q000145\", \"http://id.nlm.nih.gov/mesh/Q000175\", \"http://id.nlm.nih.gov/mesh/Q000209\", \"http://id.nlm.nih.gov/mesh/Q000000981\", \"http://id.nlm.nih.gov/mesh/Q000151\", \"http://id.nlm.nih.gov/mesh/Q000097\", \"http://id.nlm.nih.gov/mesh/Q000662\", \"http://id.nlm.nih.gov/mesh/Q000235\", \"http://id.nlm.nih.gov/mesh/Q000821\", \"http://id.nlm.nih.gov/mesh/Q000523\", \"http://id.nlm.nih.gov/mesh/Q000469\", \"http://id.nlm.nih.gov/mesh/Q000150\", \"http://id.nlm.nih.gov/mesh/Q000201\", \"http://id.nlm.nih.gov/mesh/Q000451\", \"http://id.nlm.nih.gov/mesh/Q000266\", \"http://id.nlm.nih.gov/mesh/Q000628\", \"http://id.nlm.nih.gov/mesh/Q000208\", \"http://id.nlm.nih.gov/mesh/Q000139\", \"http://id.nlm.nih.gov/mesh/Q000503\", \"http://id.nlm.nih.gov/mesh/Q000532\", \"http://id.nlm.nih.gov/mesh/Q000382\", \"http://id.nlm.nih.gov/mesh/Q000601\", \"http://id.nlm.nih.gov/mesh/Q000473\", \"http://id.nlm.nih.gov/mesh/Q000191\", \"http://id.nlm.nih.gov/mesh/Q000276\", \"http://id.nlm.nih.gov/mesh/Q000453\" ],\n  \"annotation\" : {\n    \"@language\" : \"en\",\n    \"@value\" : \"do not coordinate with ACUTE DISEASE for \\\"acute infarct\\\"\"\n  },\n  \"broaderDescriptor\" : [ \"http://id.nlm.nih.gov/mesh/D017202\", \"http://id.nlm.nih.gov/mesh/D007238\" ],\n  \"dateIntroduced\" : \"1966-01-01\",\n  \"historyNote\" : {\n    \"@language\" : \"en\",\n    \"@value\" : \"79; was MYOCARDIAL INFARCT 1963-78\"\n  },\n  \"identifier\" : \"D009203\",\n  \"lastUpdated\" : \"2019-07-01\",\n  \"nlmClassificationNumber\" : \"WG 310\",\n  \"onlineNote\" : {\n    \"@language\" : \"en\",\n    \"@value\" : \"use MYOCARDIAL INFARCTION to search MYOCARDIAL INFARCT 1966-78\"\n  },\n  \"preferredConcept\" : \"http://id.nlm.nih.gov/mesh/M0014340\",\n  \"preferredTerm\" : \"http://id.nlm.nih.gov/mesh/T027447\",\n  \"publicMeSHNote\" : {\n    \"@language\" : \"en\",\n    \"@value\" : \"79; was MYOCARDIAL INFARCT 1963-78\"\n  },\n  \"seeAlso\" : \"http://id.nlm.nih.gov/mesh/D006342\",\n  \"treeNumber\" : [ \"http://id.nlm.nih.gov/mesh/C14.907.585.500\", \"http://id.nlm.nih.gov/mesh/C23.550.513.355.750\", \"http://id.nlm.nih.gov/mesh/C14.280.647.500\", \"http://id.nlm.nih.gov/mesh/C23.550.717.489.750\" ],\n  \"label\" : {\n    \"@language\" : \"en\",\n    \"@value\" : \"Myocardial Infarction\"\n  },\n  \"@context\" : {\n    \"allowableQualifier\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#allowableQualifier\",\n      \"@type\" : \"@id\"\n    },\n    \"annotation\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#annotation\"\n    },\n    \"preferredConcept\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#preferredConcept\",\n      \"@type\" : \"@id\"\n    },\n    \"treeNumber\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#treeNumber\",\n      \"@type\" : \"@id\"\n    },\n    \"broaderDescriptor\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor\",\n      \"@type\" : \"@id\"\n    },\n    \"historyNote\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#historyNote\"\n    },\n    \"dateIntroduced\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#dateIntroduced\",\n      \"@type\" : \"http://www.w3.org/2001/XMLSchema#date\"\n    },\n    \"seeAlso\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#seeAlso\",\n      \"@type\" : \"@id\"\n    },\n    \"publicMeSHNote\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote\"\n    },\n    \"identifier\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#identifier\"\n    },\n    \"preferredTerm\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#preferredTerm\",\n      \"@type\" : \"@id\"\n    },\n    \"nlmClassificationNumber\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber\"\n    },\n    \"active\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#active\",\n      \"@type\" : \"http://www.w3.org/2001/XMLSchema#boolean\"\n    },\n    \"label\" : {\n      \"@id\" : \"http://www.w3.org/2000/01/rdf-schema#label\"\n    },\n    \"lastUpdated\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#lastUpdated\",\n      \"@type\" : \"http://www.w3.org/2001/XMLSchema#date\"\n    },\n    \"onlineNote\" : {\n      \"@id\" : \"http://id.nlm.nih.gov/mesh/vocab#onlineNote\"\n    }\n  }\n}\n",
+      "headers": {
+        "date": "Fri, 02 Oct 2026 15:21:18 GMT",
+        "server": "Apache",
+        "x-frame-options": "SAMEORIGIN",
+        "x-forwarded-proto": "https",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "GET, POST, PUT",
+        "access-control-allow-headers": "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With",
+        "access-control-max-age": "1800",
+        "content-type": "application/rdf+json;charset=utf-8",
+        "set-cookie": "JSESSIONID=1EDA7001ADEEE83914B86CCF59C9956B; Path=/mesh; Secure; HttpOnly",
+        "transfer-encoding": "chunked",
+        "x-count": "3",
+        "x-vip-info": "130.14.16.63:443",
+        "x-pool-info": "/Common/id_pool",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+      },
+      "status_code": 200
+    }
+  }
+]

@@ -20,7 +20,8 @@ config :authoritex,
     Authoritex.LOC.Languages,
     Authoritex.LOC.Names,
     Authoritex.LOC.SubjectHeadings,
-    Authoritex.LOC
+    Authoritex.LOC,
+    Authoritex.MeSH
   ]
 
 import_config "#{Mix.env()}.exs"

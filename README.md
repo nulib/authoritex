@@ -46,7 +46,8 @@ config :authoritex,
     Authoritex.LOC.Languages,
     Authoritex.LOC.Names,
     Authoritex.LOC.SubjectHeadings,
-    Authoritex.LOC
+    Authoritex.LOC,
+    Authoritex.MeSH
   ]
 
 # Authoritex uses httpoison_retry https://github.com/mgwidmann/httpoison_retry
