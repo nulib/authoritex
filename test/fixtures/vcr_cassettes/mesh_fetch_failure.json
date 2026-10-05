@@ -6,17 +6,17 @@
       "url": "https://id.nlm.nih.gov/mesh/D999999999.json",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
       "body": "\r\n\r\n{ }\n",
       "headers": {
-        "date": "Fri, 02 Oct 2026 15:21:18 GMT",
+        "date": "Mon, 05 Oct 2026 19:44:39 GMT",
         "server": "Apache",
         "x-frame-options": "SAMEORIGIN",
         "x-forwarded-proto": "https",
@@ -25,9 +25,9 @@
         "access-control-allow-headers": "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With",
         "access-control-max-age": "1800",
         "content-type": "application/rdf+json;charset=utf-8",
-        "set-cookie": "JSESSIONID=D11871A7A097439A53DC7C4301F4F005; Path=/mesh; Secure; HttpOnly",
+        "set-cookie": "JSESSIONID=71CC2B87F894B263E985BBE20F673587; Path=/mesh; Secure; HttpOnly",
         "transfer-encoding": "chunked",
-        "x-count": "8",
+        "x-count": "11",
         "x-vip-info": "130.14.16.63:443",
         "x-pool-info": "/Common/id_pool",
         "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
