@@ -8,6 +8,40 @@ defmodule Authoritex.MeSH do
   @http_uri_base "http://id.nlm.nih.gov/mesh/"
   @max_results 50
 
+  @search_template """
+    PREFIX meshv: <http://id.nlm.nih.gov/mesh/vocab#>
+    PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT ?descriptor ?preferred
+    FROM <http://id.nlm.nih.gov/mesh>
+    WHERE {
+      {
+        SELECT ?descriptor (MAX(?s) AS ?score)
+        WHERE {
+          ?descriptor a meshv:TopicalDescriptor ;
+                      meshv:preferredConcept/meshv:preferredTerm ?prefTerm ;
+                      meshv:concept/meshv:term ?term .
+
+          ?term ?p ?label .
+          FILTER(?p IN (meshv:prefLabel, meshv:altLabel))
+
+          FILTER(CONTAINS(LCASE(STR(?label)), LCASE("<%= term %>")))
+          # Base score: 10 if preferred label and term, 5 otherwise
+          BIND(IF(?p = meshv:prefLabel && ?term = ?prefTerm, 10, 5) AS ?base)
+
+          # Bonus score: 5 if exact match, 2 if starts with the term, 0 otherwise
+          BIND(IF(LCASE(STR(?label)) = LCASE("<%= term %>"), 5,
+              IF(STRSTARTS(LCASE(STR(?label)), LCASE("<%= term %>")), 2, 0)) AS ?bonus)
+          BIND(?base + ?bonus AS ?s)
+        }
+        GROUP BY ?descriptor
+      }
+      ?descriptor rdfs:label ?preferred .
+    }
+    GROUP BY ?descriptor ?preferred ?score ?category
+    ORDER BY DESC(?score) ?preferred
+    LIMIT <%= max_results %>
+  """
   @impl Authoritex
   def can_resolve?(@http_uri_base <> "D" <> _), do: true
   def can_resolve?("https://id.nlm.nih.gov/mesh/D" <> _), do: true
@@ -32,12 +66,22 @@ defmodule Authoritex.MeSH do
 
   @impl Authoritex
   def search(query, max_results \\ 30) do
-    HttpClient.get("#{@api_base}/lookup/descriptor",
-      params: [label: query, match: "contains", limit: min(max_results, @max_results)]
+    query = EEx.eval_string(@search_template, term: query, max_results: max_results)
+
+    HttpClient.get("#{@api_base}/sparql",
+      params: [query: query, match: "contains", format: "JSON", offset: 0, inference: "true", limit: min(max_results, @max_results)]
     )
     |> case do
-      {:ok, %{body: response, status: 200}} when is_list(response) ->
-        {:ok, Enum.map(response, &%{id: &1["resource"], label: &1["label"], hint: nil})}
+      {:ok, %{body: response, status: 200}} when is_map(response) ->
+        {:ok,
+         get_in(response, ["results", "bindings"])
+         |> Enum.map(fn result ->
+           %{
+             id: get_in(result, ["descriptor", "value"]),
+             label: get_in(result, ["preferred", "value"]),
+             hint: nil
+           }
+         end)}
 
       {:ok, %{body: response, status: status}} ->
         {:error, parse_mesh_error(response, status)}

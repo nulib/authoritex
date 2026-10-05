@@ -3,20 +3,20 @@
     "request": {
       "options": [],
       "body": "",
-      "url": "https://id.nlm.nih.gov/mesh/lookup/descriptor?label=myocardial+infarction&match=contains&limit=30",
+      "url": "https://id.nlm.nih.gov/mesh/sparql?query=++PREFIX+meshv%3A+%3Chttp%3A%2F%2Fid.nlm.nih.gov%2Fmesh%2Fvocab%23%3E%0A++PREFIX+rdfs%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0A++SELECT+%3Fdescriptor+%3Fpreferred%0A++FROM+%3Chttp%3A%2F%2Fid.nlm.nih.gov%2Fmesh%3E%0A++WHERE+%7B%0A++++%7B%0A++++++SELECT+%3Fdescriptor+%28MAX%28%3Fs%29+AS+%3Fscore%29%0A++++++WHERE+%7B%0A++++++++%3Fdescriptor+a+meshv%3ATopicalDescriptor+%3B%0A++++++++++++++++++++meshv%3ApreferredConcept%2Fmeshv%3ApreferredTerm+%3FprefTerm+%3B%0A++++++++++++++++++++meshv%3Aconcept%2Fmeshv%3Aterm+%3Fterm+.%0A%0A++++++++%3Fterm+%3Fp+%3Flabel+.%0A++++++++FILTER%28%3Fp+IN+%28meshv%3AprefLabel%2C+meshv%3AaltLabel%29%29%0A%0A++++++++FILTER%28CONTAINS%28LCASE%28STR%28%3Flabel%29%29%2C+LCASE%28%22myocardial+infarction%22%29%29%29%0A++++++++%23+Base+score%3A+10+if+preferred+label+and+term%2C+5+otherwise%0A++++++++BIND%28IF%28%3Fp+%3D+meshv%3AprefLabel+%26%26+%3Fterm+%3D+%3FprefTerm%2C+10%2C+5%29+AS+%3Fbase%29%0A%0A++++++++%23+Bonus+score%3A+5+if+exact+match%2C+2+if+starts+with+the+term%2C+0+otherwise%0A++++++++BIND%28IF%28LCASE%28STR%28%3Flabel%29%29+%3D+LCASE%28%22myocardial+infarction%22%29%2C+5%2C%0A++++++++++++IF%28STRSTARTS%28LCASE%28STR%28%3Flabel%29%29%2C+LCASE%28%22myocardial+infarction%22%29%29%2C+2%2C+0%29%29+AS+%3Fbonus%29%0A++++++++BIND%28%3Fbase+%2B+%3Fbonus+AS+%3Fs%29%0A++++++%7D%0A++++++GROUP+BY+%3Fdescriptor%0A++++%7D%0A++++%3Fdescriptor+rdfs%3Alabel+%3Fpreferred+.%0A++%7D%0A++GROUP+BY+%3Fdescriptor+%3Fpreferred+%3Fscore+%3Fcategory%0A++ORDER+BY+DESC%28%3Fscore%29+%3Fpreferred%0A++LIMIT+30%0A&match=contains&format=JSON&offset=0&inference=true&limit=30",
       "headers": {
         "accept-encoding": "gzip",
-        "user-agent": "Authoritex/3.2.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
+        "user-agent": "Authoritex/3.3.0 (https://github.com/nulib/authoritex; contact: repository@northwestern.edu) req/0.7.3 finch/0.23.0 mint/1.9.3"
       },
-      "method": "get",
-      "request_body": ""
+      "request_body": "",
+      "method": "get"
     },
     "response": {
       "binary": false,
       "type": "ok",
-      "body": "[{\"resource\":\"http://id.nlm.nih.gov/mesh/D056988\",\"label\":\"Anterior Wall Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D056989\",\"label\":\"Inferior Wall Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D009203\",\"label\":\"Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D000072658\",\"label\":\"Non-ST Elevated Myocardial Infarction\"},{\"resource\":\"http://id.nlm.nih.gov/mesh/D000072657\",\"label\":\"ST Elevation Myocardial Infarction\"}]",
+      "body": "{ \"head\": {\n    \"vars\": [ \"descriptor\" , \"preferred\" ]\n  } ,\n  \"results\": {\n    \"bindings\": [\n      { \n        \"descriptor\": { \"type\": \"uri\" , \"value\": \"http://id.nlm.nih.gov/mesh/D009203\" } ,\n        \"preferred\": { \"type\": \"literal\" , \"xml:lang\": \"en\" , \"value\": \"Myocardial Infarction\" }\n      } ,\n      { \n        \"descriptor\": { \"type\": \"uri\" , \"value\": \"http://id.nlm.nih.gov/mesh/D056988\" } ,\n        \"preferred\": { \"type\": \"literal\" , \"xml:lang\": \"en\" , \"value\": \"Anterior Wall Myocardial Infarction\" }\n      } ,\n      { \n        \"descriptor\": { \"type\": \"uri\" , \"value\": \"http://id.nlm.nih.gov/mesh/D056989\" } ,\n        \"preferred\": { \"type\": \"literal\" , \"xml:lang\": \"en\" , \"value\": \"Inferior Wall Myocardial Infarction\" }\n      } ,\n      { \n        \"descriptor\": { \"type\": \"uri\" , \"value\": \"http://id.nlm.nih.gov/mesh/D000072658\" } ,\n        \"preferred\": { \"type\": \"literal\" , \"xml:lang\": \"en\" , \"value\": \"Non-ST Elevated Myocardial Infarction\" }\n      } ,\n      { \n        \"descriptor\": { \"type\": \"uri\" , \"value\": \"http://id.nlm.nih.gov/mesh/D000072657\" } ,\n        \"preferred\": { \"type\": \"literal\" , \"xml:lang\": \"en\" , \"value\": \"ST Elevation Myocardial Infarction\" }\n      } ,\n      { \n        \"descriptor\": { \"type\": \"uri\" , \"value\": \"http://id.nlm.nih.gov/mesh/D000074962\" } ,\n        \"preferred\": { \"type\": \"literal\" , \"xml:lang\": \"en\" , \"value\": \"Kounis Syndrome\" }\n      } ,\n      { \n        \"descriptor\": { \"type\": \"uri\" , \"value\": \"http://id.nlm.nih.gov/mesh/D000088442\" } ,\n        \"preferred\": { \"type\": \"literal\" , \"xml:lang\": \"en\" , \"value\": \"MINOCA\" }\n      }\n    ]\n  }\n}\n",
       "headers": {
-        "date": "Fri, 02 Oct 2026 15:21:18 GMT",
+        "date": "Mon, 05 Oct 2026 19:44:30 GMT",
         "server": "Apache",
         "x-frame-options": "SAMEORIGIN",
         "x-forwarded-proto": "https",
@@ -24,10 +24,12 @@
         "access-control-allow-methods": "GET, POST, PUT",
         "access-control-allow-headers": "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With",
         "access-control-max-age": "1800",
-        "content-type": "application/json",
-        "set-cookie": "JSESSIONID=C5099B44DD177E4BF27B1B8C90BED5E1; Path=/mesh; Secure; HttpOnly",
+        "content-type": "application/sparql-results+json;charset=utf-8",
+        "set-cookie": "JSESSIONID=2629A2D931E3C0AA80E383CB29BC5A4C; Path=/mesh; Secure; HttpOnly",
+        "cache-control": "no-cache,no-store",
+        "x-xss-protection": "1; mode=lock",
         "transfer-encoding": "chunked",
-        "x-count": "9",
+        "x-count": "6",
         "x-vip-info": "130.14.16.63:443",
         "x-pool-info": "/Common/id_pool",
         "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
