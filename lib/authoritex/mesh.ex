@@ -38,10 +38,11 @@ defmodule Authoritex.MeSH do
       }
       ?descriptor rdfs:label ?preferred .
     }
-    GROUP BY ?descriptor ?preferred ?score ?category
+    GROUP BY ?descriptor ?preferred ?score
     ORDER BY DESC(?score) ?preferred
     LIMIT <%= max_results %>
   """
+
   @impl Authoritex
   def can_resolve?(@http_uri_base <> "D" <> _), do: true
   def can_resolve?("https://id.nlm.nih.gov/mesh/D" <> _), do: true
@@ -66,10 +67,13 @@ defmodule Authoritex.MeSH do
 
   @impl Authoritex
   def search(query, max_results \\ 30) do
-    query = EEx.eval_string(@search_template, term: query, max_results: max_results)
+    max_results = min(max_results, @max_results)
+
+    sparql =
+      EEx.eval_string(@search_template, term: escape_literal(query), max_results: max_results)
 
     HttpClient.get("#{@api_base}/sparql",
-      params: [query: query, match: "contains", format: "JSON", offset: 0, inference: "true", limit: min(max_results, @max_results)]
+      params: [query: sparql, format: "JSON", offset: 0, inference: "true", limit: max_results]
     )
     |> case do
       {:ok, %{body: response, status: 200}} when is_map(response) ->
@@ -90,6 +94,14 @@ defmodule Authoritex.MeSH do
         {:error, error}
     end
     |> Authoritex.search_results()
+  end
+
+  # Escape the search term for use inside a double-quoted SPARQL string literal
+  defp escape_literal(term) do
+    term
+    |> String.replace("\\", "\\\\")
+    |> String.replace("\"", "\\\"")
+    |> String.replace(~r/[\r\n\t]+/, " ")
   end
 
   defp fetch_descriptor(descriptor) do
