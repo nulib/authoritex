@@ -23,3 +23,17 @@ defmodule Authoritex.MeSHTest do
     default_results: 30,
     explicit_results: 50
 end
+
+defmodule Authoritex.MeSHEscapeTest do
+  use ExUnit.Case, async: true
+  use ExVCR.Mock, adapter: ExVCR.Adapter.Finch
+
+  alias Authoritex.MeSH
+
+  test "search terms with quotes and backslashes don't break the SPARQL query" do
+    use_cassette "mesh_search_escaped", match_requests_on: [:query] do
+      assert {:ok, results} = MeSH.search(~S|Crohn's "disease" \ x|)
+      assert is_list(results)
+    end
+  end
+end
