@@ -1,7 +1,7 @@
 defmodule Authoritex.MixProject do
   use Mix.Project
 
-  @version "3.3.1"
+  @version "3.3.2"
   @url "https://github.com/nulib/authoritex"
 
   def project do
